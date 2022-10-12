@@ -1,7 +1,13 @@
-## Obiettivo 
+- [Obiettivo](#obiettivo)
+- [Contenuti](#contenuti)
+- [Materiale bibliografico](#materiale-bibliografico)
+- [Altri link interessanti](#altri-link-interessanti)
+- [Installazione ambiente di sviluppo](#installazione-ambiente-di-sviluppo)
+- [Domande di riepilogo](#domande-di-riepilogo)
+# Obiettivo 
 Comprendere le motivazioni dietro Java Enterprise. Presentare i concetti chiavi dell'architetettura di Java EE e le tecnologie.
 
-## Contenuti
+# Contenuti
 - Introduzione
 - Architettura
   - Multilayer e multitier
@@ -13,11 +19,11 @@ Comprendere le motivazioni dietro Java Enterprise. Presentare i concetti chiavi 
   - Storia
 - Tecnologie
 
-# Materiale bibliografico:
+# Materiale bibliografico
 - Beginning Java Enterprise Edition: Chapter 1 "Java EE 7 at a Glance"
 - Codice: https://github.com/agoncal/agoncal-book-javaee7
 
-# Altri link interessanti:
+# Altri link interessanti
 - Tutorial su Java EE: https://javaee.github.io/tutorial/
 
 # Installazione ambiente di sviluppo
@@ -30,7 +36,7 @@ Comprendere le motivazioni dietro Java Enterprise. Presentare i concetti chiavi 
 - Verificare che il server Glassfish utilizza JDK 8, nel caso modificare il file ```glassfish/config/asenv.conf``` per impostare il percorso corretto della JAVA_HOME
 
 
-# Domande di riepilogo:
+# Domande di riepilogo
 * Quali sono le motivazioni dietro Java Enterprise?
 * Che cos’è un Container?
 * Quali sono i quattro container di Java EE?

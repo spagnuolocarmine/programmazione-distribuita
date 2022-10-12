@@ -6,4 +6,4 @@
   
 # Materiale
 
-- [Introduzione a Java Enterprise](01-intro)
+- [Introduzione a Java Enterpris & Ambiente di sviluppo](01-intro)
