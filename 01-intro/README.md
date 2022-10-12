@@ -21,7 +21,14 @@ Comprendere le motivazioni dietro Java Enterprise. Presentare i concetti chiavi 
 - Tutorial su Java EE: https://javaee.github.io/tutorial/
 
 # Installazione ambiente di sviluppo
-- 
+- Utilizzare solo la JDK SE 8.0
+- Installare [Netbeans](https://netbeans.apache.org/download/nb15/)
+- ⚠️ Utilizzare per il percorso di installazione di Netbeans e dei progetti solo path privi di spazio!
+- Nel caso di più versioni della JDK, impostare Netbeans per utilizzare come default la JDK 8.0
+- Unix like systems: netbeans/etc/netbeans.conf
+- Aggiungere un nuovo server Glassfish 4.1: Tools ➡️ Servers ➡️ Add Servers ...
+- Verificare che il server Glassfish utilizza JDK 8, nel caso modificare il file ```glassfish/config/asenv.conf``` per impostare il percorso corretto della JAVA_HOME
+
 
 # Domande di riepilogo:
 * Quali sono le motivazioni dietro Java Enterprise?
