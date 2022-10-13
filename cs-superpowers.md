@@ -1,7 +1,7 @@
-# Computer Science Superpowers 
+# 1️⃣0️⃣ Computer Science Superpowers 
 This page is currently being developed and will be updated during the course.
 
-## Power \#1: The Shell
+## \#1️⃣ The Shell
 
 ### What is the shell?
 
@@ -80,14 +80,31 @@ In this lecture, we will focus on the Bourne Again SHell, or “bash” for shor
   50.  **passwd** - Create or update passwords for existing users
 </details>
 
-## Power \#2: Text editing
+## \#2️⃣ Finding files
+```brew install fd```
+
+## \#3️⃣ Remote machines
+
 ```ssh```
 
 ```tmux```
 
 ```mosh```
+## \#4️⃣ Text editing and IDE
+```vi``` and ```vim```
 
-## Power \#2: Finding files
-```brew install fd```
+```nano```
 
-## Power \#3: Remote machines
+```emacs```
+
+## \#5️⃣ Version Control (Git)
+
+## \#6️⃣ Metaprogramming
+
+## \#7️⃣ Shortcuts and layout manager
+
+## \#8️⃣ Markdown
+
+## \#9️⃣ Docker and VMs
+
+## \#1️⃣0️⃣ Notebooks programming
