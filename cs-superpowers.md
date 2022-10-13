@@ -80,33 +80,36 @@ In this lecture, we will focus on the Bourne Again SHell, or “bash” for shor
   50.  **passwd** - Create or update passwords for existing users
 </details>
 
-## \#2️⃣ Finding files
+## \#2️⃣ Finding files and regular expressions
 ```brew install fd```
-
+//TODO
 ## \#3️⃣ Remote machines
 
-```ssh```
+```ssh``` Secure Shell Protocol (SSH) is a cryptographic network protocol for operating network services securely over an unsecured network. SSH applications are based on a client–server architecture, connecting an SSH client instance with an SSH server.
+- ssh key exchange //TODO
+- ssh tunneling //TODO
 
-```tmux```
+```tmux``` is a terminal multiplexer, allowing you to use multiple programs in a single terminal.
+- [Getting Started with Tmux](https://github.com/tmux/tmux/wiki/Getting-Started)
 
-```mosh```
 ## \#4️⃣ Text editing and IDE
-```vi``` and ```vim```
+```vi``` and ```vim``` //TODO
 
 ![vim commands](data/vim.png)
 
-```nano```
+```nano``` //TODO
 
-```emacs```
+```emacs``` //TODO
 
 ## \#5️⃣ Version Control (Git)
-
+//TODO
 ## \#6️⃣ Metaprogramming
-
+//TODO
 ## \#7️⃣ Shortcuts and layout manager
-
+//TODO
 ## \#8️⃣ Markdown
-
+//TODO
 ## \#9️⃣ Docker and VMs
-
+//TODO
 ## \#1️⃣0️⃣ Notebooks programming
+//TODO
