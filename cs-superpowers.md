@@ -1,4 +1,4 @@
-# 1️⃣0️⃣ Computer Science Superpowers 
+# The Ten Computer Science Superpowers 
 This page is currently being developed and will be updated during the course.
 
 ## \#1️⃣ The Shell

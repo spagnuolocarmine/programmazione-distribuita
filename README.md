@@ -11,3 +11,8 @@
 # Materiale
 
 - [Introduzione a Java Enterpris & Ambiente di sviluppo](01-intro)
+
+# Blog
+
+- [Test RMI Thread Safeness](data/rmi_test_thread_safeness.zip) ✅
+- [The Ten Computer Science Superpowers ](cs-superpowers.md) (in aggiornamento durante il corso)
