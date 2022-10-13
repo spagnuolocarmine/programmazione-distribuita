@@ -1,0 +1,41 @@
+- [Obiettivo](#obiettivo)
+- [Contenuti](#contenuti)
+- [Materiale bibliografico](#materiale-bibliografico)
+- [Domande di riepilogo](#domande-di-riepilogo)
+# Obiettivo 
+Presentare il meccanismo di Dependency and Context Injection. Presentare concetti chiavi legati al ciclo di vita e al deployment delle applicazioni enterprise. Mostrare degli esempi di injection, qualificatori, producers, disposers, interceptors e decorators.
+
+
+
+# Contenuti
+- Introduzione  
+  - Dependency Injection
+  - Life-cycle Management  
+  - Interception
+  - Loose Coupling and Strong Typing
+  - Deployment Descriptor
+- Esempio di CDI Bean
+  - Injection
+  - Qualifiers  
+  - Producers/Disposers  
+  - Scope
+- Interceptors
+  - Classi Interceptor e Ciclo di vita  
+  - Interceptor multipli
+  - Decorators ed eventi  
+
+# Materiale bibliografico
+- Beginning Java Enterprise Edition": Chapter 2 "Context Dependance Injection" da pag. 23 a 66 (tranne "CDI Specifications Overview", "InjectionPoint API", "Beans in Expression Language")
+- [Descrizione di classi tightly e loosely coupled](https://learn.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/hh323705(v=vs.100)?redirectedfrom=MSDN) 
+
+# Domande di riepilogo
+* Qual è l'idea alla base del design pattern inversion of control?
+* Quali sono i vantaggi del "loose coupling, strong typing"?
+* In che modo il ciclo di vita di un bean differisce da quello di un POJO?
+* Quali sono i vantaggi derivanti dall'uso degli Interceptor?
+* In che modo è possibile definire una sorta di priorità nell'esecuzione di una catena di Interceptor?
+* In che modo è possibile realizzare disaccoppiamento nelle applicazioni Java enterprise?
+* Qual è il meccanismo che permette di scegliere fra due diverse implementazioni di uno specifico bean?
+* Perchè è stato introdotto il concetto di Interceptor Binding?
+* Qual è il vantaggio derivante dall'uso dei Decorator?
+*  Qual è il vantaggio derivante dall'uso degli Eventi?* 

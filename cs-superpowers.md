@@ -93,6 +93,8 @@ In this lecture, we will focus on the Bourne Again SHell, or “bash” for shor
 ## \#4️⃣ Text editing and IDE
 ```vi``` and ```vim```
 
+![vim commands](data/vim.png)
+
 ```nano```
 
 ```emacs```
