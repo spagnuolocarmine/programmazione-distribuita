@@ -17,4 +17,5 @@
 # Blog
 
 - [Test RMI Thread Safeness](data/rmi_test_thread_safeness.zip) ✅
-- [The Ten Computer Science Superpowers ](cs-superpowers.md) (in aggiornamento durante il corso)
+- [The Ten Computer Science Superpowers ](cs-superpowers.md): in aggiornamento durante il corso.
+- [Netbeans shortcuts and Java editor code template](https://shortcutbuzz.com/netbeans-keyboard-shortcuts-180-quick-shortcuts/): try to digit ```psvm``` or ```sout``` and press Tab.
