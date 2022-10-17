@@ -11,8 +11,12 @@
   
 # Materiale
 
-- [Introduzione a Java Enterpris & Ambiente di sviluppo](01-intro)
-- [Context Dependance Injection](02-cdi)
+🗓️ | Lezione | 
+---------|----------|
+ 20/10/2022 | [Introduzione a Java Enterpris & Ambiente di sviluppo](01-intro) | 
+ 21/10/2022 | [Context Dependance Injection](02-cdi) | 
+ 24/10/2022 | [Laboratorio Starting with J2EE ](03-lab-j2ee-intro) | 
+
 
 # Blog
 
