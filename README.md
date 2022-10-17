@@ -13,14 +13,48 @@
 
 🗓️ | Lezione | 
 ---------|----------|
+| **Week**|  **1**|
+|17/10/2022 | Laboratorio Java RMI |
  20/10/2022 | [Introduzione a Java Enterpris & Ambiente di sviluppo](01-intro) | 
  21/10/2022 | [Context Dependance Injection](02-cdi) | 
- 24/10/2022 | [Laboratorio Starting with J2EE ](03-lab-j2ee-intro) | 
+| **Week**|  **2**|
+24/10/2022 | [Laboratorio Starting with J2EE ](03-lab-j2ee-intro) | 
+<!--
+27/10/2022 |  | 
+28/10/2022 |  | 
+| **Week**|  **3**|
+31/10/2022 |  | 
+03/11/2022 |  | 
+04/11/2022 |  | 
+| **Week**|  **4**|
+07/11/2022 |  | 
+10/11/2022 |  | 
+11/11/2022 |  | 
+| **Week**|  **5**|
+14/11/2022 |  | 
+17/11/2022 |  | 
+18/11/2022 |  | 
+| **Week**|  **6**|
+21/11/2022 |  | 
+24/11/2022 |  | 
+25/11/2022 |  | 
+| **Week**|  **7**|
+28/11/2022 |  | 
+01/12/2022 |  | 
+02/12/2022 |  | 
+| **Week**|  **8**|
+05/12/2022 |  | 
+09/12/2022 |  | 
+| **Week**|  **9**|
+12/12/2022 |  | 
+15/12/2022 |  | 
+16/11/2022 |  | -->
 
+
+---
 
 # Blog
-
-- [Test RMI Thread Safeness](data/rmi_test_thread_safeness.zip) ✅
-- [The Ten Computer Science Superpowers 🇬🇧](cs-superpowers.md): frequently update.
-- [Netbeans shortcuts and Java editor code template](https://shortcutbuzz.com/netbeans-keyboard-shortcuts-180-quick-shortcuts/): provare a digitare ```psvm``` oppure ```sout``` + Tab.
-- [Z. Yu, C. Bai, L. Seinturier and M. Monperrus, "Characterizing the Usage, Evolution and Impact of Java Annotations in Practice," in IEEE Transactions on Software Engineering, vol. 47, no. 5, pp. 969-986, 1 May 2021, doi: 10.1109/TSE.2019.2910516](data/TSE_HAL.pdf)
+- [ ] [The Ten Computer Science Superpowers 🇬🇧](cs-superpowers.md): frequently update.
+- [x] [Test RMI Thread Safeness](data/rmi_test_thread_safeness.zip) ✅: importare i sorgenti in un nuovo progetto Java Application. Eseguire prima l'ogetto remoto ```MessengerServiceImpl```e poi il file ```Client```che esegue 50 clients in thread separati.
+- [x] [Netbeans shortcuts and Java editor code template](https://shortcutbuzz.com/netbeans-keyboard-shortcuts-180-quick-shortcuts/): provare a digitare ```psvm``` oppure ```sout``` + Tab.
+- [x] [Z. Yu, C. Bai, L. Seinturier and M. Monperrus, "Characterizing the Usage, Evolution and Impact of Java Annotations in Practice," in IEEE Transactions on Software Engineering, vol. 47, no. 5, pp. 969-986, 1 May 2021, doi: 10.1109/TSE.2019.2910516](data/TSE_HAL.pdf)
