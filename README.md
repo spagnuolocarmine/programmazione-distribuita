@@ -23,4 +23,4 @@
 - [Test RMI Thread Safeness](data/rmi_test_thread_safeness.zip) ✅
 - [The Ten Computer Science Superpowers ](cs-superpowers.md): in aggiornamento durante il corso.
 - [Netbeans shortcuts and Java editor code template](https://shortcutbuzz.com/netbeans-keyboard-shortcuts-180-quick-shortcuts/): try to digit ```psvm``` or ```sout``` and press Tab.
-
+- [Z. Yu, C. Bai, L. Seinturier and M. Monperrus, "Characterizing the Usage, Evolution and Impact of Java Annotations in Practice," in IEEE Transactions on Software Engineering, vol. 47, no. 5, pp. 969-986, 1 May 2021, doi: 10.1109/TSE.2019.2910516](data/TSE_HAL.pdf)
