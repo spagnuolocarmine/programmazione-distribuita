@@ -1,6 +1,9 @@
 # The Ten Computer Science Superpowers 
 This page is currently being developed and will be updated during the course.
 
+**⚠️ Disclaimer** 
+
+This page is not intended to be exhaustive and complete but should be considered a starting point for learning daily practical (side) tools for a computer programmer.
 ## \#1️⃣ The Shell
 
 ### What is the shell?
@@ -22,10 +25,10 @@ In this lecture, we will focus on the Bourne Again SHell, or “bash” for shor
 ### Must to know commands and software
 
 - ```top``` and ```htop```, information of running tasks, memory, cpu, and swap
-  - or also [btop](https://github.com/aristocratos/btop)
+  - or also more advanced tools, such as [btop](https://github.com/aristocratos/btop)
 - Software package management systems see this [list](https://en.wikipedia.org/wiki/List_of_software_package_management_systems)
-  - APT (unix), Homebrew (macOS), ...
-- TOP 50 commands:
+  - [APT](https://it.wikipedia.org/wiki/Advanced_Packaging_Tool) (unix), [Homebrew](https://brew.sh/index_it) (macOS), ...
+- 🔝 50 commands 🌟:
 <details><summary>Show commands</summary>
 
   1.  **ls** - The most frequently used command in Linux to list directories
@@ -80,9 +83,67 @@ In this lecture, we will focus on the Bourne Again SHell, or “bash” for shor
   50.  **passwd** - Create or update passwords for existing users
 </details>
 
+- 💡 **Remember to use the ```man``` command to see the documentation of each tool/command.**
+
 ## \#2️⃣ Finding files and regular expressions
-```brew install fd```
-//TODO
+
+**_Avoid repetitive tasks or use tools to help in such tasks!_** 
+
+For instance, it is vital to use tools for finding files or search content in file.
+
+### ```find```
+All UNIX-like systems provide a package named find, a tool to find files, and it will recursively search for files matching specific criteria.
+
+```bash
+# Find all directories named src
+find . -name src -type d
+# Find all python files that have a folder named test in their path
+find . -path '*/test/*.py' -type f
+# Find all files modified in the last day
+find . -mtime -1
+# Find all zip files with size in range 500k to 10M
+find . -size +500k -size -10M -name '*.tar.gz'
+# Delete all files with .tmp extension
+find . -name '*.tmp' -exec rm {} \;
+# Find all PNG files and convert them to JPG
+find . -name '*.png' -exec convert {} {}.jpg \;
+```
+
+### ```fd```
+It is an alternative to the find command and promises to offer better and more comprehensive outputs.
+
+**Install:** ```brew install fd``` or see [Github](https://github.com/sharkdp/fd) page also for documentation.
+
+### ```grep```
+The find command permits you to search files using names or matching patterns, while the grep command allows you to find inside the content of your files, such as searching specific lines of codes and more.
+
+```bash
+# Search all file that contains the string hello of types txt and doc
+grep -r --include=\*.{txt,doc} "hello" .
+# Ignore case
+grep -i "this" test-file
+# Count the number of patterns
+ps -ef | grep -c $USER
+# Display line numbers of a match
+grep -n "set" ~/.zshrc
+```
+
+It is also helpful in finding your command history ```history | grep find```.
+
+### Regular Expressions
+//TODO description of regular expression and different flavors
+
+Basic patterns:
+
+- `.` means “any single character” except newline
+- `*` zero or more of the preceding match
+- `+` one or more of the preceding match
+- `[abc]` any one character of a, b, and c
+- `(Hello|Ciao)` either something that matches Hello or Ciao
+- `^` the start of the line
+- `$` the end of the line
+
+**Debugging regular expression** on [egex101.com](https://regex101.com/).
 ## \#3️⃣ Remote machines
 
 ```ssh``` Secure Shell Protocol (SSH) is a cryptographic network protocol for operating network services securely over an unsecured network. SSH applications are based on a client–server architecture, connecting an SSH client instance with an SSH server.
@@ -100,6 +161,8 @@ In this lecture, we will focus on the Bourne Again SHell, or “bash” for shor
 ```nano``` //TODO
 
 ```emacs``` //TODO
+
+```Visual Studio Code``` //TODO
 
 ## \#5️⃣ Version Control (Git)
 //TODO
