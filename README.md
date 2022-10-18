@@ -15,14 +15,13 @@
 ---------|----------|
 | **Week**|  **1**|
 |17/10/2022 | Laboratorio Java RMI |
- 20/10/2022 | [Introduzione a Java Enterpris & Ambiente di sviluppo](01-intro) | 
- 21/10/2022 | [Context Dependance Injection](02-cdi) | 
+ 20/10/2022 | [Introduzione a Java Enterprise & Ambiente di sviluppo](01-intro) | 
+ 21/10/2022 | [Context Dependency Injection (Introduzione - Esempio di CDI Bean)](02-cdi) | 
 | **Week**|  **2**|
 24/10/2022 | [Laboratorio Starting with J2EE ](03-lab-j2ee-intro) | 
-<!--
-27/10/2022 |  | 
-28/10/2022 |  | 
-| **Week**|  **3**|
+27/10/2022 | [Context Dependency Injection (Interceptors)](02-cdi) | 
+28/10/2022 | [Java Persistence API (Parte 1)](04-jpa) | 
+<!--| **Week**|  **3**|
 31/10/2022 |  | 
 03/11/2022 |  | 
 04/11/2022 |  | 
