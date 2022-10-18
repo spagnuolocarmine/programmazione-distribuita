@@ -2,6 +2,8 @@
   - [Esercizi](#esercizi)
     - [Importare i progetti del libro di testo nel proprio ambiente](#importare-i-progetti-del-libro-di-testo-nel-proprio-ambiente)
     - [Un primo esempio con CDI](#un-primo-esempio-con-cdi)
+    - [Applicazione Hello World CDI](#applicazione-hello-world-cdi)
+  - [Approfondimenti](#approfondimenti)
 
 # Installazione ambiente di sviluppo
 - Utilizzare solo la JDK SE 8.0
@@ -39,5 +41,10 @@ Creare un nuovo progetto ```CDI WebApplication``` per utilizzare la metodologia 
 - Create una nuova Servlet, chiamata ```NewServlet``` Source Package ➡️ New ➡️ Servlet... 
 - Selezionare la modalità di discovery ``all`` nel file ```Web Pages/WEB-INF/beans.xml```
 - Utilizzare la annotazione ```@Inject```per includere una nuova istanza ```BookService```nel codice della servlet
-- Utilizzare il servizio BookSeervice per costruire un nuovo libro e visualizzare risultato nell'output della servlet (utilizzanod un tag ```<h3>```) 
-     
+- Utilizzare il servizio BookService per costruire un nuovo libro e visualizzare risultato nell'output della servlet (utilizzanod un tag ```<h3>```) 
+
+### Applicazione Hello World CDI
+- Realizzare da zero una nuova applicazione Hello World utilizza una servlet per visualizzare in una pagina Web il testo ```hello world```. Ogni lettera viene elaborata da un particolare POJO che implementa l'interfaccia ```Letter`` è possibile utilizzare Injection, Qualifiers, e Producers.
+
+## Approfondimenti 
+- [JAVA EE 7: THE BIG PICTURE](https://tomylab.wordpress.com/2016/06/18/java-ee-7-the-big-picture/)
