@@ -20,14 +20,16 @@ Comprendere le motivazioni dietro Java Enterprise. Presentare i concetti chiavi 
 
 # Materiale bibliografico
 - Beginning Java Enterprise Edition: Chapter 1 "Java EE 7 at a Glance"
-- Codice: https://github.com/agoncal/agoncal-book-javaee7
+- [Repositoty codice esempi del libro](https://github.com/agoncal/agoncal-book-javaee7)
 
 # Altri link interessanti
-- Tutorial su Java EE: https://javaee.github.io/tutorial/
+- [Tutorial su Java EE](https://javaee.github.io/tutorial)
+- [Distributed Multitiered Applications](https://docs.oracle.com/javaee/7/tutorial/overview003.htm)
+- [Packaging Applications](https://docs.oracle.com/javaee/7/tutorial/packaging001.htm#BCGDJDFB)
 
 # Domande di riepilogo
 * Quali sono le motivazioni dietro Java Enterprise?
 * Che cos’è un Container?
 * Quali sono i quattro container di Java EE?
-* A cosa servono i metadata?
 * Quali sono i vantaggi e svantaggi delle annotazioni rispetto ai deployment descriptor?
+  
