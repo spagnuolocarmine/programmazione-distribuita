@@ -40,4 +40,4 @@ Presentare il meccanismo di Dependency and Context Injection. Presentare concett
 * Qual è il meccanismo che permette di scegliere fra due diverse implementazioni di uno specifico bean?
 * Perchè è stato introdotto il concetto di Interceptor Binding?
 * Qual è il vantaggio derivante dall'uso dei Decorator?
-* Qual è il vantaggio derivante dall'uso degli Eventi?* 
+* Qual è il vantaggio derivante dall'uso degli Eventi?
