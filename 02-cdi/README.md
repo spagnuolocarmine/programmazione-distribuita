@@ -25,8 +25,10 @@ Presentare il meccanismo di Dependency and Context Injection. Presentare concett
   - Decorators ed eventi  
 
 # Materiale bibliografico
-- Beginning Java Enterprise Edition": Chapter 2 "Context Dependance Injection" da pag. 23 a 66 (tranne "CDI Specifications Overview", "InjectionPoint API", "Beans in Expression Language")
+- Beginning Java Enterprise Edition": 
+  - Chapter 2 "Context Dependance Injection" da pag. 23 a 66 (tranne "CDI Specifications Overview", "InjectionPoint API", "Beans in Expression Language")
 - [Descrizione di classi tightly e loosely coupled](https://learn.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/hh323705(v=vs.100)?redirectedfrom=MSDN) 
+- [Introduction to Contexts and Dependency Injection for Java EE](https://docs.oracle.com/javaee/7/tutorial/cdi-basic.htm#GIWHB)
 
 # Domande di riepilogo
 * Qual è l'idea alla base del design pattern inversion of control?
