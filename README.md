@@ -15,7 +15,7 @@
 ---------|----------|
 | **Week**|  **1**|
 |17/10/2022 | Laboratorio Java RMI |
- 20/10/2022 | [Introduzione a Java Enterprise & Ambiente di sviluppo](01-intro) | 
+ 20/10/2022 | [Introduzione a Java Enterprise Edition](01-intro) | 
  21/10/2022 | [Context Dependency Injection (Introduzione - Esempio di CDI Bean)](02-cdi) | 
 | **Week**|  **2**|
 24/10/2022 | [Laboratorio Starting with J2EE ](03-lab-j2ee-intro) | 
