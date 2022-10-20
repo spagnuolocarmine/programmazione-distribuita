@@ -35,16 +35,17 @@
    - Beginning Java EE 7 pg. 57 
 ### Un primo esempio con CDI
 Creare un nuovo progetto ```CDI WebApplication``` per utilizzare la metodologia CDI per visualizzare tramite una Servlet il risulato della creazione di un istanza di ```Book```.
-- Java Web ➡️ Web Application
-- Includere i sorgenti di ```chapter02-putting-together```nel package principale
-- Includere la dipendenza a ```Java EE Web 7 API Library```
+- New Project ➡️ Java with ➡️ Ant Java Web ➡️ Web Application
+- Includere i sorgenti di `chapter02-putting-together` nel package principale, utilizzando la struttura originale
+- Includere la dipendenza a J2EE 7, Project X ➡️ Properties ➡️ Libraries ➡️ Add Library ... ➡️ `Java EE Web 7 API Library`
 - Create una nuova Servlet, chiamata ```NewServlet``` Source Package ➡️ New ➡️ Servlet... 
 - Selezionare la modalità di discovery ``all`` nel file ```Web Pages/WEB-INF/beans.xml```
 - Utilizzare la annotazione ```@Inject```per includere una nuova istanza ```BookService```nel codice della servlet
-- Utilizzare il servizio BookService per costruire un nuovo libro e visualizzare risultato nell'output della servlet (utilizzanod un tag ```<h3>```) 
+- Utilizzare il servizio BookService per costruire un nuovo libro e visualizzare risultato nell'output della servlet in elemento HTML `<h3>`
 
 ### Applicazione Hello World CDI
-- Realizzare da zero una nuova applicazione Hello World utilizza una servlet per visualizzare in una pagina Web il testo ```hello world```. Ogni lettera viene elaborata da un particolare POJO che implementa l'interfaccia ```Letter`` è possibile utilizzare Injection, Qualifiers, e Producers.
+1. Realizzare da zero una nuova applicazione Hello World utilizza una servlet per visualizzare in una pagina Web il testo `hello world`. Ogni lettera viene elaborata da un particolare POJO MB che implementa l'interfaccia `Letter` è possibile utilizzare _Injection_, _Qualifiers_, e _Producers_.
+     - New Project ➡️ Java with Ant ➡️ Java Enterprise ➡️ EJB Module
 
 ## Approfondimenti 
 - [JAVA EE 7: THE BIG PICTURE](https://tomylab.wordpress.com/2016/06/18/java-ee-7-the-big-picture/)
