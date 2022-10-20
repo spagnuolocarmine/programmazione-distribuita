@@ -26,10 +26,15 @@ Comprendere le motivazioni dietro Java Enterprise. Presentare i concetti chiavi 
 - [Tutorial su Java EE](https://javaee.github.io/tutorial)
 - [Distributed Multitiered Applications](https://docs.oracle.com/javaee/7/tutorial/overview003.htm)
 - [Packaging Applications](https://docs.oracle.com/javaee/7/tutorial/packaging001.htm#BCGDJDFB)
+- [Java Annotation Processing](https://www.adrianbartnik.de/blog/annotation-processing/)
 
 # Domande di riepilogo
 * Quali sono le motivazioni dietro Java Enterprise?
 * Che cos’è un Container?
 * Quali sono i quattro container di Java EE?
 * Quali sono i vantaggi e svantaggi delle annotazioni rispetto ai deployment descriptor?
+* Cosa sono le annotazioni?
+* Come funziona il meccanismo delle annotazioni?
+* Che cos’è un application server?
+
   
