@@ -22,7 +22,7 @@
 27/10/2022 | [Context Dependency Injection (Interceptors)](02-cdi) | 
 28/10/2022 | [Java Persistence API (Parte 1)](04-jpa) | 
 | **Week**|  **3**|
-31/10/2022 | [Java Persistence API (Parte 2) ](04-jpa) -  [Laboratorio JPA ](05-lab-j2ee-intro)| 
+31/10/2022 | [Java Persistence API (Parte 2) ](04-jpa) -  [Laboratorio JPA ](05-lab-jpa)| 
 03/11/2022 | [EJB (Parte 1)](06-EJB) | 
 04/11/2022 | [EJB (Parte 2)](06-EJB) | 
 <!--| **Week**|  **4**|
