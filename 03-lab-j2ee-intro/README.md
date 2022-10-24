@@ -45,7 +45,6 @@ Creare un nuovo progetto ```CDI WebApplication``` per utilizzare la metodologia 
 
 ### Applicazione Hello World CDI
 1. Realizzare da zero una nuova applicazione Hello World utilizza una servlet per visualizzare in una pagina Web il testo `hello world`. Ogni lettera viene elaborata da un particolare POJO MB che implementa l'interfaccia `Letter` è possibile utilizzare _Injection_, _Qualifiers_, e _Producers_.
-     - New Project ➡️ Java with Ant ➡️ Java Enterprise ➡️ EJB Module
 
 ## Approfondimenti 
 - [JAVA EE 7: THE BIG PICTURE](https://tomylab.wordpress.com/2016/06/18/java-ee-7-the-big-picture/)
