@@ -69,3 +69,43 @@ Permettere il mapping di diversi Job per un singolo dipendente.
    @OneToMany(fetch = FetchType.LAZY, cascade = {CascadeType.PERSIST, CascadeType.REMOVE})
    private List<Job> jobs = new ArrayList<>();
 ```
+
+## Esercizio 2.2
+
+Definire le seguenti NamedQuery per l'entità _Person_:
+```java
+@NamedQueries({
+    @NamedQuery(name = FIND_ALL, query = " ... "),
+    @NamedQuery(name = FIND_BY_FIRST_NAME, query = "  ... "),
+    @NamedQuery(name = FIND_BY_LAST_NAME, query = " ... "),
+    @NamedQuery(name = FIND_BY_FIRST_LAST_NAME, query = " ... "),
+    @NamedQuery(name = FIND_BY_ADDRESS, query = " ... "),
+    @NamedQuery(name = FIND_BY_ID, query = " ... "),
+    @NamedQuery(name = FIND_BY_JOB, query = " ... "),
+})
+
+```
+
+## Esercizio 2.3
+
+Definire un POJO che permetta di popolare il database come segue.
+
+```java
+
+public class DatabasePopulator {
+    private Person p1, p2, p3, p4;
+    private Address a1,a2;
+    private Job j1,j2,j3,j4,j5,j6,j7,j8;
+
+    private void populateDB(){
+        /*here code*/
+    }
+    private void clearDB(){
+        /*here code*/
+    }
+}
+```
+
+## Esercizion 2.4
+
+Scrivere una classe Main che permette di popolare il DB e una Servlet che permette di eseguire le diverse NamedQuery e di visualizzare il risulato (utilizzare @Inject). 
