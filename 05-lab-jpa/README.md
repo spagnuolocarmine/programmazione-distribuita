@@ -1,6 +1,18 @@
-#TODO
+# Esercizio 1 - BookStore
 
-*Esempio di file persistence*
+Scrivere un programma Java usando JPA che simuli le operazioni principali di un negozio di libri (aggiunta, rimozione e lista dei libri).
+
+1. Da Derby, creare il database con un utente associato. Fate attenzione a specificare user name e password non vuote.
+2. Creare una classe Entity Book caratterizzata da:
+   - titolo, prezzo, descrizione, isbn e categoria.
+3. Creare una classe Main in cui l’utente può aggiungere e rimuovere un libro e permetta di fare una ricerca per filtri (titolo, categoria, isbn).
+
+Note: 
+- Nuovo progetto Java with Ant ➡️ Java Application
+- Creare il file `META-INF/persistence.xml` da Netbeans
+- Aggiungere al progetto le librerie: `Java EE 7 API Library`, `Java DB Driver`, `Eclipse Link (JPA 2.1)`
+- Se utilizzate come schema generation della persistence unit drop-and-create, non occorre che creiate manualmente le tabelle
+- *Esempio di file persistence*
 ```xml
 <persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd" version="2.1">
     <persistence-unit name="exercise_pu" transaction-type="RESOURCE_LOCAL">
@@ -15,4 +27,45 @@
         </properties>
     </persistence-unit>
 </persistence>
+```
+
+# Esercizio 2 - Job Scheduling
+
+Scrivere un programma Java usando JPA che simuli le operazioni di una azienda che assegna a ogni dipendente un particolare lavoro (_Job_). Ad ogni dipendente (_Person_) si associa anche un particolare indirizzo (_Address_).
+```java
+public class Person {
+    private String id;
+    private String firstName;
+    private String lastName;
+    private Character middleInitial;
+    private Address address;
+    private Job job;
+    /*...*/
+}
+public class Address {
+    private String id;
+    private String street1;
+    private String street2;
+    private String city;
+    private String state;
+    private String zip;
+    /*...*/
+}
+
+public class Job {
+    private Long id;
+    private String title;
+    private Float salary;
+    private String employeedId;
+     /*...*/
+}
+```
+
+## Esercizio 2.1
+
+Permettere il mapping di diversi Job per un singolo dipendente.
+
+```java
+   @OneToMany(fetch = FetchType.LAZY, cascade = {CascadeType.PERSIST, CascadeType.REMOVE})
+   private List<Job> jobs = new ArrayList<>();
 ```
