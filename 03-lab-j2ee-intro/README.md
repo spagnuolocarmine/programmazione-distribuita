@@ -3,6 +3,7 @@
     - [Importare i progetti del libro di testo nel proprio ambiente](#importare-i-progetti-del-libro-di-testo-nel-proprio-ambiente)
     - [Un primo esempio con CDI](#un-primo-esempio-con-cdi)
     - [Applicazione Hello World CDI](#applicazione-hello-world-cdi)
+    - [Esercizio Bonus](#esercizio-bonus)
   - [Approfondimenti](#approfondimenti)
 
 # Installazione ambiente di sviluppo
@@ -45,7 +46,23 @@ Creare un nuovo progetto ```CDI WebApplication``` per utilizzare la metodologia 
 
 ### Applicazione Hello World CDI
 1. Realizzare da zero una nuova applicazione Hello World utilizza una servlet per visualizzare in una pagina Web il testo `hello world`. Ogni lettera viene elaborata da un particolare POJO MB che implementa l'interfaccia `Letter` è possibile utilizzare _Injection_, _Qualifiers_, e _Producers_.
-     - New Project ➡️ Java with Ant ➡️ Java Enterprise ➡️ EJB Module
+
+### Esercizio Bonus
+2. Gestire una libreria musicale definendo un oggetto POJO _Song_ e un oggetto _Library_ che è un POJO MB che tramite l'utilizzo di Producers dichiara un `ArrayList<Song>`. 
+   - Il risultato dell'architettura deve permettere di utilizzare il seguente codice nella classe Library:
+   - `@Inject ArrayList<Book> db;`
+   - e di gestire tutte le operazioni possibili in una libreria (aggiungi, cancella, trova per ID, trova per nome, etc.).
 
 ## Approfondimenti 
 - [JAVA EE 7: THE BIG PICTURE](https://tomylab.wordpress.com/2016/06/18/java-ee-7-the-big-picture/)
+
+*Files di esempio*
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/beans_1_1.xsd"
+       bean-discovery-mode="all">
+</beans>
+```

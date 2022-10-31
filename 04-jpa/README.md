@@ -1,6 +1,7 @@
 - [Contenuti](#contenuti)
 - [Materiale bibliografico](#materiale-bibliografico)
 - [Domande di riepilogo](#domande-di-riepilogo)
+- [`persistence.xml` visto a lezione](#persistencexml-visto-a-lezione)
 
 # Contenuti
 _Parte 1_
@@ -41,3 +42,25 @@ _Parte 2_
 * Definizione e funzionalità di un Persistence Context
 * Descrivere i vari tipi di query definiti da JPQL
      
+# `persistence.xml` visto a lezione
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="PJPAPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>pjpa.Person</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:derby://localhost:1527/Paolo;create=true"/>
+      <property name="javax.persistence.jdbc.user" value="paolo"/>
+      <property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.ClientDriver"/>
+            <property name="javax.persistence.schema-generation.scripts.action" value="drop-and-create"/>
+      <property name="javax.persistence.jdbc.password" value="paolo"/>
+      <property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
+       <property name="eclipselink.logging.level" value="INFO"/>
+      <property name="javax.persistence.schema-generation.scripts.create-target" value="pjpa-create.ddl"/>
+      <property name="javax.persistence.schema-generation.scripts.drop-target" value="pjpa-drop.ddl"/>
+    </properties>
+  </persistence-unit>
+</persistence>
+```
