@@ -66,7 +66,7 @@ public class Job {
      /*...*/
 }
 ```
-
+Nota: vedere Cascading Events pg.191 libro di testo Java EE7
 ## Esercizio 2.1
 
 Permettere il mapping di diversi Job per un singolo dipendente.
