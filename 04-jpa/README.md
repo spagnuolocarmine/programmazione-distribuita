@@ -29,7 +29,7 @@ _Parte 2_
 #  Materiale bibliografico
 - "Beginning Java Enterprise Edition": Cap. 4 (tranne "Integration with Bean Validation", "JPA Specification Overview")
 - "Beginning Java Enterprise Edition": Cap. 5 (tranne "Composite Primary Keys", da pag 129 a 148)  e Cap. 6 (tranne "Fetching Relationships", da pag 161 a 176; "Type-Safe Criteria API", "Cache API", da pag 209 a 216)
-
+- [Querying JPA Entities with JPQL and Native SQL](https://www.oracle.com/technical-resources/articles/vasiliev-jpql.html)
 # Domande di riepilogo
 * Qual è la differenza fra una entità ed un oggetto?
 * A cosa serve l'annotazione @GeneratedValue?
