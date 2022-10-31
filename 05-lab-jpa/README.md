@@ -3,7 +3,7 @@
   - [Esercizio 2.1](#esercizio-21)
   - [Esercizio 2.2](#esercizio-22)
   - [Esercizio 2.3](#esercizio-23)
-  - [Esercizion 2.4](#esercizion-24)
+  - [Esercizio 2.4](#esercizio-24)
 # Esercizio 1 - BookStore
 
 Scrivere un programma Java usando JPA che simuli le operazioni principali di un negozio di libri (aggiunta, rimozione e lista dei libri).
@@ -112,6 +112,6 @@ public class DatabasePopulator {
 }
 ```
 
-## Esercizion 2.4
+## Esercizio 2.4
 
 Scrivere una classe Main che permette di popolare il DB e una Servlet che permette di eseguire le diverse NamedQuery e di visualizzare il risulato (utilizzare @Inject). 
