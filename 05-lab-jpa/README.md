@@ -114,4 +114,4 @@ public class DatabasePopulator {
 
 ## Esercizio 2.4
 
-Scrivere una classe Main che permette di popolare il DB e una Servlet che permette di eseguire le diverse NamedQuery e di visualizzare il risulato (utilizzare @Inject). 
+Scrivere una classe Main che permette di popolare il DB e una Servlet che permette di eseguire le diverse NamedQuery e di visualizzare il risulato (utilizzare `@Inject` e/o `@PersistenceUnit(unitName="name")`). 
