@@ -28,6 +28,7 @@ _Parte 2_
 - "Beginning Java Enterprise Edition": Cap. 8, escludere Timer Service
 - "Beginning Java Enterprise Edition": Cap. 9,  solo "Understanding Transactions", "Transaction Support in EJB",  "Container-managed transactions" fino a pag. 296
 - [`@Inject` vs `@EJB`](https://www.oracle.com/technical-resources/articles/java/cdi-javaee-bien.html)
+- [Managing Concurrent Access in a Singleton Session Bean](https://javaee.github.io/tutorial/ejb-basicexamples003.html)
 # Alcune domande di riepilogo
 * Qual è il ciclo di vita di un bean?
 * Qual è il vantaggio dell'utilizzo di JNDI?
