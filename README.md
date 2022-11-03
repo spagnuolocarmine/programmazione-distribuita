@@ -25,11 +25,11 @@
 31/10/2022 | [Java Persistence API (Parte 2) ](04-jpa) -  [Laboratorio JPA ](05-lab-jpa)| 
 03/11/2022 | [EJB (Parte 1)](06-EJB) | 
 04/11/2022 | [EJB (Parte 2)](06-EJB) | 
-<!--| **Week**|  **4**|
-07/11/2022 |  | 
-10/11/2022 |  | 
-11/11/2022 |  | 
-| **Week**|  **5**|
+| **Week**|  **4**|
+07/11/2022 | [EJB Lab](07-lab-EJB) | 
+10/11/2022 | [Java Messaging Service API (Parte 1)](xxx)| 
+11/11/2022 | [Java Messaging Service API (Parte 2) + Lab](xxx) | 
+<!--| **Week**|  **5**|
 14/11/2022 |  | 
 17/11/2022 |  | 
 18/11/2022 |  | 
