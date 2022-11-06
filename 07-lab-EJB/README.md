@@ -177,7 +177,7 @@ Aggiungere le seguenti funzionalità al progetto MusicLibrary:
 1. Ampliare la definizione di `MusicLibrary` per supportare le precedenti nuove entità e funzionalità. 
    - Introdurre, inotre, la definizione di una metodo `play(song_ID)` che permette di ottenere la URL di una song, questo metodo va intercettato per aggiornare il numero di volte che un particolare brano viene riprodotto.
 
-Mofificare la classe main di MusicLibraryClient per il testing e la verifica di tutte le funzionalità.
+Mofificare la classe main di `MusicLibraryClient` per il testing e la verifica di tutte le funzionalità di `MusicLibrary`.
 
 # Esercizio 0.2 - PDtify 🎵
 **Obiettivo**: creare un enterprise java application con due moduli principali un modulo di business/persistenza e un modulo di presentazione web.
@@ -190,6 +190,14 @@ Mofificare la classe main di MusicLibraryClient per il testing e la verifica di 
 - Riportare il progetto `MusicLibray` nel modulo `PDtify-ejb`.
 - Costruire un nuovo client web utilizzando una servelet `MusicPlayer` che sfrutta l'EJB `MusicLibrary` per offrire attraverso una pagina web tutte le funzionalità dell'applicazione.
 - _Note_: bisogna riportare nel modulo ejb tutte le definizione di persistence e beans.xml. Inoltre, quando si eseguono le operazioni di build, deploy, e run del progetto vanno lanciate dal progetto principale entrprise `PDtify`.
+- `play()`la visualizzazione del metodo play può essere ottenuta utilizzando l'embedding della URL di un brano all'interno di un iframe:
+    ```java
+         Song s =  new Song("Queen","We Are The Champions", new URL("https://www.youtube.com/embed/KXw8CRapg7k"));
+         out.println("<iframe width=\"420\""+
+                             "height=\"315\"\n" +
+                             "src=\""+s.getUrl()+"\">\n" +
+                     "</iframe>");
+    ```
 # Esercizio 1 - Calcolatrice EJB
 
 Scrivere un client Java che invoca degli EJB sul server che implementano un servizio di calcolatrice per tipi float. La calcolatrice offre tre metodi, tutti prendono in input due operandi di tipo `float` e restituiscono un `float`:
