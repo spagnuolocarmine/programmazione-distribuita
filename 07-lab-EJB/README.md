@@ -4,7 +4,7 @@
     - [Definizione della logica della nostra applicazione](#definizione-della-logica-della-nostra-applicazione)
   - [Music Library Client](#music-library-client)
 - [Esercizio 0.1 - Music Library++](#esercizio-01---music-library)
-- [Esercizion 0.2 - PDtify](#esercizion-02---pdtify)
+- [Esercizio 0.2 - PDtify 🎵](#esercizio-02---pdtify-)
 - [Esercizio 1 - Calcolatrice EJB](#esercizio-1---calcolatrice-ejb)
 - [Esercizio 2 - Calcolatrice EJB basata su stack](#esercizio-2---calcolatrice-ejb-basata-su-stack)
 - [Esercizio 3 - Calcolatrice EJB basata su stack persistente](#esercizio-3---calcolatrice-ejb-basata-su-stack-persistente)
@@ -179,7 +179,7 @@ Aggiungere le seguenti funzionalità al progetto MusicLibrary:
 
 Mofificare la classe main di MusicLibraryClient per il testing e la verifica di tutte le funzionalità.
 
-# Esercizion 0.2 - PDtify
+# Esercizio 0.2 - PDtify 🎵
 **Obiettivo**: creare un enterprise java application con due moduli principali un modulo di business/persistenza e un modulo di presentazione web.
 
 - `PDtify`: New Project ➡️ Java with Ant ➡️ Java Enterprise ➡️ Enterprise Application
