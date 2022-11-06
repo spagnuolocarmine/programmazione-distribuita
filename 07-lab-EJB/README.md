@@ -12,8 +12,8 @@
 # Esercizio 0 - Music Library
 
 Creare due progetti:
-- MusicLibrary: New Project ➡️ Java with Ant ➡️ Java Enterprise ➡️ EJB Module
-- MusicLibraryClient: New Project ➡️ Java with Ant ➡️ Java Application (con una main class)
+- **MusicLibrary**: New Project ➡️ Java with Ant ➡️ Java Enterprise ➡️ EJB Module
+- **MusicLibraryClient**: New Project ➡️ Java with Ant ➡️ Java Application (con una main class)
   
 ## 1️⃣ MusicPlayer
 Creare un nuovo pacchetto Source Packages ➡️ New ➡️ Java Package `ìt.pd2022.musiclibrary`
