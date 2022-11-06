@@ -1,15 +1,15 @@
-- [Esercizio 0 - Music Library](#esercizio-0---music-library)
+- [Esercizio 0 - Music Library 🎵📚 (warm-up 🏋)](#esercizio-0---music-library--warm-up-)
   - [Music Library](#music-library)
     - [Definizione entità e persistenza](#definizione-entità-e-persistenza)
     - [Definizione della logica della nostra applicazione](#definizione-della-logica-della-nostra-applicazione)
   - [Music Library Client](#music-library-client)
-- [Esercizio 1 - Music Library++](#esercizio-1---music-library)
-- [Esercizio 2 - PDtify 🎵](#esercizio-2---pdtify-)
+- [Esercizio 1 - Music Library++ 🎵📚](#esercizio-1---music-library-)
+- [Esercizio 2 - PDtify 🎵 ⏯️](#esercizio-2---pdtify--️)
 - [Esercizio 3 - Calcolatrice EJB](#esercizio-3---calcolatrice-ejb)
 - [Esercizio 4 - Calcolatrice EJB basata su stack](#esercizio-4---calcolatrice-ejb-basata-su-stack)
 - [Esercizio 5 - Calcolatrice EJB basata su stack persistente](#esercizio-5---calcolatrice-ejb-basata-su-stack-persistente)
 
-# Esercizio 0 - Music Library
+# Esercizio 0 - Music Library 🎵📚 (warm-up 🏋)
 
 Creare due progetti:
 - **MusicLibrary**: New Project ➡️ Java with Ant ➡️ Java Enterprise ➡️ EJB Module
@@ -157,7 +157,7 @@ public class MusicLibraryClient {
 }
 ```
 **Nota** l'indirizzo JNDI dell'interfaccia remota del bean MusicLibrary può essere visualizzato nella console di output di glassfish subito dopo il deploy dell'applicazione.
-# Esercizio 1 - Music Library++
+# Esercizio 1 - Music Library++ 🎵📚
 
 Aggiungere le seguenti funzionalità al progetto MusicLibrary:
 
@@ -180,7 +180,7 @@ Aggiungere le seguenti funzionalità al progetto MusicLibrary:
 
 Mofificare la classe main di `MusicLibraryClient` per il testing e la verifica di tutte le funzionalità di `MusicLibrary`.
 
-# Esercizio 2 - PDtify 🎵
+# Esercizio 2 - PDtify 🎵 ⏯️
 **Obiettivo**: creare un enterprise java application con due moduli principali un modulo di business/persistenza e un modulo di presentazione web che permetta la gestione di una libreria musicale evoluta (playlist) utilizzando come player di riproduzione web le API di Youtube Embedded.
 
 - `PDtify`: New Project ➡️ Java with Ant ➡️ Java Enterprise ➡️ Enterprise Application
