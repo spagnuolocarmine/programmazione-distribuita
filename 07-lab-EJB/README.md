@@ -182,7 +182,7 @@ Aggiungere le seguenti funzionalità al progetto MusicLibrary:
    - descrizione,
    - data in cui è stato effettuato l'ultimo aggiornamento.
   
-    Le playlist possono essere create, modificate, visualizzate, e ricercate per tipologia.
+    Le playlist possono essere create, modificate, visualizzate, ricercate per tipologia, ed eliminate senza eliminare dal database i brani contenuti.
 3. Ampliare la definizione di `MusicLibrary` per supportare le precedenti nuove entità e funzionalità. 
    - Introdurre la definizione di una metodo `play(song_ID)` che permette di ottenere la URL di una song, questo metodo va intercettato per aggiornare il numero di volte che un particolare brano viene riprodotto.
    - _Opzionale_: estendere la definizione del metodo play per la riproduzione di un lista di brani ottenuti da una particolare playlist.
