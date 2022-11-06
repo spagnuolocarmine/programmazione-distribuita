@@ -3,7 +3,7 @@
     - [Definizione entità e persistenza](#definizione-entità-e-persistenza)
     - [Definizione della logica della nostra applicazione](#definizione-della-logica-della-nostra-applicazione)
   - [Music Library Client](#music-library-client)
-- [Esercizio 0.1 - MusicLibrary➕➕](#esercizio-01---musiclibrary)
+- [Esercizio 0.1 - Music Library++](#esercizio-01---music-library)
 - [Esercizion 0.2 - PDtify](#esercizion-02---pdtify)
 - [Esercizio 1 - Calcolatrice EJB](#esercizio-1---calcolatrice-ejb)
 - [Esercizio 2 - Calcolatrice EJB basata su stack](#esercizio-2---calcolatrice-ejb-basata-su-stack)
@@ -157,13 +157,25 @@ public class MusicLibraryClient {
 }
 ```
 
-# Esercizio 0.1 - MusicLibrary➕➕
+# Esercizio 0.1 - Music Library++
 
 Aggiungere le seguenti funzionalità al progetto MusicLibrary:
 
-1. Ampliare la definzione di Song inserendo: anno di rilascio, numero di visualizzazioni (numero di volte in cui il bravo è stato riprodotto), e lyrics; specificando delle nuove NamedQuery che permettano la ricerca delle canzoni per anno di rilascio, nome autore, nome del brano.
-2. Inserire una nuova entità `Playlist` che consente di collezionare molteplici `Song`e di specificare un nome e una descrizione della playlist e di memorizzare la data dell'ultimo aggiornamento alla playlist.
-3. Ampliare la definizione di `MusicLibrary` per supportare le precedenti funzionalità. Inoltre, introdurre la definizione di una metodo `play(song_ID)` che permette di ottenere la URL di una song, questo metodo va intercettato per aggiornare il numero di volte che un particolare brano viene riprodotto.
+1. Ampliare la definzione di `Song` inserendo: 
+   - anno di rilascio, 
+   - numero di visualizzazioni (numero di volte in cui il bravo è stato riprodotto), 
+   - lyrics; 
+   - specificare delle nuove NamedQuery che permettano la ricerca delle canzoni per anno di rilascio, nome autore, nome del brano.
+2. Definire una nuova entità `Playlist` che consente di collezionare molteplici `Song`, specificando 
+   - nome, 
+   - autore, 
+   - tipologia, 
+   - descrizione,
+   - data in cui è stato effettuato l'ultimo aggiornamento.
+  
+    Le playlist possono essere create, modificate, e visualizzate.
+1. Ampliare la definizione di `MusicLibrary` per supportare le precedenti nuove entità e funzionalità. 
+   - Introdurre, inotre, la definizione di una metodo `play(song_ID)` che permette di ottenere la URL di una song, questo metodo va intercettato per aggiornare il numero di volte che un particolare brano viene riprodotto.
 
 Mofificare la classe main di MusicLibraryClient per il testing e la verifica di tutte le funzionalità.
 
