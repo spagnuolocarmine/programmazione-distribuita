@@ -181,7 +181,7 @@ Aggiungere le seguenti funzionalità al progetto MusicLibrary:
 Mofificare la classe main di `MusicLibraryClient` per il testing e la verifica di tutte le funzionalità di `MusicLibrary`.
 
 # Esercizio 2 - PDtify 🎵
-**Obiettivo**: creare un enterprise java application con due moduli principali un modulo di business/persistenza e un modulo di presentazione web.
+**Obiettivo**: creare un enterprise java application con due moduli principali un modulo di business/persistenza e un modulo di presentazione web che permetta la gestione di una libreria musicale evoluta (playlist) utilizzando come player di riproduzione web le API di Youtube Embedded.
 
 - `PDtify`: New Project ➡️ Java with Ant ➡️ Java Enterprise ➡️ Enterprise Application
 - Output in Netbeans: 
