@@ -156,6 +156,15 @@ public class MusicLibraryClient {
     
 }
 ```
+> 🚀 Il client della nostra applicazione è pronto possiamo eseguirlo.
+> 🎯 Output:
+> ```
+> run: nov 06, 2022 1:32:13 PM com.sun.enterprise.v3.server.CommonClassLoaderServiceImpl findDerbyClient
+> INFORMAZIONI: Cannot find javadb client jar file, derby jdbc driver will not be available by default.
+> Song{ID=2, authors=Home Free, name=Sea Shanty Medley, url=https://www.youtube.com/watch?v=lLGLUSzzuWU&ab_channel=HomeFree}
+> Song{ID=1, authors=Queen, name=We Are The Champions, url=https://www.youtube.com/watch?v=KXw8CRapg7k&ab_channel=QueenVEVO}
+> BUILD SUCCESSFUL (total time: 2 seconds)
+> ```
 **Nota** l'indirizzo JNDI dell'interfaccia remota del bean MusicLibrary può essere visualizzato nella console di output di glassfish subito dopo il deploy dell'applicazione.
 # Esercizio 1 - Music Library++ 🎵📚
 
@@ -182,7 +191,7 @@ Mofificare la classe main di `MusicLibraryClient` per il testing e la verifica d
 
 # Esercizio 2 - PDtify 🎵 ⏯️
 **Obiettivo**: creare un enterprise java application con due moduli principali un modulo di business/persistenza e un modulo di presentazione web che permetta la gestione di una libreria musicale evoluta (playlist) utilizzando come player di riproduzione web le API di Youtube Embedded.
-
+- ⚠️ **prima di procedere effettuare l'undeploy del progetto precedente dal server glassfish**. 
 - `PDtify`: New Project ➡️ Java with Ant ➡️ Java Enterprise ➡️ Enterprise Application
 - Output in Netbeans: 
   - `PDtify` enterprise application.
