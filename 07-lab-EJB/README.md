@@ -23,7 +23,7 @@ Creare un nuovo pacchetto Source Packages ➡️ New ➡️ Java Package `ìt.pd
 - `Song.java` definisce un entità persistente che identifica un brano musicale.
 ```java
 //import packages
-import static ìt.pd2022.musiclibrary.Song.TROVA_TUTTE;
+import static it.pd2022.musiclibrary.Song.TROVA_TUTTE;
 @Entity
 @NamedQueries({
     @NamedQuery(name = TROVA_TUTTE, query = "SELECT s FROM Song s"),
@@ -34,7 +34,7 @@ public class Song implements Serializable{
     private Long ID;
     private String authors;
     private String name;
-    private URL url; //link youtube
+    private URL url; //link youtube 
     public Song() { }
     public Song(String authors, String name, URL url) {
         this.authors = authors;
@@ -45,6 +45,7 @@ public class Song implements Serializable{
     //Insert code -> toString()
 }
 ```
+**Nota**: ottenere i link da youtube utilizzando il tasto _Condividi_ ➡️ _Incorpora_ dal player youtube.
 - Dobbiamo denifire una nuova Persistence Unit in modalità JTA: `MusicLibraryPU`
   - New ➡️ Persistence Unit, e come segue:
 ```xml
@@ -126,8 +127,8 @@ public class DatabaseProducer {
 @PostConstruct
 private void populateDB() {
     try {
-        s1 = new Song("Queen","We Are TheChampions", new URL("https://www.youtubecom/watch?v=KXw8CRapg7kab_channel=QueenVEVO"));
-        s2 = new Song("Home Free", "Sea ShantyMedley", new URL("https://www.youtube.comwatch?v=lLGLUSzzuWU&ab_channel=HomeFree"));
+        s1 = new Song("Queen","We Are The Champions", new URL("https://www.youtube.com/embed/KXw8CRapg7k"));
+        s2 = new Song("Home Free", "Sea Shanty Medley", new URL("https://www.youtube.com/embed/lLGLUSzzuWU"));
         lib.createSong(s1);
         lib.createSong(s2);
     } catch (MalformedURLException ex) {
