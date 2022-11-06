@@ -3,11 +3,11 @@
     - [Definizione entità e persistenza](#definizione-entità-e-persistenza)
     - [Definizione della logica della nostra applicazione](#definizione-della-logica-della-nostra-applicazione)
   - [Music Library Client](#music-library-client)
-- [Esercizio 0.1 - Music Library++](#esercizio-01---music-library)
-- [Esercizio 0.2 - PDtify 🎵](#esercizio-02---pdtify-)
-- [Esercizio 1 - Calcolatrice EJB](#esercizio-1---calcolatrice-ejb)
-- [Esercizio 2 - Calcolatrice EJB basata su stack](#esercizio-2---calcolatrice-ejb-basata-su-stack)
-- [Esercizio 3 - Calcolatrice EJB basata su stack persistente](#esercizio-3---calcolatrice-ejb-basata-su-stack-persistente)
+- [Esercizio 1 - Music Library++](#esercizio-1---music-library)
+- [Esercizio 2 - PDtify 🎵](#esercizio-2---pdtify-)
+- [Esercizio 3 - Calcolatrice EJB](#esercizio-3---calcolatrice-ejb)
+- [Esercizio 4 - Calcolatrice EJB basata su stack](#esercizio-4---calcolatrice-ejb-basata-su-stack)
+- [Esercizio 5 - Calcolatrice EJB basata su stack persistente](#esercizio-5---calcolatrice-ejb-basata-su-stack-persistente)
 
 # Esercizio 0 - Music Library
 
@@ -157,7 +157,7 @@ public class MusicLibraryClient {
 }
 ```
 **Nota** l'indirizzo JNDI dell'interfaccia remota del bean MusicLibrary può essere visualizzato nella console di output di glassfish subito dopo il deploy dell'applicazione.
-# Esercizio 0.1 - Music Library++
+# Esercizio 1 - Music Library++
 
 Aggiungere le seguenti funzionalità al progetto MusicLibrary:
 
@@ -180,7 +180,7 @@ Aggiungere le seguenti funzionalità al progetto MusicLibrary:
 
 Mofificare la classe main di `MusicLibraryClient` per il testing e la verifica di tutte le funzionalità di `MusicLibrary`.
 
-# Esercizio 0.2 - PDtify 🎵
+# Esercizio 2 - PDtify 🎵
 **Obiettivo**: creare un enterprise java application con due moduli principali un modulo di business/persistenza e un modulo di presentazione web.
 
 - `PDtify`: New Project ➡️ Java with Ant ➡️ Java Enterprise ➡️ Enterprise Application
@@ -199,7 +199,7 @@ Mofificare la classe main di `MusicLibraryClient` per il testing e la verifica d
                              "src=\""+s.getUrl()+"\">\n" +
                      "</iframe>");
     ```
-# Esercizio 1 - Calcolatrice EJB
+# Esercizio 3 - Calcolatrice EJB
 
 Scrivere un client Java che invoca degli EJB sul server che implementano un servizio di calcolatrice per tipi float. La calcolatrice offre tre metodi, tutti prendono in input due operandi di tipo `float` e restituiscono un `float`:
 
@@ -209,7 +209,7 @@ Scrivere un client Java che invoca degli EJB sul server che implementano un serv
 
 Il server offre inoltre un servizio di counting `count()` che restituisce il numero di operazioni effettuate da tutti i clienti dall’avvio del server. Il client deve offrire da console un interfaccia che permetta di effettuare tutte le operazioni da remoto.
 
-# Esercizio 2 - Calcolatrice EJB basata su stack
+# Esercizio 4 - Calcolatrice EJB basata su stack
 
 Scrivere un client Java che invoca degli Enterprise EJB sul server che implementano un servizio di calcolatrice basata su stack per tipi `float`. La calcolatrice offre cinque metodi. Tre di questi metodi rappresentano operazioni aritmetiche che non prendono input e operano direttamente sui dati nello stack: `add()`, `sub()`, `multiply()`.
 In aggiunta, il server offre il metodovoid `push(float)` e `float pop()` per la gestione dello stack. Nota che l’unico metodo che restituisce valori è la `pop()`. Le operazione aritmetiche eseguono implicitamente due `pop()` per prelevare gli operandi e una `push()` per salvare il valore di ritorno.
@@ -223,7 +223,7 @@ Esempio di esecuzione del servizio:
 
 Avanzato: gestire i meccanismi di attivazione e passivazione.
 
-# Esercizio 3 - Calcolatrice EJB basata su stack persistente
+# Esercizio 5 - Calcolatrice EJB basata su stack persistente
 
 Estendere il servizio di calcolatrice basata su stack implementata nell’esercizio precedente aggiungendo un livello di persistenza dello stack. In particolare, ad ogni operazione, lo stack deve essere salvato su database. All’interfaccia del servizio verrà aggiunto il metodo `loadStack(String stackName)` e `saveStack(String stackName)` che consentono all’utente di caricare lo stack da database . Se il client non invoca la `loadStack()`, la sessione si avvia con uno stack vuoto. Lo stack puo essere salvato nel formato piu appropriato, anche come stringa.
 
