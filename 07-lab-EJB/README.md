@@ -141,7 +141,7 @@ private void populateDB() {
 ## Music Library Client
 Prima di procedere con lo sviluppo del nostro java client dobbiamo specificare le dipendenze necessarie:
 * 1️⃣ Progetto `MusicLibrary`: Properties ➡️ Libraries ➡️  Classpath ➕  ➡️ Add Projects...  ➡️ `MusicLibrary`
-* 2️⃣ Libreria `gf-clinet.jar`: Properties ➡️ Libraries ➡️  Classpath ➕  ➡️ Add JAR/Folder ➡️ `[USER_HOME]/GlassFish_Server/glassfish/lib/gf-clinet.jar`, la libreria si trova nella vostra installazione di glassfish nel path specificato.
+* 2️⃣ Libreria `gf-client.jar`: Properties ➡️ Libraries ➡️  Classpath ➕  ➡️ Add JAR/Folder ➡️ `[USER_HOME]/GlassFish_Server/glassfish/lib/gf-client.jar`, la libreria si trova nella vostra installazione di glassfish nel path specificato.
 ```java 
 public class MusicLibraryClient {
 
