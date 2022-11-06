@@ -1,8 +1,8 @@
 - [Esercizio 0 - Music Library](#esercizio-0---music-library)
-  - [1️⃣ MusicPlayer](#1️⃣-musicplayer)
+  - [Music Library](#music-library)
     - [Definizione entità e persistenza](#definizione-entità-e-persistenza)
     - [Definizione della logica della nostra applicazione](#definizione-della-logica-della-nostra-applicazione)
-  - [2️⃣ MusicPlayerClient](#2️⃣-musicplayerclient)
+  - [Music Library Client](#music-library-client)
 - [Esercizio 0.1 - MusicLibrary➕➕](#esercizio-01---musiclibrary)
 - [Esercizion 0.2 - PDtify](#esercizion-02---pdtify)
 - [Esercizio 1 - Calcolatrice EJB](#esercizio-1---calcolatrice-ejb)
@@ -15,7 +15,7 @@ Creare due progetti:
 - **MusicLibrary**: New Project ➡️ Java with Ant ➡️ Java Enterprise ➡️ EJB Module
 - **MusicLibraryClient**: New Project ➡️ Java with Ant ➡️ Java Application (con una main class)
   
-## 1️⃣ MusicPlayer
+## Music Library
 Creare un nuovo pacchetto Source Packages ➡️ New ➡️ Java Package `ìt.pd2022.musiclibrary`
 
 ### Definizione entità e persistenza
@@ -138,7 +138,7 @@ private void populateDB() {
 ```
 
 > 🚀 La parte di logica è terminata e possiamo eseguire la build del progetto e il deploy su GlassFish.
-## 2️⃣ MusicPlayerClient
+## Music Library Client
 Prima di procedere con lo sviluppo del nostro java client dobbiamo specificare le dipendenze necessarie:
 * 1️⃣ Progetto `MusicLibrary`: Properties ➡️ Libraries ➡️  Classpath ➕  ➡️ Add Projects...  ➡️ `MusicLibrary`
 * 2️⃣ Libreria `gf-clinet.jar`: Properties ➡️ Libraries ➡️  Classpath ➕  ➡️ Add JAR/Folder ➡️ `[USER_HOME]/GlassFish_Server/glassfish/lib/gf-clinet.jar`, la libreria si trova nella vostra installazione di glassfish nel path specificato.
