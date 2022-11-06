@@ -147,7 +147,7 @@ public class MusicLibraryClient {
 
     public static void main(String[] args) throws NamingException {
         Context ctx = new InitialContext();
-        MusicLibraryRemote ejb = (MusicLibraryRemote) ctx.lookup("java:global/MusicLibrary/MusicLibrary!ìt.pd2022.musiclibrary.MusicLibraryRemote");
+        MusicLibraryRemote ejb = (MusicLibraryRemote) ctx.lookup("java:global/MusicLibrary/MusicLibrary!it.pd2022.musiclibrary.MusicLibraryRemote");
         
         List<Song> lista = ejb.findSongs();
         for(Song s: lista)
@@ -156,7 +156,7 @@ public class MusicLibraryClient {
     
 }
 ```
-
+**Nota** l'indirizzo JNDI dell'interfaccia remota del bean MusicLibrary può essere visualizzato nella console di output di glassfish subito dopo il deploy dell'applicazione.
 # Esercizio 0.1 - Music Library++
 
 Aggiungere le seguenti funzionalità al progetto MusicLibrary:
@@ -173,9 +173,10 @@ Aggiungere le seguenti funzionalità al progetto MusicLibrary:
    - descrizione,
    - data in cui è stato effettuato l'ultimo aggiornamento.
   
-    Le playlist possono essere create, modificate, e visualizzate.
-1. Ampliare la definizione di `MusicLibrary` per supportare le precedenti nuove entità e funzionalità. 
-   - Introdurre, inotre, la definizione di una metodo `play(song_ID)` che permette di ottenere la URL di una song, questo metodo va intercettato per aggiornare il numero di volte che un particolare brano viene riprodotto.
+    Le playlist possono essere create, modificate, visualizzate, e ricercate per tipologia.
+3. Ampliare la definizione di `MusicLibrary` per supportare le precedenti nuove entità e funzionalità. 
+   - Introdurre la definizione di una metodo `play(song_ID)` che permette di ottenere la URL di una song, questo metodo va intercettato per aggiornare il numero di volte che un particolare brano viene riprodotto.
+   - _Opzionale_: estendere la definizione del metodo play per la riproduzione di un lista di brani ottenuti da una particolare playlist.
 
 Mofificare la classe main di `MusicLibraryClient` per il testing e la verifica di tutte le funzionalità di `MusicLibrary`.
 
