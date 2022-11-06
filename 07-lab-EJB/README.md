@@ -189,8 +189,17 @@ Mofificare la classe main di `MusicLibraryClient` per il testing e la verifica d
   - `PDtify-ejb` un modulo ejb.
   - `PDtify-web` un modulo web.
 - Riportare il progetto `MusicLibray` nel modulo `PDtify-ejb`.
-- Costruire un nuovo client web utilizzando una servelet `MusicPlayer` che sfrutta l'EJB `MusicLibrary` per offrire attraverso una pagina web tutte le funzionalità dell'applicazione.
-- _Note_: bisogna riportare nel modulo ejb tutte le definizione di persistence e beans.xml. Inoltre, quando si eseguono le operazioni di build, deploy, e run del progetto vanno lanciate dal progetto principale entrprise `PDtify`.
+- Costruire un nuovo client web utilizzando una servelet `MusicPlayer` che sfrutta l'EJB `MusicLibrary` per offrire attraverso una pagina web tutte le funzionalità dell'applicazione. Quando si crea la Servlet specificare _Add information to the deployment descriptor (web.xml)_ passaggio 2 del wizard di creazione della Servlet.
+- _Note_: 
+  * riportare nel modulo ejb tutte le definizione di persistence e beans.xml;
+  * quando si eseguono le operazioni di build, deploy, e run del progetto vanno lanciate dal progetto principale entrprise `PDtify`;
+  * per specificare che di default la index della nostra applicazione sarà la Servlet `MusicPlayer` modificare il file `PDtify-war/Web Pages/WEB-INF/web.xml` come segue:
+    ```xml
+        <servlet-mapping>
+            <servlet-name>MusicPlayer</servlet-name>
+            <url-pattern>/</url-pattern>
+        </servlet-mapping>
+    ```
 - `play()`la visualizzazione del metodo play può essere ottenuta utilizzando l'embedding della URL di un brano all'interno di un iframe:
     ```java
          Song s =  new Song("Queen","We Are The Champions", new URL("https://www.youtube.com/embed/KXw8CRapg7k"));
