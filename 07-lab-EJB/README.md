@@ -136,7 +136,7 @@ private void populateDB() {
         lib.createSong(s1);
         lib.createSong(s2);
     } catch (MalformedURLException ex) {
-        Logger.getLogger(DatabasePopulator.classgetName()).log(Level.SEVERE, null, ex);
+        Logger.getLogger(DatabasePopulator.class.getName()).log(Level.SEVERE, null, ex);
     }
 }
 ```
