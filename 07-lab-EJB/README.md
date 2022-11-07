@@ -124,6 +124,10 @@ public class DatabaseProducer {
   - New File ➡️ Contexts and Dependency Injection ➡️ beans.xml, impostare `bean-discovery-mode="all"`
 - A questo punto possiamo completare il nostro `DatabasePopulator.java`inserendo nel database alcune canzoni di esempio ed utilizzando l'EJB MusicLibrary. Possiamo inserire la definizione del seguente metodo:
 ```java
+private Song s1, s2; 
+@Inject
+private MusicLibrary lib;
+
 @PostConstruct
 private void populateDB() {
     try {
