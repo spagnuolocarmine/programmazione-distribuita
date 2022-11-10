@@ -188,7 +188,17 @@ Aggiungere le seguenti funzionalità al progetto MusicLibrary:
   
     Le playlist possono essere create, modificate, visualizzate, ricercate per tipologia, ed eliminate senza eliminare dal database i brani contenuti.
 3. Ampliare la definizione di `MusicLibrary` per supportare le precedenti nuove entità e funzionalità. 
-   - Introdurre la definizione di una metodo `play(song_ID)` che permette di ottenere la URL di una song, questo metodo va intercettato per aggiornare il numero di volte che un particolare brano viene riprodotto.
+   - Introdurre la definizione di una metodo `play(song_ID)` che permette di ottenere la URL di una song, questo metodo va intercettato per aggiornare il numero di volte che un particolare brano viene riprodotto. Modificare il file `beans.xml` per aggiungere la definizione del nuovo interceptor:
+   ```xml
+     <beans xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/beans_1_1.xsd"
+           version="1.1" bean-discovery-mode="all">
+       <interceptors>
+          <class>org.agoncal.book.javaee7.chapter02.LoggingInterceptor</class>
+        </interceptors>
+    </beans>
+   ```
    - _Opzionale_: estendere la definizione del metodo play per la riproduzione di un lista di brani ottenuti da una particolare playlist.
 
 Mofificare la classe main di `MusicLibraryClient` per il testing e la verifica di tutte le funzionalità di `MusicLibrary`.
