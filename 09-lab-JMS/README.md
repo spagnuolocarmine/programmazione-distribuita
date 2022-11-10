@@ -1,7 +1,4 @@
 - [Esercizio 0](#esercizio-0)
-- [Esercizio 1](#esercizio-1)
-- [Esercizio 2](#esercizio-2)
-- [Esercizio 3](#esercizio-3)
 - [Esercizio 4 - PDtify 🎵 ⏯️](#esercizio-4---pdtify--️)
 # Esercizio 0
 
@@ -100,27 +97,28 @@ Il server deve implementare attraverso un Message Driven Bean un servizio di not
 Note
 - La ConnectionFactory deve chiamarsi: `jms/javaee7/ConnectionFactory`
 - Il Topic deve chiamarsi: `jms/javaee7/Topic`
- 
+
 # Esercizio 2
 
 Estendere l’esercizio precedente attraverso l’implementazione di un servizio di persistenza degli ordini che salvi su una tabella del database tutti gli ordini arrivati al server. Aggiungere un Singleton che popoli il database con 2 ordini.
 
 Note
 - PersistentUnit e DB devono chiamarsi rispettivamente MotoPU e MotoDB
-  
+
 # Esercizio 3
 
 Estendere l’esercizio precedente aggiungendo un client Java che riceve i messaggi degli ordini delle moto e stampa li stampa a video; provare a ricevere tutti i messaggi inviati sul topic anche prima della sottoscrizione utilizzando un DurableConsumer. 
 
-    ```java
-    try (JMSContext jmsContext = connectionFactory.createContext()) {
-            jmsContext.setClientID("uniqueID");
-            JMSConsumer topicSubscriber = jmsContext.createDurableConsumer((Topic) topic, "uniqueID");
-            OrderDTO order = topicSubscriber.receiveBody(OrderDTO.class);
-            System.out.println("Order received: " + order);
-        topicSubscriber.close();
-        }
-    ```
+```java
+ try (JMSContext jmsContext = connectionFactory.createContext()) {
+    jmsContext.setClientID("uniqueID");
+    JMSConsumer topicSubscriber = jmsContext.createDurableConsumer((Topic) topic, "uniqueID");
+    OrderDTO order = topicSubscriber.receiveBody(OrderDTO.class);
+    System.out.println("Order received: " + order);
+    topicSubscriber.close();
+}
+```
+
 
 # Esercizio 4 - PDtify 🎵 ⏯️
 
