@@ -1,4 +1,7 @@
 - [Esercizio 0](#esercizio-0)
+- [Esercizio 1](#esercizio-1)
+- [Esercizio 2](#esercizio-2)
+- [Esercizio 3](#esercizio-3)
 - [Esercizio 4 - PDtify 🎵 ⏯️](#esercizio-4---pdtify--️)
 # Esercizio 0
 
