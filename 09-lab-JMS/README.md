@@ -1,7 +1,11 @@
-- [Esercizio 0 - (org.agoncal.book.javaee7.chapter13)](#esercizio-0---orgagoncalbookjavaee7chapter13)
+- [Esercizio 0](#esercizio-0)
+- [Esercizio 1](#esercizio-1)
+- [Esercizio 2](#esercizio-2)
+- [Esercizio 3](#esercizio-3)
 - [Esercizio 4 - PDtify 🎵 ⏯️](#esercizio-4---pdtify--️)
+# Esercizio 0
 
-# Esercizio 0 - (org.agoncal.book.javaee7.chapter13)
+- Riferimento: org.agoncal.book.javaee7.chapter13
 - New Project ➡️ Java with Ant ➡️ Java Application
 - Aggiungere le dipendenze: `Java EE7 API Library` e `gf-client.jar`
   
@@ -29,6 +33,7 @@
     //toString()
     }
     ```
+
 2. Definire un Producer di messaggi, come segue:
 
     ```java
@@ -55,7 +60,9 @@
      }
     }
     ```
+
 3. Definire un Consumer di messaggi, come segue:
+   
    ```java
     public class OrderConsumer {
     public static void main(String[] args) throws NamingException {
@@ -78,7 +85,9 @@
     }
     }
     ```
+
 > 🚀 A questo punto è possibile eseguire prima il Consumer e poi il Producer.
+
 # Esercizio 1
 
 Scrivere un client Java che produce dei messaggi per un Topic di messaging su server Enterprise. Il client invia un messaggio con l’ordine per la costruzione di una moto, che è costituita da diverse componenti:
@@ -103,15 +112,15 @@ Note
 
 Estendere l’esercizio precedente aggiungendo un client Java che riceve i messaggi degli ordini delle moto e stampa li stampa a video; provare a ricevere tutti i messaggi inviati sul topic anche prima della sottoscrizione utilizzando un DurableConsumer. 
 
-```java
- try (JMSContext jmsContext = connectionFactory.createContext()) {
-        jmsContext.setClientID("uniqueID");
-        JMSConsumer topicSubscriber = jmsContext.createDurableConsumer((Topic) topic, "uniqueID");
-        OrderDTO order = topicSubscriber.receiveBody(OrderDTO.class);
-        System.out.println("Order received: " + order);
-     topicSubscriber.close();
-    }
-```
+    ```java
+    try (JMSContext jmsContext = connectionFactory.createContext()) {
+            jmsContext.setClientID("uniqueID");
+            JMSConsumer topicSubscriber = jmsContext.createDurableConsumer((Topic) topic, "uniqueID");
+            OrderDTO order = topicSubscriber.receiveBody(OrderDTO.class);
+            System.out.println("Order received: " + order);
+        topicSubscriber.close();
+        }
+    ```
 
 # Esercizio 4 - PDtify 🎵 ⏯️
 
