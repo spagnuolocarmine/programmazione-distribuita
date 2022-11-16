@@ -1,156 +1,139 @@
-- [Esercizio 0](#esercizio-0)
-- [Esercizio 1](#esercizio-1)
-- [Esercizio 2](#esercizio-2)
-- [Esercizio 3](#esercizio-3)
-- [Esercizio 4 - PDtify 🎵 ⏯️](#esercizio-4---pdtify--️)
-# Esercizio 0
+- [Esercizio 0 - Card Validator](#esercizio-0---card-validator)
+- [Esercizio 1 - Previsioni Meteo](#esercizio-1---previsioni-meteo)
+- [Esercizio 2 - Web Service Previsioni Meteo Avanzate](#esercizio-2---web-service-previsioni-meteo-avanzate)
+- [Esercizio 3 - PDtify 🎵 ⏯️](#esercizio-3---pdtify--️)
+# Esercizio 0 - Card Validator
+- New project ➡️ Java with Ant ➡️ Java Web ➡️ Web Application: `CardValidatorWebApplication`
 
-- Riferimento: org.agoncal.book.javaee7.chapter13
-- New Project ➡️ Java with Ant ➡️ Java Application
-- Aggiungere le dipendenze: `Java EE7 API Library` e `gf-client.jar`
-  
-1. Definire un nuovo wrapper per i messaggi relativi ad un ordine, come segue:
-   
-    ```java
-    public class OrderDTO implements Serializable {
-
-    private Long orderId;
-    private Date creationDate;
-    private String customerName;
-    private Float totalAmount;
-
-    public OrderDTO() {
-    }
-
-    public OrderDTO(Long orderId, Date creationDate, String customerName, Float totalAmount) {
-        this.orderId = orderId;
-        this.creationDate = creationDate;
-        this.customerName = customerName;
-        this.totalAmount = totalAmount;
-    }
-
-    //Getters and setters
-    //toString()
-    }
-    ```
-
-2. Definire un Producer di messaggi, come segue:
+- Definiamo un nuovo oggetto `Card` utilizzando JAXB (Java Architecture for XML Binding)
 
     ```java
-    public class OrderProducer {
-
-    public static void main(String[] args) throws NamingException {
-        // Creates an orderDto with a total amount parameter
-        float value = 10.0;
-        Float totalAmount = Float.valueOf(10);
-        OrderDTO order = new OrderDTO(1234l, new Date(), "Serge Gainsbourg", totalAmount);
-
-        // Gets the JNDI context
-        Context jndiContext = new InitialContext();
-
-        // Looks up the administered objects
-        ConnectionFactory connectionFactory = (ConnectionFactory) jndiContext.lookup("jms/javaee7/ConnectionFactory");
-        Destination topic = (Destination) jndiContext.lookup("jms/javaee7/Topic");
-
-        try (JMSContext jmsContext = connectionFactory.createContext()) {
-        // Sends an object message to the topic
-        jmsContext.createProducer().setProperty("orderAmount", totalAmount).send(topic, order);
-        System.out.println("\nOrder sent : " + order.toString());
-        }
-     }
+    @XmlRootElement
+    public class CreditCard {
+        private String number;
+        private String expiryDate;
+        private Integer controlNumber; 
+        private String type;
+        // Constructors , getters , setters
     }
     ```
-
-3. Definire un Consumer di messaggi, come segue:
-   
-   ```java
-    public class OrderConsumer {
-    public static void main(String[] args) throws NamingException {
-
-        // Gets the JNDI context
-        Context jndiContext = new InitialContext();
-
-        // Looks up the administered objects
-        ConnectionFactory connectionFactory = (ConnectionFactory) jndiContext.lookup("jms/javaee7/ConnectionFactory");
-        Destination topic = (Destination) jndiContext.lookup("jms/javaee7/Topic");
-
-        // Loops to receive the messages
-        System.out.println("\nInfinite loop. Waiting for a message...");
-        try (JMSContext jmsContext = connectionFactory.createContext()) {
-        while (true) {
-            OrderDTO order = jmsContext.createConsumer(topic).receiveBody(OrderDTO.class);
-            System.out.println("Order received: " + order);
-        }
-        }
-    }
+- Definiamo una nuova interfaccia `Validator`
+  ```java
+    @WebService
+    public interface Validator {
+        public boolean validate(CreditCard creditCard); 
     }
     ```
-
-> 🚀 A questo punto è possibile eseguire prima il Consumer e poi il Producer.
-
-# Esercizio 1
-
-Scrivere un client Java che produce dei messaggi per un Topic di messaging su server Enterprise. Il client invia un messaggio con l’ordine per la costruzione di una moto, che è costituita da diverse componenti:
-- Nome modello
-- Nome telaio
-- Nome pneumatici
-  
-Il server deve implementare attraverso un Message Driven Bean un servizio di notifica degli ordini, stampando a video il nome del modello della moto, del telaio e degli pneumatici. Il client deve offrire da console un’interfaccia che permetta di effettuare tutte le operazioni da remoto.
-
-Note
-- La ConnectionFactory deve chiamarsi: `jms/javaee7/ConnectionFactory`
-- Il Topic deve chiamarsi: `jms/javaee7/Topic`
-
-# Esercizio 2
-
-Estendere l’esercizio precedente attraverso l’implementazione di un servizio di persistenza degli ordini che salvi su una tabella del database tutti gli ordini arrivati al server. Aggiungere un Singleton che popoli il database con 2 ordini.
-
-Note
-- PersistentUnit e DB devono chiamarsi rispettivamente MotoPU e MotoDB
-
-# Esercizio 3
-
-Estendere l’esercizio precedente aggiungendo un client Java che riceve i messaggi degli ordini delle moto e stampa li stampa a video; provare a ricevere tutti i messaggi inviati sul topic anche prima della sottoscrizione utilizzando un DurableConsumer. 
+- Definiamo un nuovo Web Service `CardValidator` che implementa un interfaccia `Validator`
+    - New Files ... ➡️ Web Services ➡️ Web Service
+    - _Name_ : `CardValidator`
+    - _Implement Web Service as Stateless Session Beans_: [✔️] 
 
 ```java
- try (JMSContext jmsContext = connectionFactory.createContext()) {
-    jmsContext.setClientID("uniqueID");
-    JMSConsumer topicSubscriber = jmsContext.createDurableConsumer((Topic) topic, "uniqueID");
-    OrderDTO order = topicSubscriber.receiveBody(OrderDTO.class);
-    System.out.println("Order received: " + order);
-    topicSubscriber.close();
+@WebService(endpointInterface = "CardValidator")
+public class CardValidator implements Validator {
+    public boolean validate(CreditCard creditCard) {
+        Character lastDigit = creditCard.getNumber().charAt( creditCard.getNumber().length() - 1);
+        if (Integer.parseInt(lastDigit.toString()) % 2 == 0) {
+             return true;
+        } else {
+                 return false; 
+                }
+    }    
 }
 ```
 
-
-# Esercizio 4 - PDtify 🎵 ⏯️
-
-Definire una nuova servlet `Player` che si occupa di visualizzare il player youtube per un particolare brano o una playlist.
-
-- *Input*: due parametri nel metodo GET `?id=x&type=song|playlist`:
-  - _song_  viene visualizzato a tutto schermo il player youtube;
-  - _playlist_ vengono visualizzati tutti i brani in una tabella, e mostra un tasto play per ogni brano.
-
-Quando la servlet viene caricata in modalità _song_ viene inviato un nuovo messaggio sul Topic `jsm/musicplayer/Player` (utilizzare la factory di default di installazione di glassfish) contenete l'identificativo del brano. Se la servlet viene caricata in modalità _playlist_  si invia un messaggio sempre sullo stesso topic con l'identificativo della playlist.
-La gestione dei messaggi avviene tramite l'utilizzo di MDB e degli eventi, per ogni messaggio si genera un messaggio di log visualizzato nella console di glassfish.
-
-Sviluppare il progetto come segue:
-
-
-- Definire due nuovi Qualifier `SongEvent` e `PlaylistEvent`. 
-- Definire un wrapper di messaggi `MessageWrapper` che permette di memorizzare l'id di un brano o di una playlist ed il relativo tipo di messaggio song/playlist.
-- Definire un nuovo message-driven bean `MusicLibraryMDB` che implementa `MessageListener`, per ogni messaggio ricevuto (MessageWrapper) si esegue il fire di un nuovo evento con body la relativa Song o Playlist.
-- Definire due nuove classi `SongNotification`e `PlaylistNotification` che definiscono un singolo metodo `notify` che definisce un'opportuna `@Observes` di un entità `Song` o `Playlist` (parametro del metodo) con l'obiettivo di visualizzare un messaggio di log.
-
+- **Testing**: Project ➡️ Web Services ➡️ `Card Validator`➡️ Test Web Service
+- Aggiungere al Web Service `Card Validator` un nuovo metodo `validatedata`che prende come parametri tutti i campi di `Card`singolarmente e utilizza `validate` restituire una stringa `valid| not valid`.
+  - utilizzare il wizard di netbeans per aggungere il metodo  Project ➡️ Web Services ➡️ `Card Validator`➡️ Add Operation ...
+  - successivamente modificare il codice come segue:
     ```java
-        public class PlaySongNotification {
-            public void notify(@Observes Song s){
-                System.out.println("Playing song "+s.getName());
+    public String validatedata(String number, String expiryDate, Integer controlNumber, String type) {
+        Character lastDigit = number.charAt( number.length() - 1);
+        if (validate(new CreditCard(number, expiryDate, controlNumber,type))) {
+             return "valid"; 
+        } else {
+                 return "not valid"; 
+                }
+    }    
+    ```
+- Definire un nuovo Web Service Client
+  - New Project ➡️ Jav with Ant ➡️ Java Application
+  - _Nome_: `ValidateWSClient`
+  - Project ➡️ New Web Service Client
+    - Project ➡️ Browse ...
+    - `CardValidatorWebApplication` ➡️ `CardValidator`
+    - Visualizzare i file generati in `Generated Sources (jax-ws)`
+    - Definire l'oggetto `ValidateWSClient` come segue:
+        ```java
+        public class ValidateWSClient {
+
+            public static void main(String[] args) {
+                CardValidator_Service service = new CardValidator_Service();
+                CardValidator port = service.getCardValidatorPort();
+                CreditCard card = new CreditCard();
+                card.setNumber("6011111111111118");
+                System.out.println(port.validate(card));
+                
+            }
+            
+        }
+        ```
+# Esercizio 1 - Previsioni Meteo
+
+Scrivere un servizio Web Service che implementa un servizio di previsioni meteo. Il servizio
+implementa un servizio `forecast()` che prende in input una stringa con il nome del luogo
+in cui fare previsione (ad esempio “Salerno” o “Fisciano”), e restituisce una stringa con la
+previsione (ad esempio “sole”, “pioggia”, “neve”, “nebbia”). L’implementazione del servizio
+restituisce sempre “sole” se l’input è “Salerno”, “pioggia” se l’input è “Fisciano”, oppure un
+valore casuale se l’input è diverso. 
+
+Implementare un client Java che richiede il servizio di previsioni per diverse località, e le
+stampa a video. 
+
+# Esercizio 2 - Web Service Previsioni Meteo Avanzate 
+
+Aggiungere al Web Service dell’esercizio precedente una funzionalità chiamata
+`advancedForecast()` che prende in input un oggetto `Place` con i seguenti attributi: 
+- Stringa con nome del posto
+- Coordinate GPS 
+e restituisce un oggetto Forecast con i seguenti attributi: 
+- Stringa con la descrizione della previsione
+- Temperatura
+- Direzione del vento
+- Forza del vento
+- Umidità
+
+I valori in output posso essere casuali. Implementare un client Java che richiede il servizio di previsioni avanzato per diverse località, e le visualizza su standard output.
+
+# Esercizio 3 - PDtify 🎵 ⏯️
+
+Modificare il progetto PDtify per offrire  le funzionalità di MusicLibrary utilizzando anche un Web Service.
+Sviluppare un client java che permette di eseguire tutte le funzionalità di PDtify e per eseguire il play di una canzone utilizzare il seguente esempio.
+```java
+public class TestOpenBrowser {
+    public static void main(String[] args) {
+         String url = "https://www.youtube.com/embed/lLGLUSzzuWU";
+
+        if(Desktop.isDesktopSupported()){
+            Desktop desktop = Desktop.getDesktop();
+            try {
+                desktop.browse(new URI(url));
+            } catch (IOException | URISyntaxException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+        }else{
+            Runtime runtime = Runtime.getRuntime();
+            try {
+                runtime.exec("xdg-open " + url);
+            } catch (IOException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
             }
         }
-    ```
-- Definire un nuovo stateless EJB `EventProducer` che consente di inviare messaggi su Topic `jsm/musicplayer/Player`.
-- Definire una nuova servlet `Player`che si comporta come descritto ed utilizza l'`EventProducer` per notificare il play di un brano. 
-- Definire un client Java `MDBtest` nel package test del ptrogetto EJB che definire un metodo main nel quale si esegue il test di tutte le funzionalità di scambio di messaggi definiti (aggiungere il file gf-client.jar come dipendenza).
-- Modificare la servlet `MusicPlayer` al fine di utilizzare la nuova servlet `Player`per effettuare il play di un brano o una playlist.
+    }
+    
+}
 
+```
