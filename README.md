@@ -29,11 +29,12 @@
 07/11/2022 | [EJB Lab](07-lab-EJB) | 
 10/11/2022 | [Java Messaging Service (JMS) API - Parte 1](08-JMS)| 
 11/11/2022 | [JMS - Parte 2](08-JMS) & [JMS Lab](09-lab-JMS) | 
-<!--| **Week**|  **5**|
-14/11/2022 |  | 
-17/11/2022 |  | 
-18/11/2022 |  | 
-| **Week**|  **6**|
+| **Week**|  **5**|
+14/11/2022 | Laboratorio JPA + EJB + JMS  | 
+17/11/2022 | [Web Services - Part 1](10-WS) | 
+18/11/2022 | [Web Services - Part 2](10-WS) | 
+
+<!--| **Week**|  **6**|
 21/11/2022 |  | 
 24/11/2022 |  | 
 25/11/2022 |  | 
@@ -53,7 +54,7 @@
 ---
 
 # Blog
-- [ ] [The Ten Computer Science Superpowers 🇬🇧](cs-superpowers.md): frequently update.
+<!-- - [ ] [The Ten Computer Science Superpowers 🇬🇧](cs-superpowers.md): frequently update.-->
 - [x] [Test RMI Thread Safeness](data/rmi_test_thread_safeness.zip) ✅: importare i sorgenti in un nuovo progetto Java Application. Eseguire prima l'ogetto remoto ```MessengerServiceImpl```e poi il file ```Client```che esegue 50 clients in thread separati.
 - [x] [Netbeans shortcuts and Java editor code template](https://shortcutbuzz.com/netbeans-keyboard-shortcuts-180-quick-shortcuts/): provare a digitare ```psvm``` oppure ```sout``` + Tab.
 - [x] [Z. Yu, C. Bai, L. Seinturier and M. Monperrus, "Characterizing the Usage, Evolution and Impact of Java Annotations in Practice," in IEEE Transactions on Software Engineering, vol. 47, no. 5, pp. 969-986, 1 May 2021, doi: 10.1109/TSE.2019.2910516](data/TSE_HAL.pdf)
