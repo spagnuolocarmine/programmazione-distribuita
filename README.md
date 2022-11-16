@@ -36,7 +36,7 @@
 | **Week**|  **6**|
 21/11/2022 | [Web Services Lab](10-lab-WS)  | 
 24/11/2022 | Esame Step by Step | 
-25/11/2022 | Simulazione Esame 2 | 
+25/11/2022 | Simulazione Esame | 
 | **Week**|  **9**|
 12/12/2022 | Introduzione al Cloud Computing | 
 <!--15/12/2022 | Simulazione Esame 3 | 
