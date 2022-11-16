@@ -33,22 +33,22 @@
 14/11/2022 | Laboratorio JPA + EJB + JMS  | 
 17/11/2022 | [Web Services - Part 1](10-WS) | 
 18/11/2022 | [Web Services - Part 2](10-WS) | 
-
-<!--| **Week**|  **6**|
-21/11/2022 |  | 
-24/11/2022 |  | 
-25/11/2022 |  | 
+| **Week**|  **6**|
+21/11/2022 | [Web Services Lab](10-lab-WS)  | 
+24/11/2022 | Simulazione Esame 1 | 
+25/11/2022 | Simulazione Esame 2 | 
+| **Week**|  **9**|
+12/12/2022 | Introduzione al Cloud Computing | 
+<!--15/12/2022 | Simulazione Esame 3 | 
+16/11/2022 | Simulazione Esame 4 | 
 | **Week**|  **7**|
 28/11/2022 |  | 
 01/12/2022 |  | 
 02/12/2022 |  | 
 | **Week**|  **8**|
 05/12/2022 |  | 
-09/12/2022 |  | 
-| **Week**|  **9**|
-12/12/2022 |  | 
-15/12/2022 |  | 
-16/11/2022 |  | -->
+09/12/2022 |  | -->
+
 
 
 ---
