@@ -13,7 +13,8 @@ _Parte 1_
   - SOAP 
   - UDDI
 - Le specifiche di WS
-_Parte 1_
+  
+_Parte 2_
 - WS in Java
   - WSDL Mapping 
   - Eccezioni e Fault 
