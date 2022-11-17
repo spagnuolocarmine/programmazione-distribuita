@@ -9,7 +9,9 @@
 
     ```java
     @XmlRootElement
+    @XmlAccessorType(XmlAccessType.FIELD)
     public class CreditCard {
+        @XmlAttribute(required = true)
         private String number;
         private String expiryDate;
         private Integer controlNumber; 
