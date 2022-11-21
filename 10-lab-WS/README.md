@@ -99,6 +99,7 @@ Aggiungere al Web Service dell’esercizio precedente una funzionalità chiamata
 `advancedForecast()` che prende in input un oggetto `Place` con i seguenti attributi: 
 - Stringa con nome del posto
 - Coordinate GPS 
+
 e restituisce un oggetto Forecast con i seguenti attributi: 
 - Stringa con la descrizione della previsione
 - Temperatura
