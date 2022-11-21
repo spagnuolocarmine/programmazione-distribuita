@@ -32,7 +32,7 @@
     - _Implement Web Service as Stateless Session Beans_: [✔️] 
 
 ```java
-@WebService(endpointInterface = "CardValidator")
+@WebService(serviceName = "CardValidator")
 public class CardValidator implements Validator {
     public boolean validate(CreditCard creditCard) {
         Character lastDigit = creditCard.getNumber().charAt( creditCard.getNumber().length() - 1);
