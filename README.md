@@ -54,7 +54,13 @@
 
 
 ---
+# Date di esame (da verificare su ESSE3)
 
+🗓️ | 🕘 | 
+---------|----------|
+19/01/2023 | 09:00-12:00
+03/02/2023 | 09:00-12:00
+17/02/2023 | 09:00-12:00
 # Blog
 <!-- - [ ] [The Ten Computer Science Superpowers 🇬🇧](cs-superpowers.md): frequently update.-->
 - [x] [Test RMI Thread Safeness](data/rmi_test_thread_safeness.zip) ✅: importare i sorgenti in un nuovo progetto Java Application. Eseguire prima l'ogetto remoto ```MessengerServiceImpl```e poi il file ```Client```che esegue 50 clients in thread separati.
