@@ -40,7 +40,7 @@
 | **Week**|  **7**|
 28/11/2022 | Simulazione Esame | 
 | **Week**|  **9**|
-12/12/2022 | Introduzione al Cloud Computing P3 | 
+12/12/2022 | Introduzione al Cloud Computing **AULA P3** | 
 <!--15/12/2022 | Simulazione Esame 3 | 
 16/11/2022 | Simulazione Esame 4 | 
 | **Week**|  **7**|
