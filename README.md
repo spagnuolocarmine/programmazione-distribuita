@@ -54,13 +54,87 @@
 
 
 ---
-# Date di esame (da verificare su ESSE3)
+# Informazioni modalità d'esame 
 
+**Prova scirtta** ➡️ **Svolgimento prova a casa** ➡️ **Consegna progetto** ➡️ **Prova orale**
+## Prova scritta 
+**Date (da verificare su ESSE3)**
 🗓️ | 🕘 | 
 ---------|----------|
 19/01/2023 | 09:00-12:00
 03/02/2023 | 09:00-12:00
 17/02/2023 | 09:00-12:00
+
+**Note sullo svolgimento della prova scritta**
+
+- Alla terminazione della prova scritta dovete scansionare il compito per poterlo svolgere a casa.
+- Ricordatevi di portare un congruo numero di fogli bianchi e almeno due penne. La commissione non vi consegnerà NULLA e voi non potrete assolutamente scambiarvi oggetti.
+- Il cellulare dovrete averlo con voi (Modalità aereo), non potrete alzarvi per recuperarlo dagli zaini.
+- Sul vostro cellulare dovrà essere già installata una qualunque app per la scansione del compito.
+- A compito terminato dovrete effettuarne la scansione usando il vostro cellulare. Dovrete a questo punto comunicare alla commissione di voler eseguire la scansione e successivamente procedere alla scansione senza muovervi dal vostro posto.
+  
+**Suggerimenti utili**
+- Scrivete in maniera chiara, senza troppe cancellature, seguite l’ordine di progettazione indicato nella traccia e indentate correttamente il codice.
+- Rispondere alla domanda di teoria in maniera chiara, puntuale e precisa, eventuali argomenti non chiesti non verranno valutati.
+- Parti non implementate durante l’esame non dovranno essere consegnate nel progetto
+import, getter, setter e toString si possono omettere nello scritto, ma i costruttori vanno implementati.
+
+## ➡️ Svolgimento prova a casa
+
+- I progetti da consegnare (progetti NetBeans) si devono chiamare “COGNOMENOMEXXX” nei rispettivi files COGNOMENOMEXXX.zip (devono essere esportati).
+- L’archivio che li contiene TUTTI insieme deve chiamarsi COGNOMENOME_EE.zip
+- Deve esserci un UNICO file readme.txt (non Readme, non leggimi, …) all’interno di COGNOMENOME_EE.zip che illustri le modifiche che si sono rese necessarie (per ogni file di ogni progetto) rispetto a quanto consegnato, secondo lo schema presente alla fine di questo documento.
+- Le modifiche devono essere commentate ANCHE nel codice dei progetti.
+
+    **Esempio file readme.txt**
+
+    ```
+    Cognome e Nome: XXXXXXX
+    Data: gg/mm/yy
+
+    Breve descrizione riassuntiva delle modifiche: 
+    xxxxxxxxx xxxxxxxxx
+    xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx 
+    xxxxxxxxx xxxxxxxxx
+    xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx 
+    xxxxxxxxx xxxxxxxxx
+    xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx xxxxxxxxx 
+    ------------------------------
+    MODIFICHE
+    PROGETTO: NOMEPROGETTO 1
+    FILE: xxxxxx
+    Linea 4: xxxxxxxxxx
+    Linea 34: xxxxxxxxxx
+    Linea 52: xxxxxxxxxx
+
+    FILE: yyyy
+    Linea 7: xxxxxxxxxx
+    Linea 13: xxxxxxxxxx
+    Linea 22: xxxxxxxxxx
+
+    PROGETTO: NOMEPROGETTO 2
+    FILE: xxxxxx
+    Linea 4: xxxxxxxxxx
+    Linea 34: xxxxxxxxxx
+    Linea 52: xxxxxxxxxx
+
+    FILE: yyyy
+    Linea 7: xxxxxxxxxx
+    Linea 13: xxxxxxxxxx
+    Linea 22: xxxxxxxxxx
+    ...
+    ```
+## ➡️ Consegna progetto
+
+- I progetti funzionanti, entro la data indicata sul compito, vanno inviati tramite il link che troverete sul compito o sulla piattaforma MS Teams. 
+- ⚠️ **L’invio dei progetti entro la data stabilita è da considerarsi come richiesta di correzione (nel senso che se non viene inviato, il compito non viene corretto!).**
+
+
+## ➡️ Prova orale
+- _Il calendario delle prove orali (per gli ammessi) sarà comunicato su MS Teams per ogni appello._
+
+
+
 # Blog
 <!-- - [ ] [The Ten Computer Science Superpowers 🇬🇧](cs-superpowers.md): frequently update.-->
 - [x] [Test RMI Thread Safeness](data/rmi_test_thread_safeness.zip) ✅: importare i sorgenti in un nuovo progetto Java Application. Eseguire prima l'ogetto remoto ```MessengerServiceImpl```e poi il file ```Client```che esegue 50 clients in thread separati.
