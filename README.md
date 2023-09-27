@@ -5,15 +5,11 @@
 ![](https://img.shields.io/badge/cod-0512100021-orange)
 ![](https://img.shields.io/badge/Platform-JAVA%20EE-brightgreen)
 
-[Link al corso 2022](https://corsi.unisa.it/informatica/didattica/insegnamenti?anno=2022&id=507548) 
-
-[Link per matricole resto 0](https://corsi.unisa.it/informatica/didattica/insegnamenti?anno=2022&id=507548&cId=9999-2017&pId=MODULO_3*RESTO_0*S1)
-  
 # Materiale
 
 🗓️ | Lezione | 
 ---------|----------|
-| **Week**|  **1**|
+<!-- | **Week**|  **1**|
 |17/10/2022 | Laboratorio Java RMI |
  20/10/2022 | [Introduzione a Java Enterprise Edition](01-intro) | 
  21/10/2022 | [Context Dependency Injection (Introduzione - Esempio di CDI Bean)](02-cdi) | 
@@ -40,7 +36,7 @@
 | **Week**|  **7**|
 28/11/2022 | Simulazione Esame | 
 | **Week**|  **9**|
-12/12/2022 | Introduzione al Cloud Computing **AULA P3** | 
+12/12/2022 | Introduzione al Cloud Computing **AULA P3** |  -->
 <!--15/12/2022 | Simulazione Esame 3 | 
 16/11/2022 | Simulazione Esame 4 | 
 | **Week**|  **7**|
@@ -59,11 +55,11 @@
 **Prova scirtta** ➡️ **Svolgimento prova a casa** ➡️ **Consegna progetto** ➡️ **Prova orale**
 ## Prova scritta 
 **Date (da verificare su ESSE3)**
-🗓️ | 🕘 | 
----------|----------|
-19/01/2023 | 09:00-12:00
-03/02/2023 | 09:00-12:00
-17/02/2023 | 09:00-12:00
+🗓️ | 🕘 | 📍
+---------|----------|--------|
+16/01/2023 | 15:00-17:30 | P3/P4
+31/01/2023 | 15:00-17:30 | F1/F8
+16/02/2023 | 15:00-17:30 | P3/P4
 
 **Note sullo svolgimento della prova scritta**
 
