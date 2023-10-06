@@ -53,7 +53,7 @@
 ---
 # Informazioni modalità d'esame 
 
-**Prova scirtta** ➡️ **Svolgimento prova a casa** ➡️ **Consegna progetto** ➡️ **Prova orale**
+**Prova scritta** ➡️ **Svolgimento prova a casa** ➡️ **Consegna progetto** ➡️ **Prova orale**
 ## Prova scritta 
 **Date (da verificare su ESSE3)**
 🗓️ | 🕘 | 📍
@@ -62,7 +62,7 @@
 31/01/2023 | 15:00-17:30 | F1/F8
 16/02/2023 | 15:00-17:30 | P3/P4
 
-## Svolgimento della prova di esame durante il corso (relativa al primo appello) 🛑 **non definitivo**
+### Svolgimento della prova di esame durante il corso (relativa al primo appello) 🛑 **non definitivo**
 1. 📝 Prova a quiz Ottobre (Libro Programmazione con Oggetti Distribuiti: Java RMI)
 2. 📝 Prova a quiz Novembre (Libro Beginning Java EE 7)
 3. 💻 Prova di programmazione Dicembre (Applicazione Java Enterprise)
