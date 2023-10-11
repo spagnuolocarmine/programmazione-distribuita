@@ -12,6 +12,8 @@
 |06/10/2023 | Java Socket TCP 1 | |
 | **Week**|  **1**| |
 |09/10/2023 | Java Socket TCP 2 | [🔗 Installazione ambiente di sviluppo (solo prima sezione)](https://github.com/spagnuolocarmine/programmazione-distribuita/tree/main/03-lab-j2ee-intro#installazione-ambiente-di-sviluppo)|
+|12/10/2023 | RMI 1 | |
+|13/10/2023 | RMI 2 | |
 <!--  20/10/2022 | [Introduzione a Java Enterprise Edition](01-intro) | 
  21/10/2022 | [Context Dependency Injection (Introduzione - Esempio di CDI Bean)](02-cdi) | 
 | **Week**|  **2**|
