@@ -5,15 +5,19 @@
 ![](https://img.shields.io/badge/cod-0512100021-orange)
 ![](https://img.shields.io/badge/Platform-JAVA%20EE-brightgreen)
 
+### Libri di testo
+- 📕 [Programmazione con Oggetti Distribuiti: Java RMI](https://ilmiolibro.kataweb.it/libro/informatica-e-internet/36104/programmazione-con-oggetti-distribuiti-java-rmi-2/)
+- 📗 [Beginning Java EE 7](https://www.amazon.it/Beginning-Java-Expert-Voice-English-ebook/dp/B00EO03GQM)
+
 # Materiale
 
-🗓️ | Lezione | Materiale|
----------|----------|--------|
-|06/10/2023 | Java Socket TCP 1 | |
+🗓️ | Lezione | Materiale| Riferimenti |
+---------|----------|--------|-----------|
+|06/10/2023 | Java Socket TCP 1 | | 📕Cap. 2 |
 | **Week**|  **1**| |
-|09/10/2023 | Java Socket TCP 2 | [🔗 Installazione ambiente di sviluppo (solo prima sezione)](https://github.com/spagnuolocarmine/programmazione-distribuita/tree/main/03-lab-j2ee-intro#installazione-ambiente-di-sviluppo)|
-|12/10/2023 | RMI 1 | [RMI 1 - Hello World](https://github.com/spagnuolocarmine/programmazione-distribuita/blob/main/RMI.md)|
-|13/10/2023 | RMI 2 | |
+|09/10/2023 | Java Socket TCP 2 | [🔗 Installazione ambiente di sviluppo (solo prima sezione)](https://github.com/spagnuolocarmine/programmazione-distribuita/tree/main/03-lab-j2ee-intro#installazione-ambiente-di-sviluppo)|📕 Cap. 2  |
+|12/10/2023 | RMI 1 | [RMI 1 - Hello World](https://github.com/spagnuolocarmine/programmazione-distribuita/blob/main/RMI.md)| 📕 Cap. 3|
+|13/10/2023 | RMI 2 | |  📕 Cap. 3|
 <!--  20/10/2022 | [Introduzione a Java Enterprise Edition](01-intro) | 
  21/10/2022 | [Context Dependency Injection (Introduzione - Esempio di CDI Bean)](02-cdi) | 
 | **Week**|  **2**|
