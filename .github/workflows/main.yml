@@ -16,10 +16,10 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Install dependencies 🔧
-        run: make install
+        run: cargo install mdbook
 
       - name: Build 🏗️
-        run: make build
+        run: mdbook build
 
       - name: Deploy to GitHub Pages 🚀
         if: ${{ github.event_name != 'pull_request' }}
