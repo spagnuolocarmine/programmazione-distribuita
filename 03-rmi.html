@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Hello World RMI - Programmazione Distribuita</title>
+        <title>Laboratorio Java RMI - Programmazione Distribuita</title>
 
 
         <!-- Custom HTML head -->
@@ -88,7 +88,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="index.html"><strong aria-hidden="true">1.</strong> Programmazione Distribuita</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="blog.html"><strong aria-hidden="true">1.1.</strong> Blog</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> Week 1</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">2.1.</strong> Presentazione del corso</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.2.</strong> Introduzione al calcolo distribuito</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.3.</strong> Java Thread 1</div></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> Week 2</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">3.1.</strong> Java Thread 2-3</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.2.</strong> laboratorio Java Thread</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.3.</strong> Java Socket TCP 1</div></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.</strong> Week 3</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">4.1.</strong> Java Socket TCP 2</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.2.</strong> Java Remote Method Invocation (RMI) 1 - Hello World</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="03-rmi.html" class="active"><strong aria-hidden="true">4.2.1.</strong> Hello World RMI</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.3.</strong> RMI 2</div></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.</strong> Week 4</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="04-javaee.html"><strong aria-hidden="true">5.1.</strong> Introduzione Java Enterprise Edition (Java EE)</a></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">5.1.1.</strong> Laboratorio Java RMI</div></li></ol></li><li class="chapter-item expanded "><a href="04-cdi.html"><strong aria-hidden="true">5.2.</strong> Contexts and Dependency Injection (CDI)</a></li><li class="chapter-item expanded "><a href="04-javaee-lab.html"><strong aria-hidden="true">5.3.</strong> Laboratorio Java EE</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="index.html"><strong aria-hidden="true">1.</strong> Programmazione Distribuita</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="blog.html"><strong aria-hidden="true">1.1.</strong> Blog</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> Week 1</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">2.1.</strong> Presentazione del corso</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.2.</strong> Introduzione al calcolo distribuito</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.3.</strong> Java Thread 1</div></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> Week 2</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">3.1.</strong> Java Thread 2-3</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.2.</strong> laboratorio Java Thread</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.3.</strong> Java Socket TCP 1</div></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.</strong> Week 3</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">4.1.</strong> Java Socket TCP 2</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.2.</strong> Java Remote Method Invocation (RMI) 1</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="03-rmi.html" class="active"><strong aria-hidden="true">4.2.1.</strong> Hello World RMI</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.3.</strong> RMI 2</div></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.</strong> Week 4</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="04-javaee.html"><strong aria-hidden="true">5.1.</strong> Introduzione Java Enterprise Edition (Java EE)</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="03-rmi.html" class="active"><strong aria-hidden="true">5.1.1.</strong> Laboratorio Java RMI</a></li></ol></li><li class="chapter-item expanded "><a href="04-cdi.html"><strong aria-hidden="true">5.2.</strong> Contexts and Dependency Injection (CDI)</a></li><li class="chapter-item expanded "><a href="04-javaee-lab.html"><strong aria-hidden="true">5.3.</strong> Laboratorio Java EE</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -251,9 +251,27 @@ public class HelloClient {
 <ol start="4">
 <li>Esecuzione del progetto
 <ul>
-<li>avviare <code>rmiregistry</code> dalla directory <code>~/$PROJECT_NAME/build/classes</code></li>
-<li>eseguire <code>HelloImpl.java</code>da netbeans tasto destro run file</li>
-<li>eseguire <code>HelloClient.java</code>da netbeans tasto destro run file</li>
+<li>avviare <code>rmiregistry</code> dalla directory <code>~/$PROJECT_NAME/build/classes</code> porta di default <code>rmiregistry</code> 1099.</li>
+<li>eseguire <code>HelloImpl.java</code>da netbeans tasto destro run file.</li>
+<li>eseguire <code>HelloClient.java</code>da netbeans tasto destro run file.</li>
+</ul>
+</li>
+</ol>
+<h2 id="esercizi-java-rmi"><a class="header" href="#esercizi-java-rmi">Esercizi Java RMI</a></h2>
+<ol>
+<li>Progettare e realizzare una semplice applicazione RMI client/server per realizzare una calcolatrice:
+<ul>
+<li>Interfaccia remota <code>Calculator</code> che definire i metodi per le operazioni di somma, sottrazione, divisione e moltiplicazione;</li>
+<li><code>CalculatorImpl</code> implementa l'interfaccia <code>Calculator</code> ed estende <code> java.rmi.server.UnicastRemoteObject</code> definendo la logica dell'applicazione;</li>
+<li><code>CalculatorServer</code> definisce solo il metodo <em>main</em> e costruisce ed esporta l'oggetto remoto  <code>CalculatorImpl</code>;</li>
+<li><code>CalculatorClient</code> utilizza l'oggetto remoto <code>Calculator</code>.</li>
+</ul>
+</li>
+<li>Progettare e realizzare una  applicazione RMI client/server per la gestione delle prenotazioni di un Hotel, con le seguenti operazioni:
+<ul>
+<li>il client deve essere in grado di ottenere la lista delle stanze libere;</li>
+<li>il client può tentare di prenotare una stanza e ottiene un risultato booleano;</li>
+<li>la applicazione deve funzionare in presenza di più client connessi.</li>
 </ul>
 </li>
 </ol>

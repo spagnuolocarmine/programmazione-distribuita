@@ -89,7 +89,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="index.html"><strong aria-hidden="true">1.</strong> Programmazione Distribuita</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="blog.html"><strong aria-hidden="true">1.1.</strong> Blog</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> Week 1</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">2.1.</strong> Presentazione del corso</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.2.</strong> Introduzione al calcolo distribuito</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.3.</strong> Java Thread 1</div></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> Week 2</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">3.1.</strong> Java Thread 2-3</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.2.</strong> laboratorio Java Thread</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.3.</strong> Java Socket TCP 1</div></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.</strong> Week 3</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">4.1.</strong> Java Socket TCP 2</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.2.</strong> Java Remote Method Invocation (RMI) 1 - Hello World</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="03-rmi.html"><strong aria-hidden="true">4.2.1.</strong> Hello World RMI</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.3.</strong> RMI 2</div></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.</strong> Week 4</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="04-javaee.html"><strong aria-hidden="true">5.1.</strong> Introduzione Java Enterprise Edition (Java EE)</a></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">5.1.1.</strong> Laboratorio Java RMI</div></li></ol></li><li class="chapter-item expanded "><a href="04-cdi.html"><strong aria-hidden="true">5.2.</strong> Contexts and Dependency Injection (CDI)</a></li><li class="chapter-item expanded "><a href="04-javaee-lab.html"><strong aria-hidden="true">5.3.</strong> Laboratorio Java EE</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="index.html"><strong aria-hidden="true">1.</strong> Programmazione Distribuita</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="blog.html"><strong aria-hidden="true">1.1.</strong> Blog</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> Week 1</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">2.1.</strong> Presentazione del corso</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.2.</strong> Introduzione al calcolo distribuito</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.3.</strong> Java Thread 1</div></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> Week 2</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">3.1.</strong> Java Thread 2-3</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.2.</strong> laboratorio Java Thread</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.3.</strong> Java Socket TCP 1</div></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.</strong> Week 3</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">4.1.</strong> Java Socket TCP 2</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.2.</strong> Java Remote Method Invocation (RMI) 1</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="03-rmi.html"><strong aria-hidden="true">4.2.1.</strong> Hello World RMI</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.3.</strong> RMI 2</div></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.</strong> Week 4</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="04-javaee.html"><strong aria-hidden="true">5.1.</strong> Introduzione Java Enterprise Edition (Java EE)</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="03-rmi.html"><strong aria-hidden="true">5.1.1.</strong> Laboratorio Java RMI</a></li></ol></li><li class="chapter-item expanded "><a href="04-cdi.html"><strong aria-hidden="true">5.2.</strong> Contexts and Dependency Injection (CDI)</a></li><li class="chapter-item expanded "><a href="04-javaee-lab.html"><strong aria-hidden="true">5.3.</strong> Laboratorio Java EE</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -415,9 +415,27 @@ public class HelloClient {
 <ol start="4">
 <li>Esecuzione del progetto
 <ul>
-<li>avviare <code>rmiregistry</code> dalla directory <code>~/$PROJECT_NAME/build/classes</code></li>
-<li>eseguire <code>HelloImpl.java</code>da netbeans tasto destro run file</li>
-<li>eseguire <code>HelloClient.java</code>da netbeans tasto destro run file</li>
+<li>avviare <code>rmiregistry</code> dalla directory <code>~/$PROJECT_NAME/build/classes</code> porta di default <code>rmiregistry</code> 1099.</li>
+<li>eseguire <code>HelloImpl.java</code>da netbeans tasto destro run file.</li>
+<li>eseguire <code>HelloClient.java</code>da netbeans tasto destro run file.</li>
+</ul>
+</li>
+</ol>
+<h2 id="esercizi-java-rmi"><a class="header" href="#esercizi-java-rmi">Esercizi Java RMI</a></h2>
+<ol>
+<li>Progettare e realizzare una semplice applicazione RMI client/server per realizzare una calcolatrice:
+<ul>
+<li>Interfaccia remota <code>Calculator</code> che definire i metodi per le operazioni di somma, sottrazione, divisione e moltiplicazione;</li>
+<li><code>CalculatorImpl</code> implementa l'interfaccia <code>Calculator</code> ed estende <code> java.rmi.server.UnicastRemoteObject</code> definendo la logica dell'applicazione;</li>
+<li><code>CalculatorServer</code> definisce solo il metodo <em>main</em> e costruisce ed esporta l'oggetto remoto  <code>CalculatorImpl</code>;</li>
+<li><code>CalculatorClient</code> utilizza l'oggetto remoto <code>Calculator</code>.</li>
+</ul>
+</li>
+<li>Progettare e realizzare una  applicazione RMI client/server per la gestione delle prenotazioni di un Hotel, con le seguenti operazioni:
+<ul>
+<li>il client deve essere in grado di ottenere la lista delle stanze libere;</li>
+<li>il client può tentare di prenotare una stanza e ottiene un risultato booleano;</li>
+<li>la applicazione deve funzionare in presenza di più client connessi.</li>
 </ul>
 </li>
 </ol>
@@ -473,6 +491,110 @@ public class HelloClient {
 <li>Come funziona il meccanismo delle annotazioni?</li>
 <li>Che cos’è un application server?</li>
 </ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="java-remote-method-invocation-rmi-1"><a class="header" href="#java-remote-method-invocation-rmi-1">Java Remote Method Invocation (RMI)</a></h1>
+<h2 id="hello-world-con-java-remote-method-invocation-1"><a class="header" href="#hello-world-con-java-remote-method-invocation-1">Hello World con Java Remote Method Invocation</a></h2>
+<ul>
+<li>In questo esempio utilizzeremo per il servizio di naming Java RMI registry <code>rmiregistry</code> presente nella directory <code>bin</code> della jdk,
+<ul>
+<li>per permettere al registro di caricare la codebase necessaria dobbiamo avviarlo all'interno della directory contente i file <code>.class</code>del nostro progetto, nel costro caso la direcory <code>$Project/build/classes</code></li>
+</ul>
+</li>
+<li>Per i nostri scopi definiamo un nuovo SecurityManager che garantisce una politica <code>AllPermission</code>.</li>
+<li>Per la lookup degli oggetti remoti utilizzeremo la classe <a href="https://docs.oracle.com/javase/8/docs/api/java/rmi/Naming.html"><code>Naming</code></a>.</li>
+<li><a href="https://docs.oracle.com/javase/8/docs/technotes/guides/rmi/hello/hello-world.html">Material di supporto: Oracle Getting Started Using Java RMI</a></li>
+</ul>
+<ol>
+<li>Definizione interfaccia remota <code>Hello.java</code></li>
+</ol>
+<pre><code class="language-java">   public interface Hello extends java.rmi.Remote {
+     String dimmiQualcosa(String daChi) throws java.rmi.RemoteException;
+   }
+</code></pre>
+<ol start="2">
+<li>Implementazione dell'oggetto remoto <code>HelloImpl.java</code></li>
+</ol>
+<pre><code class="language-java">import java.rmi.*;
+import java.rmi.server.UnicastRemoteObject; 
+import java.security.Permission;
+import java.util.logging.Logger;
+public class HelloImpl extends UnicastRemoteObject implements Hello {
+    
+    private static final long serialVersionUID = -4469091140865645865L;
+    static Logger logger= Logger.getLogger(&quot;global&quot;);
+    public HelloImpl() throws RemoteException { }
+    public String dimmiQualcosa(String daChi) throws RemoteException {
+        logger.info(&quot;Sto salutando &quot;+daChi);
+        return &quot;Ciao &quot;+daChi+&quot;!&quot;; 
+    }
+    public static void main(String args[]) throws RemoteException { 
+        System.setSecurityManager(new SecurityManager() {
+            @Override
+            public void checkPermission(Permission perm) {
+            }
+            @Override
+            public void checkPermission(Permission perm, Object context) {
+            }
+        });
+        try {
+            logger.info(&quot;Creo l’oggetto remoto...&quot;); 
+            HelloImpl obj = new HelloImpl(); 
+            logger.info(&quot;... ne effettuo il rebind...&quot;);
+            Naming.rebind(&quot;HelloServer&quot;, obj); 
+           
+            logger.info(&quot;... Pronto!&quot;);
+        } catch (Exception e) { 
+            e.printStackTrace();
+        }
+    }
+}
+</code></pre>
+<ol start="3">
+<li>Definizione del client che utilizza l'oggetto remoto <code>HelloClient.java</code></li>
+</ol>
+<pre><code class="language-java">import java.rmi.*;
+import java.util.logging.Logger;
+public class HelloClient {
+    static Logger logger= Logger.getLogger(&quot;global&quot;);
+    public static void main(String args[]) { 
+        try {
+            
+        logger.info(&quot;Sto cercando l’oggetto remoto...&quot;); 
+        Hello obj = (Hello) Naming.lookup(&quot;rmi://localhost/HelloServer&quot;);  
+        logger.info(&quot;... Trovato! Invoco metodo...&quot;);
+        String risultato = obj.dimmiQualcosa(&quot;Pippo&quot;);
+        System.out.println(&quot;Ricevuto:&quot;+ risultato); } 
+        catch (Exception e) { e.printStackTrace(); }
+
+    }
+}
+</code></pre>
+<ol start="4">
+<li>Esecuzione del progetto
+<ul>
+<li>avviare <code>rmiregistry</code> dalla directory <code>~/$PROJECT_NAME/build/classes</code> porta di default <code>rmiregistry</code> 1099.</li>
+<li>eseguire <code>HelloImpl.java</code>da netbeans tasto destro run file.</li>
+<li>eseguire <code>HelloClient.java</code>da netbeans tasto destro run file.</li>
+</ul>
+</li>
+</ol>
+<h2 id="esercizi-java-rmi-1"><a class="header" href="#esercizi-java-rmi-1">Esercizi Java RMI</a></h2>
+<ol>
+<li>Progettare e realizzare una semplice applicazione RMI client/server per realizzare una calcolatrice:
+<ul>
+<li>Interfaccia remota <code>Calculator</code> che definire i metodi per le operazioni di somma, sottrazione, divisione e moltiplicazione;</li>
+<li><code>CalculatorImpl</code> implementa l'interfaccia <code>Calculator</code> ed estende <code> java.rmi.server.UnicastRemoteObject</code> definendo la logica dell'applicazione;</li>
+<li><code>CalculatorServer</code> definisce solo il metodo <em>main</em> e costruisce ed esporta l'oggetto remoto  <code>CalculatorImpl</code>;</li>
+<li><code>CalculatorClient</code> utilizza l'oggetto remoto <code>Calculator</code>.</li>
+</ul>
+</li>
+<li>Progettare e realizzare una  applicazione RMI client/server per la gestione delle prenotazioni di un Hotel, con le seguenti operazioni:
+<ul>
+<li>il client deve essere in grado di ottenere la lista delle stanze libere;</li>
+<li>il client può tentare di prenotare una stanza e ottiene un risultato booleano;</li>
+<li>la applicazione deve funzionare in presenza di più client connessi.</li>
+</ul>
+</li>
+</ol>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="contexts-and-dependency-injection-cdi"><a class="header" href="#contexts-and-dependency-injection-cdi">Contexts and Dependency Injection (CDI)</a></h1>
 <ul>
 <li><a href="04-cdi.html#contexts-and-dependency-injection-cdi">Contexts and Dependency Injection (CDI)</a></li>
