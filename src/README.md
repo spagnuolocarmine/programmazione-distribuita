@@ -14,8 +14,8 @@
 |🗓️ | Lezione | Materiale| Riferimenti |
 |---------|----------|--------|-----------|
 |06/10/2023 | Java Socket TCP 1 | | 📕Cap. 2 |
-|09/10/2023 | Java Socket TCP 2 | [Installazione ambiente di sviluppo (solo prima sezione)](03-lab-j2ee-intro/README.md)|📕 Cap. 2  |
-|12/10/2023 | RMI 1 | [RMI 1 - Hello World](01-intro/RMI.md)| 📕 Cap. 3|
+|09/10/2023 | Java Socket TCP 2 | [Installazione ambiente di sviluppo (solo prima sezione)](04-javaee-lab.md)|📕 Cap. 2  |
+|12/10/2023 | RMI 1 | [RMI 1 - Hello World](03-rmi.md)| 📕 Cap. 3|
 |13/10/2023 | RMI 2 | |  📕 Cap. 4|
 <!--  20/10/2022 | [Introduzione a Java Enterprise Edition](01-intro) | 
  21/10/2022 | [Context Dependency Injection (Introduzione - Esempio di CDI Bean)](02-cdi) | 

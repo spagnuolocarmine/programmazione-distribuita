@@ -1,4 +1,4 @@
-# RMI 1 
+# Java Remote Method Invocation (RMI)
 ## Hello World con Java Remote Method Invocation 
 - In questo esempio utilizzeremo per il servizio di naming Java RMI registry `rmiregistry` presente nella directory `bin` della jdk,
   - per permettere al registro di caricare la codebase necessaria dobbiamo avviarlo all'interno della directory contente i file `.class`del nostro progetto, nel costro caso la direcory `$Project/build/classes`
