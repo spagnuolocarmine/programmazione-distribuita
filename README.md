@@ -5,17 +5,19 @@
 ![](https://img.shields.io/badge/cod-0512100021-orange)
 ![](https://img.shields.io/badge/Platform-JAVA%20EE-brightgreen)
 
-[Link al corso 2022](https://corsi.unisa.it/informatica/didattica/insegnamenti?anno=2022&id=507548) 
+### Libri di testo
+- 📕 [Programmazione con Oggetti Distribuiti: Java RMI](https://ilmiolibro.kataweb.it/libro/informatica-e-internet/36104/programmazione-con-oggetti-distribuiti-java-rmi-2/)
+- 📗 [Beginning Java EE 7](https://www.amazon.it/Beginning-Java-Expert-Voice-English-ebook/dp/B00EO03GQM)
 
-[Link per matricole resto 0](https://corsi.unisa.it/informatica/didattica/insegnamenti?anno=2022&id=507548&cId=9999-2017&pId=MODULO_3*RESTO_0*S1)
-  
 # Materiale
 
-🗓️ | Lezione | 
----------|----------|
-| **Week**|  **1**|
-|17/10/2022 | Laboratorio Java RMI |
- 20/10/2022 | [Introduzione a Java Enterprise Edition](01-intro) | 
+|🗓️ | Lezione | Materiale| Riferimenti |
+|---------|----------|--------|-----------|
+|06/10/2023 | Java Socket TCP 1 | | 📕Cap. 2 |
+|09/10/2023 | Java Socket TCP 2 | [Installazione ambiente di sviluppo (solo prima sezione)](https://github.com/spagnuolocarmine/programmazione-distribuita/tree/main/03-lab-j2ee-intro#installazione-ambiente-di-sviluppo)|📕 Cap. 2  |
+|12/10/2023 | RMI 1 | [RMI 1 - Hello World](https://github.com/spagnuolocarmine/programmazione-distribuita/blob/main/RMI.md)| 📕 Cap. 3|
+|13/10/2023 | RMI 2 | |  📕 Cap. 4|
+<!--  20/10/2022 | [Introduzione a Java Enterprise Edition](01-intro) | 
  21/10/2022 | [Context Dependency Injection (Introduzione - Esempio di CDI Bean)](02-cdi) | 
 | **Week**|  **2**|
 24/10/2022 | [Laboratorio Starting with J2EE ](03-lab-j2ee-intro) | 
@@ -40,7 +42,7 @@
 | **Week**|  **7**|
 28/11/2022 | Simulazione Esame | 
 | **Week**|  **9**|
-12/12/2022 | Introduzione al Cloud Computing **AULA P3** | 
+12/12/2022 | Introduzione al Cloud Computing **AULA P3** |  -->
 <!--15/12/2022 | Simulazione Esame 3 | 
 16/11/2022 | Simulazione Esame 4 | 
 | **Week**|  **7**|
@@ -56,14 +58,23 @@
 ---
 # Informazioni modalità d'esame 
 
-**Prova scirtta** ➡️ **Svolgimento prova a casa** ➡️ **Consegna progetto** ➡️ **Prova orale**
+**Prova scritta** ➡️ **Svolgimento prova a casa** ➡️ **Consegna progetto** ➡️ **Prova orale**
 ## Prova scritta 
 **Date (da verificare su ESSE3)**
-🗓️ | 🕘 | 
----------|----------|
-19/01/2023 | 09:00-12:00
-03/02/2023 | 09:00-12:00
-17/02/2023 | 09:00-12:00
+🗓️ | 🕘 | 📍
+---------|----------|--------|
+16/01/2023 | 15:00-17:30 | P3/P4
+31/01/2023 | 15:00-17:30 | F1/F8
+16/02/2023 | 15:00-17:30 | P3/P4
+
+<!--
+### Svolgimento della prova di esame durante il corso (relativa al primo appello) 🛑 **non definitivo**
+1. 📝 Prova a quiz Ottobre (Libro Programmazione con Oggetti Distribuiti: Java RMI)
+2. 📝 Prova a quiz Novembre (Libro Beginning Java EE 7)
+3. 💻 Prova di programmazione Dicembre (Applicazione Java Enterprise)
+4. ⚽️ Risultati prima dello scritto del primo appello
+5. 🗣️ Esame orale al primo appello
+-->
 
 **Note sullo svolgimento della prova scritta**
 
