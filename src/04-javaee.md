@@ -1,5 +1,5 @@
-# Introduzione Java EE
-- [Introduzione Java EE](#introduzione-java-ee)
+# Introduzione Java Enterprise Edition (Java EE)
+- [Introduzione Java Enterprise Edition (Java EE)](#introduzione-java-enterprise-edition-java-ee)
 - [Obiettivo](#obiettivo)
 - [Contenuti](#contenuti)
 - [Materiale bibliografico](#materiale-bibliografico)
