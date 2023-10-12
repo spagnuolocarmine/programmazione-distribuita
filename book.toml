@@ -1,0 +1,7 @@
+[book]
+authors = ["Carmine Spagnuolo"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Programmazione Distribuita"
+description = "materiale di supporto al corso di Programmazione Distribuita"
