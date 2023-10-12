@@ -5,6 +5,9 @@
 ![](https://img.shields.io/badge/cod-0512100021-orange)
 ![](https://img.shields.io/badge/Platform-JAVA%20EE-brightgreen)
 
+![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/w/spagnuolocarmine/programmazione-distribuita)
+
+
 ### Libri di testo
 - 📕 [Programmazione con Oggetti Distribuiti: Java RMI](https://ilmiolibro.kataweb.it/libro/informatica-e-internet/36104/programmazione-con-oggetti-distribuiti-java-rmi-2/)
 - 📗 [Beginning Java EE 7](https://www.amazon.it/Beginning-Java-Expert-Voice-English-ebook/dp/B00EO03GQM)
