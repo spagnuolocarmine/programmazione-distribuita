@@ -68,7 +68,18 @@ public class HelloClient {
 }
 ```
 4. Esecuzione del progetto
-   - avviare `rmiregistry` dalla directory `~/$PROJECT_NAME/build/classes`
-   - eseguire `HelloImpl.java`da netbeans tasto destro run file
-   - eseguire `HelloClient.java`da netbeans tasto destro run file
+   - avviare `rmiregistry` dalla directory `~/$PROJECT_NAME/build/classes` porta di default `rmiregistry` 1099.
+   - eseguire `HelloImpl.java`da netbeans tasto destro run file.
+   - eseguire `HelloClient.java`da netbeans tasto destro run file.
    
+## Esercizi Java RMI
+
+1. Progettare e realizzare una semplice applicazione RMI client/server per realizzare una calcolatrice:
+    - Interfaccia remota `Calculator` che definire i metodi per le operazioni di somma, sottrazione, divisione e moltiplicazione;
+    - `CalculatorImpl` implementa l'interfaccia `Calculator` ed estende ` java.rmi.server.UnicastRemoteObject` definendo la logica dell'applicazione;
+    - `CalculatorServer` definisce solo il metodo _main_ e costruisce ed esporta l'oggetto remoto  `CalculatorImpl`;
+    - `CalculatorClient` utilizza l'oggetto remoto `Calculator`.
+2. Progettare e realizzare una  applicazione RMI client/server per la gestione delle prenotazioni di un Hotel, con le seguenti operazioni:
+   -  il client deve essere in grado di ottenere la lista delle stanze libere;
+   -  il client può tentare di prenotare una stanza e ottiene un risultato booleano;
+   -  la applicazione deve funzionare in presenza di più client connessi.
