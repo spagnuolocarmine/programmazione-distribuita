@@ -1,8 +1,9 @@
 # Summary
 
-- [mdBook Quickstart](README.md)
-- [Chapter 1](chapter-1.md)
-- [Chapter 2](chapter-2.md)
-- [Foo](foo/README.md)
-    - [Fizz](foo/fizz.md)
-    - [Buzz](foo/buzz.md)
+- [Programmazione Distribuita](README.md)
+- Week 1
+  - Java Socket TCP 1
+  - Java Socket TCP 2
+- Week 2
+  - [RMI 1 - Hello World](../01-intro/RMI.md)
+  - RMI 2
