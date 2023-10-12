@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>RMI 1 - Hello World - Programmazione Distribuita</title>
+        <title>Laboratorio Java EE - Programmazione Distribuita</title>
 
 
         <!-- Custom HTML head -->
@@ -88,7 +88,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="../index.html"><strong aria-hidden="true">1.</strong> Programmazione Distribuita</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../blog.html"><strong aria-hidden="true">1.1.</strong> Blog</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> Week 1</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">2.1.</strong> Presentazione del corso</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.2.</strong> Introduzione al calcolo distribuito</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.3.</strong> Java Thread 1</div></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> Week 2</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">3.1.</strong> Java Thread 2-3</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.2.</strong> laboratorio Java Thread</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.3.</strong> Java Socket TCP 1</div></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.</strong> Week 3</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">4.1.</strong> Java Socket TCP 2</div></li><li class="chapter-item expanded "><a href="../01-intro/RMI.html" class="active"><strong aria-hidden="true">4.2.</strong> RMI 1 - Hello World</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.3.</strong> RMI 2</div></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.</strong> Week 4</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">5.1.</strong> Introduzione Java Enterprise Edition (Java EE)</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">5.1.1.</strong> Laboratorio Java RMI</div></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.2.</strong> Contexts and Dependency Injection (CDI)</div></li><li class="chapter-item expanded "><a href="../03-lab-j2ee-intro/index.html"><strong aria-hidden="true">5.3.</strong> Laboratorio Java EE</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../index.html"><strong aria-hidden="true">1.</strong> Programmazione Distribuita</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../blog.html"><strong aria-hidden="true">1.1.</strong> Blog</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> Week 1</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">2.1.</strong> Presentazione del corso</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.2.</strong> Introduzione al calcolo distribuito</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.3.</strong> Java Thread 1</div></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> Week 2</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">3.1.</strong> Java Thread 2-3</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.2.</strong> laboratorio Java Thread</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.3.</strong> Java Socket TCP 1</div></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.</strong> Week 3</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">4.1.</strong> Java Socket TCP 2</div></li><li class="chapter-item expanded "><a href="../01-intro/RMI.html"><strong aria-hidden="true">4.2.</strong> RMI 1 - Hello World</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.3.</strong> RMI 2</div></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.</strong> Week 4</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">5.1.</strong> Introduzione Java Enterprise Edition (Java EE)</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">5.1.1.</strong> Laboratorio Java RMI</div></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.2.</strong> Contexts and Dependency Injection (CDI)</div></li><li class="chapter-item expanded "><a href="../03-lab-j2ee-intro/index.html" class="active"><strong aria-hidden="true">5.3.</strong> Laboratorio Java EE</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -171,104 +171,105 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="rmi-1"><a class="header" href="#rmi-1">RMI 1</a></h1>
-<h2 id="hello-world-con-java-remote-method-invocation"><a class="header" href="#hello-world-con-java-remote-method-invocation">Hello World con Java Remote Method Invocation</a></h2>
+                        <ul>
+<li><a href="#installazione-ambiente-di-sviluppo">Installazione ambiente di sviluppo</a>
 <ul>
-<li>In questo esempio utilizzeremo per il servizio di naming Java RMI registry <code>rmiregistry</code> presente nella directory <code>bin</code> della jdk,
+<li><a href="#esercizi">Esercizi</a>
 <ul>
-<li>per permettere al registro di caricare la codebase necessaria dobbiamo avviarlo all'interno della directory contente i file <code>.class</code>del nostro progetto, nel costro caso la direcory <code>$Project/build/classes</code></li>
+<li><a href="#importare-i-progetti-del-libro-di-testo-nel-proprio-ambiente">Importare i progetti del libro di testo nel proprio ambiente</a></li>
+<li><a href="#un-primo-esempio-con-cdi">Un primo esempio con CDI</a></li>
+<li><a href="#applicazione-hello-world-cdi">Applicazione Hello World CDI</a></li>
+<li><a href="#esercizio-bonus">Esercizio Bonus</a></li>
 </ul>
 </li>
-<li>Per i nostri scopi definiamo un nuovo SecurityManager che garantisce una politica <code>AllPermission</code>.</li>
-<li>Per la lookup degli oggetti remoti utilizzeremo la classe <a href="https://docs.oracle.com/javase/8/docs/api/java/rmi/Naming.html"><code>Naming</code></a>.</li>
-<li><a href="https://docs.oracle.com/javase/8/docs/technotes/guides/rmi/hello/hello-world.html">Material di supporto: Oracle Getting Started Using Java RMI</a></li>
+<li><a href="#approfondimenti">Approfondimenti</a></li>
 </ul>
+</li>
+</ul>
+<h1 id="installazione-ambiente-di-sviluppo"><a class="header" href="#installazione-ambiente-di-sviluppo">Installazione ambiente di sviluppo</a></h1>
+<ul>
+<li>Utilizzare solo la JDK SE 8.0</li>
+<li>Installare <a href="https://netbeans.apache.org/download/nb15/">Netbeans</a></li>
+<li>⚠️ Utilizzare per il percorso di installazione di Netbeans e dei progetti solo path privi di spazio!</li>
+<li>Nel caso di più versioni della JDK, impostare Netbeans per utilizzare come default la JDK 8.0</li>
+<li>Unix like systems: netbeans/etc/netbeans.conf</li>
+<li>Aggiungere un nuovo server Glassfish 4.1: Tools ➡️ Servers ➡️ Add Servers ...</li>
+<li>Verificare che il server Glassfish utilizza JDK 8, nel caso modificare il file <code>glassfish/config/asenv.conf</code> per impostare il percorso corretto della JAVA_HOME</li>
+</ul>
+<h2 id="esercizi"><a class="header" href="#esercizi">Esercizi</a></h2>
+<ul>
+<li><a href="https://github.com/Apress/beg-java-ee-7">Repository</a> codice  del libro di testo <a href="https://link.springer.com/book/10.1007/978-1-4302-4627-5">Beginning Java EE 7</a> </li>
+</ul>
+<h3 id="importare-i-progetti-del-libro-di-testo-nel-proprio-ambiente"><a class="header" href="#importare-i-progetti-del-libro-di-testo-nel-proprio-ambiente">Importare i progetti del libro di testo nel proprio ambiente</a></h3>
 <ol>
-<li>Definizione interfaccia remota <code>Hello.java</code></li>
+<li>Code ➡️ Download Zip,  Unarchive the project zip, Open Project</li>
+<li>Aprire il progetto <a href="https://github.com/Apress/beg-java-ee-7/tree/master/agoncal-book-javaee7-master/chapter02/chapter02-samples">chapter02-samples</a></li>
 </ol>
-<pre><code class="language-java">   public interface Hello extends java.rmi.Remote {
-     String dimmiQualcosa(String daChi) throws java.rmi.RemoteException;
-   }
-</code></pre>
-<ol start="2">
-<li>Implementazione dell'oggetto remoto <code>HelloImpl.java</code></li>
-</ol>
-<pre><code class="language-java">import java.rmi.*;
-import java.rmi.server.UnicastRemoteObject; 
-import java.security.Permission;
-import java.util.logging.Logger;
-public class HelloImpl extends UnicastRemoteObject implements Hello {
-    
-    private static final long serialVersionUID = -4469091140865645865L;
-    static Logger logger= Logger.getLogger(&quot;global&quot;);
-    public HelloImpl() throws RemoteException { }
-    public String dimmiQualcosa(String daChi) throws RemoteException {
-        logger.info(&quot;Sto salutando &quot;+daChi);
-        return &quot;Ciao &quot;+daChi+&quot;!&quot;; 
-    }
-    public static void main(String args[]) throws RemoteException { 
-        System.setSecurityManager(new SecurityManager() {
-            @Override
-            public void checkPermission(Permission perm) {
-            }
-            @Override
-            public void checkPermission(Permission perm, Object context) {
-            }
-        });
-        try {
-            logger.info(&quot;Creo l’oggetto remoto...&quot;); 
-            HelloImpl obj = new HelloImpl(); 
-            logger.info(&quot;... ne effettuo il rebind...&quot;);
-            Naming.rebind(&quot;HelloServer&quot;, obj); 
-           
-            logger.info(&quot;... Pronto!&quot;);
-        } catch (Exception e) { 
-            e.printStackTrace();
-        }
-    }
-}
-</code></pre>
-<ol start="3">
-<li>Definizione del client che utilizza l'oggetto remoto <code>HelloClient.java</code></li>
-</ol>
-<pre><code class="language-java">import java.rmi.*;
-import java.util.logging.Logger;
-public class HelloClient {
-    static Logger logger= Logger.getLogger(&quot;global&quot;);
-    public static void main(String args[]) { 
-        try {
-            
-        logger.info(&quot;Sto cercando l’oggetto remoto...&quot;); 
-        Hello obj = (Hello) Naming.lookup(&quot;rmi://localhost/HelloServer&quot;);  
-        logger.info(&quot;... Trovato! Invoco metodo...&quot;);
-        String risultato = obj.dimmiQualcosa(&quot;Pippo&quot;);
-        System.out.println(&quot;Ricevuto:&quot;+ risultato); } 
-        catch (Exception e) { e.printStackTrace(); }
-
-    }
-}
-</code></pre>
-<ol start="4">
-<li>Esecuzione del progetto
 <ul>
-<li>avviare <code>rmiregistry</code> dalla directory <code>~/$PROJECT_NAME/build/classes</code></li>
-<li>eseguire <code>HelloImpl.java</code>da netbeans tasto destro run file</li>
-<li>eseguire <code>HelloClient.java</code>da netbeans tasto destro run file</li>
+<li>Aggiungere nel descrittore di progetto <a href="https://maven.apache.org/">Maven</a> nella dipendenza <code>javaee-api</code>la versione specifica di J2EE 7.0 </li>
+</ul>
+<pre><code class="language-maven">    &lt;dependency&gt;
+      &lt;groupId&gt;javax&lt;/groupId&gt;
+      &lt;artifactId&gt;javaee-api&lt;/artifactId&gt;
+      &lt;version&gt;7.0&lt;/version&gt;
+    &lt;/dependency&gt; 
+</code></pre>
+<ul>
+<li>Analizzare il codice degli esercizi</li>
+</ul>
+<ol start="3">
+<li>Aprire il progetto <a href="https://github.com/Apress/beg-java-ee-7/tree/master/agoncal-book-javaee7-master/chapter02/chapter02-putting-together">chapter02-putting-together</a> e provare ad eseguire il file <code>Main.java</code>
+<ul>
+<li>Beginning Java EE 7 pg. 57 </li>
 </ul>
 </li>
 </ol>
+<h3 id="un-primo-esempio-con-cdi"><a class="header" href="#un-primo-esempio-con-cdi">Un primo esempio con CDI</a></h3>
+<p>Creare un nuovo progetto <code>CDI WebApplication</code> per utilizzare la metodologia CDI per visualizzare tramite una Servlet il risulato della creazione di un istanza di <code>Book</code>.</p>
+<ul>
+<li>New Project ➡️ Java with ➡️ Ant Java Web ➡️ Web Application</li>
+<li>Includere i sorgenti di <code>chapter02-putting-together</code> nel package principale, utilizzando la struttura originale</li>
+<li>Includere la dipendenza a J2EE 7, Project X ➡️ Properties ➡️ Libraries ➡️ Add Library ... ➡️ <code>Java EE Web 7 API Library</code></li>
+<li>Create una nuova Servlet, chiamata <code>NewServlet</code> Source Package ➡️ New ➡️ Servlet... </li>
+<li>Selezionare la modalità di discovery <code>all</code> nel file <code>Web Pages/WEB-INF/beans.xml</code></li>
+<li>Utilizzare la annotazione <code>@Inject</code>per includere una nuova istanza <code>BookService</code>nel codice della servlet</li>
+<li>Utilizzare il servizio BookService per costruire un nuovo libro e visualizzare risultato nell'output della servlet in elemento HTML <code>&lt;h3&gt;</code></li>
+</ul>
+<h3 id="applicazione-hello-world-cdi"><a class="header" href="#applicazione-hello-world-cdi">Applicazione Hello World CDI</a></h3>
+<ol>
+<li>Realizzare da zero una nuova applicazione Hello World utilizza una servlet per visualizzare in una pagina Web il testo <code>hello world</code>. Ogni lettera viene elaborata da un particolare POJO MB che implementa l'interfaccia <code>Letter</code> è possibile utilizzare <em>Injection</em>, <em>Qualifiers</em>, e <em>Producers</em>.</li>
+</ol>
+<h3 id="esercizio-bonus"><a class="header" href="#esercizio-bonus">Esercizio Bonus</a></h3>
+<ol start="2">
+<li>Gestire una libreria musicale definendo un oggetto POJO <em>Song</em> e un oggetto <em>Library</em> che è un POJO MB che tramite l'utilizzo di Producers dichiara un <code>ArrayList&lt;Song&gt;</code>. 
+<ul>
+<li>Il risultato dell'architettura deve permettere di utilizzare il seguente codice nella classe Library:</li>
+<li><code>@Inject ArrayList&lt;Book&gt; db;</code></li>
+<li>e di gestire tutte le operazioni possibili in una libreria (aggiungi, cancella, trova per ID, trova per nome, etc.).</li>
+</ul>
+</li>
+</ol>
+<h2 id="approfondimenti"><a class="header" href="#approfondimenti">Approfondimenti</a></h2>
+<ul>
+<li><a href="https://tomylab.wordpress.com/2016/06/18/java-ee-7-the-big-picture/">JAVA EE 7: THE BIG PICTURE</a></li>
+</ul>
+<p><em>Files di esempio</em></p>
+<pre><code class="language-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;beans xmlns=&quot;http://xmlns.jcp.org/xml/ns/javaee&quot;
+       xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+       xsi:schemaLocation=&quot;http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/beans_1_1.xsd&quot;
+       bean-discovery-mode=&quot;all&quot;&gt;
+&lt;/beans&gt;
+</code></pre>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="../blog.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../01-intro/RMI.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next prefetch" href="../03-lab-j2ee-intro/index.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                                <i class="fa fa-angle-right"></i>
-                            </a>
 
                         <div style="clear: both"></div>
                     </nav>
@@ -276,13 +277,10 @@ public class HelloClient {
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="../blog.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../01-intro/RMI.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next prefetch" href="../03-lab-j2ee-intro/index.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                        <i class="fa fa-angle-right"></i>
-                    </a>
             </nav>
 
         </div>

@@ -89,7 +89,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="index.html"><strong aria-hidden="true">1.</strong> Programmazione Distribuita</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="blog.html"><strong aria-hidden="true">1.1.</strong> Blog</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> Week 1</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">2.1.</strong> Presentazione del corso</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.2.</strong> Introduzione al calcolo distribuito</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.3.</strong> Java Thread 1</div></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> Week 2</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">3.1.</strong> Java Thread 2-3</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.2.</strong> Esercitazione Java Thread</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.3.</strong> Java Socket TCP 1</div></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.</strong> Week 3</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">4.1.</strong> Java Socket TCP 2</div></li><li class="chapter-item expanded "><a href="01-intro/RMI.html"><strong aria-hidden="true">4.2.</strong> RMI 1 - Hello World</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.3.</strong> RMI 2</div></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="index.html"><strong aria-hidden="true">1.</strong> Programmazione Distribuita</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="blog.html"><strong aria-hidden="true">1.1.</strong> Blog</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> Week 1</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">2.1.</strong> Presentazione del corso</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.2.</strong> Introduzione al calcolo distribuito</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.3.</strong> Java Thread 1</div></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> Week 2</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">3.1.</strong> Java Thread 2-3</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.2.</strong> laboratorio Java Thread</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.3.</strong> Java Socket TCP 1</div></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.</strong> Week 3</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">4.1.</strong> Java Socket TCP 2</div></li><li class="chapter-item expanded "><a href="01-intro/RMI.html"><strong aria-hidden="true">4.2.</strong> RMI 1 - Hello World</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.3.</strong> RMI 2</div></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.</strong> Week 4</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">5.1.</strong> Introduzione Java Enterprise Edition (Java EE)</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">5.1.1.</strong> Laboratorio Java RMI</div></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.2.</strong> Contexts and Dependency Injection (CDI)</div></li><li class="chapter-item expanded "><a href="03-lab-j2ee-intro/index.html"><strong aria-hidden="true">5.3.</strong> Laboratorio Java EE</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -421,6 +421,96 @@ public class HelloClient {
 </ul>
 </li>
 </ol>
+<div style="break-before: page; page-break-before: always;"></div><ul>
+<li><a href="03-lab-j2ee-intro/index.html#installazione-ambiente-di-sviluppo">Installazione ambiente di sviluppo</a>
+<ul>
+<li><a href="03-lab-j2ee-intro/index.html#esercizi">Esercizi</a>
+<ul>
+<li><a href="03-lab-j2ee-intro/index.html#importare-i-progetti-del-libro-di-testo-nel-proprio-ambiente">Importare i progetti del libro di testo nel proprio ambiente</a></li>
+<li><a href="03-lab-j2ee-intro/index.html#un-primo-esempio-con-cdi">Un primo esempio con CDI</a></li>
+<li><a href="03-lab-j2ee-intro/index.html#applicazione-hello-world-cdi">Applicazione Hello World CDI</a></li>
+<li><a href="03-lab-j2ee-intro/index.html#esercizio-bonus">Esercizio Bonus</a></li>
+</ul>
+</li>
+<li><a href="03-lab-j2ee-intro/index.html#approfondimenti">Approfondimenti</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="installazione-ambiente-di-sviluppo"><a class="header" href="#installazione-ambiente-di-sviluppo">Installazione ambiente di sviluppo</a></h1>
+<ul>
+<li>Utilizzare solo la JDK SE 8.0</li>
+<li>Installare <a href="https://netbeans.apache.org/download/nb15/">Netbeans</a></li>
+<li>⚠️ Utilizzare per il percorso di installazione di Netbeans e dei progetti solo path privi di spazio!</li>
+<li>Nel caso di più versioni della JDK, impostare Netbeans per utilizzare come default la JDK 8.0</li>
+<li>Unix like systems: netbeans/etc/netbeans.conf</li>
+<li>Aggiungere un nuovo server Glassfish 4.1: Tools ➡️ Servers ➡️ Add Servers ...</li>
+<li>Verificare che il server Glassfish utilizza JDK 8, nel caso modificare il file <code>glassfish/config/asenv.conf</code> per impostare il percorso corretto della JAVA_HOME</li>
+</ul>
+<h2 id="esercizi"><a class="header" href="#esercizi">Esercizi</a></h2>
+<ul>
+<li><a href="https://github.com/Apress/beg-java-ee-7">Repository</a> codice  del libro di testo <a href="https://link.springer.com/book/10.1007/978-1-4302-4627-5">Beginning Java EE 7</a> </li>
+</ul>
+<h3 id="importare-i-progetti-del-libro-di-testo-nel-proprio-ambiente"><a class="header" href="#importare-i-progetti-del-libro-di-testo-nel-proprio-ambiente">Importare i progetti del libro di testo nel proprio ambiente</a></h3>
+<ol>
+<li>Code ➡️ Download Zip,  Unarchive the project zip, Open Project</li>
+<li>Aprire il progetto <a href="https://github.com/Apress/beg-java-ee-7/tree/master/agoncal-book-javaee7-master/chapter02/chapter02-samples">chapter02-samples</a></li>
+</ol>
+<ul>
+<li>Aggiungere nel descrittore di progetto <a href="https://maven.apache.org/">Maven</a> nella dipendenza <code>javaee-api</code>la versione specifica di J2EE 7.0 </li>
+</ul>
+<pre><code class="language-maven">    &lt;dependency&gt;
+      &lt;groupId&gt;javax&lt;/groupId&gt;
+      &lt;artifactId&gt;javaee-api&lt;/artifactId&gt;
+      &lt;version&gt;7.0&lt;/version&gt;
+    &lt;/dependency&gt; 
+</code></pre>
+<ul>
+<li>Analizzare il codice degli esercizi</li>
+</ul>
+<ol start="3">
+<li>Aprire il progetto <a href="https://github.com/Apress/beg-java-ee-7/tree/master/agoncal-book-javaee7-master/chapter02/chapter02-putting-together">chapter02-putting-together</a> e provare ad eseguire il file <code>Main.java</code>
+<ul>
+<li>Beginning Java EE 7 pg. 57 </li>
+</ul>
+</li>
+</ol>
+<h3 id="un-primo-esempio-con-cdi"><a class="header" href="#un-primo-esempio-con-cdi">Un primo esempio con CDI</a></h3>
+<p>Creare un nuovo progetto <code>CDI WebApplication</code> per utilizzare la metodologia CDI per visualizzare tramite una Servlet il risulato della creazione di un istanza di <code>Book</code>.</p>
+<ul>
+<li>New Project ➡️ Java with ➡️ Ant Java Web ➡️ Web Application</li>
+<li>Includere i sorgenti di <code>chapter02-putting-together</code> nel package principale, utilizzando la struttura originale</li>
+<li>Includere la dipendenza a J2EE 7, Project X ➡️ Properties ➡️ Libraries ➡️ Add Library ... ➡️ <code>Java EE Web 7 API Library</code></li>
+<li>Create una nuova Servlet, chiamata <code>NewServlet</code> Source Package ➡️ New ➡️ Servlet... </li>
+<li>Selezionare la modalità di discovery <code>all</code> nel file <code>Web Pages/WEB-INF/beans.xml</code></li>
+<li>Utilizzare la annotazione <code>@Inject</code>per includere una nuova istanza <code>BookService</code>nel codice della servlet</li>
+<li>Utilizzare il servizio BookService per costruire un nuovo libro e visualizzare risultato nell'output della servlet in elemento HTML <code>&lt;h3&gt;</code></li>
+</ul>
+<h3 id="applicazione-hello-world-cdi"><a class="header" href="#applicazione-hello-world-cdi">Applicazione Hello World CDI</a></h3>
+<ol>
+<li>Realizzare da zero una nuova applicazione Hello World utilizza una servlet per visualizzare in una pagina Web il testo <code>hello world</code>. Ogni lettera viene elaborata da un particolare POJO MB che implementa l'interfaccia <code>Letter</code> è possibile utilizzare <em>Injection</em>, <em>Qualifiers</em>, e <em>Producers</em>.</li>
+</ol>
+<h3 id="esercizio-bonus"><a class="header" href="#esercizio-bonus">Esercizio Bonus</a></h3>
+<ol start="2">
+<li>Gestire una libreria musicale definendo un oggetto POJO <em>Song</em> e un oggetto <em>Library</em> che è un POJO MB che tramite l'utilizzo di Producers dichiara un <code>ArrayList&lt;Song&gt;</code>. 
+<ul>
+<li>Il risultato dell'architettura deve permettere di utilizzare il seguente codice nella classe Library:</li>
+<li><code>@Inject ArrayList&lt;Book&gt; db;</code></li>
+<li>e di gestire tutte le operazioni possibili in una libreria (aggiungi, cancella, trova per ID, trova per nome, etc.).</li>
+</ul>
+</li>
+</ol>
+<h2 id="approfondimenti"><a class="header" href="#approfondimenti">Approfondimenti</a></h2>
+<ul>
+<li><a href="https://tomylab.wordpress.com/2016/06/18/java-ee-7-the-big-picture/">JAVA EE 7: THE BIG PICTURE</a></li>
+</ul>
+<p><em>Files di esempio</em></p>
+<pre><code class="language-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;beans xmlns=&quot;http://xmlns.jcp.org/xml/ns/javaee&quot;
+       xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+       xsi:schemaLocation=&quot;http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/beans_1_1.xsd&quot;
+       bean-discovery-mode=&quot;all&quot;&gt;
+&lt;/beans&gt;
+</code></pre>
 
                     </main>
 
