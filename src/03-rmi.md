@@ -77,10 +77,10 @@ public class HelloClient {
 - Server
 ```java
 public void createStubAndBind() throws RemoteException {
-		MessengerService stub = (MessengerService) UnicastRemoteObject.exportObject((MessengerService) this, 0);
-		Registry registry = LocateRegistry.createRegistry(1099);
-		registry.rebind("MessengerService", stub);
-	}
+	MessengerService stub = (MessengerService) UnicastRemoteObject.exportObject((MessengerService) this, 0);
+	Registry registry = LocateRegistry.createRegistry(1099);
+	registry.rebind("MessengerService", stub);
+}
 ```
 - Client
 ```java
