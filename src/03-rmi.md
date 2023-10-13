@@ -71,7 +71,24 @@ public class HelloClient {
    - avviare `rmiregistry` dalla directory `~/$PROJECT_NAME/build/classes` porta di default `rmiregistry` 1099.
    - eseguire `HelloImpl.java`da netbeans tasto destro run file.
    - eseguire `HelloClient.java`da netbeans tasto destro run file.
-   
+
+## `rmiregistry` locale e export di oggetti remoti
+
+- Server
+```java
+public void createStubAndBind() throws RemoteException {
+		MessengerService stub = (MessengerService) UnicastRemoteObject.exportObject((MessengerService) this, 0);
+		Registry registry = LocateRegistry.createRegistry(1099);
+		registry.rebind("MessengerService", stub);
+	}
+```
+- Client
+```java
+Registry registry = LocateRegistry.getRegistry();
+MessengerService server = (MessengerService) registry.lookup("MessengerService");
+responseMessage = server.sendMessage("Client Message");
+```
+
 ## Esercizi Java RMI
 
 1. Progettare e realizzare una semplice applicazione RMI client/server per realizzare una calcolatrice:
