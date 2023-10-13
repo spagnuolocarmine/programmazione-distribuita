@@ -421,6 +421,23 @@ public class HelloClient {
 </ul>
 </li>
 </ol>
+<h2 id="rmiregistry-locale-e-export-di-oggetti-remoti"><a class="header" href="#rmiregistry-locale-e-export-di-oggetti-remoti"><code>rmiregistry</code> locale e export di oggetti remoti</a></h2>
+<ul>
+<li>Server</li>
+</ul>
+<pre><code class="language-java">public void createStubAndBind() throws RemoteException {
+	MessengerService stub = (MessengerService) UnicastRemoteObject.exportObject((MessengerService) this, 0);
+	Registry registry = LocateRegistry.createRegistry(1099);
+	registry.rebind(&quot;MessengerService&quot;, stub);
+}
+</code></pre>
+<ul>
+<li>Client</li>
+</ul>
+<pre><code class="language-java">Registry registry = LocateRegistry.getRegistry();
+MessengerService server = (MessengerService) registry.lookup(&quot;MessengerService&quot;);
+responseMessage = server.sendMessage(&quot;Client Message&quot;);
+</code></pre>
 <h2 id="esercizi-java-rmi"><a class="header" href="#esercizi-java-rmi">Esercizi Java RMI</a></h2>
 <ol>
 <li>Progettare e realizzare una semplice applicazione RMI client/server per realizzare una calcolatrice:
@@ -577,6 +594,23 @@ public class HelloClient {
 </ul>
 </li>
 </ol>
+<h2 id="rmiregistry-locale-e-export-di-oggetti-remoti-1"><a class="header" href="#rmiregistry-locale-e-export-di-oggetti-remoti-1"><code>rmiregistry</code> locale e export di oggetti remoti</a></h2>
+<ul>
+<li>Server</li>
+</ul>
+<pre><code class="language-java">public void createStubAndBind() throws RemoteException {
+	MessengerService stub = (MessengerService) UnicastRemoteObject.exportObject((MessengerService) this, 0);
+	Registry registry = LocateRegistry.createRegistry(1099);
+	registry.rebind(&quot;MessengerService&quot;, stub);
+}
+</code></pre>
+<ul>
+<li>Client</li>
+</ul>
+<pre><code class="language-java">Registry registry = LocateRegistry.getRegistry();
+MessengerService server = (MessengerService) registry.lookup(&quot;MessengerService&quot;);
+responseMessage = server.sendMessage(&quot;Client Message&quot;);
+</code></pre>
 <h2 id="esercizi-java-rmi-1"><a class="header" href="#esercizi-java-rmi-1">Esercizi Java RMI</a></h2>
 <ol>
 <li>Progettare e realizzare una semplice applicazione RMI client/server per realizzare una calcolatrice:
