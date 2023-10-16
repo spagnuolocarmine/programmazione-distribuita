@@ -2,6 +2,7 @@
 
 - [Programmazione Distribuita](README.md)
   - [🔗 Blog](blog.md)
+  - [📝 Esame: modalità con prove intercorso per studenti corsisti](esame_con_intercorso.md)
 - [1️⃣]()
   - [Presentazione del corso]()
   - [Introduzione al calcolo distribuito]()
