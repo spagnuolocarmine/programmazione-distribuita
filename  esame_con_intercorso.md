@@ -2,7 +2,6 @@
 
 [E-Learning UNISA PD 23/24](https://elearning.unisa.it/course/view.php?id=7552)
 
-
 L'esame per gli studenti corsisti può essere sostenuto tramite 3 prove intercorso + prova orale nella data del preappello:
 
 - _Quiz Parte A_: Fondamenti di programmazione distribuita fino a Java RMI (Libro 📕) 20% del voto di accesso all'esame orale
