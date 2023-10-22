@@ -180,8 +180,8 @@
 <ul>
 <li><a href="#importare-i-progetti-del-libro-di-testo-nel-proprio-ambiente">Importare i progetti del libro di testo nel proprio ambiente</a></li>
 <li><a href="#un-primo-esempio-con-cdi">Un primo esempio con CDI</a></li>
-<li><a href="#applicazione-hello-world-cdi">Applicazione Hello World CDI</a></li>
-<li><a href="#esercizio-bonus">Esercizio Bonus</a></li>
+<li><a href="#%EF%B8%8F-esercizio-explore-cdi---applicazione-hello-world-cdi">🗺️ Esercizio Explore CDI - Applicazione Hello World CDI</a></li>
+<li><a href="#%EF%B8%8F-esercizio-music-library">⏯️ Esercizio Music Library</a></li>
 </ul>
 </li>
 <li><a href="#approfondimenti">Approfondimenti</a></li>
@@ -204,7 +204,7 @@
 </ul>
 <h3 id="importare-i-progetti-del-libro-di-testo-nel-proprio-ambiente"><a class="header" href="#importare-i-progetti-del-libro-di-testo-nel-proprio-ambiente">Importare i progetti del libro di testo nel proprio ambiente</a></h3>
 <ol>
-<li>Code ➡️ Download Zip,  Unarchive the project zip, Open Project</li>
+<li>Code ➡️ <a href="https://github.com/Apress/beg-java-ee-7">Download Zip</a>,  Unarchive the project zip, Open Project</li>
 <li>Aprire il progetto <a href="https://github.com/Apress/beg-java-ee-7/tree/master/agoncal-book-javaee7-master/chapter02/chapter02-samples">chapter02-samples</a></li>
 </ol>
 <ul>
@@ -230,18 +230,51 @@
 <p>Creare un nuovo progetto <code>CDI WebApplication</code> per utilizzare la metodologia CDI per visualizzare tramite una Servlet il risulato della creazione di un istanza di <code>Book</code>.</p>
 <ul>
 <li>New Project ➡️ Java with ➡️ Ant Java Web ➡️ Web Application</li>
-<li>Includere i sorgenti di <code>chapter02-putting-together</code> nel package principale, utilizzando la struttura originale</li>
+<li>Includere i sorgenti di <code>chapter02-putting-together</code> nel package principale, utilizzando la struttura originale (fare copia e incolla dei sorgenti ossia del package <code>org.agoncal.book.javaee7.chapter02</code> in src)</li>
 <li>Includere la dipendenza a J2EE 7, Project X ➡️ Properties ➡️ Libraries ➡️ Add Library ... ➡️ <code>Java EE Web 7 API Library</code></li>
 <li>Create una nuova Servlet, chiamata <code>NewServlet</code> Source Package ➡️ New ➡️ Servlet... </li>
-<li>Selezionare la modalità di discovery <code>all</code> nel file <code>Web Pages/WEB-INF/beans.xml</code></li>
+<li>Selezionare la modalità di discovery <code>all</code> nel file <code>Web Pages/WEB-INF/beans.xml</code> se non presente crearlo con new file in <code>Web Pages/WEB-INF/beans.xml</code></li>
+</ul>
+<pre><code class="language-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;beans xmlns=&quot;http://xmlns.jcp.org/xml/ns/javaee&quot;
+       xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+       xsi:schemaLocation=&quot;http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/beans_1_1.xsd&quot;
+       bean-discovery-mode=&quot;all&quot;&gt;
+&lt;/beans&gt;
+</code></pre>
+<ul>
 <li>Utilizzare la annotazione <code>@Inject</code>per includere una nuova istanza <code>BookService</code>nel codice della servlet</li>
+</ul>
+<pre><code class="language-java">public class MainServerlet extends HttpServlet {
+    
+    @Inject
+    BookService b;
+...
+}
+</code></pre>
+<ul>
 <li>Utilizzare il servizio BookService per costruire un nuovo libro e visualizzare risultato nell'output della servlet in elemento HTML <code>&lt;h3&gt;</code></li>
 </ul>
-<h3 id="applicazione-hello-world-cdi"><a class="header" href="#applicazione-hello-world-cdi">Applicazione Hello World CDI</a></h3>
+<pre><code class="language-java"> protected void processRequest(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        response.setContentType(&quot;text/html;charset=UTF-8&quot;);
+        try ( PrintWriter out = response.getWriter()) {
+            /* TODO output your page here. You may use following sample code. */
+            out.println(&quot;&lt;!DOCTYPE html&gt;&quot;); out.println(&quot;&lt;html&gt;&quot;);
+            out.println(&quot;&lt;head&gt;&quot;);
+            out.println(&quot;&lt;title &gt;Servlet NewServlet &lt;/title &gt;&quot;); out.println(&quot;&lt;/head&gt;&quot;);
+            out.println(&quot;&lt;body&gt;&quot;); out.println(&quot;&lt;h1&gt;Servlet NewServlet at &quot; +
+            request.getContextPath() + &quot;&lt;/h1&gt;&quot;);
+            Book book = b.createBook(&quot;H2G2&quot;, 12.5f, &quot;Geeky scifi Book&quot;);
+            out.println(&quot;&lt;h3&gt;Libro creato:&quot;+book+&quot;&lt;/h3&gt;&quot;); out.println(&quot;&lt;/body&gt;&quot;); out.println(&quot;&lt;/html&gt;&quot;);
+        }
+    }
+</code></pre>
+<h3 id="-esercizio-explore-cdi---applicazione-hello-world-cdi"><a class="header" href="#-esercizio-explore-cdi---applicazione-hello-world-cdi">🗺️ Esercizio Explore CDI - Applicazione Hello World CDI</a></h3>
 <ol>
-<li>Realizzare da zero una nuova applicazione Hello World utilizza una servlet per visualizzare in una pagina Web il testo <code>hello world</code>. Ogni lettera viene elaborata da un particolare POJO MB che implementa l'interfaccia <code>Letter</code> è possibile utilizzare <em>Injection</em>, <em>Qualifiers</em>, e <em>Producers</em>.</li>
+<li>Realizzare da zero una nuova applicazione Hello World che utilizza una servlet per visualizzare in una pagina Web il testo <code>hello world</code>. La stringa viene elaborata tramite un particolare POJO MB che implementa l'interfaccia <code>Letters</code> è possibile utilizzare <em>Injection</em>, <em>Qualifiers</em>, e <em>Producers</em>.</li>
 </ol>
-<h3 id="esercizio-bonus"><a class="header" href="#esercizio-bonus">Esercizio Bonus</a></h3>
+<h3 id="-esercizio-music-library"><a class="header" href="#-esercizio-music-library">⏯️ Esercizio Music Library</a></h3>
 <ol start="2">
 <li>Gestire una libreria musicale definendo un oggetto POJO <em>Song</em> e un oggetto <em>Library</em> che è un POJO MB che tramite l'utilizzo di Producers dichiara un <code>ArrayList&lt;Song&gt;</code>. 
 <ul>
