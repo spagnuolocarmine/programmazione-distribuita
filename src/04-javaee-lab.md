@@ -38,6 +38,7 @@
    - Analizzare il codice degli esercizi
 1. Aprire il progetto [chapter02-putting-together](https://github.com/Apress/beg-java-ee-7/tree/master/agoncal-book-javaee7-master/chapter02/chapter02-putting-together) e provare ad eseguire il file ```Main.java```
    - Beginning Java EE 7 pg. 57 
+   - Questo esempio utilizza [Weld](https://weld.cdi-spec.org/) un implementazione CDI per applicazioni Java o Java EE ora sviluppato nell'ambito del progetto [Jakarta EE](https://jakarta.ee/). Weld in questo caso consente di eseguire una applicazione Java SE che utilizza CDI.
   
 # Esercizi
 
