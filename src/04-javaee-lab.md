@@ -85,6 +85,7 @@ public class MainServerlet extends HttpServlet {
 2. Gestire una libreria musicale definendo un oggetto POJO _Song_ e un oggetto _Library_ che è un POJO MB che tramite l'utilizzo di Producers dichiara un `ArrayList<Song>`. 
    - Il risultato dell'architettura deve permettere di utilizzare il seguente codice nella classe Library: `@Inject ArrayList<Song> db;`
    - e di gestire tutte le successive operazioni possibili in una libreria inizializzata con un produces (aggiungi, cancella, trova per ID, trova per nome, etc.).
+   - _Opzionale_: realizzare una serverlet che permette di visualizzare il contenuto della libreria in una pagina HTML, e di aggiungere nuove canzoni tramite un form HTML.
 
 ## Approfondimenti 
 - [JAVA EE 7: THE BIG PICTURE](https://tomylab.wordpress.com/2016/06/18/java-ee-7-the-big-picture/)
