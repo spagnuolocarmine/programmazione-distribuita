@@ -743,9 +743,10 @@ responseMessage = server.sendMessage(&quot;Client Message&quot;);
 </li>
 <li><a href="04-javaee-lab.html#esercizi">Esercizi</a>
 <ul>
-<li><a href="04-javaee-lab.html#un-primo-esempio-con-cdi">Un primo esempio con CDI</a></li>
-<li><a href="04-javaee-lab.html#%EF%B8%8F-esercizio-explore-cdi---applicazione-hello-world-cdi">🗺️ Esercizio Explore CDI - Applicazione Hello World CDI</a></li>
-<li><a href="04-javaee-lab.html#%EF%B8%8F-esercizio-music-library-primi-">⏯️ Esercizio Music Library primi 👣</a></li>
+<li><a href="04-javaee-lab.html#0-un-primo-esempio-con-cdi">0. Un primo esempio con CDI</a></li>
+<li><a href="04-javaee-lab.html#1-%EF%B8%8F-esercizio-explore-cdi---applicazione-hello-world-cdi">1. 🗺️ Esercizio Explore CDI - Applicazione Hello World CDI</a></li>
+<li><a href="04-javaee-lab.html#2-%EF%B8%8F-esercizio-music-library-primi-">2. ⏯️ Esercizio Music Library primi 👣</a></li>
+<li><a href="04-javaee-lab.html#3-verifica-del-funzionamento-di-safe-exam-browser">3. Verifica del funzionamento di Safe Exam Browser</a></li>
 <li><a href="04-javaee-lab.html#approfondimenti">Approfondimenti</a></li>
 </ul>
 </li>
@@ -787,7 +788,7 @@ responseMessage = server.sendMessage(&quot;Client Message&quot;);
 </li>
 </ol>
 <h1 id="esercizi"><a class="header" href="#esercizi">Esercizi</a></h1>
-<h2 id="un-primo-esempio-con-cdi"><a class="header" href="#un-primo-esempio-con-cdi">Un primo esempio con CDI</a></h2>
+<h2 id="0-un-primo-esempio-con-cdi"><a class="header" href="#0-un-primo-esempio-con-cdi">0. Un primo esempio con CDI</a></h2>
 <p>Creare un nuovo progetto <code>CDI WebApplication</code> per utilizzare la metodologia CDI per visualizzare tramite una Servlet il risulato della creazione di un istanza di <code>Book</code>.</p>
 <ul>
 <li>New Project ➡️ Java with ➡️ Ant Java Web ➡️ Web Application</li>
@@ -831,24 +832,19 @@ responseMessage = server.sendMessage(&quot;Client Message&quot;);
         }
     }
 </code></pre>
-<h2 id="-esercizio-explore-cdi---applicazione-hello-world-cdi"><a class="header" href="#-esercizio-explore-cdi---applicazione-hello-world-cdi">🗺️ Esercizio Explore CDI - Applicazione Hello World CDI</a></h2>
-<ol>
-<li>Realizzare da zero una nuova applicazione Hello World che utilizza una servlet per visualizzare in una pagina Web il testo <code>hello world</code>. La stringa viene elaborata tramite un particolare POJO MB che implementa l'interfaccia <code>Letters</code> è possibile utilizzare <em>Injection</em>, <em>Qualifiers</em>, e <em>Producers</em>.
+<h2 id="1--esercizio-explore-cdi---applicazione-hello-world-cdi"><a class="header" href="#1--esercizio-explore-cdi---applicazione-hello-world-cdi">1. 🗺️ Esercizio Explore CDI - Applicazione Hello World CDI</a></h2>
+<p>Realizzare da zero una nuova applicazione Hello World che utilizza una servlet per visualizzare in una pagina Web il testo <code>hello world</code>. La stringa viene elaborata tramite un particolare POJO MB che implementa l'interfaccia <code>Letters</code> è possibile utilizzare <em>Injection</em>, <em>Qualifiers</em>, e <em>Producers</em>.</p>
 <ul>
 <li>Ad es. provare a definire un producer per la stringa <code>hello world</code> e un producer per la stringa <code>HELLO WORLD</code> in maiuscolo specificando due diversi <em>qualifiers</em> per i due producer, e alternare l'utilizzo dei due producer nella servlet per visualizzare il testo in minuscolo e maiuscolo in richieste diverse.</li>
 </ul>
-</li>
-</ol>
-<h2 id="-esercizio-music-library-primi-"><a class="header" href="#-esercizio-music-library-primi-">⏯️ Esercizio Music Library primi 👣</a></h2>
-<ol start="2">
-<li>Gestire una libreria musicale definendo un oggetto POJO <em>Song</em> e un oggetto <em>Library</em> che è un POJO MB che tramite l'utilizzo di Producers dichiara un <code>ArrayList&lt;Song&gt;</code>. 
+<h2 id="2--esercizio-music-library-primi-"><a class="header" href="#2--esercizio-music-library-primi-">2. ⏯️ Esercizio Music Library primi 👣</a></h2>
+<p>Gestire una libreria musicale definendo un oggetto POJO <em>Song</em> e un oggetto <em>Library</em> che è un POJO MB che tramite l'utilizzo di Producers dichiara un <code>ArrayList&lt;Song&gt;</code>. </p>
 <ul>
 <li>Il risultato dell'architettura deve permettere di utilizzare il seguente codice nella classe Library: <code>@Inject ArrayList&lt;Song&gt; db;</code></li>
 <li>e di gestire tutte le successive operazioni possibili in una libreria inizializzata con un produces (aggiungi, cancella, trova per ID, trova per nome, etc.).</li>
 <li><em>Opzionale</em>: realizzare una serverlet che permette di visualizzare il contenuto della libreria in una pagina HTML, e di aggiungere nuove canzoni tramite un form HTML.</li>
 </ul>
-</li>
-</ol>
+<h2 id="3-verifica-del-funzionamento-di-safe-exam-browser"><a class="header" href="#3-verifica-del-funzionamento-di-safe-exam-browser">3. Verifica del funzionamento di <a href="https://safeexambrowser.org/">Safe Exam Browser</a></a></h2>
 <h2 id="approfondimenti"><a class="header" href="#approfondimenti">Approfondimenti</a></h2>
 <ul>
 <li><a href="https://tomylab.wordpress.com/2016/06/18/java-ee-7-the-big-picture/">JAVA EE 7: THE BIG PICTURE</a></li>
