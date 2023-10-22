@@ -171,19 +171,19 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="laboratorio-java-ee"><a class="header" href="#laboratorio-java-ee">Laboratorio Java EE</a></h1>
+                        <h1 id="laboratorio-java-ee-"><a class="header" href="#laboratorio-java-ee-">Laboratorio Java EE ☕</a></h1>
 <ul>
-<li><a href="#laboratorio-java-ee">Laboratorio Java EE</a></li>
+<li><a href="#laboratorio-java-ee-">Laboratorio Java EE ☕</a></li>
 <li><a href="#installazione-ambiente-di-sviluppo">Installazione ambiente di sviluppo</a>
 <ul>
+<li><a href="#importare-i-progetti-del-libro-di-testo-nel-proprio-ambiente">Importare i progetti del libro di testo nel proprio ambiente</a></li>
+</ul>
+</li>
 <li><a href="#esercizi">Esercizi</a>
 <ul>
-<li><a href="#importare-i-progetti-del-libro-di-testo-nel-proprio-ambiente">Importare i progetti del libro di testo nel proprio ambiente</a></li>
 <li><a href="#un-primo-esempio-con-cdi">Un primo esempio con CDI</a></li>
 <li><a href="#%EF%B8%8F-esercizio-explore-cdi---applicazione-hello-world-cdi">🗺️ Esercizio Explore CDI - Applicazione Hello World CDI</a></li>
 <li><a href="#%EF%B8%8F-esercizio-music-library-primi-">⏯️ Esercizio Music Library primi 👣</a></li>
-</ul>
-</li>
 <li><a href="#approfondimenti">Approfondimenti</a></li>
 </ul>
 </li>
@@ -198,11 +198,8 @@
 <li>Aggiungere un nuovo server Glassfish 4.1: Tools ➡️ Servers ➡️ Add Servers ...</li>
 <li>Verificare che il server Glassfish utilizza JDK 8, nel caso modificare il file <code>glassfish/config/asenv.conf</code> per impostare il percorso corretto della JAVA_HOME</li>
 </ul>
-<h2 id="esercizi"><a class="header" href="#esercizi">Esercizi</a></h2>
-<ul>
-<li><a href="https://github.com/Apress/beg-java-ee-7">Repository</a> codice  del libro di testo <a href="https://link.springer.com/book/10.1007/978-1-4302-4627-5">Beginning Java EE 7</a> </li>
-</ul>
-<h3 id="importare-i-progetti-del-libro-di-testo-nel-proprio-ambiente"><a class="header" href="#importare-i-progetti-del-libro-di-testo-nel-proprio-ambiente">Importare i progetti del libro di testo nel proprio ambiente</a></h3>
+<h2 id="importare-i-progetti-del-libro-di-testo-nel-proprio-ambiente"><a class="header" href="#importare-i-progetti-del-libro-di-testo-nel-proprio-ambiente">Importare i progetti del libro di testo nel proprio ambiente</a></h2>
+<p><a href="https://github.com/Apress/beg-java-ee-7">Repository</a> codice  del libro di testo <a href="https://link.springer.com/book/10.1007/978-1-4302-4627-5">Beginning Java EE 7</a> </p>
 <ol>
 <li>Code ➡️ <a href="https://github.com/Apress/beg-java-ee-7">Download Zip</a>,  Unarchive the project zip, Open Project</li>
 <li>Aprire il progetto <a href="https://github.com/Apress/beg-java-ee-7/tree/master/agoncal-book-javaee7-master/chapter02/chapter02-samples">chapter02-samples</a></li>
@@ -219,14 +216,15 @@
 <ul>
 <li>Analizzare il codice degli esercizi</li>
 </ul>
-<ol start="3">
+<ol>
 <li>Aprire il progetto <a href="https://github.com/Apress/beg-java-ee-7/tree/master/agoncal-book-javaee7-master/chapter02/chapter02-putting-together">chapter02-putting-together</a> e provare ad eseguire il file <code>Main.java</code>
 <ul>
 <li>Beginning Java EE 7 pg. 57 </li>
 </ul>
 </li>
 </ol>
-<h3 id="un-primo-esempio-con-cdi"><a class="header" href="#un-primo-esempio-con-cdi">Un primo esempio con CDI</a></h3>
+<h1 id="esercizi"><a class="header" href="#esercizi">Esercizi</a></h1>
+<h2 id="un-primo-esempio-con-cdi"><a class="header" href="#un-primo-esempio-con-cdi">Un primo esempio con CDI</a></h2>
 <p>Creare un nuovo progetto <code>CDI WebApplication</code> per utilizzare la metodologia CDI per visualizzare tramite una Servlet il risulato della creazione di un istanza di <code>Book</code>.</p>
 <ul>
 <li>New Project ➡️ Java with ➡️ Ant Java Web ➡️ Web Application</li>
@@ -270,7 +268,7 @@
         }
     }
 </code></pre>
-<h3 id="-esercizio-explore-cdi---applicazione-hello-world-cdi"><a class="header" href="#-esercizio-explore-cdi---applicazione-hello-world-cdi">🗺️ Esercizio Explore CDI - Applicazione Hello World CDI</a></h3>
+<h2 id="-esercizio-explore-cdi---applicazione-hello-world-cdi"><a class="header" href="#-esercizio-explore-cdi---applicazione-hello-world-cdi">🗺️ Esercizio Explore CDI - Applicazione Hello World CDI</a></h2>
 <ol>
 <li>Realizzare da zero una nuova applicazione Hello World che utilizza una servlet per visualizzare in una pagina Web il testo <code>hello world</code>. La stringa viene elaborata tramite un particolare POJO MB che implementa l'interfaccia <code>Letters</code> è possibile utilizzare <em>Injection</em>, <em>Qualifiers</em>, e <em>Producers</em>.
 <ul>
@@ -278,7 +276,7 @@
 </ul>
 </li>
 </ol>
-<h3 id="-esercizio-music-library-primi-"><a class="header" href="#-esercizio-music-library-primi-">⏯️ Esercizio Music Library primi 👣</a></h3>
+<h2 id="-esercizio-music-library-primi-"><a class="header" href="#-esercizio-music-library-primi-">⏯️ Esercizio Music Library primi 👣</a></h2>
 <ol start="2">
 <li>Gestire una libreria musicale definendo un oggetto POJO <em>Song</em> e un oggetto <em>Library</em> che è un POJO MB che tramite l'utilizzo di Producers dichiara un <code>ArrayList&lt;Song&gt;</code>. 
 <ul>
