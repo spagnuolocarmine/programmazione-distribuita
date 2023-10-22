@@ -1,11 +1,11 @@
-# Laboratorio Java EE
-- [Laboratorio Java EE](#laboratorio-java-ee)
+# Laboratorio Java EE ☕
+- [Laboratorio Java EE ☕](#laboratorio-java-ee-)
 - [Installazione ambiente di sviluppo](#installazione-ambiente-di-sviluppo)
-  - [Esercizi](#esercizi)
-    - [Importare i progetti del libro di testo nel proprio ambiente](#importare-i-progetti-del-libro-di-testo-nel-proprio-ambiente)
-    - [Un primo esempio con CDI](#un-primo-esempio-con-cdi)
-    - [🗺️ Esercizio Explore CDI - Applicazione Hello World CDI](#️-esercizio-explore-cdi---applicazione-hello-world-cdi)
-    - [⏯️ Esercizio Music Library primi 👣](#️-esercizio-music-library-primi-)
+  - [Importare i progetti del libro di testo nel proprio ambiente](#importare-i-progetti-del-libro-di-testo-nel-proprio-ambiente)
+- [Esercizi](#esercizi)
+  - [Un primo esempio con CDI](#un-primo-esempio-con-cdi)
+  - [🗺️ Esercizio Explore CDI - Applicazione Hello World CDI](#️-esercizio-explore-cdi---applicazione-hello-world-cdi)
+  - [⏯️ Esercizio Music Library primi 👣](#️-esercizio-music-library-primi-)
   - [Approfondimenti](#approfondimenti)
 
 # Installazione ambiente di sviluppo
@@ -17,12 +17,14 @@
 - Aggiungere un nuovo server Glassfish 4.1: Tools ➡️ Servers ➡️ Add Servers ...
 - Verificare che il server Glassfish utilizza JDK 8, nel caso modificare il file ```glassfish/config/asenv.conf``` per impostare il percorso corretto della JAVA_HOME
 
-## Esercizi
 
-- [Repository](https://github.com/Apress/beg-java-ee-7) codice  del libro di testo [Beginning Java EE 7](https://link.springer.com/book/10.1007/978-1-4302-4627-5) 
 
-### Importare i progetti del libro di testo nel proprio ambiente 
 
+
+## Importare i progetti del libro di testo nel proprio ambiente 
+
+[Repository](https://github.com/Apress/beg-java-ee-7) codice  del libro di testo [Beginning Java EE 7](https://link.springer.com/book/10.1007/978-1-4302-4627-5) 
+  
 1. Code ➡️ [Download Zip](https://github.com/Apress/beg-java-ee-7),  Unarchive the project zip, Open Project  
 2. Aprire il progetto [chapter02-samples](https://github.com/Apress/beg-java-ee-7/tree/master/agoncal-book-javaee7-master/chapter02/chapter02-samples)
   - Aggiungere nel descrittore di progetto [Maven](https://maven.apache.org/) nella dipendenza ```javaee-api```la versione specifica di J2EE 7.0 
@@ -34,9 +36,12 @@
       </dependency> 
    ```
    - Analizzare il codice degli esercizi
-3. Aprire il progetto [chapter02-putting-together](https://github.com/Apress/beg-java-ee-7/tree/master/agoncal-book-javaee7-master/chapter02/chapter02-putting-together) e provare ad eseguire il file ```Main.java```
+1. Aprire il progetto [chapter02-putting-together](https://github.com/Apress/beg-java-ee-7/tree/master/agoncal-book-javaee7-master/chapter02/chapter02-putting-together) e provare ad eseguire il file ```Main.java```
    - Beginning Java EE 7 pg. 57 
-### Un primo esempio con CDI
+  
+# Esercizi
+
+## Un primo esempio con CDI
 Creare un nuovo progetto ```CDI WebApplication``` per utilizzare la metodologia CDI per visualizzare tramite una Servlet il risulato della creazione di un istanza di ```Book```.
 - New Project ➡️ Java with ➡️ Ant Java Web ➡️ Web Application
 - Includere i sorgenti di `chapter02-putting-together` nel package principale, utilizzando la struttura originale (fare copia e incolla dei sorgenti ossia del package `org.agoncal.book.javaee7.chapter02` in src)
@@ -77,11 +82,11 @@ public class MainServerlet extends HttpServlet {
         }
     }
 ```
-### 🗺️ Esercizio Explore CDI - Applicazione Hello World CDI
+## 🗺️ Esercizio Explore CDI - Applicazione Hello World CDI
 1. Realizzare da zero una nuova applicazione Hello World che utilizza una servlet per visualizzare in una pagina Web il testo `hello world`. La stringa viene elaborata tramite un particolare POJO MB che implementa l'interfaccia `Letters` è possibile utilizzare _Injection_, _Qualifiers_, e _Producers_.  
    - Ad es. provare a definire un producer per la stringa `hello world` e un producer per la stringa `HELLO WORLD` in maiuscolo specificando due diversi _qualifiers_ per i due producer, e alternare l'utilizzo dei due producer nella servlet per visualizzare il testo in minuscolo e maiuscolo in richieste diverse.
 
-### ⏯️ Esercizio Music Library primi 👣
+## ⏯️ Esercizio Music Library primi 👣
 2. Gestire una libreria musicale definendo un oggetto POJO _Song_ e un oggetto _Library_ che è un POJO MB che tramite l'utilizzo di Producers dichiara un `ArrayList<Song>`. 
    - Il risultato dell'architettura deve permettere di utilizzare il seguente codice nella classe Library: `@Inject ArrayList<Song> db;`
    - e di gestire tutte le successive operazioni possibili in una libreria inizializzata con un produces (aggiungi, cancella, trova per ID, trova per nome, etc.).
