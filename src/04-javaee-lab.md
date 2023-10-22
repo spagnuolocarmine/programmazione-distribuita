@@ -4,8 +4,8 @@
   - [Esercizi](#esercizi)
     - [Importare i progetti del libro di testo nel proprio ambiente](#importare-i-progetti-del-libro-di-testo-nel-proprio-ambiente)
     - [Un primo esempio con CDI](#un-primo-esempio-con-cdi)
-    - [Applicazione Hello World CDI](#applicazione-hello-world-cdi)
-    - [Esercizio Bonus](#esercizio-bonus)
+    - [🗺️ Esercizio Explore CDI - Applicazione Hello World CDI](#️-esercizio-explore-cdi---applicazione-hello-world-cdi)
+    - [⏯️ Esercizio Music Library](#️-esercizio-music-library)
   - [Approfondimenti](#approfondimenti)
 
 # Installazione ambiente di sviluppo
@@ -23,7 +23,7 @@
 
 ### Importare i progetti del libro di testo nel proprio ambiente 
 
-1. Code ➡️ Download Zip,  Unarchive the project zip, Open Project  
+1. Code ➡️ [Download Zip](https://github.com/Apress/beg-java-ee-7),  Unarchive the project zip, Open Project  
 2. Aprire il progetto [chapter02-samples](https://github.com/Apress/beg-java-ee-7/tree/master/agoncal-book-javaee7-master/chapter02/chapter02-samples)
   - Aggiungere nel descrittore di progetto [Maven](https://maven.apache.org/) nella dipendenza ```javaee-api```la versione specifica di J2EE 7.0 
   ```maven 
@@ -39,17 +39,48 @@
 ### Un primo esempio con CDI
 Creare un nuovo progetto ```CDI WebApplication``` per utilizzare la metodologia CDI per visualizzare tramite una Servlet il risulato della creazione di un istanza di ```Book```.
 - New Project ➡️ Java with ➡️ Ant Java Web ➡️ Web Application
-- Includere i sorgenti di `chapter02-putting-together` nel package principale, utilizzando la struttura originale
+- Includere i sorgenti di `chapter02-putting-together` nel package principale, utilizzando la struttura originale (fare copia e incolla dei sorgenti ossia del package `org.agoncal.book.javaee7.chapter02` in src)
 - Includere la dipendenza a J2EE 7, Project X ➡️ Properties ➡️ Libraries ➡️ Add Library ... ➡️ `Java EE Web 7 API Library`
 - Create una nuova Servlet, chiamata ```NewServlet``` Source Package ➡️ New ➡️ Servlet... 
-- Selezionare la modalità di discovery ``all`` nel file ```Web Pages/WEB-INF/beans.xml```
+- Selezionare la modalità di discovery ``all`` nel file ```Web Pages/WEB-INF/beans.xml``` se non presente crearlo con new file in ```Web Pages/WEB-INF/beans.xml```
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/beans_1_1.xsd"
+       bean-discovery-mode="all">
+</beans>
+```
 - Utilizzare la annotazione ```@Inject```per includere una nuova istanza ```BookService```nel codice della servlet
+```java
+public class MainServerlet extends HttpServlet {
+    
+    @Inject
+    BookService b;
+...
+}
+```
 - Utilizzare il servizio BookService per costruire un nuovo libro e visualizzare risultato nell'output della servlet in elemento HTML `<h3>`
+```java
+ protected void processRequest(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        response.setContentType("text/html;charset=UTF-8");
+        try ( PrintWriter out = response.getWriter()) {
+            /* TODO output your page here. You may use following sample code. */
+            out.println("<!DOCTYPE html>"); out.println("<html>");
+            out.println("<head>");
+            out.println("<title >Servlet NewServlet </title >"); out.println("</head>");
+            out.println("<body>"); out.println("<h1>Servlet NewServlet at " +
+            request.getContextPath() + "</h1>");
+            Book book = b.createBook("H2G2", 12.5f, "Geeky scifi Book");
+            out.println("<h3>Libro creato:"+book+"</h3>"); out.println("</body>"); out.println("</html>");
+        }
+    }
+```
+### 🗺️ Esercizio Explore CDI - Applicazione Hello World CDI
+1. Realizzare da zero una nuova applicazione Hello World che utilizza una servlet per visualizzare in una pagina Web il testo `hello world`. La stringa viene elaborata tramite un particolare POJO MB che implementa l'interfaccia `Letters` è possibile utilizzare _Injection_, _Qualifiers_, e _Producers_.  
 
-### Applicazione Hello World CDI
-1. Realizzare da zero una nuova applicazione Hello World utilizza una servlet per visualizzare in una pagina Web il testo `hello world`. Ogni lettera viene elaborata da un particolare POJO MB che implementa l'interfaccia `Letter` è possibile utilizzare _Injection_, _Qualifiers_, e _Producers_.
-
-### Esercizio Bonus
+### ⏯️ Esercizio Music Library
 2. Gestire una libreria musicale definendo un oggetto POJO _Song_ e un oggetto _Library_ che è un POJO MB che tramite l'utilizzo di Producers dichiara un `ArrayList<Song>`. 
    - Il risultato dell'architettura deve permettere di utilizzare il seguente codice nella classe Library:
    - `@Inject ArrayList<Book> db;`
