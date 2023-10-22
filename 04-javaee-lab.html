@@ -181,7 +181,7 @@
 <li><a href="#importare-i-progetti-del-libro-di-testo-nel-proprio-ambiente">Importare i progetti del libro di testo nel proprio ambiente</a></li>
 <li><a href="#un-primo-esempio-con-cdi">Un primo esempio con CDI</a></li>
 <li><a href="#%EF%B8%8F-esercizio-explore-cdi---applicazione-hello-world-cdi">🗺️ Esercizio Explore CDI - Applicazione Hello World CDI</a></li>
-<li><a href="#%EF%B8%8F-esercizio-music-library">⏯️ Esercizio Music Library</a></li>
+<li><a href="#%EF%B8%8F-esercizio-music-library-primi-">⏯️ Esercizio Music Library primi 👣</a></li>
 </ul>
 </li>
 <li><a href="#approfondimenti">Approfondimenti</a></li>
@@ -274,13 +274,12 @@
 <ol>
 <li>Realizzare da zero una nuova applicazione Hello World che utilizza una servlet per visualizzare in una pagina Web il testo <code>hello world</code>. La stringa viene elaborata tramite un particolare POJO MB che implementa l'interfaccia <code>Letters</code> è possibile utilizzare <em>Injection</em>, <em>Qualifiers</em>, e <em>Producers</em>.</li>
 </ol>
-<h3 id="-esercizio-music-library"><a class="header" href="#-esercizio-music-library">⏯️ Esercizio Music Library</a></h3>
+<h3 id="-esercizio-music-library-primi-"><a class="header" href="#-esercizio-music-library-primi-">⏯️ Esercizio Music Library primi 👣</a></h3>
 <ol start="2">
 <li>Gestire una libreria musicale definendo un oggetto POJO <em>Song</em> e un oggetto <em>Library</em> che è un POJO MB che tramite l'utilizzo di Producers dichiara un <code>ArrayList&lt;Song&gt;</code>. 
 <ul>
-<li>Il risultato dell'architettura deve permettere di utilizzare il seguente codice nella classe Library:</li>
-<li><code>@Inject ArrayList&lt;Book&gt; db;</code></li>
-<li>e di gestire tutte le operazioni possibili in una libreria (aggiungi, cancella, trova per ID, trova per nome, etc.).</li>
+<li>Il risultato dell'architettura deve permettere di utilizzare il seguente codice nella classe Library: <code>@Inject ArrayList&lt;Song&gt; db;</code></li>
+<li>e di gestire tutte le successive operazioni possibili in una libreria inizializzata con un produces (aggiungi, cancella, trova per ID, trova per nome, etc.).</li>
 </ul>
 </li>
 </ol>
@@ -288,14 +287,6 @@
 <ul>
 <li><a href="https://tomylab.wordpress.com/2016/06/18/java-ee-7-the-big-picture/">JAVA EE 7: THE BIG PICTURE</a></li>
 </ul>
-<p><em>Files di esempio</em></p>
-<pre><code class="language-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;beans xmlns=&quot;http://xmlns.jcp.org/xml/ns/javaee&quot;
-       xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
-       xsi:schemaLocation=&quot;http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/beans_1_1.xsd&quot;
-       bean-discovery-mode=&quot;all&quot;&gt;
-&lt;/beans&gt;
-</code></pre>
 
                     </main>
 
