@@ -3,9 +3,10 @@
 - [Installazione ambiente di sviluppo](#installazione-ambiente-di-sviluppo)
   - [Importare i progetti del libro di testo nel proprio ambiente](#importare-i-progetti-del-libro-di-testo-nel-proprio-ambiente)
 - [Esercizi](#esercizi)
-  - [Un primo esempio con CDI](#un-primo-esempio-con-cdi)
-  - [🗺️ Esercizio Explore CDI - Applicazione Hello World CDI](#️-esercizio-explore-cdi---applicazione-hello-world-cdi)
-  - [⏯️ Esercizio Music Library primi 👣](#️-esercizio-music-library-primi-)
+  - [0. Un primo esempio con CDI](#0-un-primo-esempio-con-cdi)
+  - [1. 🗺️ Esercizio Explore CDI - Applicazione Hello World CDI](#1-️-esercizio-explore-cdi---applicazione-hello-world-cdi)
+  - [2. ⏯️ Esercizio Music Library primi 👣](#2-️-esercizio-music-library-primi-)
+  - [3. Verifica del funzionamento di Safe Exam Browser](#3-verifica-del-funzionamento-di-safe-exam-browser)
   - [Approfondimenti](#approfondimenti)
 
 # Installazione ambiente di sviluppo
@@ -42,7 +43,7 @@
   
 # Esercizi
 
-## Un primo esempio con CDI
+## 0. Un primo esempio con CDI
 Creare un nuovo progetto ```CDI WebApplication``` per utilizzare la metodologia CDI per visualizzare tramite una Servlet il risulato della creazione di un istanza di ```Book```.
 - New Project ➡️ Java with ➡️ Ant Java Web ➡️ Web Application
 - Includere i sorgenti di `chapter02-putting-together` nel package principale, utilizzando la struttura originale (fare copia e incolla dei sorgenti ossia del package `org.agoncal.book.javaee7.chapter02` in src)
@@ -83,16 +84,17 @@ public class MainServerlet extends HttpServlet {
         }
     }
 ```
-## 🗺️ Esercizio Explore CDI - Applicazione Hello World CDI
-1. Realizzare da zero una nuova applicazione Hello World che utilizza una servlet per visualizzare in una pagina Web il testo `hello world`. La stringa viene elaborata tramite un particolare POJO MB che implementa l'interfaccia `Letters` è possibile utilizzare _Injection_, _Qualifiers_, e _Producers_.  
+## 1. 🗺️ Esercizio Explore CDI - Applicazione Hello World CDI
+Realizzare da zero una nuova applicazione Hello World che utilizza una servlet per visualizzare in una pagina Web il testo `hello world`. La stringa viene elaborata tramite un particolare POJO MB che implementa l'interfaccia `Letters` è possibile utilizzare _Injection_, _Qualifiers_, e _Producers_.  
    - Ad es. provare a definire un producer per la stringa `hello world` e un producer per la stringa `HELLO WORLD` in maiuscolo specificando due diversi _qualifiers_ per i due producer, e alternare l'utilizzo dei due producer nella servlet per visualizzare il testo in minuscolo e maiuscolo in richieste diverse.
 
-## ⏯️ Esercizio Music Library primi 👣
-2. Gestire una libreria musicale definendo un oggetto POJO _Song_ e un oggetto _Library_ che è un POJO MB che tramite l'utilizzo di Producers dichiara un `ArrayList<Song>`. 
+## 2. ⏯️ Esercizio Music Library primi 👣
+Gestire una libreria musicale definendo un oggetto POJO _Song_ e un oggetto _Library_ che è un POJO MB che tramite l'utilizzo di Producers dichiara un `ArrayList<Song>`. 
    - Il risultato dell'architettura deve permettere di utilizzare il seguente codice nella classe Library: `@Inject ArrayList<Song> db;`
    - e di gestire tutte le successive operazioni possibili in una libreria inizializzata con un produces (aggiungi, cancella, trova per ID, trova per nome, etc.).
    - _Opzionale_: realizzare una serverlet che permette di visualizzare il contenuto della libreria in una pagina HTML, e di aggiungere nuove canzoni tramite un form HTML.
 
+## 3. Verifica del funzionamento di [Safe Exam Browser](https://safeexambrowser.org/)
 ## Approfondimenti 
 - [JAVA EE 7: THE BIG PICTURE](https://tomylab.wordpress.com/2016/06/18/java-ee-7-the-big-picture/)
 
