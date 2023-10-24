@@ -18,8 +18,11 @@
 |12/10/2023 | RMI 1 | [RMI 1 - Hello World](03-rmi.md)| 📕 Cap. 3|
 |13/10/2023 | RMI 2 | |  📕 Cap. 4|
 |16/10/2023 | Laboratorio Java RMI| [RMI - Esercizi Java RMI](03-rmi.md) | |
-|19/10/2023 | Introduzione Java Enterprise Edition (Java EE) | [Java EE](04-javaee.md) | |
-|20/10/2023 | Contexts and Dependency Injection (CDI) | [CDI](04-cdi.md) | |
+|19/10/2023 | Introduzione Java Enterprise Edition (Java EE) | [Java EE](04-javaee.md) | 📗 Cap. 1|
+|20/10/2023 | Contexts and Dependency Injection (CDI) | [CDI Part 1](04-cdi.md) | 📗 Cap. 2|
+|23/10/2023 | Laboratorio Starting with J2EE | [J2EE Lab](05-javaee-lab.md) | |
+|26/10/2023 | CDI Interceptor | [CDI Part 2](04-cdi.md) | 📗 Cap. 2 |
+|27/10/2023 | Java Persistence API (JPA) | [ JPA- Part 1](05-jpa.md) | 📗 Cap. 4 |
 <!--  20/10/2022 | [Introduzione a Java Enterprise Edition](01-intro) | 
  21/10/2022 | [Context Dependency Injection (Introduzione - Esempio di CDI Bean)](02-cdi) | 
 | **Week**|  **2**|
