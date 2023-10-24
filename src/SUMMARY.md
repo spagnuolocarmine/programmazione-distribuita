@@ -25,6 +25,7 @@
   - [Contexts and Dependency Injection (CDI) - Part 2](04-cdi.md)
   - [Java Persistence API - Part 1](05-jpa.md)
 - [6️⃣]()
-  - [JPA 2](05-jpa.md) [Laboratorio JPA](06-jpa-lab.md)
+  - [JPA 2](05-jpa.md) 
+    - [Laboratorio JPA](06-jpa-lab.md)
   - [Enterprise JavaBeans (EJB) - Part 1](06-ejb.md)
   - [EJB - Part 2](06-ejb.md)
