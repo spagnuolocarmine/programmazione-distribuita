@@ -22,7 +22,11 @@
 |20/10/2023 | Contexts and Dependency Injection (CDI) | [CDI Part 1](04-cdi.md) | 📗 Cap. 2|
 |23/10/2023 | Laboratorio Starting with J2EE | [J2EE Lab](05-javaee-lab.md) | |
 |26/10/2023 | CDI Interceptor | [CDI Part 2](04-cdi.md) | 📗 Cap. 2 |
-|27/10/2023 | Java Persistence API (JPA) | [ JPA- Part 1](05-jpa.md) | 📗 Cap. 4 |
+|27/10/2023 | Java Persistence API (JPA) | [ JPA - Part 1](05-jpa.md) | 📗 Cap. 4-5 |
+|30/10/2023 | Java Persistence API (JPA) | [ JPA - Part 2](05-jpa.md) [Laboratorio JPA](06-jpa-lab.md) | 📗 Cap. 4-5 |
+|02/11/2023 | Enterprise JavaBeans (EJB) - Part 1 | [ EJB - Part 1](06-ejb.md) | 📗 Cap. 7-9 |
+|03/11/2023 | EJB - Part 2 | [ EJB - Part 2](06-ejb.md) | 📗 Cap. 7-9 |
+
 <!--  20/10/2022 | [Introduzione a Java Enterprise Edition](01-intro) | 
  21/10/2022 | [Context Dependency Injection (Introduzione - Esempio di CDI Bean)](02-cdi) | 
 | **Week**|  **2**|
