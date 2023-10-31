@@ -16,7 +16,7 @@ Creare due progetti:
 - **MusicLibraryClient**: New Project ➡️ Java with Ant ➡️ Java Application (con una main class)
   
 ## Music Library
-Creare un nuovo pacchetto Source Packages ➡️ New ➡️ Java Package `ìt.pd2022.musiclibrary`
+Creare un nuovo pacchetto Source Packages ➡️ New ➡️ Java Package `ìt.pd2023.musiclibrary`
 
 ### Definizione entità e persistenza
 

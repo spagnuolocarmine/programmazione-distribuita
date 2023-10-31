@@ -29,3 +29,7 @@
     - [Laboratorio JPA](06-jpa-lab.md)
   - [Enterprise JavaBeans (EJB) - Part 1](06-ejb.md)
   - [EJB - Part 2](06-ejb.md)
+- [7️⃣]()
+  - [Laboratorio EJB](07-ejb-lab.md)
+  - [Java Message Service - Part 1](07-jms.md)
+  - [JMS - Part 2](06-ejb.md)
