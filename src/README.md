@@ -26,7 +26,7 @@
 |30/10/2023 | Java Persistence API (JPA) | [ JPA - Part 2](05-jpa.md) [Laboratorio JPA](06-jpa-lab.md) | 📗 Cap. 4-5 |
 |02/11/2023 | Enterprise JavaBeans (EJB) - Part 1 | [ EJB - Part 1](06-ejb.md) | 📗 Cap. 7-9 |
 |06/11/2023 | EJB - Part 2 ➕ Laboratorio EJB Parte 1|[ EJB - Part 2](06-ejb.md) [EJB - Lab](07-ejb-lab.md) |📗 Cap. 7-9  |
-|09/11/2023 | Java Message Service (JMS) - Part 1 ➕ 📝 Quiz Parte A | [ JMS - Part a](07-jms.md) | 📗 Cap. 13 |
+|09/11/2023 | Java Message Service (JMS) - Part 1 ➕ 📝 Quiz Parte A | [ JMS - Part 1](07-jms.md) | 📗 Cap. 13 |
 |10/11/2023 | JMS - Part 2 | [ JMS - Part 2](07-jms.md) | 📗 Cap. 13 |
 
 <!--  20/10/2022 | [Introduzione a Java Enterprise Edition](01-intro) | 
