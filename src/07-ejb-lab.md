@@ -9,6 +9,23 @@
 - [Esercizio 4 - Calcolatrice EJB basata su stack](#esercizio-4---calcolatrice-ejb-basata-su-stack)
 - [Esercizio 5 - Calcolatrice EJB basata su stack persistente](#esercizio-5---calcolatrice-ejb-basata-su-stack-persistente)
 
+> 🚀 Se avete problemi con la lookup dei vostri bean potete verificare che state utilizzando il dominio corretto con i parametri di default nel file `[USER_HOME]/GlassFish_Server/glassfish/domains/domain1/config/domain.xml`. Il pacchetto `[USER_HOME]/GlassFish_Server/glassfish/lib/gf-client.jar` carica configurazioni per l'InitialContext di default ([GlassFish Server Administration Guide](https://docs.oracle.com/cd/E26576_01/doc.312/e24928/overview.htm#GSADG00004)). 
+
+> ❓ Esempio di setting della porta per il servizio IIOP necessario per il discovery di RMI: 
+```java
+Properties props = new Properties();
+props.setProperty("java.naming.factory.initial",
+"com.sun.enterprise.naming.SerialInitContextFactory");
+props.setProperty("java.naming.factory.url.pkgs",
+"com.sun.enterprise.naming");
+props.setProperty("java.naming.factory.state",
+"com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl");
+props.setProperty("org.omg.CORBA.ORBInitialHost", "localhost");
+props.setProperty("org.omg.CORBA.ORBInitialPort", "3700");
+Context ctx = new InitialContext(props);
+```
+
+
 # Esercizio 0 - Music Library 🎵📚 (warm-up 🏋)
 
 Creare due progetti:
