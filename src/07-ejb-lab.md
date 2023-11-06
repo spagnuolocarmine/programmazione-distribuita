@@ -1,13 +1,15 @@
-- [Esercizio 0 - Music Library 🎵📚 (warm-up 🏋)](#esercizio-0---music-library--warm-up-)
+- [Esercizio 0 - Hello World EJB](#esercizio-0---hello-world-ejb)
+- [Esercizio 1 - Music Library 🎵📚 (warm-up 🏋)](#esercizio-1---music-library--warm-up-)
   - [Music Library](#music-library)
     - [Definizione entità e persistenza](#definizione-entità-e-persistenza)
     - [Definizione della logica della nostra applicazione](#definizione-della-logica-della-nostra-applicazione)
   - [Music Library Client](#music-library-client)
-- [Esercizio 1 - Music Library++ 🎵📚](#esercizio-1---music-library-)
-- [Esercizio 2 - PDtify 🎵 ⏯️](#esercizio-2---pdtify--️)
-- [Esercizio 3 - Calcolatrice EJB](#esercizio-3---calcolatrice-ejb)
-- [Esercizio 4 - Calcolatrice EJB basata su stack](#esercizio-4---calcolatrice-ejb-basata-su-stack)
-- [Esercizio 5 - Calcolatrice EJB basata su stack persistente](#esercizio-5---calcolatrice-ejb-basata-su-stack-persistente)
+- [Esercizio 2 - Music Library++ 🎵📚](#esercizio-2---music-library-)
+- [Esercizio 3 - PDtify 🎵 ⏯️](#esercizio-3---pdtify--️)
+- [Esercizi Bonus](#esercizi-bonus)
+  - [Esercizio B.1 - Calcolatrice EJB](#esercizio-b1---calcolatrice-ejb)
+  - [Esercizio B.2 - Calcolatrice EJB basata su stack](#esercizio-b2---calcolatrice-ejb-basata-su-stack)
+  - [Esercizio B.3 - Calcolatrice EJB basata su stack persistente](#esercizio-b3---calcolatrice-ejb-basata-su-stack-persistente)
 
 > 🚀 Se avete problemi con la lookup dei vostri bean potete verificare che state utilizzando il dominio corretto con i parametri di default nel file `[USER_HOME]/GlassFish_Server/glassfish/domains/domain1/config/domain.xml`. Il pacchetto `[USER_HOME]/GlassFish_Server/glassfish/lib/gf-client.jar` carica configurazioni per l'InitialContext di default ([GlassFish Server Administration Guide](https://docs.oracle.com/cd/E26576_01/doc.312/e24928/overview.htm#GSADG00004)). 
 
@@ -24,9 +26,19 @@ props.setProperty("org.omg.CORBA.ORBInitialHost", "localhost");
 props.setProperty("org.omg.CORBA.ORBInitialPort", "3700");
 Context ctx = new InitialContext(props);
 ```
+# Esercizio 0 - Hello World EJB
 
+Ripetere l'esercitazione visto a lezione per la definizione di un nuovo _stateless_ EJB `HelloWorld` che implementa un metodo `sayHello(String text)` che restituisce una stringa di saluto. Il client deve essere un applicazione Java che invoca il metodo remoto `sayHello("Hello my name is "+name)` e stampa il risultato a console.
 
-# Esercizio 0 - Music Library 🎵📚 (warm-up 🏋)
+> 🚀 Includere nell'applicazione Java SE Client il pacchetto ``[USER_HOME]/GlassFish_Server/glassfish/lib/gf-client.jar`` per la lookup del bean remoto. Definendo la sua interfaccia remota `HelloWorldRemote.java` come segue:
+```java
+@Remote
+public interface HelloWorldEJBRemote{
+    public String sayHello(String name);
+}
+```
+
+# Esercizio 1 - Music Library 🎵📚 (warm-up 🏋)
 
 Creare due progetti:
 - **MusicLibrary**: New Project ➡️ Java with Ant ➡️ Java Enterprise ➡️ EJB Module
@@ -187,7 +199,7 @@ public class MusicLibraryClient {
 > BUILD SUCCESSFUL (total time: 2 seconds)
 > ```
 **Nota** l'indirizzo JNDI dell'interfaccia remota del bean MusicLibrary può essere visualizzato nella console di output di glassfish subito dopo il deploy dell'applicazione.
-# Esercizio 1 - Music Library++ 🎵📚
+# Esercizio 2 - Music Library++ 🎵📚
 
 Aggiungere le seguenti funzionalità al progetto MusicLibrary:
 
@@ -220,7 +232,7 @@ Aggiungere le seguenti funzionalità al progetto MusicLibrary:
 
 Mofificare la classe main di `MusicLibraryClient` per il testing e la verifica di tutte le funzionalità di `MusicLibrary`.
 
-# Esercizio 2 - PDtify 🎵 ⏯️
+# Esercizio 3 - PDtify 🎵 ⏯️
 **Obiettivo**: creare un enterprise java application con due moduli principali un modulo di business/persistenza e un modulo di presentazione web che permetta la gestione di una libreria musicale evoluta (playlist) utilizzando come player di riproduzione web le API di Youtube Embedded.
 - ⚠️ **prima di procedere effettuare l'undeploy del progetto precedente dal server glassfish**. 
 - `PDtify`: New Project ➡️ Java with Ant ➡️ Java Enterprise ➡️ Enterprise Application
@@ -248,7 +260,8 @@ Mofificare la classe main di `MusicLibraryClient` per il testing e la verifica d
                              "src=\""+s.getUrl()+"\">\n" +
                      "</iframe>");
     ```
-# Esercizio 3 - Calcolatrice EJB
+# Esercizi Bonus
+## Esercizio B.1 - Calcolatrice EJB
 
 Scrivere un client Java che invoca degli EJB sul server che implementano un servizio di calcolatrice per tipi float. La calcolatrice offre tre metodi, tutti prendono in input due operandi di tipo `float` e restituiscono un `float`:
 
@@ -258,7 +271,7 @@ Scrivere un client Java che invoca degli EJB sul server che implementano un serv
 
 Il server offre inoltre un servizio di counting `count()` che restituisce il numero di operazioni effettuate da tutti i clienti dall’avvio del server. Il client deve offrire da console un interfaccia che permetta di effettuare tutte le operazioni da remoto.
 
-# Esercizio 4 - Calcolatrice EJB basata su stack
+## Esercizio B.2 - Calcolatrice EJB basata su stack
 
 Scrivere un client Java che invoca degli Enterprise EJB sul server che implementano un servizio di calcolatrice basata su stack per tipi `float`. La calcolatrice offre cinque metodi. Tre di questi metodi rappresentano operazioni aritmetiche che non prendono input e operano direttamente sui dati nello stack: `add()`, `sub()`, `multiply()`.
 In aggiunta, il server offre il metodovoid `push(float)` e `float pop()` per la gestione dello stack. Nota che l’unico metodo che restituisce valori è la `pop()`. Le operazione aritmetiche eseguono implicitamente due `pop()` per prelevare gli operandi e una `push()` per salvare il valore di ritorno.
@@ -272,7 +285,7 @@ Esempio di esecuzione del servizio:
 
 Avanzato: gestire i meccanismi di attivazione e passivazione.
 
-# Esercizio 5 - Calcolatrice EJB basata su stack persistente
+## Esercizio B.3 - Calcolatrice EJB basata su stack persistente
 
 Estendere il servizio di calcolatrice basata su stack implementata nell’esercizio precedente aggiungendo un livello di persistenza dello stack. In particolare, ad ogni operazione, lo stack deve essere salvato su database. All’interfaccia del servizio verrà aggiunto il metodo `loadStack(String stackName)` e `saveStack(String stackName)` che consentono all’utente di caricare lo stack da database . Se il client non invoca la `loadStack()`, la sessione si avvia con uno stack vuoto. Lo stack puo essere salvato nel formato piu appropriato, anche come stringa.
 

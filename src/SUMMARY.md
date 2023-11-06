@@ -30,6 +30,6 @@
   - [Enterprise JavaBeans (EJB) - Part 1](06-ejb.md)
 - [7️⃣]()
   - [EJB - Part 2](06-ejb.md)
-    - [Laboratorio EJB Parte 1](07-ejb-lab.md)
+    - [Laboratorio EJB (Esercizio 0)](07-ejb-lab.md)
   - [Java Message Service - Part 1](07-jms.md)
   - [JMS - Part 2](06-ejb.md)
