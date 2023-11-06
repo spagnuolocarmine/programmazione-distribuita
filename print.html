@@ -1334,6 +1334,23 @@ public class DatabasePopulator {
 <li><a href="07-ejb-lab.html#esercizio-4---calcolatrice-ejb-basata-su-stack">Esercizio 4 - Calcolatrice EJB basata su stack</a></li>
 <li><a href="07-ejb-lab.html#esercizio-5---calcolatrice-ejb-basata-su-stack-persistente">Esercizio 5 - Calcolatrice EJB basata su stack persistente</a></li>
 </ul>
+<blockquote>
+<p>🚀 Se avete problemi con la lookup dei vostri bean potete verificare che state utilizzando il dominio corretto con i parametri di default nel file <code>[USER_HOME]/GlassFish_Server/glassfish/domains/domain1/config/domain.xml</code>. Il pacchetto <code>[USER_HOME]/GlassFish_Server/glassfish/lib/gf-client.jar</code> carica configurazioni per l'InitialContext di default (<a href="https://docs.oracle.com/cd/E26576_01/doc.312/e24928/overview.htm#GSADG00004">GlassFish Server Administration Guide</a>). </p>
+</blockquote>
+<blockquote>
+<p>❓ Esempio di setting della porta per il servizio IIOP necessario per il discovery di RMI: </p>
+</blockquote>
+<pre><code class="language-java">Properties props = new Properties();
+props.setProperty(&quot;java.naming.factory.initial&quot;,
+&quot;com.sun.enterprise.naming.SerialInitContextFactory&quot;);
+props.setProperty(&quot;java.naming.factory.url.pkgs&quot;,
+&quot;com.sun.enterprise.naming&quot;);
+props.setProperty(&quot;java.naming.factory.state&quot;,
+&quot;com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl&quot;);
+props.setProperty(&quot;org.omg.CORBA.ORBInitialHost&quot;, &quot;localhost&quot;);
+props.setProperty(&quot;org.omg.CORBA.ORBInitialPort&quot;, &quot;3700&quot;);
+Context ctx = new InitialContext(props);
+</code></pre>
 <h1 id="esercizio-0---music-library--warm-up-"><a class="header" href="#esercizio-0---music-library--warm-up-">Esercizio 0 - Music Library 🎵📚 (warm-up 🏋)</a></h1>
 <p>Creare due progetti:</p>
 <ul>
