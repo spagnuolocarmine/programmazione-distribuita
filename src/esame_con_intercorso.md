@@ -26,8 +26,14 @@ Il candidato deve munirsi di un laptop, dotato di [Safe Exam Browser](https://sa
 
 |🗓️ | 🕘 | 📍|
 ---------|----------|--------|
-Quiz Parte A | 09/11/2023 11:15-11:45 | F8
-Quiz Parte B | 20/11/2023 14:45-15:15 | Lab Sammet
+Quiz Parte A (Fino a RMI)| 09/11/2023 11:15-11:45 | F8
+Quiz Parte B (Fino a JMS)| 20/11/2023 14:45-15:15 | Lab Sammet
 Programma JEE | 18/12/2023 11:15-13:00 | F8 
 
 Data di consegna della prova 18/12/2023 entro le ore 9:00 tramite la piattaforma e-learning di unisa.
+
+### Analisi dei risultati 2023
+
+**Quiz Parte A**
+
+![quiz-a-2023](../data/scores/quiz-a_09_11_2023.png)
