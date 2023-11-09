@@ -36,4 +36,4 @@ Data di consegna della prova 18/12/2023 entro le ore 9:00 tramite la piattaforma
 
 **Quiz Parte A**
 
-![quiz-a-2023](../data/scores/quiz-a_09_11_2023.png)
+![quiz-a-2023](https://github.com/spagnuolocarmine/programmazione-distribuita/raw/main/data/scores/quiz-a_09_11_2023.png)
