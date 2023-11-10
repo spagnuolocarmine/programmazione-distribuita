@@ -18,6 +18,7 @@
 |12/10/2023 | RMI 1 | [RMI 1 - Hello World](03-rmi.md)| 📕 Cap. 3|
 |13/10/2023 | RMI 2 | |  📕 Cap. 4|
 |16/10/2023 | Laboratorio Java RMI| [RMI - Esercizi Java RMI](03-rmi.md) | |
+| |*_Fine Parte A_*|  |  |
 |19/10/2023 | Introduzione Java Enterprise Edition (Java EE) | [Java EE](04-javaee.md) | 📗 Cap. 1|
 |20/10/2023 | Contexts and Dependency Injection (CDI) | [CDI Part 1](04-cdi.md) | 📗 Cap. 2|
 |23/10/2023 | Laboratorio Starting with J2EE | [J2EE Lab](05-javaee-lab.md) | |
@@ -28,7 +29,11 @@
 |06/11/2023 | EJB - Part 2 ➕ Laboratorio EJB (Esercizio 0)|[ EJB - Part 2](06-ejb.md) [EJB - Lab](07-ejb-lab.md) |📗 Cap. 7-9  |
 |09/11/2023 | Java Message Service (JMS) - Part 1 ➕ 📝 Quiz Parte A | [ JMS - Part 1](07-jms.md) | 📗 Cap. 13 |
 |10/11/2023 | JMS - Part 2 | [ JMS - Part 2](07-jms.md) | 📗 Cap. 13 |
-
+| |*_Fine Parte B_*|  |  |
+|13/11/2023 | Laboratorio EJB ➕ JMS | [EJB - Lab](07-ejb-lab.md) [JMS - Lab](08-jms-lab.md) |  |
+|16/11/2023 | Java Web Services (WS) Parte 1 | [Java Web Services (WS) Parte 1](08-ws.md) | 📗 Cap. 14 |
+|17/11/2023 | Java WS Parte 2 | [Java WS Parte 2](08-ws.md)  | 📗 Cap. 14 |
+| |*_Fine Parte C_*|  |  |
 <!--  20/10/2022 | [Introduzione a Java Enterprise Edition](01-intro) | 
  21/10/2022 | [Context Dependency Injection (Introduzione - Esempio di CDI Bean)](02-cdi) | 
 | **Week**|  **2**|

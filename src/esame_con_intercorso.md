@@ -6,7 +6,7 @@ L'esame per gli studenti corsisti può essere sostenuto tramite 3 prove intercor
 
 - _Quiz Parte A_: Fondamenti di programmazione distribuita fino a Java RMI (Libro 📕) 20% del voto di accesso all'esame orale
 - _Quiz Parte B_: Java Enterprise Edition (Libro 📗) 20% del voto di accesso all'esame orale
-- _Programma JEE_: Sviluppo di un programma in JEE 60% del voto di accesso all'esame orale
+- _Programma JEE Parte C_: Sviluppo di un programma in JEE 60% del voto di accesso all'esame orale
 
 ### Esempi di votazione
 
