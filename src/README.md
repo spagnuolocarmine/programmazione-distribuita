@@ -34,6 +34,17 @@
 |16/11/2023 | Java Web Services (WS) Parte 1 | [Java Web Services (WS) Parte 1](08-ws.md) | 📗 Cap. 14 |
 |17/11/2023 | Java WS Parte 2 | [Java WS Parte 2](08-ws.md)  | 📗 Cap. 14 |
 | |*_Fine Parte C_*|  |  |
+|20/11/2023 | Laboratorio Java WS ➕ 📝 Quiz Parte B | [Laboratorio Java WS](09-ws-lab.md)  |  |
+|23/11/2023 | Laboratorio J2EE Step-by-step |  |  |
+|24/11/2023 | Introduzione al Cloud Computing |  |  |
+|04/11/2023 | From J2EE to Spring Framework (Teoria) |  |  |
+|07/11/2023 | From J2EE to Spring Framework (Pratica) |  |  |
+|11/11/2023 | Laboratorio J2EE Step-by-step |  |  |
+|14/11/2023 | Laboratorio J2EE Step-by-step |  |  |
+|15/11/2023 | 📝 Parte C |  |  |
+|18/11/2023 | Laboratorio J2EE Step-by-step |  |  |
+|21/11/2023 | Laboratorio J2EE Step-by-step |  |  |
+|22/11/2023 | Laboratorio J2EE Step-by-step |  |  |
 <!--  20/10/2022 | [Introduzione a Java Enterprise Edition](01-intro) | 
  21/10/2022 | [Context Dependency Injection (Introduzione - Esempio di CDI Bean)](02-cdi) | 
 | **Week**|  **2**|
