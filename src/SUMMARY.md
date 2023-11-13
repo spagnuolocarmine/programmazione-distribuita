@@ -34,7 +34,7 @@
   - [Java Message Service - Part 1](07-jms.md)
   - [JMS - Part 2](06-ejb.md)
 - [8️⃣ 📗]()
-  - [Laboratorio EJB](06-ejb-lab.md)
+  - [Laboratorio EJB](07-ejb-lab.md)
     - [JMS Lab](08-jms-lab.md)
   - [Java Web Services (WS) Parte 1](08-ws.md)
   - [Java WS Parte 2](08-ws.md)
