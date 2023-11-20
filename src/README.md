@@ -39,10 +39,10 @@
 |24/11/2023 | Laboratorio J2EE Step-by-step |  |  |
 |27/11/2023 | Laboratorio J2EE Step-by-step |  |  |
 |30/11/2023 | Laboratorio J2EE Step-by-step |  |  |
-|01/12/2023 |  📝 Parte C |  |  |
+|01/12/2023 | Laboratorio J2EE Step-by-step  |  |  |
 |04/12/2023 | From J2EE to Spring Framework (Teoria) |  |  |
 |07/12/2023 | From J2EE to Spring Framework (Pratica) |  |  |
-|11/12/2023 |Laboratorio J2EE Step-by-step |  |  |
+|11/12/2023 |📝 Parte C |  |  |
 |14/12/2023 | Laboratorio J2EE Step-by-step |  |  |
 |15/12/2023 | Laboratorio J2EE Step-by-step |  |  |
 <!--  20/10/2022 | [Introduzione a Java Enterprise Edition](01-intro) | 
