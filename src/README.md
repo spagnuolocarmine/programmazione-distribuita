@@ -35,7 +35,7 @@
 |17/11/2023 | Java WS Parte 2 | [Java WS Parte 2](08-ws.md)  | 📗 Cap. 14 |
 | |*_Fine Parte C_*|  |  |
 |20/11/2023 | Laboratorio Java WS ➕ 📝 Quiz Parte B | [Laboratorio Java WS](09-ws-lab.md)  |  |
-|23/11/2023 | Introduzione al Cloud Computing|  |  |
+|23/11/2023 | Introduzione al Cloud Computing|  | [Materiale cloud computing](https://github.com/spagnuolocarmine/programmazione-distribuita/raw/main/data/cloud_2023.pdf) |
 |24/11/2023 | Laboratorio J2EE Step-by-step |  |  |
 |27/11/2023 | Laboratorio J2EE Step-by-step |  |  |
 |30/11/2023 | Laboratorio J2EE Step-by-step |  |  |
