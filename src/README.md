@@ -36,7 +36,7 @@
 | |*_Fine Parte C_*|  |  |
 |20/11/2023 | Laboratorio Java WS ➕ 📝 Quiz Parte B | [Laboratorio Java WS](09-ws-lab.md)  |  |
 |23/11/2023 | Laboratorio J2EE Step-by-step |  |  |
-|24/11/2023 | Introduzione al Cloud Computing |  |  |
+|24/11/2023 | Introduzione al Cloud Computing |  | [Materiale Cloud Computing]() |
 |04/11/2023 | From J2EE to Spring Framework (Teoria) |  |  |
 |07/11/2023 | From J2EE to Spring Framework (Pratica) |  |  |
 |11/11/2023 | Laboratorio J2EE Step-by-step |  |  |
