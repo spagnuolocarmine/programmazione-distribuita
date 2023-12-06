@@ -44,7 +44,7 @@
 |07/12/2023 | From J2EE to Spring Framework (Pratica) |  |  |
 |11/12/2023 | Laboratorio J2EE Step-by-step |  |  |
 |14/12/2023 | PAUSA pre intercorso |  |  |
-|15/12/2023 ||  |  |
+|15/12/2023 || Laboratorio J2EE Step-by-step |  |
 |18/12/2023 |  📝 Parte C   |  |  |
 <!--  20/10/2022 | [Introduzione a Java Enterprise Edition](01-intro) | 
  21/10/2022 | [Context Dependency Injection (Introduzione - Esempio di CDI Bean)](02-cdi) | 
