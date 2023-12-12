@@ -40,8 +40,8 @@
 |27/11/2023 | Laboratorio J2EE Step-by-step |  |  |
 |30/11/2023 | Laboratorio J2EE Step-by-step |  |  |
 |01/12/2023 | Laboratorio J2EE Step-by-step  |  |  |
-|04/12/2023 | From J2EE to Spring Framework (Teoria) |  |  |
-|07/12/2023 | From J2EE to Spring Framework (Pratica) |  |  |
+|04/12/2023 | From J2EE to Spring Framework (Teoria) |  | [Introduzione a Spring Framework](https://github.com/spagnuolocarmine/programmazione-distribuita/raw/main/data/introduction_to_spring_citro_2023.pdf) |
+|07/12/2023 | From J2EE to Spring Framework (Pratica) |  | [Spring Framework In Action](https://github.com/tizianocitro/pdtify) |
 |11/12/2023 | Laboratorio J2EE Step-by-step |  |  |
 |14/12/2023 | PAUSA pre intercorso |  |  |
 |15/12/2023 || Laboratorio J2EE Step-by-step |  |
