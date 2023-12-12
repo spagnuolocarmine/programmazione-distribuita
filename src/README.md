@@ -43,7 +43,7 @@
 |04/12/2023 | From J2EE to Spring Framework (Teoria) |  | [Introduzione a Spring Framework](https://github.com/spagnuolocarmine/programmazione-distribuita/raw/main/data/introduction_to_spring_citro_2023.pdf) |
 |07/12/2023 | From J2EE to Spring Framework (Pratica) |  | [Spring Framework In Action](https://github.com/tizianocitro/pdtify) |
 |11/12/2023 | Laboratorio J2EE Step-by-step |  |  |
-|15/12/2023 || Laboratorio J2EE Step-by-step |  |
+|15/12/2023 | Laboratorio J2EE Step-by-step |  |  |
 |18/12/2023 |  📝 Parte C   |  |  |
 <!--  20/10/2022 | [Introduzione a Java Enterprise Edition](01-intro) | 
  21/10/2022 | [Context Dependency Injection (Introduzione - Esempio di CDI Bean)](02-cdi) | 
