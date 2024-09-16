@@ -195,7 +195,7 @@
 </li>
 <li>Creare una classe Main in cui l’utente può aggiungere e rimuovere un libro e permetta di fare una ricerca per filtri (titolo, categoria, isbn).</li>
 </ol>
-<p>Note: </p>
+<p>Note:</p>
 <ul>
 <li>Nuovo progetto Java with Ant ➡️ Java Application</li>
 <li>Creare il file <code>META-INF/persistence.xml</code> da Netbeans</li>
@@ -203,16 +203,16 @@
 <li>Se utilizzate come schema generation della persistence unit drop-and-create, non occorre che creiate manualmente le tabelle</li>
 <li><em>Esempio di file persistence</em></li>
 </ul>
-<pre><code class="language-xml">&lt;persistence xmlns=&quot;http://xmlns.jcp.org/xml/ns/persistence&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:schemaLocation=&quot;http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd&quot; version=&quot;2.1&quot;&gt;
-    &lt;persistence-unit name=&quot;exercise_pu&quot; transaction-type=&quot;RESOURCE_LOCAL&quot;&gt;
+<pre><code class="language-xml">&lt;persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd" version="2.1"&gt;
+    &lt;persistence-unit name="exercise_pu" transaction-type="RESOURCE_LOCAL"&gt;
     &lt;provider&gt;org.eclipse.persistence.jpa.PersistenceProvider &lt;/provider&gt;
     &lt;class&gt;pd.bookstore.Book&lt;/class&gt;
         &lt;properties&gt;
-            &lt;property name=&quot;javax.persistence.schema-generation.database.action&quot; value=&quot;drop-and-create&quot;/&gt;
-            &lt;property name=&quot;javax.persistence.jdbc.driver&quot; value=&quot;org.apache.derby.jdbc.ClientDriver&quot;/&gt;
-            &lt;property name=&quot;javax.persistence.jdbc.url&quot; value=&quot;jdbc:derby://localhost:1527/BookStore;create=true&quot;/&gt;
-            &lt;property name=&quot;javax.persistence.jdbc.password&quot; value=&quot;abc&quot;/&gt;
-            &lt;property name=&quot;javax.persistence.jdbc.user&quot; value=&quot;abc&quot;/&gt;
+            &lt;property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/&gt;
+            &lt;property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.ClientDriver"/&gt;
+            &lt;property name="javax.persistence.jdbc.url" value="jdbc:derby://localhost:1527/BookStore;create=true"/&gt;
+            &lt;property name="javax.persistence.jdbc.password" value="abc"/&gt;
+            &lt;property name="javax.persistence.jdbc.user" value="abc"/&gt;
         &lt;/properties&gt;
     &lt;/persistence-unit&gt;
 &lt;/persistence&gt;
@@ -255,13 +255,13 @@ public class Job {
 <h2 id="esercizio-22"><a class="header" href="#esercizio-22">Esercizio 2.2</a></h2>
 <p>Definire le seguenti NamedQuery per l'entità <em>Person</em>:</p>
 <pre><code class="language-java">@NamedQueries({
-    @NamedQuery(name = FIND_ALL, query = &quot; ... &quot;),
-    @NamedQuery(name = FIND_BY_FIRST_NAME, query = &quot;  ... &quot;),
-    @NamedQuery(name = FIND_BY_LAST_NAME, query = &quot; ... &quot;),
-    @NamedQuery(name = FIND_BY_FIRST_LAST_NAME, query = &quot; ... &quot;),
-    @NamedQuery(name = FIND_BY_ADDRESS, query = &quot; ... &quot;),
-    @NamedQuery(name = FIND_BY_ID, query = &quot; ... &quot;),
-    @NamedQuery(name = FIND_BY_JOB, query = &quot; ... &quot;),
+    @NamedQuery(name = FIND_ALL, query = " ... "),
+    @NamedQuery(name = FIND_BY_FIRST_NAME, query = "  ... "),
+    @NamedQuery(name = FIND_BY_LAST_NAME, query = " ... "),
+    @NamedQuery(name = FIND_BY_FIRST_LAST_NAME, query = " ... "),
+    @NamedQuery(name = FIND_BY_ADDRESS, query = " ... "),
+    @NamedQuery(name = FIND_BY_ID, query = " ... "),
+    @NamedQuery(name = FIND_BY_JOB, query = " ... "),
 })
 
 </code></pre>
@@ -282,7 +282,7 @@ public class DatabasePopulator {
 }
 </code></pre>
 <h2 id="esercizio-24"><a class="header" href="#esercizio-24">Esercizio 2.4</a></h2>
-<p>Scrivere una classe Main che permette di popolare il DB e permette di eseguire le diverse NamedQuery e di visualizzare il risulato (utilizzare <code>@Inject</code> e/o <code>@PersistenceUnit(unitName=&quot;name&quot;)</code>). </p>
+<p>Scrivere una classe Main che permette di popolare il DB e permette di eseguire le diverse NamedQuery e di visualizzare il risulato (utilizzare <code>@Inject</code> e/o <code>@PersistenceUnit(unitName="name")</code>).</p>
 
                     </main>
 

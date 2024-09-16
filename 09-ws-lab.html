@@ -211,11 +211,11 @@ public class CreditCard {
 <ul>
 <li>New Files ... ➡️ Web Services ➡️ Web Service</li>
 <li><em>Name</em> : <code>CardValidator</code></li>
-<li><em>Implement Web Service as Stateless Session Beans</em>: [✔️] </li>
+<li><em>Implement Web Service as Stateless Session Beans</em>: [✔️]</li>
 </ul>
 </li>
 </ul>
-<pre><code class="language-java">@WebService(serviceName = &quot;CardValidator&quot;)
+<pre><code class="language-java">@WebService(serviceName = "CardValidator")
 public class CardValidator implements Validator {
     public boolean validate(CreditCard creditCard) {
         Character lastDigit = creditCard.getNumber().charAt( creditCard.getNumber().length() - 1);
@@ -236,9 +236,9 @@ public class CardValidator implements Validator {
 <pre><code class="language-java">public String validatedata(String number, String expiryDate, Integer controlNumber, String type) {
     Character lastDigit = number.charAt( number.length() - 1);
     if (validate(new CreditCard(number, expiryDate, controlNumber,type))) {
-         return &quot;valid&quot;; 
+         return "valid"; 
     } else {
-             return &quot;not valid&quot;; 
+             return "not valid"; 
             }
 }    
 </code></pre>
@@ -261,7 +261,7 @@ public class CardValidator implements Validator {
         CardValidator_Service service = new CardValidator_Service();
         CardValidator port = service.getCardValidatorPort();
         CreditCard card = new CreditCard();
-        card.setNumber(&quot;6011111111111118&quot;);
+        card.setNumber("6011111111111118");
         System.out.println(port.validate(card));
         
     }
@@ -280,17 +280,17 @@ implementa un servizio <code>forecast()</code> che prende in input una stringa c
 in cui fare previsione (ad esempio “Salerno” o “Fisciano”), e restituisce una stringa con la
 previsione (ad esempio “sole”, “pioggia”, “neve”, “nebbia”). L’implementazione del servizio
 restituisce sempre “sole” se l’input è “Salerno”, “pioggia” se l’input è “Fisciano”, oppure un
-valore casuale se l’input è diverso. </p>
+valore casuale se l’input è diverso.</p>
 <p>Implementare un client Java che richiede il servizio di previsioni per diverse località, e le
-stampa a video. </p>
+stampa a video.</p>
 <h1 id="esercizio-2---web-service-previsioni-meteo-avanzate"><a class="header" href="#esercizio-2---web-service-previsioni-meteo-avanzate">Esercizio 2 - Web Service Previsioni Meteo Avanzate</a></h1>
 <p>Aggiungere al Web Service dell’esercizio precedente una funzionalità chiamata
-<code>advancedForecast()</code> che prende in input un oggetto <code>Place</code> con i seguenti attributi: </p>
+<code>advancedForecast()</code> che prende in input un oggetto <code>Place</code> con i seguenti attributi:</p>
 <ul>
 <li>Stringa con nome del posto</li>
-<li>Coordinate GPS </li>
+<li>Coordinate GPS</li>
 </ul>
-<p>e restituisce un oggetto Forecast con i seguenti attributi: </p>
+<p>e restituisce un oggetto Forecast con i seguenti attributi:</p>
 <ul>
 <li>Stringa con la descrizione della previsione</li>
 <li>Temperatura</li>
@@ -304,7 +304,7 @@ stampa a video. </p>
 Sviluppare un client java che permette di eseguire tutte le funzionalità di PDtify e per eseguire il play di una canzone utilizzare il seguente esempio.</p>
 <pre><code class="language-java">public class TestOpenBrowser {
     public static void main(String[] args) {
-         String url = &quot;https://www.youtube.com/embed/lLGLUSzzuWU&quot;;
+         String url = "https://www.youtube.com/embed/lLGLUSzzuWU";
 
         if(Desktop.isDesktopSupported()){
             Desktop desktop = Desktop.getDesktop();
@@ -317,7 +317,7 @@ Sviluppare un client java che permette di eseguire tutte le funzionalità di PDt
         }else{
             Runtime runtime = Runtime.getRuntime();
             try {
-                runtime.exec(&quot;xdg-open &quot; + url);
+                runtime.exec("xdg-open " + url);
             } catch (IOException e) {
                 // TODO Auto-generated catch block
                 e.printStackTrace();

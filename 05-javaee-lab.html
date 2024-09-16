@@ -202,13 +202,13 @@
 <li>Verificare che il server Glassfish utilizza JDK 8, nel caso modificare il file <code>glassfish/config/asenv.conf</code> per impostare il percorso corretto della JAVA_HOME</li>
 </ul>
 <h2 id="importare-i-progetti-del-libro-di-testo-nel-proprio-ambiente"><a class="header" href="#importare-i-progetti-del-libro-di-testo-nel-proprio-ambiente">Importare i progetti del libro di testo nel proprio ambiente</a></h2>
-<p><a href="https://github.com/Apress/beg-java-ee-7">Repository</a> codice  del libro di testo <a href="https://link.springer.com/book/10.1007/978-1-4302-4627-5">Beginning Java EE 7</a> </p>
+<p><a href="https://github.com/Apress/beg-java-ee-7">Repository</a> codice  del libro di testo <a href="https://link.springer.com/book/10.1007/978-1-4302-4627-5">Beginning Java EE 7</a></p>
 <ol>
 <li>Code ➡️ <a href="https://github.com/Apress/beg-java-ee-7">Download Zip</a>,  Unarchive the project zip, Open Project</li>
 <li>Aprire il progetto <a href="https://github.com/Apress/beg-java-ee-7/tree/master/agoncal-book-javaee7-master/chapter02/chapter02-samples">chapter02-samples</a></li>
 </ol>
 <ul>
-<li>Aggiungere nel descrittore di progetto <a href="https://maven.apache.org/">Maven</a> nella dipendenza <code>javaee-api</code>la versione specifica di J2EE 7.0 </li>
+<li>Aggiungere nel descrittore di progetto <a href="https://maven.apache.org/">Maven</a> nella dipendenza <code>javaee-api</code>la versione specifica di J2EE 7.0</li>
 </ul>
 <pre><code class="language-maven">    &lt;dependency&gt;
       &lt;groupId&gt;javax&lt;/groupId&gt;
@@ -222,7 +222,7 @@
 <ol>
 <li>Aprire il progetto <a href="https://github.com/Apress/beg-java-ee-7/tree/master/agoncal-book-javaee7-master/chapter02/chapter02-putting-together">chapter02-putting-together</a> e provare ad eseguire il file <code>Main.java</code>
 <ul>
-<li>Beginning Java EE 7 pg. 57 </li>
+<li>Beginning Java EE 7 pg. 57</li>
 <li>Questo esempio utilizza <a href="https://weld.cdi-spec.org/">Weld</a> un implementazione CDI per applicazioni Java o Java EE ora sviluppato nell'ambito del progetto <a href="https://jakarta.ee/">Jakarta EE</a>. Weld in questo caso consente di eseguire una applicazione Java SE che utilizza CDI.</li>
 </ul>
 </li>
@@ -234,14 +234,14 @@
 <li>New Project ➡️ Java with ➡️ Ant Java Web ➡️ Web Application</li>
 <li>Includere i sorgenti di <code>chapter02-putting-together</code> nel package principale, utilizzando la struttura originale (fare copia e incolla dei sorgenti ossia del package <code>org.agoncal.book.javaee7.chapter02</code> in src)</li>
 <li>Includere la dipendenza a J2EE 7, Project X ➡️ Properties ➡️ Libraries ➡️ Add Library ... ➡️ <code>Java EE Web 7 API Library</code></li>
-<li>Create una nuova Servlet, chiamata <code>NewServlet</code> Source Package ➡️ New ➡️ Servlet... </li>
+<li>Create una nuova Servlet, chiamata <code>NewServlet</code> Source Package ➡️ New ➡️ Servlet...</li>
 <li>Selezionare la modalità di discovery <code>all</code> nel file <code>Web Pages/WEB-INF/beans.xml</code> se non presente crearlo con new file in <code>Web Pages/WEB-INF/beans.xml</code></li>
 </ul>
-<pre><code class="language-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;beans xmlns=&quot;http://xmlns.jcp.org/xml/ns/javaee&quot;
-       xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
-       xsi:schemaLocation=&quot;http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/beans_1_1.xsd&quot;
-       bean-discovery-mode=&quot;all&quot;&gt;
+<pre><code class="language-xml">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;beans xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/beans_1_1.xsd"
+       bean-discovery-mode="all"&gt;
 &lt;/beans&gt;
 </code></pre>
 <ul>
@@ -259,16 +259,16 @@
 </ul>
 <pre><code class="language-java"> protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        response.setContentType(&quot;text/html;charset=UTF-8&quot;);
+        response.setContentType("text/html;charset=UTF-8");
         try ( PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
-            out.println(&quot;&lt;!DOCTYPE html&gt;&quot;); out.println(&quot;&lt;html&gt;&quot;);
-            out.println(&quot;&lt;head&gt;&quot;);
-            out.println(&quot;&lt;title &gt;Servlet NewServlet &lt;/title &gt;&quot;); out.println(&quot;&lt;/head&gt;&quot;);
-            out.println(&quot;&lt;body&gt;&quot;); out.println(&quot;&lt;h1&gt;Servlet NewServlet at &quot; +
-            request.getContextPath() + &quot;&lt;/h1&gt;&quot;);
-            Book book = b.createBook(&quot;H2G2&quot;, 12.5f, &quot;Geeky scifi Book&quot;);
-            out.println(&quot;&lt;h3&gt;Libro creato:&quot;+book+&quot;&lt;/h3&gt;&quot;); out.println(&quot;&lt;/body&gt;&quot;); out.println(&quot;&lt;/html&gt;&quot;);
+            out.println("&lt;!DOCTYPE html&gt;"); out.println("&lt;html&gt;");
+            out.println("&lt;head&gt;");
+            out.println("&lt;title &gt;Servlet NewServlet &lt;/title &gt;"); out.println("&lt;/head&gt;");
+            out.println("&lt;body&gt;"); out.println("&lt;h1&gt;Servlet NewServlet at " +
+            request.getContextPath() + "&lt;/h1&gt;");
+            Book book = b.createBook("H2G2", 12.5f, "Geeky scifi Book");
+            out.println("&lt;h3&gt;Libro creato:"+book+"&lt;/h3&gt;"); out.println("&lt;/body&gt;"); out.println("&lt;/html&gt;");
         }
     }
 </code></pre>
@@ -278,7 +278,7 @@
 <li>Ad es. provare a definire un producer per la stringa <code>hello world</code> e un producer per la stringa <code>HELLO WORLD</code> in maiuscolo specificando due diversi <em>qualifiers</em> per i due producer, e alternare l'utilizzo dei due producer nella servlet per visualizzare il testo in minuscolo e maiuscolo in richieste diverse.</li>
 </ul>
 <h2 id="2--esercizio-music-library-primi-"><a class="header" href="#2--esercizio-music-library-primi-">2. ⏯️ Esercizio Music Library primi 👣</a></h2>
-<p>Gestire una libreria musicale definendo un oggetto POJO <em>Song</em> e un oggetto <em>Library</em> che è un POJO MB che tramite l'utilizzo di Producers dichiara un <code>ArrayList&lt;Song&gt;</code>. </p>
+<p>Gestire una libreria musicale definendo un oggetto POJO <em>Song</em> e un oggetto <em>Library</em> che è un POJO MB che tramite l'utilizzo di Producers dichiara un <code>ArrayList&lt;Song&gt;</code>.</p>
 <ul>
 <li>Il risultato dell'architettura deve permettere di utilizzare il seguente codice nella classe Library: <code>@Inject ArrayList&lt;Song&gt; db;</code></li>
 <li>e di gestire tutte le successive operazioni possibili in una libreria inizializzata con un produces (aggiungi, cancella, trova per ID, trova per nome, etc.).</li>

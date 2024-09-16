@@ -219,19 +219,19 @@ public static void main(String[] args) throws NamingException {
     // Creates an orderDto with a total amount parameter
     float value = 10.0;
     Float totalAmount = Float.valueOf(10);
-    OrderDTO order = new OrderDTO(1234l, new Date(), &quot;Serge Gainsbourg&quot;, totalAmount);
+    OrderDTO order = new OrderDTO(1234l, new Date(), "Serge Gainsbourg", totalAmount);
 
     // Gets the JNDI context
     Context jndiContext = new InitialContext();
 
     // Looks up the administered objects
-    ConnectionFactory connectionFactory = (ConnectionFactory) jndiContext.lookup(&quot;jms/javaee7/ConnectionFactory&quot;);
-    Destination topic = (Destination) jndiContext.lookup(&quot;jms/javaee7/Topic&quot;);
+    ConnectionFactory connectionFactory = (ConnectionFactory) jndiContext.lookup("jms/javaee7/ConnectionFactory");
+    Destination topic = (Destination) jndiContext.lookup("jms/javaee7/Topic");
 
     try (JMSContext jmsContext = connectionFactory.createContext()) {
     // Sends an object message to the topic
-    jmsContext.createProducer().setProperty(&quot;orderAmount&quot;, totalAmount).send(topic, order);
-    System.out.println(&quot;\nOrder sent : &quot; + order.toString());
+    jmsContext.createProducer().setProperty("orderAmount", totalAmount).send(topic, order);
+    System.out.println("\nOrder sent : " + order.toString());
     }
  }
 }
@@ -246,15 +246,15 @@ public static void main(String[] args) throws NamingException {
      Context jndiContext = new InitialContext();
 
      // Looks up the administered objects
-     ConnectionFactory connectionFactory = (ConnectionFactory) jndiContext.lookup(&quot;jms/javaee7/ConnectionFactory&quot;);
-     Destination topic = (Destination) jndiContext.lookup(&quot;jms/javaee7/Topic&quot;);
+     ConnectionFactory connectionFactory = (ConnectionFactory) jndiContext.lookup("jms/javaee7/ConnectionFactory");
+     Destination topic = (Destination) jndiContext.lookup("jms/javaee7/Topic");
 
      // Loops to receive the messages
-     System.out.println(&quot;\nInfinite loop. Waiting for a message...&quot;);
+     System.out.println("\nInfinite loop. Waiting for a message...");
      try (JMSContext jmsContext = connectionFactory.createContext()) {
      while (true) {
          OrderDTO order = jmsContext.createConsumer(topic).receiveBody(OrderDTO.class);
-         System.out.println(&quot;Order received: &quot; + order);
+         System.out.println("Order received: " + order);
      }
      }
  }
@@ -285,12 +285,12 @@ public static void main(String[] args) throws NamingException {
 <li>PersistentUnit e DB devono chiamarsi rispettivamente MotoPU e MotoDB</li>
 </ul>
 <h1 id="esercizio-3"><a class="header" href="#esercizio-3">Esercizio 3</a></h1>
-<p>Estendere l’esercizio precedente aggiungendo un client Java che riceve i messaggi degli ordini delle moto e stampa li stampa a video; provare a ricevere tutti i messaggi inviati sul topic anche prima della sottoscrizione utilizzando un DurableConsumer. </p>
+<p>Estendere l’esercizio precedente aggiungendo un client Java che riceve i messaggi degli ordini delle moto e stampa li stampa a video; provare a ricevere tutti i messaggi inviati sul topic anche prima della sottoscrizione utilizzando un DurableConsumer.</p>
 <pre><code class="language-java"> try (JMSContext jmsContext = connectionFactory.createContext()) {
-    jmsContext.setClientID(&quot;uniqueID&quot;);
-    JMSConsumer topicSubscriber = jmsContext.createDurableConsumer((Topic) topic, &quot;uniqueID&quot;);
+    jmsContext.setClientID("uniqueID");
+    JMSConsumer topicSubscriber = jmsContext.createDurableConsumer((Topic) topic, "uniqueID");
     OrderDTO order = topicSubscriber.receiveBody(OrderDTO.class);
-    System.out.println(&quot;Order received: &quot; + order);
+    System.out.println("Order received: " + order);
     topicSubscriber.close();
 }
 </code></pre>
@@ -309,7 +309,7 @@ La gestione dei messaggi avviene tramite l'utilizzo di MDB e degli eventi, per o
 <p>Sviluppare il progetto come segue:</p>
 <ul>
 <li>
-<p>Definire due nuovi Qualifier <code>SongEvent</code> e <code>PlaylistEvent</code>. </p>
+<p>Definire due nuovi Qualifier <code>SongEvent</code> e <code>PlaylistEvent</code>.</p>
 </li>
 <li>
 <p>Definire un wrapper di messaggi <code>MessageWrapper</code> che permette di memorizzare l'id di un brano o di una playlist ed il relativo tipo di messaggio song/playlist.</p>
@@ -321,7 +321,7 @@ La gestione dei messaggi avviene tramite l'utilizzo di MDB e degli eventi, per o
 <p>Definire due nuove classi <code>SongNotification</code>e <code>PlaylistNotification</code> che definiscono un singolo metodo <code>notify</code> che definisce un'opportuna <code>@Observes</code> di un entità <code>Song</code> o <code>Playlist</code> (parametro del metodo) con l'obiettivo di visualizzare un messaggio di log.</p>
 <pre><code class="language-java">    public class PlaySongNotification {
         public void notify(@Observes Song s){
-            System.out.println(&quot;Playing song &quot;+s.getName());
+            System.out.println("Playing song "+s.getName());
         }
     }
 </code></pre>
@@ -330,7 +330,7 @@ La gestione dei messaggi avviene tramite l'utilizzo di MDB e degli eventi, per o
 <p>Definire un nuovo stateless EJB <code>EventProducer</code> che consente di inviare messaggi su Topic <code>jsm/musicplayer/Player</code>.</p>
 </li>
 <li>
-<p>Definire una nuova servlet <code>Player</code>che si comporta come descritto ed utilizza l'<code>EventProducer</code> per notificare il play di un brano. </p>
+<p>Definire una nuova servlet <code>Player</code>che si comporta come descritto ed utilizza l'<code>EventProducer</code> per notificare il play di un brano.</p>
 </li>
 <li>
 <p>Definire un client Java <code>MDBtest</code> nel package test del ptrogetto EJB che definire un metodo main nel quale si esegue il test di tutte le funzionalità di scambio di messaggi definiti (aggiungere il file gf-client.jar come dipendenza).</p>

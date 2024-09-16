@@ -218,8 +218,8 @@
 </ul>
 <h1 id="materiale-bibliografico"><a class="header" href="#materiale-bibliografico">Materiale bibliografico</a></h1>
 <ul>
-<li>&quot;Beginning Java Enterprise Edition&quot;: Cap. 4 (tranne &quot;Integration with Bean Validation&quot;, &quot;JPA Specification Overview&quot;)</li>
-<li>&quot;Beginning Java Enterprise Edition&quot;: Cap. 5 (tranne &quot;Composite Primary Keys&quot;, da pag 129 a 148)  e Cap. 6 (tranne &quot;Fetching Relationships&quot;, da pag 161 a 176; &quot;Type-Safe Criteria API&quot;, &quot;Cache API&quot;, da pag 209 a 216)</li>
+<li>"Beginning Java Enterprise Edition": Cap. 4 (tranne "Integration with Bean Validation", "JPA Specification Overview")</li>
+<li>"Beginning Java Enterprise Edition": Cap. 5 (tranne "Composite Primary Keys", da pag 129 a 148)  e Cap. 6 (tranne "Fetching Relationships", da pag 161 a 176; "Type-Safe Criteria API", "Cache API", da pag 209 a 216)</li>
 <li><a href="https://www.oracle.com/technical-resources/articles/vasiliev-jpql.html">Querying JPA Entities with JPQL and Native SQL</a></li>
 </ul>
 <h1 id="domande-di-riepilogo"><a class="header" href="#domande-di-riepilogo">Domande di riepilogo</a></h1>
@@ -236,21 +236,21 @@
 <li>Descrivere i vari tipi di query definiti da JPQL</li>
 </ul>
 <h1 id="persistencexml-visto-a-lezione"><a class="header" href="#persistencexml-visto-a-lezione"><code>persistence.xml</code> visto a lezione</a></h1>
-<pre><code class="language-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;persistence version=&quot;2.1&quot; xmlns=&quot;http://xmlns.jcp.org/xml/ns/persistence&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:schemaLocation=&quot;http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd&quot;&gt;
-  &lt;persistence-unit name=&quot;PJPAPU&quot; transaction-type=&quot;RESOURCE_LOCAL&quot;&gt;
+<pre><code class="language-xml">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"&gt;
+  &lt;persistence-unit name="PJPAPU" transaction-type="RESOURCE_LOCAL"&gt;
     &lt;provider&gt;org.eclipse.persistence.jpa.PersistenceProvider&lt;/provider&gt;
     &lt;class&gt;pjpa.Person&lt;/class&gt;
     &lt;properties&gt;
-      &lt;property name=&quot;javax.persistence.jdbc.url&quot; value=&quot;jdbc:derby://localhost:1527/Paolo;create=true&quot;/&gt;
-      &lt;property name=&quot;javax.persistence.jdbc.user&quot; value=&quot;paolo&quot;/&gt;
-      &lt;property name=&quot;javax.persistence.jdbc.driver&quot; value=&quot;org.apache.derby.jdbc.ClientDriver&quot;/&gt;
-            &lt;property name=&quot;javax.persistence.schema-generation.scripts.action&quot; value=&quot;drop-and-create&quot;/&gt;
-      &lt;property name=&quot;javax.persistence.jdbc.password&quot; value=&quot;paolo&quot;/&gt;
-      &lt;property name=&quot;javax.persistence.schema-generation.database.action&quot; value=&quot;drop-and-create&quot;/&gt;
-       &lt;property name=&quot;eclipselink.logging.level&quot; value=&quot;INFO&quot;/&gt;
-      &lt;property name=&quot;javax.persistence.schema-generation.scripts.create-target&quot; value=&quot;pjpa-create.ddl&quot;/&gt;
-      &lt;property name=&quot;javax.persistence.schema-generation.scripts.drop-target&quot; value=&quot;pjpa-drop.ddl&quot;/&gt;
+      &lt;property name="javax.persistence.jdbc.url" value="jdbc:derby://localhost:1527/Paolo;create=true"/&gt;
+      &lt;property name="javax.persistence.jdbc.user" value="paolo"/&gt;
+      &lt;property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.ClientDriver"/&gt;
+            &lt;property name="javax.persistence.schema-generation.scripts.action" value="drop-and-create"/&gt;
+      &lt;property name="javax.persistence.jdbc.password" value="paolo"/&gt;
+      &lt;property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/&gt;
+       &lt;property name="eclipselink.logging.level" value="INFO"/&gt;
+      &lt;property name="javax.persistence.schema-generation.scripts.create-target" value="pjpa-create.ddl"/&gt;
+      &lt;property name="javax.persistence.schema-generation.scripts.drop-target" value="pjpa-drop.ddl"/&gt;
     &lt;/properties&gt;
   &lt;/persistence-unit&gt;
 &lt;/persistence&gt;
