@@ -23,6 +23,11 @@
 |10/10/2024 | RMI 1 | [RMI 1 - Hello World](03-rmi.md)| 📕 Cap. 3|
 |11/10/2024 | RMI 2 | |  📕 Cap. 4|
 |14/10/2024 | Laboratorio Java RMI| [RMI - Esercizi Java RMI](03-rmi.md) | |
+
+<span style="color: gray;">
+
+| |  | |  |
+|---------|----------|--------|-----------|
 | |*_Fine Parte A_*|  |  |
 |XX/XX/20XX | Introduzione Java Enterprise Edition (Java EE) | [Java EE](04-javaee.md) | 📗 Cap. 1|
 |XX/XX/20XX | Contexts and Dependency Injection (CDI) | [CDI Part 1](04-cdi.md) | 📗 Cap. 2|
@@ -50,6 +55,8 @@
 |XX/XX/20XX | Laboratorio J2EE Step-by-step |  |  |
 |XX/XX/20XX | Laboratorio J2EE Step-by-step |  |  |
 |XX/XX/20XX |  📝 Parte C   |  |  |
+
+</span>
 <!--  XX/XX/20XX | [Introduzione a Java Enterprise Edition](01-intro) | 
  XX/XX/20XX | [Context Dependency Injection (Introduzione - Esempio di CDI Bean)](02-cdi) | 
 | **Week**|  **2**|
