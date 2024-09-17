@@ -15,7 +15,7 @@
 |---------|----------|--------|-----------|
 |23/09/2024 | Presentazione Corso + Introduzione Programmazione Distribuita (Prof. Scarano)| | 📕Cap. 1 |
 |26/09/2024 | Programmazione Distribuita (Prof. Scarano)| | 📕Cap. 1 |
-|27/09/2024 | Thread 1 (Prof. Scarano)| | 📕Cap. 1 |
+|27/09/2024 | Thread 1 | | 📕Cap. 1 |
 |30/09/2024 | Thread 2-3 | | 📕Cap. 1 |
 |03/10/2024 | Laboratorio Thread  (Prof. Scarano)| | 📕Cap. 1 |
 |04/10/2024 | Java Socket TCP 1| | 📕Cap. 2 |
