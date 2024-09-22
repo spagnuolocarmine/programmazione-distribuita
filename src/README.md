@@ -15,9 +15,9 @@
 |---------|----------|--------|-----------|
 |23/09/2024 | Presentazione Corso + Introduzione Programmazione Distribuita (Prof. Scarano)| | 📕Cap. 1 |
 |26/09/2024 | Programmazione Distribuita (Prof. Scarano)| | 📕Cap. 1 |
-|27/09/2024 | Thread 1 | | 📕Cap. 1 |
+|27/09/2024 | Thread 1 (Prof. Scarano)| | 📕Cap. 1 |
 |30/09/2024 | Thread 2-3 | | 📕Cap. 1 |
-|03/10/2024 | Laboratorio Thread  (Prof. Scarano)| | 📕Cap. 1 |
+|03/10/2024 | Laboratorio Thread | | 📕Cap. 1 |
 |04/10/2024 | Java Socket TCP 1| | 📕Cap. 2 |
 |07/10/2024 | Java Socket TCP 2 | [Installazione ambiente di sviluppo (solo prima sezione)](04-javaee-lab.md)|📕 Cap. 2  |
 |10/10/2024 | RMI 1 | [RMI 1 - Hello World](03-rmi.md)| 📕 Cap. 3|
