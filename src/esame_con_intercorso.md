@@ -1,5 +1,9 @@
 # 📝 Esame: modalità con prove intercorso per studenti corsisti
 
+  - [A.A. 2024/2025](#aa-20242025)
+  - [A.A. 2023/2024](#aa-20232024)
+## A.A. 2024/2025
+
 <span style="color: gray;">
 
 ## A.A. 2023/2024
