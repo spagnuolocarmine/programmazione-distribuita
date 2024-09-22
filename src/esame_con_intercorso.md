@@ -1,5 +1,9 @@
 # 📝 Esame: modalità con prove intercorso per studenti corsisti
 
+<span style="color: gray;">
+
+## A.A. 2023/2024
+
 [E-Learning UNISA PD 23/24](https://elearning.unisa.it/course/view.php?id=7552)
 
 L'esame per gli studenti corsisti può essere sostenuto tramite 3 prove intercorso + prova orale nella data del preappello:
@@ -41,3 +45,4 @@ Data di consegna della prova 18/12/2023 entro le ore 9:00 tramite la piattaforma
 **Quiz Parte B**
 
 ![quiz-b-2023](https://github.com/spagnuolocarmine/programmazione-distribuita/raw/main/data/scores/quiz-b_20_11_2023.png)
+</span>
