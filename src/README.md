@@ -105,9 +105,9 @@ XX/XX/20XX |  | -->
 
 |🗓️ | 🕘 | 📍|
 ---------|----------|--------|
-XX/XX/20XX | XX:00-XX:30 | XX
-XX/XX/20XX | XX:00-XX:30 | XX
-XX/XX/20XX | XX:00-XX:30 | XX
+17/01/2025 | 09:00-12:00 | P3/P4
+07/02/2025 | 09:00-12:00 | P3/P4
+21/02/2025 | 09:00-12:00 | P3
 
 <!--
 ### Svolgimento della prova di esame durante il corso (relativa al primo appello) 🛑 **non definitivo**
