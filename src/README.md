@@ -17,7 +17,7 @@
 |26/09/2024 | Programmazione Distribuita (Prof. Scarano) 1| | 📕Cap. 1 |
 |27/09/2024| Programmazione Distribuita (Prof. Scarano) 2| | 📕Cap. 1 |
 |30/09/2024 | Thread 1 | | 📕Cap. 1 |
-|03/09/2024 | Thread 2-3 | | 📕Cap. 1 |
+|03/09/2024 | Thread 2 | | 📕Cap. 1 |
 |04/10/2024 | Laboratorio Thread | | 📕Cap. 1 |
 |07/10/2024 | Java Socket TCP 1| | 📕Cap. 2 |
 |10/10/2024 | Java Socket TCP 2 | [Installazione ambiente di sviluppo (solo prima sezione)](04-javaee-lab.md)|📕 Cap. 2  |
