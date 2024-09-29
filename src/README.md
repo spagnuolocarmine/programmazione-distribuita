@@ -14,24 +14,25 @@
 |🗓️ | Lezione | Materiale| Riferimenti |
 |---------|----------|--------|-----------|
 |23/09/2024 | Presentazione Corso + Introduzione Programmazione Distribuita (Prof. Scarano)| | 📕Cap. 1 |
-|26/09/2024 | Programmazione Distribuita (Prof. Scarano)| | 📕Cap. 1 |
-|27/09/2024 | Thread 1 (Prof. Scarano)| | 📕Cap. 1 |
-|30/09/2024 | Thread 2-3 | | 📕Cap. 1 |
-|03/10/2024 | Laboratorio Thread | | 📕Cap. 1 |
-|04/10/2024 | Java Socket TCP 1| | 📕Cap. 2 |
-|07/10/2024 | Java Socket TCP 2 | [Installazione ambiente di sviluppo (solo prima sezione)](04-javaee-lab.md)|📕 Cap. 2  |
-|10/10/2024 | RMI 1 | [RMI 1 - Hello World](03-rmi.md)| 📕 Cap. 3|
-|11/10/2024 | RMI 2 | |  📕 Cap. 4|
-|14/10/2024 | Laboratorio Java RMI| [RMI - Esercizi Java RMI](03-rmi.md) | |
-
+|26/09/2024 | Programmazione Distribuita (Prof. Scarano) 1| | 📕Cap. 1 |
+|27/09/2024| Programmazione Distribuita (Prof. Scarano) 2| | 📕Cap. 1 |
+|30/09/2024 | Thread 1 | | 📕Cap. 1 |
+|03/09/2024 | Thread 2-3 | | 📕Cap. 1 |
+|04/10/2024 | Laboratorio Thread | | 📕Cap. 1 |
+|07/10/2024 | Java Socket TCP 1| | 📕Cap. 2 |
+|10/10/2024 | Java Socket TCP 2 | [Installazione ambiente di sviluppo (solo prima sezione)](04-javaee-lab.md)|📕 Cap. 2  |
+|11/10/2024 | RMI 1 | [RMI 1 - Hello World](03-rmi.md)| 📕 Cap. 3|
+|14/10/2024 | RMI 2 | |  📕 Cap. 4|
+|17/10/2024 | Laboratorio Java RMI| [RMI - Esercizi Java RMI](03-rmi.md) | |
+| |*_Fine Parte A_*|  |  |
+|18/10/2024 | Introduzione Java Enterprise Edition (Java EE) | [Java EE](04-javaee.md) | 📗 Cap. 1|
 <span style="color: gray;">
 
 ## A.A. 2023/2024
 
 | |  | |  |
 |---------|----------|--------|-----------|
-| |*_Fine Parte A_*|  |  |
-|XX/XX/20XX | Introduzione Java Enterprise Edition (Java EE) | [Java EE](04-javaee.md) | 📗 Cap. 1|
+
 |XX/XX/20XX | Contexts and Dependency Injection (CDI) | [CDI Part 1](04-cdi.md) | 📗 Cap. 2|
 |XX/XX/20XX | Laboratorio Starting with J2EE | [J2EE Lab](05-javaee-lab.md) | |
 |XX/XX/20XX | CDI Interceptor | [CDI Part 2](04-cdi.md) | 📗 Cap. 2 |
