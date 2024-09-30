@@ -31,8 +31,7 @@
 ## A.A. 2023/2024
 
 | |  | |  |
-|---------|----------|--------|-----------|
-
+|---------|----------|--------|----------
 |XX/XX/20XX | Contexts and Dependency Injection (CDI) | [CDI Part 1](04-cdi.md) | 📗 Cap. 2|
 |XX/XX/20XX | Laboratorio Starting with J2EE | [J2EE Lab](05-javaee-lab.md) | |
 |XX/XX/20XX | CDI Interceptor | [CDI Part 2](04-cdi.md) | 📗 Cap. 2 |
