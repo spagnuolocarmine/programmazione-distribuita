@@ -24,7 +24,7 @@
 |11/10/2024 | RMI 1 | [RMI 1 - Hello World](03-rmi.md)| 📕 Cap. 3|
 |14/10/2024  (pari-dispari)| RMI 2 | |  📕 Cap. 4|
 |17/10/2024 | Laboratorio Java RMI| [RMI - Esercizi Java RMI](03-rmi.md) | |
-| |*_Fine Parte A_*|  |  |
+|  **_Fine Parte A_** ||| 
 |18/10/2024 | Introduzione Java Enterprise Edition (Java EE) | [Java EE](04-javaee.md) | 📗 Cap. 1|
 <span style="color: gray;">
 
