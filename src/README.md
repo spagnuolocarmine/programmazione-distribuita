@@ -17,10 +17,10 @@
 |26/09/2024 | Programmazione Distribuita (Prof. Scarano) 1| | 📕Cap. 1 |
 |27/09/2024| Programmazione Distribuita (Prof. Scarano) 2| | 📕Cap. 1 |
 |30/09/2024 (pari-dispari)| Java Thread 1 | | [Official Java Essential Concurrency](https://docs.oracle.com/javase/tutorial/essential/concurrency) Insights: O'Reilly Java Threads (google it)|
-|03/10/2024 | Java Thread 2 | [Alphonse and Gaston Java Thread](https://www.jdoodle.com/ia/1jpx) | [Official Java Essential Concurrency](https://docs.oracle.com/javase/tutorial/essential/concurrency) |
+|03/10/2024 | Java Thread 2 | [Alphonse and Gaston Java Thread](https://www.jdoodle.com/ia/1jpx) [Installazione ambiente di sviluppo (solo prima sezione)](04-javaee-lab.md) | [Official Java Essential Concurrency](https://docs.oracle.com/javase/tutorial/essential/concurrency) |
 |04/10/2024 | Laboratorio Thread | | [Official Java Essential Concurrency](https://docs.oracle.com/javase/tutorial/essential/concurrency) |
 |07/10/2024 (dispari-pari) | Java Socket TCP 1| | 📕Cap. 2 |
-|10/10/2024 | Java Socket TCP 2 | [Installazione ambiente di sviluppo (solo prima sezione)](04-javaee-lab.md)|📕 Cap. 2  |
+|10/10/2024 | Java Socket TCP 2 | |📕 Cap. 2  |
 |11/10/2024 | RMI 1 | [RMI 1 - Hello World](03-rmi.md)| 📕 Cap. 3|
 |14/10/2024  (pari-dispari)| RMI 2 | |  📕 Cap. 4|
 |17/10/2024 | Laboratorio Java RMI| [RMI - Esercizi Java RMI](03-rmi.md) | |
