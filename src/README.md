@@ -19,7 +19,7 @@
 |30/09/2024 (pari-dispari)| Java Thread 1 | | 📋 [Official Java Essential Concurrency](https://docs.oracle.com/javase/tutorial/essential/concurrency) </br></br> 🌐 Insights: O'Reilly Java Threads (google it)|
 |03/10/2024 | Java Thread 2 |  💾 [Alphonse and Gaston Java Thread](https://www.jdoodle.com/ia/1jpx) </br></br> ⚙️ [Installazione ambiente di sviluppo (solo prima sezione)](05-javaee-lab.html#installazione-ambiente-di-sviluppo) | 📋 [Official Java Essential Concurrency](https://docs.oracle.com/javase/tutorial/essential/concurrency) |
 |04/10/2024 | Laboratorio Thread | [Esercitazione Java Thread](01-threads.md) | [Official Java Essential Concurrency](https://docs.oracle.com/javase/tutorial/essential/concurrency) |
-|07/10/2024 (dispari-pari) | Java Socket TCP 1| | 📕Cap. 2 |
+|07/10/2024 (dispari-pari) | Java Socket TCP 1| 📋 [Official Java All About Sockets](https://docs.oracle.com/javase/tutorial/networking/sockets/index.html)| 📕Cap. 2 |
 |10/10/2024 | Java Socket TCP 2 | |📕 Cap. 2  |
 |11/10/2024 | RMI 1 | [RMI 1 - Hello World](03-rmi.md)| 📕 Cap. 3|
 |14/10/2024  (pari-dispari)| RMI 2 | |  📕 Cap. 4|
