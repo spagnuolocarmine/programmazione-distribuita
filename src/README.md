@@ -187,6 +187,3 @@ import, getter, setter e toString si possono omettere nello scritto, ma i costru
 
 ## ➡️ Prova orale
 - _Il calendario delle prove orali (per gli ammessi) sarà comunicato su MS Teams per ogni appello._
-
-
-
