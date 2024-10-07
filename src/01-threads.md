@@ -28,7 +28,7 @@ Scrivere un programma Java per:
 Verificare le prestazioni del programma al variare del numero dei thread 1 ... P (P> maggiore del numero di thread del processore).
 
 ## Esercizio 5
-Modificare il seguente codice al fine di scrivere su standard output la stringa `smiley`.
+Modificare il seguente codice al fine di scrivere su standard output la stringa `smiley :-)`.
 ```java
    public class Smiley extends Thread {
        public void run() {
