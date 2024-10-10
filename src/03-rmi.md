@@ -100,3 +100,8 @@ responseMessage = server.sendMessage("Client Message");
    -  il client deve essere in grado di ottenere la lista delle stanze libere;
    -  il client può tentare di prenotare una stanza e ottiene un risultato booleano;
    -  la applicazione deve funzionare in presenza di più client connessi.
+3. Progettare e realizzare una applicazione RMI client/server per la gestione di un sistema di votazione, con le seguenti operazioni:
+   - il client deve essere in grado di ottenere la lista dei candidati;
+   - il client può votare per un candidato e ottiene lo score medio;
+   - il client può ottenere il risultato delle votazioni (media delle votazioni);
+   - la applicazione deve funzionare in presenza di più client connessi.
