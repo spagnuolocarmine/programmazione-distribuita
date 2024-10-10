@@ -20,8 +20,8 @@
 |03/10/2024 | Java Thread 2 |  💾 [Alphonse and Gaston Java Thread](https://www.jdoodle.com/ia/1jpx) </br></br> ⚙️ [Installazione ambiente di sviluppo (solo prima sezione)](05-javaee-lab.html#installazione-ambiente-di-sviluppo) | 📋 [Official Java Essential Concurrency](https://docs.oracle.com/javase/tutorial/essential/concurrency) |
 |04/10/2024 | Laboratorio Thread | [Esercitazione Java Thread](01-threads.md) | [Official Java Essential Concurrency](https://docs.oracle.com/javase/tutorial/essential/concurrency) |
 |07/10/2024 (dispari-pari) | Java Socket TCP 1-2| 📋 [Official Java All About Sockets](https://docs.oracle.com/javase/tutorial/networking/sockets/index.html)| 📕Cap. 2 |
-|10/10/2024 | RMI 1 | [RMI 1 - Hello World](03-rmi.md)| 📕 Cap. 3|
-|11/10/2024  | RMI 2 | |  📕 Cap. 4|
+|10/10/2024 | RMI 1 | | 📕 Cap. 3|
+|11/10/2024  | RMI 2 |[RMI 1 - Hello World](03-rmi.md) |  📕 Cap. 4|
 |14/10/2024 (pari-dispari)| Laboratorio Java RMI| [RMI - Esercizi Java RMI](03-rmi.md) | |
 |  **_Fine Parte A_** ||| 
 |17/10/2024 | Introduzione Java Enterprise Edition (Java EE) | [Java EE](04-javaee.md) | 📗 Cap. 1|
