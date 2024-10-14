@@ -25,13 +25,13 @@
 |14/10/2024 (pari-dispari)| Laboratorio Java RMI| [RMI - Esercizi Java RMI](03-rmi.md) | |
 |  **_Fine Parte A_** ||| 
 |17/10/2024 | Introduzione Java Enterprise Edition (Java EE) | [Java EE](04-javaee.md) | 📗 Cap. 1|
+|18/XX/2024 | Contexts and Dependency Injection (CDI) | [CDI Part 1](04-cdi.md) | 📗 Cap. 2|
 <span style="color: gray;">
 
 ## A.A. 2023/2024
 
 | |  | |  |
 |---------|----------|--------|----------
-|XX/XX/20XX | Contexts and Dependency Injection (CDI) | [CDI Part 1](04-cdi.md) | 📗 Cap. 2|
 |XX/XX/20XX | Laboratorio Starting with J2EE | [J2EE Lab](05-javaee-lab.md) | |
 |XX/XX/20XX | CDI Interceptor | [CDI Part 2](04-cdi.md) | 📗 Cap. 2 |
 |XX/XX/20XX | Java Persistence API (JPA) | [ JPA - Part 1](05-jpa.md) | 📗 Cap. 4-5 |
