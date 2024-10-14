@@ -106,3 +106,10 @@ responseMessage = server.sendMessage("Client Message");
    - il client può votare per un candidato e ottiene lo score medio;
    - il client può ottenere il risultato delle votazioni (media delle votazioni);
    - la applicazione deve funzionare in presenza di più client connessi.
+4. Progettare e realizzare una applicazione RMI client/server (multi-client) per la gestione di una libreria musicale:
+   - il client deve essere in grado di ottenere la lista delle canzoni (titolo - link youtube);
+   - il client deve essere in grado di creare delle playlist musicali (sub-set delle canzoni);
+   - il client può eseguire il play di una canzone o di una playlist (il risultato del metodo sono tutti i link youtube),
+     - **Nota**: ottenere i link da youtube utilizzando il tasto _Condividi_ ➡️ _Incorpora_ dal player youtube;
+   - il server tiene traccia di quante volte una specifica canzone viene riprodotta;
+   - il server deve permettere al client di 
