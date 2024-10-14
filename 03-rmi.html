@@ -304,15 +304,13 @@ responseMessage = server.sendMessage("Client Message");
 </li>
 <li>Progettare e realizzare una applicazione RMI client/server (multi-client) per la gestione di una libreria musicale:
 <ul>
-<li>il client deve essere in grado di ottenere la lista delle canzoni (titolo - link youtube);</li>
-<li>il client deve essere in grado di creare delle playlist musicali (sub-set delle canzoni);</li>
-<li>il client può eseguire il play di una canzone o di una playlist (il risultato del metodo sono tutti i link youtube),
-<ul>
-<li><strong>Nota</strong>: ottenere i link da youtube utilizzando il tasto <em>Condividi</em> ➡️ <em>Incorpora</em> dal player youtube;</li>
-</ul>
-</li>
-<li>il server tiene traccia di quante volte una specifica canzone viene riprodotta;</li>
-<li>il server deve permettere al client di</li>
+<li>il client deve essere in grado di ottenere la lista delle canzoni (titolo univoco - link youtube - client name univoco);</li>
+<li>il client può caricare una nuova canzone (titolo univoco - link youtube - client name univoco) visibile a tutti gli altri client;</li>
+<li>il client deve essere in grado di creare delle playlist musicali (sub-set delle canzoni) con titolo univoco visibile a tutti gli altri client;</li>
+<li>il client può eseguire il play di una canzone o di una playlist (il risultato del metodo sono tutti i link youtube);</li>
+<li>il server tiene traccia della riproduzione di una specifica canzone o di una playlist (titolo univoco canzone/playlist, #volte, Lista delle riproduzioni con data e ora);</li>
+<li>il server deve permettere al client di ottenere la lista delle TOP 10 canzoni/playlist riprodotte per ultima settimana, mese e anno.</li>
+<li><em>Nota</em> 🔗 : ottenere i link da youtube utilizzando il tasto <em>Condividi</em> ➡️ <em>Incorpora</em> dal player youtube;</li>
 </ul>
 </li>
 </ol>
