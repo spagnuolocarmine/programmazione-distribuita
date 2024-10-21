@@ -24,17 +24,17 @@
 |11/10/2024  | RMI 2 |[RMI 1 - Hello World](03-rmi.md) |  📕 Cap. 4|
 |14/10/2024 (pari-dispari)| Laboratorio Java RMI| [RMI - Esercizi Java RMI](03-rmi.md) | |
 |  **_Fine Parte A_** ||| 
-|17/10/2024 | Introduzione Java Enterprise Edition (Java EE) | [Java EE](04-javaee.md) <br> [Consenso Prove](https://www.menti.com/al9p1mpkthg3) | 📗 Cap. 1|
+|17/10/2024 | Introduzione Java Enterprise Edition (Java EE) | [Java EE](04-javaee.md) | 📗 Cap. 1|
 |18/10/2024 | Contexts and Dependency Injection (CDI) | [CDI Part 1](04-cdi.md) | 📗 Cap. 2|
+|21/10/2024 | Laboratorio Starting with J2EE | [J2EE Lab](05-javaee-lab.md) | |
+|24/10/2024 | CDI Interceptor | [CDI Part 2](04-cdi.md) | 📗 Cap. 2 |
+|25/10/2024 | Java Persistence API (JPA) | [ JPA - Part 2](05-jpa.md) [Laboratorio JPA](06-jpa-lab.md) | 📗 Cap. 4-5 |
 <span style="color: gray;">
 
 ## A.A. 2023/2024
 
 | |  | |  |
 |---------|----------|--------|----------
-|XX/XX/20XX | Laboratorio Starting with J2EE | [J2EE Lab](05-javaee-lab.md) | |
-|XX/XX/20XX | CDI Interceptor | [CDI Part 2](04-cdi.md) | 📗 Cap. 2 |
-|XX/XX/20XX | Java Persistence API (JPA) | [ JPA - Part 1](05-jpa.md) | 📗 Cap. 4-5 |
 |XX/XX/20XX | Java Persistence API (JPA) | [ JPA - Part 2](05-jpa.md) [Laboratorio JPA](06-jpa-lab.md) | 📗 Cap. 4-5 |
 |XX/XX/20XX | Enterprise JavaBeans (EJB) - Part 1 | [ EJB - Part 1](06-ejb.md) | 📗 Cap. 7-9 |
 |XX/XX/20XX | EJB - Part 2 ➕ Laboratorio EJB (Esercizio 0)|[ EJB - Part 2](06-ejb.md) [EJB - Lab](07-ejb-lab.md) |📗 Cap. 7-9  |
