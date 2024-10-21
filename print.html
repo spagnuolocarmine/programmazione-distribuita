@@ -983,9 +983,12 @@ responseMessage = server.sendMessage("Client Message");
     }
 </code></pre>
 <h2 id="1--esercizio-explore-cdi---applicazione-hello-world-cdi"><a class="header" href="#1--esercizio-explore-cdi---applicazione-hello-world-cdi">1. 🗺️ Esercizio Explore CDI - Applicazione Hello World CDI</a></h2>
-<p>Realizzare da zero una nuova applicazione Hello World che utilizza una servlet per visualizzare in una pagina Web il testo <code>hello world</code>. La stringa viene elaborata tramite un particolare POJO MB che implementa l'interfaccia <code>Letters</code> è possibile utilizzare <em>Injection</em>, <em>Qualifiers</em>, e <em>Producers</em>.</p>
+<p>Realizzare da zero una nuova applicazione Hello World che utilizza una servlet per visualizzare in una pagina Web un messaggio di benvenuto.</p>
 <ul>
-<li>Ad es. provare a definire un producer per la stringa <code>hello world</code> e un producer per la stringa <code>HELLO WORLD</code> in maiuscolo specificando due diversi <em>qualifiers</em> per i due producer, e alternare l'utilizzo dei due producer nella servlet per visualizzare il testo in minuscolo e maiuscolo in richieste diverse.</li>
+<li>La stringa viene elaborata tramite un particolare MB che implementa l'interfaccia <code>Welcome</code> che definisce i metedi <code>getWelcomeMessageLowercase()</code> e <code>getWelcomeMessageUppercase()</code>.</li>
+<li>E' possibile utilizzare <em>Injection</em>, <em>Qualifiers</em>, e <em>Producers</em>.</li>
+<li>Provare a definire un producer per la stringa <code>hello world</code> e un producer per la stringa <code>HELLO WORLD</code> in maiuscolo specificando due diversi <em>qualifiers</em>.</li>
+<li>Implementare una servlet che visualizza il messaggio <code>hello world</code> e <code>HELLO WORLD</code> in maiuscolo invocando i corrispondenti metodi dell'MB.</li>
 </ul>
 <h2 id="2--esercizio-music-library-primi-"><a class="header" href="#2--esercizio-music-library-primi-">2. ⏯️ Esercizio Music Library primi 👣</a></h2>
 <p>Gestire una libreria musicale definendo un oggetto <em>Song</em> e un oggetto <em>Library</em> che è un MB che tramite l'utilizzo di Producers dichiara un <code>ArrayList&lt;Song&gt;</code>.</p>
