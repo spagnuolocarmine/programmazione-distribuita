@@ -28,16 +28,8 @@
   
 1. Code ➡️ [Download Zip](https://github.com/Apress/beg-java-ee-7),  Unarchive the project zip, Open Project  
 2. Aprire il progetto [chapter02-samples](https://github.com/Apress/beg-java-ee-7/tree/master/agoncal-book-javaee7-master/chapter02/chapter02-samples)
-  - Aggiungere nel descrittore di progetto [Maven](https://maven.apache.org/) nella dipendenza ```javaee-api```la versione specifica di J2EE 7.0 
-  ```maven 
-      <dependency>
-        <groupId>javax</groupId>
-        <artifactId>javaee-api</artifactId>
-        <version>7.0</version>
-      </dependency> 
-   ```
    - Analizzare il codice degli esercizi
-1. Aprire il progetto [chapter02-putting-together](https://github.com/Apress/beg-java-ee-7/tree/master/agoncal-book-javaee7-master/chapter02/chapter02-putting-together) e provare ad eseguire il file ```Main.java```
+3. Aprire il progetto [chapter02-putting-together](https://github.com/Apress/beg-java-ee-7/tree/master/agoncal-book-javaee7-master/chapter02/chapter02-putting-together) e provare ad eseguire il file ```Main.java```
    - Beginning Java EE 7 pg. 57 
    - Questo esempio utilizza [Weld](https://weld.cdi-spec.org/) un implementazione CDI per applicazioni Java o Java EE ora sviluppato nell'ambito del progetto [Jakarta EE](https://jakarta.ee/). Weld in questo caso consente di eseguire una applicazione Java SE che utilizza CDI.
   
