@@ -79,8 +79,11 @@ public class MainServerlet extends HttpServlet {
     }
 ```
 ## 1. 🗺️ Esercizio Explore CDI - Applicazione Hello World CDI
-Realizzare da zero una nuova applicazione Hello World che utilizza una servlet per visualizzare in una pagina Web il testo `hello world`. La stringa viene elaborata tramite un particolare POJO MB che implementa l'interfaccia `Letters` è possibile utilizzare _Injection_, _Qualifiers_, e _Producers_.  
-   - Ad es. provare a definire un producer per la stringa `hello world` e un producer per la stringa `HELLO WORLD` in maiuscolo specificando due diversi _qualifiers_ per i due producer, e alternare l'utilizzo dei due producer nella servlet per visualizzare il testo in minuscolo e maiuscolo in richieste diverse.
+Realizzare da zero una nuova applicazione Hello World che utilizza una servlet per visualizzare in una pagina Web un messaggio di benvenuto.
+  - La stringa viene elaborata tramite un particolare MB che implementa l'interfaccia `Welcome` che definisce i metedi `getWelcomeMessageLowercase()` e `getWelcomeMessageUppercase()`.
+  - E' possibile utilizzare _Injection_, _Qualifiers_, e _Producers_.  
+  - Provare a definire un producer per la stringa `hello world` e un producer per la stringa `HELLO WORLD` in maiuscolo specificando due diversi _qualifiers_. 
+  - Implementare una servlet che visualizza il messaggio `hello world` e `HELLO WORLD` in maiuscolo invocando i corrispondenti metodi dell'MB.
 
 ## 2. ⏯️ Esercizio Music Library primi 👣
 Gestire una libreria musicale definendo un oggetto _Song_ e un oggetto _Library_ che è un MB che tramite l'utilizzo di Producers dichiara un `ArrayList<Song>`. 
