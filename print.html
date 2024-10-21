@@ -996,11 +996,14 @@ responseMessage = server.sendMessage("Client Message");
 <li>Ad es. provare a definire un producer per la stringa <code>hello world</code> e un producer per la stringa <code>HELLO WORLD</code> in maiuscolo specificando due diversi <em>qualifiers</em> per i due producer, e alternare l'utilizzo dei due producer nella servlet per visualizzare il testo in minuscolo e maiuscolo in richieste diverse.</li>
 </ul>
 <h2 id="2--esercizio-music-library-primi-"><a class="header" href="#2--esercizio-music-library-primi-">2. ⏯️ Esercizio Music Library primi 👣</a></h2>
-<p>Gestire una libreria musicale definendo un oggetto POJO <em>Song</em> e un oggetto <em>Library</em> che è un POJO MB che tramite l'utilizzo di Producers dichiara un <code>ArrayList&lt;Song&gt;</code>.</p>
+<p>Gestire una libreria musicale definendo un oggetto <em>Song</em> e un oggetto <em>Library</em> che è un MB che tramite l'utilizzo di Producers dichiara un <code>ArrayList&lt;Song&gt;</code>.</p>
 <ul>
-<li>Il risultato dell'architettura deve permettere di utilizzare il seguente codice nella classe Library: <code>@Inject ArrayList&lt;Song&gt; db;</code></li>
-<li>e di gestire tutte le successive operazioni possibili in una libreria inizializzata con un produces (aggiungi, cancella, trova per ID, trova per nome, etc.).</li>
-<li><em>Opzionale</em>: realizzare una serverlet che permette di visualizzare il contenuto della libreria in una pagina HTML, e di aggiungere nuove canzoni tramite un form HTML.</li>
+<li>Il risultato dell'architettura deve permettere di utilizzare il seguente codice nella classe <em>Library</em>: <code>@Inject ArrayList&lt;Song&gt; db;</code>, preinizializzato con un fissato insieme di Song
+<ul>
+<li>la classe Library permette di gestire tutte le successive operazioni possibili di una libreria musicale (aggiungi, cancella, trova per ID, trova per nome, etc.).</li>
+</ul>
+</li>
+<li>Realizzare una serverlet che permette di visualizzare il contenuto della libreria in una pagina HTML.</li>
 </ul>
 <h2 id="3-verifica-del-funzionamento-di-safe-exam-browser"><a class="header" href="#3-verifica-del-funzionamento-di-safe-exam-browser">3. Verifica del funzionamento di <a href="https://safeexambrowser.org/">Safe Exam Browser</a></a></h2>
 <h2 id="approfondimenti"><a class="header" href="#approfondimenti">Approfondimenti</a></h2>
