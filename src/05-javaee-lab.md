@@ -89,10 +89,10 @@ Realizzare da zero una nuova applicazione Hello World che utilizza una servlet p
    - Ad es. provare a definire un producer per la stringa `hello world` e un producer per la stringa `HELLO WORLD` in maiuscolo specificando due diversi _qualifiers_ per i due producer, e alternare l'utilizzo dei due producer nella servlet per visualizzare il testo in minuscolo e maiuscolo in richieste diverse.
 
 ## 2. ⏯️ Esercizio Music Library primi 👣
-Gestire una libreria musicale definendo un oggetto POJO _Song_ e un oggetto _Library_ che è un POJO MB che tramite l'utilizzo di Producers dichiara un `ArrayList<Song>`. 
-   - Il risultato dell'architettura deve permettere di utilizzare il seguente codice nella classe Library: `@Inject ArrayList<Song> db;`
-   - e di gestire tutte le successive operazioni possibili in una libreria inizializzata con un produces (aggiungi, cancella, trova per ID, trova per nome, etc.).
-   - _Opzionale_: realizzare una serverlet che permette di visualizzare il contenuto della libreria in una pagina HTML, e di aggiungere nuove canzoni tramite un form HTML.
+Gestire una libreria musicale definendo un oggetto _Song_ e un oggetto _Library_ che è un MB che tramite l'utilizzo di Producers dichiara un `ArrayList<Song>`. 
+   - Il risultato dell'architettura deve permettere di utilizzare il seguente codice nella classe _Library_: `@Inject ArrayList<Song> db;`, preinizializzato con un fissato insieme di Song
+     - la classe Library permette di gestire tutte le successive operazioni possibili di una libreria musicale (aggiungi, cancella, trova per ID, trova per nome, etc.).
+   - Realizzare una serverlet che permette di visualizzare il contenuto della libreria in una pagina HTML.
 
 ## 3. Verifica del funzionamento di [Safe Exam Browser](https://safeexambrowser.org/)
 ## Approfondimenti 
