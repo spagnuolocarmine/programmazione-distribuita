@@ -27,7 +27,7 @@
 |17/10/2024 | Introduzione Java Enterprise Edition (Java EE) | [Java EE](04-javaee.md) | 📗 Cap. 1|
 |18/10/2024 | Contexts and Dependency Injection (CDI) | [CDI Part 1](04-cdi.md) | 📗 Cap. 2|
 |21/10/2024 | Laboratorio Starting with J2EE | [J2EE Lab](05-javaee-lab.md) | |
-|24/10/2024 | CDI Interceptor | [CDI Part 2](04-cdi.md) | 📗 Cap. 2 |
+|24/10/2024 | CDI Interceptor ➕ Laboratorio J2EE| [CDI Part 2](04-cdi.md) | 📗 Cap. 2 |
 |25/10/2024 | Java Persistence API (JPA) | [ JPA - Part 1](05-jpa.md)  | 📗 Cap. 4-5 |
 |28/10/2024 | Java Persistence API (JPA) | [ JPA - Part 2](05-jpa.md) [Laboratorio JPA](06-jpa-lab.md) | 📗 Cap. 4-5 |
 |31/10/2024 | Enterprise JavaBeans (EJB) - Part 1 | [ EJB - Part 1](06-ejb.md) | 📗 Cap. 7-9 |
