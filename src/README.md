@@ -13,9 +13,9 @@
 
 |🗓️ | Lezione | Materiale| Riferimenti |
 |---------|----------|--------|-----------|
-|23/09/2024 | Presentazione Corso + Introduzione Programmazione Distribuita (Prof. Scarano)| | 📕Cap. 1 |
-|26/09/2024 | Programmazione Distribuita (Prof. Scarano) 1| | 📕Cap. 1 |
-|27/09/2024| Programmazione Distribuita (Prof. Scarano) 2| | 📕Cap. 1 |
+|23/09/2024 | Presentazione Corso + Introduzione Programmazione Distribuita (Prof. Scarano)| | 📕 Cap. 1 |
+|26/09/2024 | Programmazione Distribuita (Prof. Scarano) 1| | 📕 Cap. 1 |
+|27/09/2024| Programmazione Distribuita (Prof. Scarano) 2| | 📕 Cap. 1 |
 |30/09/2024 (pari-dispari)| Java Thread 1 | | 📋 [Official Java Essential Concurrency](https://docs.oracle.com/javase/tutorial/essential/concurrency) </br></br> 🌐 Insights: O'Reilly Java Threads (google it)|
 |03/10/2024 | Java Thread 2 |  💾 [Alphonse and Gaston Java Thread](https://www.jdoodle.com/ia/1jpx) </br></br> ⚙️ [Installazione ambiente di sviluppo (solo prima sezione)](05-javaee-lab.html#installazione-ambiente-di-sviluppo) | 📋 [Official Java Essential Concurrency](https://docs.oracle.com/javase/tutorial/essential/concurrency) |
 |04/10/2024 | Laboratorio Thread | [Esercitazione Java Thread](01-threads.md) | [Official Java Essential Concurrency](https://docs.oracle.com/javase/tutorial/essential/concurrency) |
@@ -28,36 +28,26 @@
 |18/10/2024 | Contexts and Dependency Injection (CDI) | [CDI Part 1](04-cdi.md) | 📗 Cap. 2|
 |21/10/2024 | Laboratorio Starting with J2EE | [J2EE Lab](05-javaee-lab.md) | |
 |24/10/2024 | CDI Interceptor | [CDI Part 2](04-cdi.md) | 📗 Cap. 2 |
-|25/10/2024 | Java Persistence API (JPA) | [ JPA - Part 2](05-jpa.md) [Laboratorio JPA](06-jpa-lab.md) | 📗 Cap. 4-5 |
-<span style="color: gray;">
+|25/10/2024 | Java Persistence API (JPA) | [ JPA - Part 1](05-jpa.md)  | 📗 Cap. 4-5 |
+|28/10/2024 | Java Persistence API (JPA) | [ JPA - Part 2](05-jpa.md) [Laboratorio JPA](06-jpa-lab.md) | 📗 Cap. 4-5 |
+|31/10/2024 | Enterprise JavaBeans (EJB) - Part 1 | [ EJB - Part 1](06-ejb.md) | 📗 Cap. 7-9 |
+|04/11/2024 | EJB - Part 2 ➕ Laboratorio EJB (Esercizio 0)|[ EJB - Part 2](06-ejb.md) [EJB - Lab](07-ejb-lab.md) |📗 Cap. 7-9  |
+|07/11/2024 | Java Message Service (JMS) - Part 1  | [ JMS - Part 1](07-jms.md) | 📗 Cap. 13 |
+|08/11/2024 | JMS - Part 2 | [ JMS - Part 2](07-jms.md) | 📗 Cap. 13 |
+|11/11/2024 | Laboratorio EJB ➕ 📝 Quiz Parte A  |  | 📕 |
+|14/11/2024 | Laboratorio EJB ➕ JMS | [EJB - Lab](07-ejb-lab.md) [JMS - Lab](08-jms-lab.md) |  |
+|  **_Fine Parte B_** ||| 
+|15/11/2024 | Java Web Services (WS) Parte 1 | [Java Web Services (WS) Parte 1](08-ws.md) | 📗 Cap. 14 |
+|18/11/2024 | Java WS Parte 2 | [Java WS Parte 2](08-ws.md)  | 📗 Cap. 14 |
+|21/11/2024 | Laboratorio Java WS ➕ Laboratorio J2EE Step-by-step| [Laboratorio Java WS](09-ws-lab.md)  |  |
+|22/11/2024 | Introduzione al Cloud Computing|  | [Materiale cloud computing](https://github.com/spagnuolocarmine/programmazione-distribuita/raw/main/data/cloud_2023.pdf) |
+|25/11/2024 | Laboratorio J2EE Step-by-step ➕ 📝 Quiz Parte B   |  |  |
+|28/11/2024 | From J2EE to Spring Framework (Teoria) |  | [Introduzione a Spring Framework](https://github.com/spagnuolocarmine/programmazione-distribuita/raw/main/data/introduction_to_spring_citro_2023.pdf) |
+|29/11/2024 | From J2EE to Spring Framework (Pratica) |  | [Spring Framework In Action](https://github.com/tizianocitro/pdtify) |
+|02/12/2024 | Laboratorio J2EE Simulazione |  |  |
+|05/12/2024 | Laboratorio J2EE Simulazione |  |  |
+|06/12/2024 |  📝 Prova Parte C   |  |  |
 
-## A.A. 2023/2024
-
-| |  | |  |
-|---------|----------|--------|----------
-|XX/XX/20XX | Java Persistence API (JPA) | [ JPA - Part 2](05-jpa.md) [Laboratorio JPA](06-jpa-lab.md) | 📗 Cap. 4-5 |
-|XX/XX/20XX | Enterprise JavaBeans (EJB) - Part 1 | [ EJB - Part 1](06-ejb.md) | 📗 Cap. 7-9 |
-|XX/XX/20XX | EJB - Part 2 ➕ Laboratorio EJB (Esercizio 0)|[ EJB - Part 2](06-ejb.md) [EJB - Lab](07-ejb-lab.md) |📗 Cap. 7-9  |
-|XX/XX/20XX | Java Message Service (JMS) - Part 1 ➕ 📝 Quiz Parte A | [ JMS - Part 1](07-jms.md) | 📗 Cap. 13 |
-|XX/XX/20XX | JMS - Part 2 | [ JMS - Part 2](07-jms.md) | 📗 Cap. 13 |
-| |*_Fine Parte B_*|  |  |
-|XX/XX/20XX | Laboratorio EJB ➕ JMS | [EJB - Lab](07-ejb-lab.md) [JMS - Lab](08-jms-lab.md) |  |
-|XX/XX/20XX | Java Web Services (WS) Parte 1 | [Java Web Services (WS) Parte 1](08-ws.md) | 📗 Cap. 14 |
-|XX/XX/20XX | Java WS Parte 2 | [Java WS Parte 2](08-ws.md)  | 📗 Cap. 14 |
-| |*_Fine Parte C_*|  |  |
-|XX/XX/20XX | Laboratorio Java WS ➕ 📝 Quiz Parte B | [Laboratorio Java WS](09-ws-lab.md)  |  |
-|XX/XX/20XX | Introduzione al Cloud Computing|  | [Materiale cloud computing](https://github.com/spagnuolocarmine/programmazione-distribuita/raw/main/data/cloud_2023.pdf) |
-|XX/XX/20XX | Laboratorio J2EE Step-by-step |  |  |
-|XX/XX/20XX | Laboratorio J2EE Step-by-step |  |  |
-|XX/XX/20XX | Laboratorio J2EE Step-by-step |  |  |
-|XX/XX/20XX | Laboratorio J2EE Step-by-step  |  |  |
-|XX/XX/20XX | From J2EE to Spring Framework (Teoria) |  | [Introduzione a Spring Framework](https://github.com/spagnuolocarmine/programmazione-distribuita/raw/main/data/introduction_to_spring_citro_2023.pdf) |
-|XX/XX/20XX | From J2EE to Spring Framework (Pratica) |  | [Spring Framework In Action](https://github.com/tizianocitro/pdtify) |
-|XX/XX/20XX | Laboratorio J2EE Step-by-step |  |  |
-|XX/XX/20XX | Laboratorio J2EE Step-by-step |  |  |
-|XX/XX/20XX |  📝 Parte C   |  |  |
-
-</span>
 <!--  XX/XX/20XX | [Introduzione a Java Enterprise Edition](01-intro) | 
  XX/XX/20XX | [Context Dependency Injection (Introduzione - Esempio di CDI Bean)](02-cdi) | 
 | **Week**|  **2**|
