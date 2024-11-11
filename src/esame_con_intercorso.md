@@ -4,12 +4,6 @@
   - [A.A. 2023/2024](#aa-20232024)
 ## A.A. 2024/2025
 
-<span style="color: gray;">
-
-## A.A. 2023/2024
-
-[E-Learning UNISA PD 23/24](https://elearning.unisa.it/course/view.php?id=7552)
-
 L'esame per gli studenti corsisti può essere sostenuto tramite 3 prove intercorso + prova orale nella data del preappello:
 
 - _Quiz Parte A_: Fondamenti di programmazione distribuita fino a Java RMI (Libro 📕) 20% del voto di accesso all'esame orale
@@ -27,6 +21,30 @@ L'esame per gli studenti corsisti può essere sostenuto tramite 3 prove intercor
 |30	|30	|0	|12|
 |0	|30	|30	|24|
 |30	|0	|0	|6|
+
+## Calendario delle prove (da confermare)
+
+Il candidato deve munirsi di un laptop, dotato di [Safe Exam Browser](https://safeexambrowser.org/), per lo svolgimento della prova tramite la piattaforma di e-learning di UNISA.
+
+|🗓️ | 🕘 | 📍| ✅❌ |
+---------|----------|--------|-------|
+Quiz Parte A (Fino a RMI)| 11/11/2023 14:35-17:30 | Lab Sammet | ✅|
+Quiz Parte B (Fino a JMS)| TODO | TODO | ✅ |
+Programma JEE | TODO | TODO |  |
+
+Data di consegna della prova TODO entro le ore 9:00 tramite la piattaforma e-learning di unisa.
+
+### Analisi dei risultati 2024-25
+
+![quiz-a-2024](https://github.com/spagnuolocarmine/programmazione-distribuita/raw/main/data/scores/quiz-a-2024.png)
+
+
+<span style="color: gray;">
+
+## A.A. 2023/2024
+
+[E-Learning UNISA PD 23/24](https://elearning.unisa.it/course/view.php?id=7552)
+
 
 ## Calendario delle prove (da confermare)
 
