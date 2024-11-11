@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en" class="light" dir="ltr">
+<html lang="en" class="light sidebar-visible" dir="ltr">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
@@ -8,7 +8,7 @@
 
 
         <!-- Custom HTML head -->
-        
+
         <meta name="description" content="materiale di supporto al corso di Programmazione Distribuita">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff">
@@ -31,15 +31,17 @@
 
         <!-- Custom theme stylesheets -->
 
-    </head>
-    <body class="sidebar-visible no-js">
-    <div id="body-container">
+
         <!-- Provide site root to javascript -->
         <script>
             var path_to_root = "";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
         </script>
-
+        <!-- Start loading toc.js asap -->
+        <script src="toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
         <script>
             try {
@@ -61,19 +63,16 @@
             var theme;
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
-            var html = document.querySelector('html');
+            const html = document.documentElement;
             html.classList.remove('light')
             html.classList.add(theme);
-            var body = document.querySelector('body');
-            body.classList.remove('no-js')
-            body.classList.add('js');
+            html.classList.add("js");
         </script>
 
         <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
 
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
-            var body = document.querySelector('body');
             var sidebar = null;
             var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
             if (document.body.clientWidth >= 1080) {
@@ -83,45 +82,25 @@
                 sidebar = 'hidden';
             }
             sidebar_toggle.checked = sidebar === 'visible';
-            body.classList.remove('sidebar-visible');
-            body.classList.add("sidebar-" + sidebar);
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
-            <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="index.html"><strong aria-hidden="true">1.</strong> Programmazione Distribuita</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="blog.html"><strong aria-hidden="true">1.1.</strong> 🔗 Blog</a></li><li class="chapter-item expanded "><a href="esame_con_intercorso.html"><strong aria-hidden="true">1.2.</strong> 📝 Esame: modalità con prove intercorso per studenti corsisti</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> 1️⃣ 📕</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">2.1.</strong> Presentazione del corso</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.2.</strong> Introduzione al calcolo distribuito 1</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.3.</strong> Introduzione al calcolo distribuito 2</div></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> 2️⃣ 📕</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">3.1.</strong> Java Thread 1</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.2.</strong> Java Thread 2</div></li><li class="chapter-item expanded "><a href="01-threads.html"><strong aria-hidden="true">3.3.</strong> Esercitazione Java Thread</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.</strong> 3️⃣ 📕</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">4.1.</strong> Java Socket TCP 1</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.2.</strong> Java Socket TCP 2</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.3.</strong> Java Remote Method Invocation (RMI) 1</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="03-rmi.html"><strong aria-hidden="true">4.3.1.</strong>  Hello World RMI</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.4.</strong> RMI 2</div></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.</strong> 4️⃣ 📕📗</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="03-rmi.html"><strong aria-hidden="true">5.1.</strong> Laboratorio Java RMI</a></li><li class="chapter-item expanded "><a href="04-javaee.html"><strong aria-hidden="true">5.2.</strong> Introduzione Java Enterprise Edition (Java EE)</a></li><li class="chapter-item expanded "><a href="04-cdi.html"><strong aria-hidden="true">5.3.</strong> Contexts and Dependency Injection (CDI) - Part 1</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">6.</strong> 5️⃣ 📗</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="05-javaee-lab.html"><strong aria-hidden="true">6.1.</strong> Laboratorio Java EE</a></li><li class="chapter-item expanded "><a href="04-cdi.html"><strong aria-hidden="true">6.2.</strong> Contexts and Dependency Injection (CDI) - Part 2</a></li><li class="chapter-item expanded "><a href="05-jpa.html"><strong aria-hidden="true">6.3.</strong> Java Persistence API - Part 1</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">7.</strong> 6️⃣ 📗</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="05-jpa.html"><strong aria-hidden="true">7.1.</strong> JPA 2</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="06-jpa-lab.html"><strong aria-hidden="true">7.1.1.</strong> Laboratorio JPA</a></li></ol></li><li class="chapter-item expanded "><a href="06-ejb.html"><strong aria-hidden="true">7.2.</strong> Enterprise JavaBeans (EJB) - Part 1</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">8.</strong> 7️⃣ 📗</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="06-ejb.html"><strong aria-hidden="true">8.1.</strong> EJB - Part 2</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="07-ejb-lab.html"><strong aria-hidden="true">8.1.1.</strong> Laboratorio EJB (Esercizio 0)</a></li></ol></li><li class="chapter-item expanded "><a href="07-jms.html"><strong aria-hidden="true">8.2.</strong> Java Message Service - Part 1</a></li><li class="chapter-item expanded "><a href="06-ejb.html"><strong aria-hidden="true">8.3.</strong> JMS - Part 2</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">9.</strong> 8️⃣ 📗</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="07-ejb-lab.html"><strong aria-hidden="true">9.1.</strong> Laboratorio EJB</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="08-jms-lab.html"><strong aria-hidden="true">9.1.1.</strong> JMS Lab</a></li></ol></li><li class="chapter-item expanded "><a href="08-ws.html"><strong aria-hidden="true">9.2.</strong> Java Web Services (WS) Parte 1</a></li><li class="chapter-item expanded "><a href="08-ws.html"><strong aria-hidden="true">9.3.</strong> Java WS Parte 2</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">10.</strong> 9️⃣ 📗</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="09-ws-lab.html"><strong aria-hidden="true">10.1.</strong> Laboratorio Java WS</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">10.2.</strong> Laboratorio J2EE Step-by-step</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">10.3.</strong> Introduzione al Cloud Computing</div></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">11.</strong> 1️⃣0️⃣</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">11.1.</strong> From J2EE to Spring Framework (Teoria)</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">11.2.</strong> From J2EE to Spring Framework (Pratica)</div></li></ol></li></ol>
-            </div>
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
             </div>
         </nav>
 
-        <!-- Track and set sidebar scroll position -->
-        <script>
-            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
-            sidebarScrollbox.addEventListener('click', function(e) {
-                if (e.target.tagName === 'A') {
-                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
-                }
-            }, { passive: true });
-            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
-            sessionStorage.removeItem('sidebar-scroll');
-            if (sidebarScrollTop) {
-                // preserve sidebar scroll position when navigating via links within sidebar
-                sidebarScrollbox.scrollTop = sidebarScrollTop;
-            } else {
-                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
-                var activeSection = document.querySelector('#sidebar .active');
-                if (activeSection) {
-                    activeSection.scrollIntoView({ block: 'center' });
-                }
-            }
-        </script>
-
         <div id="page-wrapper" class="page-wrapper">
 
             <div class="page">
-                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar-hover-placeholder"></div>
                 <div id="menu-bar" class="menu-bar sticky">
                     <div class="left-buttons">
                         <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
@@ -373,9 +352,6 @@ Linea 22: xxxxxxxxxx
 <li><a href="esame_con_intercorso.html#aa-20232024">A.A. 2023/2024</a></li>
 </ul>
 <h2 id="aa-20242025"><a class="header" href="#aa-20242025">A.A. 2024/2025</a></h2>
-<span style="color: gray;">
-<h2 id="aa-20232024"><a class="header" href="#aa-20232024">A.A. 2023/2024</a></h2>
-<p><a href="https://elearning.unisa.it/course/view.php?id=7552">E-Learning UNISA PD 23/24</a></p>
 <p>L'esame per gli studenti corsisti può essere sostenuto tramite 3 prove intercorso + prova orale nella data del preappello:</p>
 <ul>
 <li><em>Quiz Parte A</em>: Fondamenti di programmazione distribuita fino a Java RMI (Libro 📕) 20% del voto di accesso all'esame orale</li>
@@ -394,6 +370,20 @@ Linea 22: xxxxxxxxxx
 </tbody></table>
 </div>
 <h2 id="calendario-delle-prove-da-confermare"><a class="header" href="#calendario-delle-prove-da-confermare">Calendario delle prove (da confermare)</a></h2>
+<p>Il candidato deve munirsi di un laptop, dotato di <a href="https://safeexambrowser.org/">Safe Exam Browser</a>, per lo svolgimento della prova tramite la piattaforma di e-learning di UNISA.</p>
+<div class="table-wrapper"><table><thead><tr><th>🗓️</th><th>🕘</th><th>📍</th><th>✅❌</th></tr></thead><tbody>
+<tr><td>Quiz Parte A (Fino a RMI)</td><td>11/11/2023 14:35-17:30</td><td>Lab Sammet</td><td>✅</td></tr>
+<tr><td>Quiz Parte B (Fino a JMS)</td><td>TODO</td><td>TODO</td><td>✅</td></tr>
+<tr><td>Programma JEE</td><td>TODO</td><td>TODO</td><td></td></tr>
+</tbody></table>
+</div>
+<p>Data di consegna della prova TODO entro le ore 9:00 tramite la piattaforma e-learning di unisa.</p>
+<h3 id="analisi-dei-risultati-2024-25"><a class="header" href="#analisi-dei-risultati-2024-25">Analisi dei risultati 2024-25</a></h3>
+<p><img src="https://github.com/spagnuolocarmine/programmazione-distribuita/raw/main/data/scores/quiz-a-2024.png" alt="quiz-a-2024" /></p>
+<span style="color: gray;">
+<h2 id="aa-20232024"><a class="header" href="#aa-20232024">A.A. 2023/2024</a></h2>
+<p><a href="https://elearning.unisa.it/course/view.php?id=7552">E-Learning UNISA PD 23/24</a></p>
+<h2 id="calendario-delle-prove-da-confermare-1"><a class="header" href="#calendario-delle-prove-da-confermare-1">Calendario delle prove (da confermare)</a></h2>
 <p>Il candidato deve munirsi di un laptop, dotato di <a href="https://safeexambrowser.org/">Safe Exam Browser</a>, per lo svolgimento della prova tramite la piattaforma di e-learning di UNISA.</p>
 <div class="table-wrapper"><table><thead><tr><th>🗓️</th><th>🕘</th><th>📍</th><th>✅❌</th></tr></thead><tbody>
 <tr><td>Quiz Parte A (Fino a RMI)</td><td>09/11/2023 11:15-11:45</td><td>F8</td><td>✅</td></tr>
