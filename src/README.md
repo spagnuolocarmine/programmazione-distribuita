@@ -42,7 +42,7 @@
 |21/11/2024 | Laboratorio Java WS ➕ Laboratorio J2EE Step-by-step| [Laboratorio Java WS](09-ws-lab.md)  |  |
 |22/11/2024 | Introduzione al Cloud Computing|  | [Materiale cloud computing](https://github.com/spagnuolocarmine/programmazione-distribuita/raw/main/data/cloud_2023.pdf) |
 |25/11/2024 | Laboratorio J2EE Step-by-step ➕ 📝 Quiz Parte B   |  |  |
-|28/11/2024 | From J2EE to Spring Framework (Teoria) |  | [Introduzione a Spring Framework](https://github.com/spagnuolocarmine/programmazione-distribuita/raw/main/data/introduction_to_spring_citro_2023.pdf) |
+|28/11/2024 | From J2EE to Spring Framework (Teoria) |  | [Introduzione a Spring Framework](https://github.com/spagnuolocarmine/programmazione-distribuita/raw/main/data/introduction_to_spring_citro_2024.pdf) |
 |29/11/2024 | From J2EE to Spring Framework (Pratica) |  | [Spring Framework In Action](https://github.com/tizianocitro/pdtify) |
 |02/12/2024 | Laboratorio J2EE Simulazione |  |  |
 |05/12/2024 | Laboratorio J2EE Simulazione |  |  |
