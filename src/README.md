@@ -47,6 +47,7 @@
 |02/12/2024 | Laboratorio J2EE Simulazione |  |  |
 |05/12/2024 | Laboratorio J2EE Simulazione |  |  |
 |06/12/2024 |  📝 Prova Parte C   |  |  |
+|09/12/2024 |  Cloud Computing 2   |  |  |
 
 <!--  XX/XX/20XX | [Introduzione a Java Enterprise Edition](01-intro) | 
  XX/XX/20XX | [Context Dependency Injection (Introduzione - Esempio di CDI Bean)](02-cdi) | 
