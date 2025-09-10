@@ -24,28 +24,41 @@
         <link rel="stylesheet" href="fonts/fonts.css">
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" href="highlight.css">
-        <link rel="stylesheet" href="tomorrow-night.css">
-        <link rel="stylesheet" href="ayu-highlight.css">
+        <link rel="stylesheet" id="highlight-css" href="highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
 
 
-        <!-- Provide site root to javascript -->
+        <!-- Provide site root and default themes to javascript -->
         <script>
-            var path_to_root = "";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+            const path_to_root = "";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "searchindex.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc.js"></script>
     </head>
     <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
     <div id="body-container">
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
         <script>
             try {
-                var theme = localStorage.getItem('mdbook-theme');
-                var sidebar = localStorage.getItem('mdbook-sidebar');
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
 
                 if (theme.startsWith('"') && theme.endsWith('"')) {
                     localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
@@ -59,7 +72,8 @@
 
         <!-- Set the theme before any content is loaded, prevents flash -->
         <script>
-            var theme;
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
             const html = document.documentElement;
@@ -72,17 +86,20 @@
 
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
-            var sidebar = null;
-            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
             } else {
                 sidebar = 'hidden';
+                sidebar_toggle.checked = false;
             }
-            sidebar_toggle.checked = sidebar === 'visible';
-            html.classList.remove('sidebar-visible');
-            html.classList.add("sidebar-" + sidebar);
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
@@ -109,13 +126,14 @@
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
                         </ul>
-                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
                             <i class="fa fa-search"></i>
                         </button>
                     </div>
@@ -132,7 +150,12 @@
 
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
                     </form>
                     <div id="searchresults-outer" class="searchresults-outer hidden">
                         <div id="searchresults-header" class="searchresults-header"></div>
@@ -162,97 +185,70 @@
 <li>📕 <a href="https://ilmiolibro.kataweb.it/libro/informatica-e-internet/36104/programmazione-con-oggetti-distribuiti-java-rmi-2/">Programmazione con Oggetti Distribuiti: Java RMI</a></li>
 <li>📗 <a href="https://www.amazon.it/Beginning-Java-Expert-Voice-English-ebook/dp/B00EO03GQM">Beginning Java EE 7</a></li>
 </ul>
+<h3 id="lezioni"><a class="header" href="#lezioni">Lezioni</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>🗓️</th><th>🕘</th><th>📍</th></tr></thead><tbody>
+<tr><td>Lun</td><td>11:00-13:00</td><td>Lab Sammet</td></tr>
+<tr><td>Gio</td><td>09:00-11:00</td><td>F8</td></tr>
+<tr><td>Ven</td><td>09:00-11:00</td><td>F8</td></tr>
+</tbody></table>
+</div>
 <h1 id="materiale"><a class="header" href="#materiale">Materiale</a></h1>
 <div class="table-wrapper"><table><thead><tr><th>🗓️</th><th>Lezione</th><th>Materiale</th><th>Riferimenti</th></tr></thead><tbody>
-<tr><td>23/09/2024</td><td>Presentazione Corso + Introduzione Programmazione Distribuita (Prof. Scarano)</td><td></td><td>📕 Cap. 1</td></tr>
-<tr><td>26/09/2024</td><td>Programmazione Distribuita (Prof. Scarano) 1</td><td></td><td>📕 Cap. 1</td></tr>
-<tr><td>27/09/2024</td><td>Programmazione Distribuita (Prof. Scarano) 2</td><td></td><td>📕 Cap. 1</td></tr>
-<tr><td>30/09/2024 (pari-dispari)</td><td>Java Thread 1</td><td></td><td>📋 <a href="https://docs.oracle.com/javase/tutorial/essential/concurrency">Official Java Essential Concurrency</a> </br></br> 🌐 Insights: O'Reilly Java Threads (google it)</td></tr>
-<tr><td>03/10/2024</td><td>Java Thread 2</td><td>💾 <a href="https://www.jdoodle.com/ia/1jpx">Alphonse and Gaston Java Thread</a> </br></br> ⚙️ <a href="05-javaee-lab.html#installazione-ambiente-di-sviluppo">Installazione ambiente di sviluppo (solo prima sezione)</a></td><td>📋 <a href="https://docs.oracle.com/javase/tutorial/essential/concurrency">Official Java Essential Concurrency</a></td></tr>
-<tr><td>04/10/2024</td><td>Laboratorio Thread</td><td><a href="01-threads.html">Esercitazione Java Thread</a></td><td><a href="https://docs.oracle.com/javase/tutorial/essential/concurrency">Official Java Essential Concurrency</a></td></tr>
-<tr><td>07/10/2024 (dispari-pari)</td><td>Java Socket TCP 1-2</td><td>📋 <a href="https://docs.oracle.com/javase/tutorial/networking/sockets/index.html">Official Java All About Sockets</a></td><td>📕Cap. 2</td></tr>
-<tr><td>10/10/2024</td><td>RMI 1</td><td></td><td>📕 Cap. 3</td></tr>
-<tr><td>11/10/2024</td><td>RMI 2</td><td><a href="03-rmi.html">RMI 1 - Hello World</a></td><td>📕 Cap. 4</td></tr>
-<tr><td>14/10/2024 (pari-dispari)</td><td>Laboratorio Java RMI</td><td><a href="03-rmi.html">RMI - Esercizi Java RMI</a></td><td></td></tr>
-<tr><td><strong><em>Fine Parte A</em></strong></td><td></td><td></td><td></td></tr>
-<tr><td>17/10/2024</td><td>Introduzione Java Enterprise Edition (Java EE)</td><td><a href="04-javaee.html">Java EE</a></td><td>📗 Cap. 1</td></tr>
-<tr><td>18/10/2024</td><td>Contexts and Dependency Injection (CDI)</td><td><a href="04-cdi.html">CDI Part 1</a></td><td>📗 Cap. 2</td></tr>
-<tr><td>21/10/2024</td><td>Laboratorio Starting with J2EE</td><td><a href="05-javaee-lab.html">J2EE Lab</a></td><td></td></tr>
-<tr><td>24/10/2024</td><td>CDI Interceptor ➕ Laboratorio J2EE</td><td><a href="04-cdi.html">CDI Part 2</a></td><td>📗 Cap. 2</td></tr>
-<tr><td>25/10/2024</td><td>Java Persistence API (JPA)</td><td><a href="05-jpa.html"> JPA - Part 1</a></td><td>📗 Cap. 4-5</td></tr>
-<tr><td>28/10/2024</td><td>Java Persistence API (JPA)</td><td><a href="05-jpa.html"> JPA - Part 2</a> <a href="06-jpa-lab.html">Laboratorio JPA</a></td><td>📗 Cap. 4-5</td></tr>
-<tr><td>31/10/2024</td><td>Enterprise JavaBeans (EJB) - Part 1 ➕ Laboratorio EJB (Esercizio 0)</td><td><a href="06-ejb.html"> EJB - Part 1</a></td><td>📗 Cap. 7-9</td></tr>
-<tr><td>04/11/2024</td><td>EJB - Part 2 ➕ Laboratorio EJB</td><td><a href="06-ejb.html"> EJB - Part 2</a> <a href="07-ejb-lab.html">EJB - Lab</a></td><td>📗 Cap. 7-9</td></tr>
-<tr><td>07/11/2024</td><td>Java Message Service (JMS) - Part 1</td><td><a href="07-jms.html"> JMS - Part 1</a></td><td>📗 Cap. 13</td></tr>
-<tr><td>08/11/2024</td><td>JMS - Part 2</td><td><a href="07-jms.html"> JMS - Part 2</a></td><td>📗 Cap. 13</td></tr>
-<tr><td>11/11/2024</td><td>Laboratorio EJB ➕ 📝 Quiz Parte A</td><td></td><td>📕</td></tr>
-<tr><td>14/11/2024</td><td>Laboratorio EJB ➕ JMS</td><td><a href="07-ejb-lab.html">EJB - Lab</a> <a href="08-jms-lab.html">JMS - Lab</a></td><td></td></tr>
-<tr><td><strong><em>Fine Parte B</em></strong></td><td></td><td></td><td></td></tr>
-<tr><td>15/11/2024</td><td>Laboratorio EJB ➕ JMS</td><td><a href="07-ejb-lab.html">EJB - Lab</a> <a href="08-jms-lab.html">JMS - Lab</a></td><td></td></tr>
-<tr><td>18/11/2024</td><td>Java Web Services (WS)</td><td><a href="08-ws.html">Java Web Services (WS) Parte 1</a></td><td>📗 Cap. 14</td></tr>
-<tr><td>21/11/2024</td><td>Laboratorio Java WS ➕ Laboratorio J2EE Step-by-step</td><td><a href="09-ws-lab.html">Laboratorio Java WS</a></td><td></td></tr>
-<tr><td>22/11/2024</td><td>Introduzione al Cloud Computing</td><td></td><td><a href="https://github.com/spagnuolocarmine/programmazione-distribuita/raw/main/data/cloud_2023.pdf">Materiale cloud computing</a></td></tr>
-<tr><td>25/11/2024</td><td>Laboratorio J2EE Step-by-step ➕ 📝 Quiz Parte B</td><td></td><td></td></tr>
-<tr><td>28/11/2024</td><td>From J2EE to Spring Framework (Teoria)</td><td></td><td><a href="https://github.com/spagnuolocarmine/programmazione-distribuita/raw/main/data/introduction_to_spring_citro_2024.pdf">Introduzione a Spring Framework</a></td></tr>
-<tr><td>29/11/2024</td><td>From J2EE to Spring Framework (Pratica)</td><td></td><td><a href="https://github.com/tizianocitro/pdtify">Spring Framework In Action</a></td></tr>
-<tr><td>02/12/2024</td><td>Laboratorio J2EE Simulazione</td><td></td><td></td></tr>
-<tr><td>05/12/2024</td><td>Laboratorio J2EE Simulazione</td><td></td><td></td></tr>
-<tr><td>06/12/2024</td><td>📝 Prova Parte C</td><td></td><td></td></tr>
-<tr><td>09/12/2024</td><td>Cloud Computing 2</td><td></td><td></td></tr>
+<tr><td>22/09/2025</td><td>Presentazione Corso + Introduzione Programmazione Distribuita</td><td></td><td>📕 Cap. 1</td></tr>
 </tbody></table>
-</div><!--  XX/XX/20XX | [Introduzione a Java Enterprise Edition](01-intro) | 
- XX/XX/20XX | [Context Dependency Injection (Introduzione - Esempio di CDI Bean)](02-cdi) | 
-| **Week**|  **2**|
-XX/XX/20XX | [Laboratorio Starting with J2EE ](03-lab-j2ee-intro) | 
-XX/XX/20XX | [Context Dependency Injection (Interceptors)](02-cdi) | 
-XX/XX/20XX | [Java Persistence API (JPA) - Parte 1](04-jpa) | 
-| **Week**|  **3**|
-XX/XX/20XX | [JPA - Parte 2](04-jpa) -  [Laboratorio JPA ](05-lab-jpa)| 
-XX/XX/20XX | [Enterprise JavaBeans (EJB) - Parte 1](06-EJB) | 
-XX/XX/20XX | [EJB - Parte 2](06-EJB) | 
-| **Week**|  **4**|
-XX/XX/20XX | [EJB Lab](07-lab-EJB) | 
-XX/XX/20XX | [Java Messaging Service (JMS) API - Parte 1](08-JMS)| 
-XX/XX/20XX | [JMS - Parte 2](08-JMS) & [JMS Lab](09-lab-JMS) | 
-| **Week**|  **5**|
-XX/XX/20XX | Laboratorio JPA + EJB + JMS  | 
-XX/XX/20XX | [Web Services - Part 1](10-WS) | 
-XX/XX/20XX | [Web Services - Part 2](10-WS) | 
-| **Week**|  **6**|
-XX/XX/20XX | [Web Services Lab](10-lab-WS)  | 
-XX/XX/20XX | Esame Step by Step 1 | 
-XX/XX/20XX | Esame Step by Step 2 | 
-| **Week**|  **7**|
-XX/XX/20XX | Simulazione Esame | 
-| **Week**|  **9**|
-XX/XX/20XX | Introduzione al Cloud Computing **AULA P3** |  -->
-<!--XX/XX/20XX | Simulazione Esame 3 | 
-XX/XX/20XX | Simulazione Esame 4 | 
-| **Week**|  **7**|
-XX/XX/20XX |  | 
-XX/XX/20XX |  | 
-XX/XX/20XX |  | 
-| **Week**|  **8**|
-XX/XX/20XX |  | 
-XX/XX/20XX |  | -->
+</div><!--|26/09/2024 | Programmazione Distribuita (Prof. Scarano) 1| | 📕 Cap. 1 |
+|27/09/2024| Programmazione Distribuita (Prof. Scarano) 2| | 📕 Cap. 1 |
+|30/09/2024 (pari-dispari)| Java Thread 1 | | 📋 [Official Java Essential Concurrency](https://docs.oracle.com/javase/tutorial/essential/concurrency) </br></br> 🌐 Insights: O'Reilly Java Threads (google it)|
+|03/10/2024 | Java Thread 2 |  💾 [Alphonse and Gaston Java Thread](https://www.jdoodle.com/ia/1jpx) </br></br> ⚙️ [Installazione ambiente di sviluppo (solo prima sezione)](05-javaee-lab.html#installazione-ambiente-di-sviluppo) | 📋 [Official Java Essential Concurrency](https://docs.oracle.com/javase/tutorial/essential/concurrency) |
+|04/10/2024 | Laboratorio Thread | [Esercitazione Java Thread](01-threads.md) | [Official Java Essential Concurrency](https://docs.oracle.com/javase/tutorial/essential/concurrency) |
+|07/10/2024 (dispari-pari) | Java Socket TCP 1-2| 📋 [Official Java All About Sockets](https://docs.oracle.com/javase/tutorial/networking/sockets/index.html)| 📕Cap. 2 |
+|10/10/2024 | RMI 1 | | 📕 Cap. 3|
+|11/10/2024  | RMI 2 |[RMI 1 - Hello World](03-rmi.md) |  📕 Cap. 4|
+|14/10/2024 (pari-dispari)| Laboratorio Java RMI| [RMI - Esercizi Java RMI](03-rmi.md) | |
+|  **_Fine Parte A_** ||| 
+|17/10/2024 | Introduzione Java Enterprise Edition (Java EE) | [Java EE](04-javaee.md) | 📗 Cap. 1|
+|18/10/2024 | Contexts and Dependency Injection (CDI) | [CDI Part 1](04-cdi.md) | 📗 Cap. 2|
+|21/10/2024 | Laboratorio Starting with J2EE | [J2EE Lab](05-javaee-lab.md) | |
+|24/10/2024 | CDI Interceptor ➕ Laboratorio J2EE| [CDI Part 2](04-cdi.md) | 📗 Cap. 2 |
+|25/10/2024 | Java Persistence API (JPA) | [ JPA - Part 1](05-jpa.md)  | 📗 Cap. 4-5 |
+|28/10/2024 | Java Persistence API (JPA) | [ JPA - Part 2](05-jpa.md) [Laboratorio JPA](06-jpa-lab.md) | 📗 Cap. 4-5 |
+|31/10/2024 | Enterprise JavaBeans (EJB) - Part 1 ➕ Laboratorio EJB (Esercizio 0)| [ EJB - Part 1](06-ejb.md) | 📗 Cap. 7-9 |
+|04/11/2024 | EJB - Part 2 ➕ Laboratorio EJB|[ EJB - Part 2](06-ejb.md) [EJB - Lab](07-ejb-lab.md) |📗 Cap. 7-9  |
+|07/11/2024 | Java Message Service (JMS) - Part 1  | [ JMS - Part 1](07-jms.md) | 📗 Cap. 13 |
+|08/11/2024 | JMS - Part 2 | [ JMS - Part 2](07-jms.md) | 📗 Cap. 13 |
+|11/11/2024 | Laboratorio EJB ➕ 📝 Quiz Parte A  |  | 📕 |
+|14/11/2024 | Laboratorio EJB ➕ JMS | [EJB - Lab](07-ejb-lab.md) [JMS - Lab](08-jms-lab.md) |  |
+|  **_Fine Parte B_** ||| 
+|15/11/2024 | Laboratorio EJB ➕ JMS | [EJB - Lab](07-ejb-lab.md) [JMS - Lab](08-jms-lab.md) |  |
+|18/11/2024 | Java Web Services (WS) | [Java Web Services (WS) Parte 1](08-ws.md) | 📗 Cap. 14 |
+|21/11/2024 | Laboratorio Java WS ➕ Laboratorio J2EE Step-by-step| [Laboratorio Java WS](09-ws-lab.md)  |  |
+|22/11/2024 | Introduzione al Cloud Computing|  | [Materiale cloud computing](https://github.com/spagnuolocarmine/programmazione-distribuita/raw/main/data/cloud_2023.pdf) |
+|25/11/2024 | Laboratorio J2EE Step-by-step ➕ 📝 Quiz Parte B   |  |  |
+|28/11/2024 | From J2EE to Spring Framework (Teoria) |  | [Introduzione a Spring Framework](https://github.com/spagnuolocarmine/programmazione-distribuita/raw/main/data/introduction_to_spring_citro_2024.pdf) |
+|29/11/2024 | From J2EE to Spring Framework (Pratica) |  | [Spring Framework In Action](https://github.com/tizianocitro/pdtify) |
+|02/12/2024 | Laboratorio J2EE Simulazione |  |  |
+|05/12/2024 | Laboratorio J2EE Simulazione |  |  |
+|06/12/2024 |  📝 Prova Parte C   |  |  |
+|09/12/2024 |  Cloud Computing 2   |  |  |-->
 <hr />
 <h1 id="informazioni-modalità-desame"><a class="header" href="#informazioni-modalità-desame">Informazioni modalità d'esame</a></h1>
 <p><strong>Prova scritta</strong> ➡️ <strong>Svolgimento prova a casa</strong> ➡️ <strong>Consegna progetto</strong> ➡️ <strong>Prova orale</strong></p>
 <h2 id="prova-scritta"><a class="header" href="#prova-scritta">Prova scritta</a></h2>
 <p><strong>Date (da verificare su ESSE3)</strong></p>
 <div class="table-wrapper"><table><thead><tr><th>🗓️</th><th>🕘</th><th>📍</th></tr></thead><tbody>
-<tr><td>17/01/2025</td><td>09:00-12:00</td><td>P3/P4</td></tr>
-<tr><td>07/02/2025</td><td>09:00-12:00</td><td>P3/P4</td></tr>
-<tr><td>21/02/2025</td><td>09:00-12:00</td><td>P3</td></tr>
+<tr><td>????</td><td>????</td><td>????</td></tr>
+<tr><td>????</td><td>????</td><td>????</td></tr>
+<tr><td>????</td><td>????</td><td>????</td></tr>
 </tbody></table>
-</div><!--
-### Svolgimento della prova di esame durante il corso (relativa al primo appello) 🛑 **non definitivo**
-1. 📝 Prova a quiz Ottobre (Libro Programmazione con Oggetti Distribuiti: Java RMI)
-2. 📝 Prova a quiz Novembre (Libro Beginning Java EE 7)
-3. 💻 Prova di programmazione Dicembre (Applicazione Java Enterprise)
-4. ⚽️ Risultati prima dello scritto del primo appello
-5. 🗣️ Esame orale al primo appello
--->
+</div>
+<h3 id="svolgimento-della-prova-di-esame-durante-il-corso-relativa-ad-esame-orale-primo-appello--da-concordare-con-la-classe"><a class="header" href="#svolgimento-della-prova-di-esame-durante-il-corso-relativa-ad-esame-orale-primo-appello--da-concordare-con-la-classe">Svolgimento della prova di esame durante il corso (relativa ad esame orale primo appello) 🛑 <strong>da concordare con la classe</strong></a></h3>
+<ol>
+<li>📝 Prova a quiz fine Ottobre (Libro Programmazione con Oggetti Distribuiti: Java RMI)</li>
+<li>📝 Prova a quiz metà Novembre (Libro Beginning Java EE 7)</li>
+<li>💻 Prova di programmazione fine Dicembre (Applicazione Java Enterprise)</li>
+<li>⚽️ Risultati prima dello scritto del primo appello</li>
+<li>🗣️ Esame orale al primo appello</li>
+</ol>
 <p><strong>Note sullo svolgimento della prova scritta</strong></p>
 <ul>
 <li>Alla terminazione della prova scritta dovete scansionare il compito per poterlo svolgere a casa.</li>
@@ -369,6 +365,7 @@ Linea 22: xxxxxxxxxx
         <script src="book.js"></script>
 
         <!-- Custom JS scripts -->
+
 
 
     </div>
