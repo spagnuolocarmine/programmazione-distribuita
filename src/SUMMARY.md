@@ -7,6 +7,7 @@
   - [Presentazione del corso]()
   - [Introduzione al calcolo distribuito 1]()
   - [Introduzione al calcolo distribuito 2]()
+<!--
 - [2️⃣ 📕]() 
   - [Java Thread 1]()
   - [Java Thread 2]()
@@ -46,3 +47,4 @@
 - [1️⃣0️⃣]()
   - [From J2EE to Spring Framework (Teoria)]()
   - [From J2EE to Spring Framework (Pratica)]()
+  -->
