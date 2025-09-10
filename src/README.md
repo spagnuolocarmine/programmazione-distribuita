@@ -9,12 +9,19 @@
 - 📕 [Programmazione con Oggetti Distribuiti: Java RMI](https://ilmiolibro.kataweb.it/libro/informatica-e-internet/36104/programmazione-con-oggetti-distribuiti-java-rmi-2/)
 - 📗 [Beginning Java EE 7](https://www.amazon.it/Beginning-Java-Expert-Voice-English-ebook/dp/B00EO03GQM)
 
+### Lezioni
+|🗓️ | 🕘 | 📍|
+---------|----------|--------|
+Lun | 11:00-13:00 | Lab Sammet
+Gio | 09:00-11:00 | F8
+Ven | 09:00-11:00 | F8
+
 # Materiale
 
 |🗓️ | Lezione | Materiale| Riferimenti |
 |---------|----------|--------|-----------|
-|23/09/2024 | Presentazione Corso + Introduzione Programmazione Distribuita (Prof. Scarano)| | 📕 Cap. 1 |
-|26/09/2024 | Programmazione Distribuita (Prof. Scarano) 1| | 📕 Cap. 1 |
+|22/09/2025 | Presentazione Corso + Introduzione Programmazione Distribuita| | 📕 Cap. 1 |
+<!--|26/09/2024 | Programmazione Distribuita (Prof. Scarano) 1| | 📕 Cap. 1 |
 |27/09/2024| Programmazione Distribuita (Prof. Scarano) 2| | 📕 Cap. 1 |
 |30/09/2024 (pari-dispari)| Java Thread 1 | | 📋 [Official Java Essential Concurrency](https://docs.oracle.com/javase/tutorial/essential/concurrency) </br></br> 🌐 Insights: O'Reilly Java Threads (google it)|
 |03/10/2024 | Java Thread 2 |  💾 [Alphonse and Gaston Java Thread](https://www.jdoodle.com/ia/1jpx) </br></br> ⚙️ [Installazione ambiente di sviluppo (solo prima sezione)](05-javaee-lab.html#installazione-ambiente-di-sviluppo) | 📋 [Official Java Essential Concurrency](https://docs.oracle.com/javase/tutorial/essential/concurrency) |
@@ -47,44 +54,7 @@
 |02/12/2024 | Laboratorio J2EE Simulazione |  |  |
 |05/12/2024 | Laboratorio J2EE Simulazione |  |  |
 |06/12/2024 |  📝 Prova Parte C   |  |  |
-|09/12/2024 |  Cloud Computing 2   |  |  |
-
-<!--  XX/XX/20XX | [Introduzione a Java Enterprise Edition](01-intro) | 
- XX/XX/20XX | [Context Dependency Injection (Introduzione - Esempio di CDI Bean)](02-cdi) | 
-| **Week**|  **2**|
-XX/XX/20XX | [Laboratorio Starting with J2EE ](03-lab-j2ee-intro) | 
-XX/XX/20XX | [Context Dependency Injection (Interceptors)](02-cdi) | 
-XX/XX/20XX | [Java Persistence API (JPA) - Parte 1](04-jpa) | 
-| **Week**|  **3**|
-XX/XX/20XX | [JPA - Parte 2](04-jpa) -  [Laboratorio JPA ](05-lab-jpa)| 
-XX/XX/20XX | [Enterprise JavaBeans (EJB) - Parte 1](06-EJB) | 
-XX/XX/20XX | [EJB - Parte 2](06-EJB) | 
-| **Week**|  **4**|
-XX/XX/20XX | [EJB Lab](07-lab-EJB) | 
-XX/XX/20XX | [Java Messaging Service (JMS) API - Parte 1](08-JMS)| 
-XX/XX/20XX | [JMS - Parte 2](08-JMS) & [JMS Lab](09-lab-JMS) | 
-| **Week**|  **5**|
-XX/XX/20XX | Laboratorio JPA + EJB + JMS  | 
-XX/XX/20XX | [Web Services - Part 1](10-WS) | 
-XX/XX/20XX | [Web Services - Part 2](10-WS) | 
-| **Week**|  **6**|
-XX/XX/20XX | [Web Services Lab](10-lab-WS)  | 
-XX/XX/20XX | Esame Step by Step 1 | 
-XX/XX/20XX | Esame Step by Step 2 | 
-| **Week**|  **7**|
-XX/XX/20XX | Simulazione Esame | 
-| **Week**|  **9**|
-XX/XX/20XX | Introduzione al Cloud Computing **AULA P3** |  -->
-<!--XX/XX/20XX | Simulazione Esame 3 | 
-XX/XX/20XX | Simulazione Esame 4 | 
-| **Week**|  **7**|
-XX/XX/20XX |  | 
-XX/XX/20XX |  | 
-XX/XX/20XX |  | 
-| **Week**|  **8**|
-XX/XX/20XX |  | 
-XX/XX/20XX |  | -->
-
+|09/12/2024 |  Cloud Computing 2   |  |  |-->
 
 
 ---
@@ -97,18 +67,16 @@ XX/XX/20XX |  | -->
 
 |🗓️ | 🕘 | 📍|
 ---------|----------|--------|
-17/01/2025 | 09:00-12:00 | P3/P4
-07/02/2025 | 09:00-12:00 | P3/P4
-21/02/2025 | 09:00-12:00 | P3
+???? | ???? | ????
+???? | ???? | ????
+???? | ???? | ????
 
-<!--
-### Svolgimento della prova di esame durante il corso (relativa al primo appello) 🛑 **non definitivo**
-1. 📝 Prova a quiz Ottobre (Libro Programmazione con Oggetti Distribuiti: Java RMI)
-2. 📝 Prova a quiz Novembre (Libro Beginning Java EE 7)
-3. 💻 Prova di programmazione Dicembre (Applicazione Java Enterprise)
+### Svolgimento della prova di esame durante il corso (relativa ad esame orale primo appello) 🛑 **da concordare con la classe**
+1. 📝 Prova a quiz fine Ottobre (Libro Programmazione con Oggetti Distribuiti: Java RMI)
+2. 📝 Prova a quiz metà Novembre (Libro Beginning Java EE 7)
+3. 💻 Prova di programmazione fine Dicembre (Applicazione Java Enterprise)
 4. ⚽️ Risultati prima dello scritto del primo appello
 5. 🗣️ Esame orale al primo appello
--->
 
 **Note sullo svolgimento della prova scritta**
 
