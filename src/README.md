@@ -1,7 +1,12 @@
 # PROGRAMMAZIONE DISTRIBUITA
 ### Università degli Studi di Salerno
 
+[Carmine Spagnuolo](https://docenti.unisa.it/028012/home) <br>
+<a href="mailto:cspagnuolo@unisa.it">cspagnuolo[@]unisa.it</a>
+
+
 ![](https://img.shields.io/badge/Language-%F0%9F%87%AE%F0%9F%87%B9-yellow)
+[![](https://img.shields.io/badge/Comunicazioni-elearning.informatica.unisa.it-red)](https://elearning.informatica.unisa.it/el-platform/course/view.php?id=1252)
 ![](https://img.shields.io/badge/cod-0512100021-orange)
 ![](https://img.shields.io/badge/Platform-JAVA%20EE-brightgreen)
 
@@ -58,6 +63,7 @@ Ven | 09:00-11:00 | F8
 
 
 ---
+
 # Informazioni modalità d'esame 
 
 **Prova scritta** ➡️ **Svolgimento prova a casa** ➡️ **Consegna progetto** ➡️ **Prova orale**
@@ -71,14 +77,14 @@ Ven | 09:00-11:00 | F8
 ???? | ???? | ????
 ???? | ???? | ????
 
-### Svolgimento della prova di esame durante il corso (relativa ad esame orale primo appello) 🛑 **da concordare con la classe**
+## Svolgimento della prova di esame durante il corso (relativa ad esame orale primo appello) 🛑 **da concordare con la classe**
 1. 📝 Prova a quiz fine Ottobre (Libro Programmazione con Oggetti Distribuiti: Java RMI)
 2. 📝 Prova a quiz metà Novembre (Libro Beginning Java EE 7)
 3. 💻 Prova di programmazione fine Dicembre (Applicazione Java Enterprise)
 4. ⚽️ Risultati prima dello scritto del primo appello
 5. 🗣️ Esame orale al primo appello
 
-**Note sullo svolgimento della prova scritta**
+## Note sullo svolgimento della prova scritta
 
 - Alla terminazione della prova scritta dovete scansionare il compito per poterlo svolgere a casa.
 - Ricordatevi di portare un congruo numero di fogli bianchi e almeno due penne. La commissione non vi consegnerà NULLA e voi non potrete assolutamente scambiarvi oggetti.
@@ -92,7 +98,8 @@ Ven | 09:00-11:00 | F8
 - Parti non implementate durante l’esame non dovranno essere consegnate nel progetto
 import, getter, setter e toString si possono omettere nello scritto, ma i costruttori vanno implementati.
 
-## ➡️ Svolgimento prova a casa
+
+###  ➡️ Svolgimento prova a casa
 
 - I progetti da consegnare (progetti NetBeans) si devono chiamare “COGNOMENOMEXXX” nei rispettivi files COGNOMENOMEXXX.zip (devono essere esportati).
 - L’archivio che li contiene TUTTI insieme deve chiamarsi COGNOMENOME_EE.zip
@@ -137,11 +144,12 @@ import, getter, setter e toString si possono omettere nello scritto, ma i costru
     Linea 22: xxxxxxxxxx
     ...
     ```
-## ➡️ Consegna progetto
+
+### ➡️ Consegna progetto
 
 - I progetti funzionanti, entro la data indicata sul compito, vanno inviati tramite il link che troverete sul compito o sulla piattaforma MS Teams. 
 - ⚠️ **L’invio dei progetti entro la data stabilita è da considerarsi come richiesta di correzione (nel senso che se non viene inviato, il compito non viene corretto!).**
 
 
 ## ➡️ Prova orale
-- _Il calendario delle prove orali (per gli ammessi) sarà comunicato su MS Teams per ogni appello._
+- _Il calendario delle prove orali (per gli ammessi) sarà comunicato su Elearning del dipartimento per ogni appello._
