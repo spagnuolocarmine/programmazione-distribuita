@@ -4,9 +4,8 @@
   - [🔗 Blog](blog.md)
   - [📝 Esame: modalità con prove intercorso per studenti corsisti](esame_con_intercorso.md)
 - [1️⃣ 📕]()
-  - [Presentazione del corso]()
-  - [Introduzione al calcolo distribuito 1]()
-  - [Introduzione al calcolo distribuito 2]()
+  - [Presentazione del corso e Introduzione]()
+  - [Open Distributed Processing Reference Model]()
 <!--
 - [2️⃣ 📕]() 
   - [Java Thread 1]()
