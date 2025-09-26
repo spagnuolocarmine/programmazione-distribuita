@@ -26,7 +26,7 @@ Ven | 09:00-11:00 | F8
 
 |🗓️ | Lezione | Materiale| Riferimenti |
 |---------|----------|--------|-----------|
-|25/09/2025 | Presentazione Corso + Introduzione Programmazione Distribuita| | 📕 Cap. 1 |
+|25/09/2025 | Presentazione Corso + Introduzione Programmazione Distribuita| [Slide Presentazione](https://prezi.com/view/L27AvjRC5rhkqtGWRRWk/?referral_token=h7tffPlnB3FN)| 📕 Cap. 1 |
 |26/09/2024 |Open Distributed Processing Reference Model | 📕 Cap. 1 |
 <!--|27/09/2024| Programmazione Distribuita (Prof. Scarano) 2| | 📕 Cap. 1 |
 |30/09/2024 (pari-dispari)| Java Thread 1 | | 📋 [Official Java Essential Concurrency](https://docs.oracle.com/javase/tutorial/essential/concurrency) </br></br> 🌐 Insights: O'Reilly Java Threads (google it)|
