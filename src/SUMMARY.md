@@ -6,11 +6,11 @@
 - [1️⃣ 📕]()
   - [Presentazione del corso e Introduzione]()
   - [Open Distributed Processing Reference Model]()
-<!--
 - [2️⃣ 📕]() 
   - [Java Thread 1]()
   - [Java Thread 2]()
   - [Esercitazione Java Thread](01-threads.md)
+<!--
 - [3️⃣ 📕]()
   - [Java Socket TCP 1]()
   - [Java Socket TCP 2]()
