@@ -401,6 +401,73 @@ Linea 22: xxxxxxxxxx
 <p><strong>Quiz Parte B</strong></p>
 <p><img src="https://github.com/spagnuolocarmine/programmazione-distribuita/raw/main/data/scores/quiz-b_20_11_2023.png" alt="quiz-b-2023" />
 </span></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="java-thread"><a class="header" href="#java-thread">Java Thread</a></h1>
+<h2 id="esercizio-1"><a class="header" href="#esercizio-1">Esercizio 1</a></h2>
+<p>Scrivere un programma che incrementa un contatore intero per 40000 volte creando una classe Counter e una classe Incrementatore con il main che istanzia e usa Counter (e verificando poi il valore di Counter stampandolo)</p>
+<ol>
+<li>senza thread;</li>
+<li>generando 4 thread che tutti insieme incrementano di 10000 volte il contatore, SENZA curarsi della race condition  (e vedere il risultato);</li>
+<li>generando 4 thread, curandosi della race condition (e vedere il risultato!).</li>
+</ol>
+<h2 id="esercizio-2"><a class="header" href="#esercizio-2">Esercizio 2</a></h2>
+<p>Scrivere un programma Java per:</p>
+<ul>
+<li>Inizializzare un array di 1200000 interi al valore 42;</li>
+<li>Misurando il tempo necessario.</li>
+</ul>
+<p>Verificare le prestazioni del programma al variare del numero dei thread 1 ... P (P&gt; maggiore del numero di thread del processore).</p>
+<h2 id="esercizio-3"><a class="header" href="#esercizio-3">Esercizio 3</a></h2>
+<p>Scrivere un programma Java per:</p>
+<ul>
+<li>Sommare un array di 1200000 interi inizializzato con valori pseudo-casuali;</li>
+<li>Misurando il tempo necessario.</li>
+</ul>
+<p>Verificare le prestazioni del programma al variare del numero dei thread 1 ... P (P&gt; maggiore del numero di thread del processore).</p>
+<h2 id="esercizio-4"><a class="header" href="#esercizio-4">Esercizio 4</a></h2>
+<p>Scrivere un programma Java per:</p>
+<ul>
+<li>Calcolare il massimo di array di 1200000 interi inizializzato con valori pseudo-casuali;</li>
+<li>Misurando il tempo necessario.</li>
+</ul>
+<p>Verificare le prestazioni del programma al variare del numero dei thread 1 ... P (P&gt; maggiore del numero di thread del processore).</p>
+<h2 id="esercizio-5"><a class="header" href="#esercizio-5">Esercizio 5</a></h2>
+<p>Modificare il seguente codice al fine di scrivere su standard output la stringa <code>smiley :-)</code>.</p>
+<pre><code class="language-java">   public class Smiley extends Thread {
+       public void run() {
+           while(true) {
+               try { 
+                //L TUO CODICE VA QUI
+               } catch (InterruptedException e)
+               { e.printStackTrace(); }
+           }
+       }
+   
+       private  void printparentesichiusa() throws InterruptedException {
+           System.out.println(")"); Thread.sleep(100);
+       }
+       private void printtrattino() throws InterruptedException {
+           System.out.print("-"); Thread.sleep(100);
+       }
+       private void printduepunti() throws InterruptedException {
+           System.out.print(":"); Thread.sleep(100);
+       }
+       public static void main(String[] args) {
+           new Smiley().start();
+           new Smiley().start();
+       }
+   }
+</code></pre>
+<h2 id="esercizio-6"><a class="header" href="#esercizio-6">Esercizio 6</a></h2>
+<ul>
+<li>Scrivere un programma con 2 thread, che va sempre in deadlock.</li>
+<li>Scrivere un programma con 3 thread, che va sempre in deadlock.</li>
+<li>Scrivere un programma dove un numero n (alto) di thread fa incremento di un contatore (inizializzato a 0) per un numero m (alto) di volte.
+<ul>
+<li>Quando l’incremento del contatore non è in mutua esclusione, causare un errore (alla fine il contatore NON è m*n).</li>
+<li>Inserire tecniche di mutua esclusione di tipo vario e verificare l’impatto sulle prestazioni.</li>
+</ul>
+</li>
+</ul>
 
                     </main>
 
