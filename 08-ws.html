@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Esercitazione Java Thread - Programmazione Distribuita</title>
+        <title>Java Web Services (WS) Parte 1 - Programmazione Distribuita</title>
 
 
         <!-- Custom HTML head -->
@@ -175,83 +175,78 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="java-thread"><a class="header" href="#java-thread">Java Thread</a></h1>
-<h2 id="esercizio-1"><a class="header" href="#esercizio-1">Esercizio 1</a></h2>
-<p>Scrivere un programma che incrementa un contatore intero per 40000 volte creando una classe Counter e una classe Incrementatore con il main che istanzia e usa Counter (e verificando poi il valore di Counter stampandolo)</p>
-<ol>
-<li>senza thread;</li>
-<li>generando 4 thread che tutti insieme incrementano di 10000 volte il contatore, SENZA curarsi della race condition  (e vedere il risultato);</li>
-<li>generando 4 thread, curandosi della race condition (e vedere il risultato!).</li>
-</ol>
-<h2 id="esercizio-2"><a class="header" href="#esercizio-2">Esercizio 2</a></h2>
-<p>Scrivere un programma Java per:</p>
-<ul>
-<li>Inizializzare un array di 1200000 interi al valore 42;</li>
-<li>Misurando il tempo necessario.</li>
+                        <ul>
+<li><a href="#contenuti">Contenuti</a></li>
+<li><a href="#materiale-bibliografico">Materiale bibliografico</a></li>
+<li><a href="#domande-di-riepilogo">Domande di riepilogo</a></li>
 </ul>
-<p>Verificare le prestazioni del programma al variare del numero dei thread 1 ... P (P&gt; maggiore del numero di thread del processore).</p>
-<h2 id="esercizio-3"><a class="header" href="#esercizio-3">Esercizio 3</a></h2>
-<p>Scrivere un programma Java per:</p>
+<h1 id="contenuti"><a class="header" href="#contenuti">Contenuti</a></h1>
+<p><em>Parte 1</em></p>
 <ul>
-<li>Sommare un array di 1200000 interi inizializzato con valori pseudo-casuali;</li>
-<li>Misurando il tempo necessario.</li>
-</ul>
-<p>Verificare le prestazioni del programma al variare del numero dei thread 1 ... P (P&gt; maggiore del numero di thread del processore).</p>
-<h2 id="esercizio-4"><a class="header" href="#esercizio-4">Esercizio 4</a></h2>
-<p>Scrivere un programma Java per:</p>
+<li>Service-Oriented Architecture</li>
+<li>I Web Services
 <ul>
-<li>Calcolare il massimo di array di 1200000 interi inizializzato con valori pseudo-casuali;</li>
-<li>Misurando il tempo necessario.</li>
-</ul>
-<p>Verificare le prestazioni del programma al variare del numero dei thread 1 ... P (P&gt; maggiore del numero di thread del processore).</p>
-<h2 id="esercizio-5"><a class="header" href="#esercizio-5">Esercizio 5</a></h2>
-<p>Modificare il seguente codice al fine di scrivere su standard output la stringa <code>smiley :-)</code>.</p>
-<pre><code class="language-java">   public class Smiley extends Thread {
-       public void run() {
-           while(true) {
-               try { 
-                //L TUO CODICE VA QUI
-               } catch (InterruptedException e)
-               { e.printStackTrace(); }
-           }
-       }
-   
-       private  void printparentesichiusa() throws InterruptedException {
-           System.out.println(")"); Thread.sleep(100);
-       }
-       private void printtrattino() throws InterruptedException {
-           System.out.print("-"); Thread.sleep(100);
-       }
-       private void printduepunti() throws InterruptedException {
-           System.out.print(":"); Thread.sleep(100);
-       }
-       public static void main(String[] args) {
-           new Smiley().start();
-           new Smiley().start();
-       }
-   }
-</code></pre>
-<h2 id="esercizio-6"><a class="header" href="#esercizio-6">Esercizio 6</a></h2>
-<ul>
-<li>Scrivere un programma con 2 thread, che va sempre in deadlock.</li>
-<li>Scrivere un programma con 3 thread, che va sempre in deadlock.</li>
-<li>Scrivere un programma dove un numero n (alto) di thread fa incremento di un contatore (inizializzato a 0) per un numero m (alto) di volte.
-<ul>
-<li>Quando l’incremento del contatore non è in mutua esclusione, causare un errore (alla fine il contatore NON è m*n).</li>
-<li>Inserire tecniche di mutua esclusione di tipo vario e verificare l’impatto sulle prestazioni.</li>
+<li>Definizioni</li>
+<li>I ruoli nei WS</li>
 </ul>
 </li>
+<li>Gli standard
+<ul>
+<li>WSDL</li>
+<li>SOAP</li>
+<li>UDDI</li>
+</ul>
+</li>
+<li>Le specifiche di WS</li>
+</ul>
+<p><em>Parte 2</em></p>
+<ul>
+<li>WS in Java
+<ul>
+<li>WSDL Mapping</li>
+<li>Eccezioni e Fault</li>
+<li>Contesto e ciclo di vita</li>
+<li>Un esempio riassuntivo</li>
+</ul>
+</li>
+<li>Supporto ai WS in Netbeans
+<ul>
+<li>il progetto per WS</li>
+<li>testing</li>
+<li>WS Client</li>
+</ul>
+</li>
+</ul>
+<h1 id="materiale-bibliografico"><a class="header" href="#materiale-bibliografico">Materiale bibliografico</a></h1>
+<ul>
+<li>"Beginning Java Enterprise Edition": capitolo 14</li>
+<li>"A Survey of Web Services Technologies".  Papazoglou, Michael P. and Dubray, Jean-jacques (2004)</li>
+</ul>
+<h1 id="domande-di-riepilogo"><a class="header" href="#domande-di-riepilogo">Domande di riepilogo</a></h1>
+<ul>
+<li>Che cos'e' una Service-Oriented Architecture?</li>
+<li>Quali sono i requisiti di un Web Service?</li>
+<li>Il ruolo del proxy nel meccanismo di invocazione di un Web Service</li>
+<li>Cosa rappresenta il file WSDL?</li>
+<li>Che cos'e' SOAP?</li>
+<li>Quali sono le gli stili di SOAP binding?</li>
+<li>Quando UDDI risulta opzionale?</li>
+<li>Come vengono gestite le eccezioni nei WS?</li>
+<li>Come si scrive un WebService in Java?</li>
+<li>A cosa servono le annotazioni @WebMethod, @WebResult, @WebParam?</li>
+<li>Quali sono le differenze tra la serializzazione classiche e quella di JAXB?</li>
+<li>A cosa servere avere un WebService come EJB Stateless?</li>
 </ul>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="esame_con_intercorso.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="08-jms-lab.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next prefetch" href="03-rmi.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="09-ws-lab.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -261,11 +256,11 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="esame_con_intercorso.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="08-jms-lab.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next prefetch" href="03-rmi.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="09-ws-lab.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>

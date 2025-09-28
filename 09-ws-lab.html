@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Esercitazione Java Thread - Programmazione Distribuita</title>
+        <title>Laboratorio Java WS - Programmazione Distribuita</title>
 
 
         <!-- Custom HTML head -->
@@ -175,85 +175,170 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="java-thread"><a class="header" href="#java-thread">Java Thread</a></h1>
-<h2 id="esercizio-1"><a class="header" href="#esercizio-1">Esercizio 1</a></h2>
-<p>Scrivere un programma che incrementa un contatore intero per 40000 volte creando una classe Counter e una classe Incrementatore con il main che istanzia e usa Counter (e verificando poi il valore di Counter stampandolo)</p>
-<ol>
-<li>senza thread;</li>
-<li>generando 4 thread che tutti insieme incrementano di 10000 volte il contatore, SENZA curarsi della race condition  (e vedere il risultato);</li>
-<li>generando 4 thread, curandosi della race condition (e vedere il risultato!).</li>
-</ol>
-<h2 id="esercizio-2"><a class="header" href="#esercizio-2">Esercizio 2</a></h2>
-<p>Scrivere un programma Java per:</p>
-<ul>
-<li>Inizializzare un array di 1200000 interi al valore 42;</li>
-<li>Misurando il tempo necessario.</li>
+                        <ul>
+<li><a href="#esercizio-0---card-validator">Esercizio 0 - Card Validator</a></li>
+<li><a href="#esercizio-1---previsioni-meteo">Esercizio 1 - Previsioni Meteo</a></li>
+<li><a href="#esercizio-2---web-service-previsioni-meteo-avanzate">Esercizio 2 - Web Service Previsioni Meteo Avanzate</a></li>
+<li><a href="#esercizio-3---pdtify--%EF%B8%8F">Esercizio 3 - PDtify 🎵 ⏯️</a></li>
 </ul>
-<p>Verificare le prestazioni del programma al variare del numero dei thread 1 ... P (P&gt; maggiore del numero di thread del processore).</p>
-<h2 id="esercizio-3"><a class="header" href="#esercizio-3">Esercizio 3</a></h2>
-<p>Scrivere un programma Java per:</p>
+<h1 id="esercizio-0---card-validator"><a class="header" href="#esercizio-0---card-validator">Esercizio 0 - Card Validator</a></h1>
 <ul>
-<li>Sommare un array di 1200000 interi inizializzato con valori pseudo-casuali;</li>
-<li>Misurando il tempo necessario.</li>
-</ul>
-<p>Verificare le prestazioni del programma al variare del numero dei thread 1 ... P (P&gt; maggiore del numero di thread del processore).</p>
-<h2 id="esercizio-4"><a class="header" href="#esercizio-4">Esercizio 4</a></h2>
-<p>Scrivere un programma Java per:</p>
-<ul>
-<li>Calcolare il massimo di array di 1200000 interi inizializzato con valori pseudo-casuali;</li>
-<li>Misurando il tempo necessario.</li>
-</ul>
-<p>Verificare le prestazioni del programma al variare del numero dei thread 1 ... P (P&gt; maggiore del numero di thread del processore).</p>
-<h2 id="esercizio-5"><a class="header" href="#esercizio-5">Esercizio 5</a></h2>
-<p>Modificare il seguente codice al fine di scrivere su standard output la stringa <code>smiley :-)</code>.</p>
-<pre><code class="language-java">   public class Smiley extends Thread {
-       public void run() {
-           while(true) {
-               try { 
-                //L TUO CODICE VA QUI
-               } catch (InterruptedException e)
-               { e.printStackTrace(); }
-           }
-       }
-   
-       private  void printparentesichiusa() throws InterruptedException {
-           System.out.println(")"); Thread.sleep(100);
-       }
-       private void printtrattino() throws InterruptedException {
-           System.out.print("-"); Thread.sleep(100);
-       }
-       private void printduepunti() throws InterruptedException {
-           System.out.print(":"); Thread.sleep(100);
-       }
-       public static void main(String[] args) {
-           new Smiley().start();
-           new Smiley().start();
-       }
-   }
+<li>
+<p>New project ➡️ Java with Ant ➡️ Java Web ➡️ Web Application: <code>CardValidatorWebApplication</code></p>
+</li>
+<li>
+<p>Definiamo un nuovo oggetto <code>Card</code> utilizzando JAXB (Java Architecture for XML Binding)</p>
+<pre><code class="language-java">@XmlRootElement
+@XmlAccessorType(XmlAccessType.FIELD)
+public class CreditCard {
+    @XmlAttribute(required = true)
+    private String number;
+    private String expiryDate;
+    private Integer controlNumber; 
+    private String type;
+    // Constructors , getters , setters
+}
 </code></pre>
-<h2 id="esercizio-6"><a class="header" href="#esercizio-6">Esercizio 6</a></h2>
+</li>
+<li>
+<p>Definiamo una nuova interfaccia <code>Validator</code></p>
+<pre><code class="language-java">  @WebService
+  public interface Validator {
+      public boolean validate(CreditCard creditCard); 
+  }
+</code></pre>
+</li>
+<li>
+<p>Definiamo un nuovo Web Service <code>CardValidator</code> che implementa un interfaccia <code>Validator</code></p>
 <ul>
-<li>Scrivere un programma con 2 thread, che va sempre in deadlock.</li>
-<li>Scrivere un programma con 3 thread, che va sempre in deadlock.</li>
-<li>Scrivere un programma dove un numero n (alto) di thread fa incremento di un contatore (inizializzato a 0) per un numero m (alto) di volte.
-<ul>
-<li>Quando l’incremento del contatore non è in mutua esclusione, causare un errore (alla fine il contatore NON è m*n).</li>
-<li>Inserire tecniche di mutua esclusione di tipo vario e verificare l’impatto sulle prestazioni.</li>
+<li>New Files ... ➡️ Web Services ➡️ Web Service</li>
+<li><em>Name</em> : <code>CardValidator</code></li>
+<li><em>Implement Web Service as Stateless Session Beans</em>: [✔️]</li>
 </ul>
 </li>
 </ul>
+<pre><code class="language-java">@WebService(serviceName = "CardValidator")
+public class CardValidator implements Validator {
+    public boolean validate(CreditCard creditCard) {
+        Character lastDigit = creditCard.getNumber().charAt( creditCard.getNumber().length() - 1);
+        if (Integer.parseInt(lastDigit.toString()) % 2 == 0) {
+             return true;
+        } else {
+                 return false; 
+                }
+    }    
+}
+</code></pre>
+<ul>
+<li><strong>Testing</strong>: Project ➡️ Web Services ➡️ <code>Card Validator</code>➡️ Test Web Service</li>
+<li>Aggiungere al Web Service <code>Card Validator</code> un nuovo metodo <code>validatedata</code>che prende come parametri tutti i campi di <code>Card</code>singolarmente e utilizza <code>validate</code> restituire una stringa <code>valid| not valid</code>.
+<ul>
+<li>utilizzare il wizard di netbeans per aggungere il metodo  Project ➡️ Web Services ➡️ <code>Card Validator</code>➡️ Add Operation ...</li>
+<li>successivamente modificare il codice come segue:
+<pre><code class="language-java">public String validatedata(String number, String expiryDate, Integer controlNumber, String type) {
+    Character lastDigit = number.charAt( number.length() - 1);
+    if (validate(new CreditCard(number, expiryDate, controlNumber,type))) {
+         return "valid"; 
+    } else {
+             return "not valid"; 
+            }
+}    
+</code></pre>
+</li>
+</ul>
+</li>
+<li>Definire un nuovo Web Service Client
+<ul>
+<li>New Project ➡️ Jav with Ant ➡️ Java Application</li>
+<li><em>Nome</em>: <code>ValidateWSClient</code></li>
+<li>Project ➡️ New Web Service Client
+<ul>
+<li>Project ➡️ Browse ...</li>
+<li><code>CardValidatorWebApplication</code> ➡️ <code>CardValidator</code></li>
+<li>Visualizzare i file generati in <code>Generated Sources (jax-ws)</code></li>
+<li>Definire l'oggetto <code>ValidateWSClient</code> come segue:
+<pre><code class="language-java">public class ValidateWSClient {
+
+    public static void main(String[] args) {
+        CardValidator_Service service = new CardValidator_Service();
+        CardValidator port = service.getCardValidatorPort();
+        CreditCard card = new CreditCard();
+        card.setNumber("6011111111111118");
+        System.out.println(port.validate(card));
+        
+    }
+    
+}
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="esercizio-1---previsioni-meteo"><a class="header" href="#esercizio-1---previsioni-meteo">Esercizio 1 - Previsioni Meteo</a></h1>
+<p>Scrivere un servizio Web Service che implementa un servizio di previsioni meteo. Il servizio
+implementa un servizio <code>forecast()</code> che prende in input una stringa con il nome del luogo
+in cui fare previsione (ad esempio “Salerno” o “Fisciano”), e restituisce una stringa con la
+previsione (ad esempio “sole”, “pioggia”, “neve”, “nebbia”). L’implementazione del servizio
+restituisce sempre “sole” se l’input è “Salerno”, “pioggia” se l’input è “Fisciano”, oppure un
+valore casuale se l’input è diverso.</p>
+<p>Implementare un client Java che richiede il servizio di previsioni per diverse località, e le
+stampa a video.</p>
+<h1 id="esercizio-2---web-service-previsioni-meteo-avanzate"><a class="header" href="#esercizio-2---web-service-previsioni-meteo-avanzate">Esercizio 2 - Web Service Previsioni Meteo Avanzate</a></h1>
+<p>Aggiungere al Web Service dell’esercizio precedente una funzionalità chiamata
+<code>advancedForecast()</code> che prende in input un oggetto <code>Place</code> con i seguenti attributi:</p>
+<ul>
+<li>Stringa con nome del posto</li>
+<li>Coordinate GPS</li>
+</ul>
+<p>e restituisce un oggetto Forecast con i seguenti attributi:</p>
+<ul>
+<li>Stringa con la descrizione della previsione</li>
+<li>Temperatura</li>
+<li>Direzione del vento</li>
+<li>Forza del vento</li>
+<li>Umidità</li>
+</ul>
+<p>I valori in output posso essere casuali. Implementare un client Java che richiede il servizio di previsioni avanzato per diverse località, e le visualizza su standard output.</p>
+<h1 id="esercizio-3---pdtify--"><a class="header" href="#esercizio-3---pdtify--">Esercizio 3 - PDtify 🎵 ⏯️</a></h1>
+<p>Modificare il progetto PDtify per offrire  le funzionalità di MusicLibrary utilizzando anche un Web Service.
+Sviluppare un client java che permette di eseguire tutte le funzionalità di PDtify e per eseguire il play di una canzone utilizzare il seguente esempio.</p>
+<pre><code class="language-java">public class TestOpenBrowser {
+    public static void main(String[] args) {
+         String url = "https://www.youtube.com/embed/lLGLUSzzuWU";
+
+        if(Desktop.isDesktopSupported()){
+            Desktop desktop = Desktop.getDesktop();
+            try {
+                desktop.browse(new URI(url));
+            } catch (IOException | URISyntaxException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+        }else{
+            Runtime runtime = Runtime.getRuntime();
+            try {
+                runtime.exec("xdg-open " + url);
+            } catch (IOException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+        }
+    }
+    
+}
+
+</code></pre>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="esame_con_intercorso.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="08-ws.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next prefetch" href="03-rmi.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                                <i class="fa fa-angle-right"></i>
-                            </a>
 
                         <div style="clear: both"></div>
                     </nav>
@@ -261,13 +346,10 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="esame_con_intercorso.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="08-ws.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next prefetch" href="03-rmi.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                        <i class="fa fa-angle-right"></i>
-                    </a>
             </nav>
 
         </div>

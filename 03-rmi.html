@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Esercitazione Java Thread - Programmazione Distribuita</title>
+        <title>Laboratorio Java RMI - Programmazione Distribuita</title>
 
 
         <!-- Custom HTML head -->
@@ -175,83 +175,157 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="java-thread"><a class="header" href="#java-thread">Java Thread</a></h1>
-<h2 id="esercizio-1"><a class="header" href="#esercizio-1">Esercizio 1</a></h2>
-<p>Scrivere un programma che incrementa un contatore intero per 40000 volte creando una classe Counter e una classe Incrementatore con il main che istanzia e usa Counter (e verificando poi il valore di Counter stampandolo)</p>
-<ol>
-<li>senza thread;</li>
-<li>generando 4 thread che tutti insieme incrementano di 10000 volte il contatore, SENZA curarsi della race condition  (e vedere il risultato);</li>
-<li>generando 4 thread, curandosi della race condition (e vedere il risultato!).</li>
-</ol>
-<h2 id="esercizio-2"><a class="header" href="#esercizio-2">Esercizio 2</a></h2>
-<p>Scrivere un programma Java per:</p>
+                        <h1 id="java-remote-method-invocation-rmi"><a class="header" href="#java-remote-method-invocation-rmi">Java Remote Method Invocation (RMI)</a></h1>
+<h2 id="hello-world-con-java-remote-method-invocation"><a class="header" href="#hello-world-con-java-remote-method-invocation">Hello World con Java Remote Method Invocation</a></h2>
 <ul>
-<li>Inizializzare un array di 1200000 interi al valore 42;</li>
-<li>Misurando il tempo necessario.</li>
-</ul>
-<p>Verificare le prestazioni del programma al variare del numero dei thread 1 ... P (P&gt; maggiore del numero di thread del processore).</p>
-<h2 id="esercizio-3"><a class="header" href="#esercizio-3">Esercizio 3</a></h2>
-<p>Scrivere un programma Java per:</p>
+<li>In questo esempio utilizzeremo per il servizio di naming Java RMI registry <code>rmiregistry</code> presente nella directory <code>bin</code> della jdk,
 <ul>
-<li>Sommare un array di 1200000 interi inizializzato con valori pseudo-casuali;</li>
-<li>Misurando il tempo necessario.</li>
-</ul>
-<p>Verificare le prestazioni del programma al variare del numero dei thread 1 ... P (P&gt; maggiore del numero di thread del processore).</p>
-<h2 id="esercizio-4"><a class="header" href="#esercizio-4">Esercizio 4</a></h2>
-<p>Scrivere un programma Java per:</p>
-<ul>
-<li>Calcolare il massimo di array di 1200000 interi inizializzato con valori pseudo-casuali;</li>
-<li>Misurando il tempo necessario.</li>
-</ul>
-<p>Verificare le prestazioni del programma al variare del numero dei thread 1 ... P (P&gt; maggiore del numero di thread del processore).</p>
-<h2 id="esercizio-5"><a class="header" href="#esercizio-5">Esercizio 5</a></h2>
-<p>Modificare il seguente codice al fine di scrivere su standard output la stringa <code>smiley :-)</code>.</p>
-<pre><code class="language-java">   public class Smiley extends Thread {
-       public void run() {
-           while(true) {
-               try { 
-                //L TUO CODICE VA QUI
-               } catch (InterruptedException e)
-               { e.printStackTrace(); }
-           }
-       }
-   
-       private  void printparentesichiusa() throws InterruptedException {
-           System.out.println(")"); Thread.sleep(100);
-       }
-       private void printtrattino() throws InterruptedException {
-           System.out.print("-"); Thread.sleep(100);
-       }
-       private void printduepunti() throws InterruptedException {
-           System.out.print(":"); Thread.sleep(100);
-       }
-       public static void main(String[] args) {
-           new Smiley().start();
-           new Smiley().start();
-       }
-   }
-</code></pre>
-<h2 id="esercizio-6"><a class="header" href="#esercizio-6">Esercizio 6</a></h2>
-<ul>
-<li>Scrivere un programma con 2 thread, che va sempre in deadlock.</li>
-<li>Scrivere un programma con 3 thread, che va sempre in deadlock.</li>
-<li>Scrivere un programma dove un numero n (alto) di thread fa incremento di un contatore (inizializzato a 0) per un numero m (alto) di volte.
-<ul>
-<li>Quando l’incremento del contatore non è in mutua esclusione, causare un errore (alla fine il contatore NON è m*n).</li>
-<li>Inserire tecniche di mutua esclusione di tipo vario e verificare l’impatto sulle prestazioni.</li>
+<li>per permettere al registro di caricare la codebase necessaria dobbiamo avviarlo all'interno della directory contente i file <code>.class</code>del nostro progetto, nel costro caso la direcory <code>$Project/build/classes</code></li>
 </ul>
 </li>
+<li>Per i nostri scopi definiamo un nuovo SecurityManager che garantisce una politica <code>AllPermission</code>.</li>
+<li>Per la lookup degli oggetti remoti utilizzeremo la classe <a href="https://docs.oracle.com/javase/8/docs/api/java/rmi/Naming.html"><code>Naming</code></a>.</li>
+<li><a href="https://docs.oracle.com/javase/8/docs/technotes/guides/rmi/hello/hello-world.html">Material di supporto: Oracle Getting Started Using Java RMI</a></li>
 </ul>
+<ol>
+<li>Definizione interfaccia remota <code>Hello.java</code></li>
+</ol>
+<pre><code class="language-java">   public interface Hello extends java.rmi.Remote {
+     String dimmiQualcosa(String daChi) throws java.rmi.RemoteException;
+   }
+</code></pre>
+<ol start="2">
+<li>Implementazione dell'oggetto remoto <code>HelloImpl.java</code></li>
+</ol>
+<pre><code class="language-java">import java.rmi.*;
+import java.rmi.server.UnicastRemoteObject; 
+import java.security.Permission;
+import java.util.logging.Logger;
+public class HelloImpl extends UnicastRemoteObject implements Hello {
+    
+    private static final long serialVersionUID = -4469091140865645865L;
+    static Logger logger= Logger.getLogger("global");
+    public HelloImpl() throws RemoteException { }
+    public String dimmiQualcosa(String daChi) throws RemoteException {
+        logger.info("Sto salutando "+daChi);
+        return "Ciao "+daChi+"!"; 
+    }
+    public static void main(String args[]) throws RemoteException { 
+        //questo codice permette di evitare di scrivere il file policy
+        System.setSecurityManager(new SecurityManager() {
+            @Override
+            public void checkPermission(Permission perm) {
+            }
+            @Override
+            public void checkPermission(Permission perm, Object context) {
+            }
+        });
+        try {
+            logger.info("Creo l’oggetto remoto..."); 
+            HelloImpl obj = new HelloImpl(); 
+            logger.info("... ne effettuo il rebind...");
+            Naming.rebind("HelloServer", obj); 
+           
+            logger.info("... Pronto!");
+        } catch (Exception e) { 
+            e.printStackTrace();
+        }
+    }
+}
+</code></pre>
+<ol start="3">
+<li>Definizione del client che utilizza l'oggetto remoto <code>HelloClient.java</code></li>
+</ol>
+<pre><code class="language-java">import java.rmi.*;
+import java.util.logging.Logger;
+public class HelloClient {
+    static Logger logger= Logger.getLogger("global");
+    public static void main(String args[]) { 
+        try {
+            
+        logger.info("Sto cercando l’oggetto remoto..."); 
+        Hello obj = (Hello) Naming.lookup("rmi://localhost/HelloServer");  
+        logger.info("... Trovato! Invoco metodo...");
+        String risultato = obj.dimmiQualcosa("Pippo");
+        System.out.println("Ricevuto:"+ risultato); } 
+        catch (Exception e) { e.printStackTrace(); }
+
+    }
+}
+</code></pre>
+<ol start="4">
+<li>Esecuzione del progetto
+<ul>
+<li>avviare <code>rmiregistry</code> dalla directory <code>~/$PROJECT_NAME/build/classes</code> porta di default <code>rmiregistry</code> 1099.</li>
+<li>eseguire <code>HelloImpl.java</code>da netbeans tasto destro run file.</li>
+<li>eseguire <code>HelloClient.java</code>da netbeans tasto destro run file.</li>
+</ul>
+</li>
+</ol>
+<h2 id="rmiregistry-locale-e-export-di-oggetti-remoti"><a class="header" href="#rmiregistry-locale-e-export-di-oggetti-remoti"><code>rmiregistry</code> locale e export di oggetti remoti</a></h2>
+<ul>
+<li>Server</li>
+</ul>
+<pre><code class="language-java">public void createStubAndBind() throws RemoteException {
+	MessengerService stub = (MessengerService) UnicastRemoteObject.exportObject((MessengerService) this, 0);
+	Registry registry = LocateRegistry.createRegistry(1099);
+	registry.rebind("MessengerService", stub);
+}
+</code></pre>
+<ul>
+<li>Client</li>
+</ul>
+<pre><code class="language-java">Registry registry = LocateRegistry.getRegistry();
+MessengerService server = (MessengerService) registry.lookup("MessengerService");
+responseMessage = server.sendMessage("Client Message");
+</code></pre>
+<h2 id="esercizi-java-rmi"><a class="header" href="#esercizi-java-rmi">Esercizi Java RMI</a></h2>
+<ol>
+<li>Progettare e realizzare una semplice applicazione RMI client/server per realizzare una calcolatrice:
+<ul>
+<li>Interfaccia remota <code>Calculator</code> che definire i metodi per le operazioni di somma, sottrazione, divisione e moltiplicazione;</li>
+<li><code>CalculatorImpl</code> implementa l'interfaccia <code>Calculator</code> ed estende <code> java.rmi.server.UnicastRemoteObject</code> definendo la logica dell'applicazione;</li>
+<li><code>CalculatorServer</code> definisce solo il metodo <em>main</em> e costruisce ed esporta l'oggetto remoto  <code>CalculatorImpl</code>;</li>
+<li><code>CalculatorClient</code> utilizza l'oggetto remoto <code>Calculator</code>.</li>
+</ul>
+</li>
+<li>Progettare e realizzare una  applicazione RMI client/server per la gestione delle prenotazioni di un Hotel, con le seguenti operazioni:
+<ul>
+<li>il client deve essere in grado di ottenere la lista delle stanze libere;</li>
+<li>il client può tentare di prenotare una stanza e ottiene un risultato booleano;</li>
+<li>la applicazione deve funzionare in presenza di più client connessi.</li>
+</ul>
+</li>
+<li>Progettare e realizzare una applicazione RMI client/server per la gestione di un sistema di votazione, con le seguenti operazioni:
+<ul>
+<li>il client deve essere in grado di ottenere la lista dei candidati;</li>
+<li>il client può votare per un candidato e ottiene lo score medio;</li>
+<li>il client può ottenere il risultato delle votazioni (media delle votazioni);</li>
+<li>la applicazione deve funzionare in presenza di più client connessi.</li>
+</ul>
+</li>
+<li>Progettare e realizzare una applicazione RMI client/server (multi-client) per la gestione di una libreria musicale:
+<ul>
+<li>il client deve essere in grado di ottenere la lista delle canzoni (titolo univoco - link youtube - client name univoco);</li>
+<li>il client può caricare una nuova canzone (titolo univoco - link youtube - client name univoco) visibile a tutti gli altri client;</li>
+<li>il client deve essere in grado di creare delle playlist musicali (sub-set delle canzoni) con titolo univoco visibile a tutti gli altri client;</li>
+<li>il client può eseguire il play di una canzone o di una playlist (il risultato del metodo sono tutti i link youtube);</li>
+<li>il server tiene traccia della riproduzione di una specifica canzone o di una playlist (titolo univoco canzone/playlist, #volte, Lista delle riproduzioni con data e ora);</li>
+<li>il server deve permettere al client di ottenere la lista delle TOP 10 canzoni/playlist riprodotte per ultima settimana, mese e anno.</li>
+<li><em>Nota</em> 🔗 : ottenere i link da youtube utilizzando il tasto <em>Condividi</em> ➡️ <em>Incorpora</em> dal player youtube;</li>
+</ul>
+</li>
+</ol>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="esame_con_intercorso.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="01-threads.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next prefetch" href="03-rmi.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="04-javaee.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -261,11 +335,11 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="esame_con_intercorso.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="01-threads.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next prefetch" href="03-rmi.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="04-javaee.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>
