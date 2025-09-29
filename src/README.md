@@ -28,8 +28,8 @@ Ven | 09:00-11:00 | F8
 |---------|----------|--------|-----------|
 |25/09/2025 | Presentazione Corso + Introduzione Programmazione Distribuita| [Slide Presentazione](https://prezi.com/view/L27AvjRC5rhkqtGWRRWk/?referral_token=h7tffPlnB3FN)| 📕 Cap. 1 |
 |26/09/2024 |Open Distributed Processing Reference Model | | 📕 Cap. 1 |
-|29/09/2025 (pari-dispari)| Java Thread 1 | | 📋 [Official Java Essential Concurrency](https://docs.oracle.com/javase/tutorial/essential/concurrency) </br></br> 🌐 Insights: O'Reilly Java Threads (google it)|
-|02/10/2025 | Java Thread 2 |  💾 [Alphonse and Gaston Java Thread](https://www.jdoodle.com/ia/1jpx) </br></br> ⚙️ [Installazione ambiente di sviluppo (solo prima sezione)](05-javaee-lab.html#installazione-ambiente-di-sviluppo) | 📋 [Official Java Essential Concurrency](https://docs.oracle.com/javase/tutorial/essential/concurrency) |
+|29/09/2025 (pari-dispari)| Java Thread 1 | ⚙️ [Installazione ambiente di sviluppo (solo prima sezione)](05-javaee-lab.html#installazione-ambiente-di-sviluppo)| 📋 [Official Java Essential Concurrency](https://docs.oracle.com/javase/tutorial/essential/concurrency) </br></br> 🌐 Insights: O'Reilly Java Threads (google it)|
+|02/10/2025 | Java Thread 2 |  💾 [Alphonse and Gaston Java Thread](https://www.jdoodle.com/ia/1jpx) | 📋 [Official Java Essential Concurrency](https://docs.oracle.com/javase/tutorial/essential/concurrency) |
 |03/10/2025 | Laboratorio Thread | [Esercitazione Java Thread](01-threads.md) | [Official Java Essential Concurrency](https://docs.oracle.com/javase/tutorial/essential/concurrency) |
 <!--|07/10/2024 (dispari-pari) | Java Socket TCP 1-2| 📋 [Official Java All About Sockets](https://docs.oracle.com/javase/tutorial/networking/sockets/index.html)| 📕Cap. 2 |
 |10/10/2024 | RMI 1 | | 📕 Cap. 3|
