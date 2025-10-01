@@ -30,7 +30,7 @@ Ven | 09:00-11:00 | F8
 |26/09/2024 |Open Distributed Processing Reference Model | | 📕 Cap. 1 |
 |29/09/2025 | Java Thread 1 | ⚙️ [Installazione ambiente di sviluppo (solo prima sezione)](05-javaee-lab.html#installazione-ambiente-di-sviluppo)| 📋 [Official Java Essential Concurrency](https://docs.oracle.com/javase/tutorial/essential/concurrency) </br></br> 🌐 Insights: O'Reilly Java Threads (google it)|
 |02/10/2025 | Java Thread 2 |  💾 [Alphonse and Gaston Java Thread](https://www.jdoodle.com/ia/1jpx) | 📋 [Official Java Essential Concurrency](https://docs.oracle.com/javase/tutorial/essential/concurrency) |
-|03/10/2025 | Laboratorio Thread | [Esercitazione Java Thread](01-threads.md) | [Official Java Essential Concurrency](https://docs.oracle.com/javase/tutorial/essential/concurrency) |
+|03/10/2025 | Laboratorio Thread | [Esercitazione Java Thread](01-threads.md) | [📖 Java Threads - Understanding and Mastering Concurrent Programming](https://github.com/shannonasmith/Java_books/blob/main/Java%20Threads%203e%20(2004).pdf) |
 <!--|07/10/2024 (dispari-pari) | Java Socket TCP 1-2| 📋 [Official Java All About Sockets](https://docs.oracle.com/javase/tutorial/networking/sockets/index.html)| 📕Cap. 2 |
 |10/10/2024 | RMI 1 | | 📕 Cap. 3|
 |11/10/2024  | RMI 2 |[RMI 1 - Hello World](03-rmi.md) |  📕 Cap. 4|
