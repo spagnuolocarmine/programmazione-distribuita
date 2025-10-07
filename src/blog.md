@@ -1,6 +1,6 @@
 # Blog
 <!-- - [ ] [The Ten Computer Science Superpowers 🇬🇧](cs-superpowers.md): frequently update.-->
-- [x] [THE GARBAGE COLLECTION HANDBOOK](https://api.pageplace.de/preview/DT0400.9781000883688_A47220885/preview-9781000883688_A47220885.pdf)
+- [x] [THE GARBAGE COLLECTION HANDBOOK (preview the document search for full version)](https://api.pageplace.de/preview/DT0400.9781000883688_A47220885/preview-9781000883688_A47220885.pdf)
 - [x] [Low-Latency, High-Throughput Garbage Collection](https://arxiv.org/pdf/2210.17175)
 - [x] [A (s)crappy Java Virtual Machine implementation, in Javascript](https://github.com/bzotto/kopiluwak)
 - [x] [Test RMI Thread Safeness](https://github.com/spagnuolocarmine/programmazione-distribuita/raw/main/data/rmi_test_thread_safeness.zip) ✅: importare i sorgenti in un nuovo progetto Java Application. Eseguire prima l'ogetto remoto ```MessengerServiceImpl```e poi il file ```Client```che esegue 50 clients in thread separati.
