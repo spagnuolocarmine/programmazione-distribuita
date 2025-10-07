@@ -14,6 +14,7 @@
 - 📕 [Programmazione con Oggetti Distribuiti: Java RMI](https://ilmiolibro.kataweb.it/libro/informatica-e-internet/36104/programmazione-con-oggetti-distribuiti-java-rmi-2/)
 - 📗 [Beginning Java EE 7](https://www.amazon.it/Beginning-Java-Expert-Voice-English-ebook/dp/B00EO03GQM)
 - 📝 [Introduzione a Spring](https://github.com/tizianocitro/pdtify/blob/main/presentation/SpringIntroduction.pdf)
+- 🔗 [Blog of related course materials](https://spagnuolocarmine.github.io/programmazione-distribuita/blog.html)
 
 ### Lezioni
 |🗓️ | 🕘 | 📍|
