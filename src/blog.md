@@ -1,4 +1,4 @@
-# Blog
+# Blog of related course materials
 <!-- - [ ] [The Ten Computer Science Superpowers 🇬🇧](cs-superpowers.md): frequently update.-->
 - [THE GARBAGE COLLECTION HANDBOOK (preview the document search for full version)](https://api.pageplace.de/preview/DT0400.9781000883688_A47220885/preview-9781000883688_A47220885.pdf)
 - [Low-Latency, High-Throughput Garbage Collection](https://arxiv.org/pdf/2210.17175)
