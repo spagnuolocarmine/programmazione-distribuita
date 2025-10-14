@@ -35,7 +35,7 @@ Ven | 09:00-11:00 | F8
 |06/10/2025 | Java Socket TCP 1-2| 📋 [Official Java All About Sockets](https://docs.oracle.com/javase/tutorial/networking/sockets/index.html)| 📕Cap. 2 |
 |09/10/2025 | RMI 1 | | 📕 Cap. 3|
 |10/10/2025 | RMI 2 |[RMI 1 - Hello World](03-rmi.md) |  📕 Cap. 4|
-|13/10/2025 (pari-dispari)| Laboratorio Java RMI| [RMI - Esercizi Java RMI](03-rmi.md) | |
+|13/10/2025 | Laboratorio Java RMI| [RMI - Esercizi Java RMI](03-rmi.md) | |
 |  **_Fine Parte A_** ||| 
 |16/10/2025 | Introduzione Java Enterprise Edition (Java EE) | [Java EE](04-javaee.md) | 📗 Cap. 1|
 |17/10/2025 | Contexts and Dependency Injection (CDI) | [CDI Part 1](04-cdi.md) | 📗 Cap. 2|
@@ -75,9 +75,9 @@ Ven | 09:00-11:00 | F8
 
 |🗓️ | 🕘 | 📍|
 ---------|----------|--------|
-???? | ???? | ????
-???? | ???? | ????
-???? | ???? | ????
+09/01/2026 | 09:00 | P3-P4
+26/01/2026 | 12:00 | P3-P4
+09/02/2026 | 12:00 | P3-P4
 
 ## Svolgimento della prova di esame durante il corso (relativa ad esame orale primo appello) 🛑 **da concordare con la classe**
 1. 📝 Prova a quiz fine Ottobre (Libro Programmazione con Oggetti Distribuiti: Java RMI)
