@@ -39,10 +39,10 @@ Ven | 09:00-11:00 | F8
 |  **_Fine Parte A_** ||| 
 |16/10/2025 | Introduzione Java Enterprise Edition (Java EE) | [Java EE](04-javaee.md) | 📗 Cap. 1|
 |17/10/2025 | Contexts and Dependency Injection (CDI) | [CDI Part 1](04-cdi.md) | 📗 Cap. 2|
+|20/10/2025 | Laboratorio Starting with J2EE | [J2EE Lab](05-javaee-lab.md) | |
+|23/10/2025 | CDI Interceptor ➕ Laboratorio J2EE| [CDI Part 2](04-cdi.md) | 📗 Cap. 2 |
+|24/10/2025 | Java Persistence API (JPA) | [ JPA - Part 1](05-jpa.md)  | 📗 Cap. 4-5 |
 <!--
-|21/10/2024 | Laboratorio Starting with J2EE | [J2EE Lab](05-javaee-lab.md) | |
-|24/10/2024 | CDI Interceptor ➕ Laboratorio J2EE| [CDI Part 2](04-cdi.md) | 📗 Cap. 2 |
-|25/10/2024 | Java Persistence API (JPA) | [ JPA - Part 1](05-jpa.md)  | 📗 Cap. 4-5 |
 |28/10/2024 | Java Persistence API (JPA) | [ JPA - Part 2](05-jpa.md) [Laboratorio JPA](06-jpa-lab.md) | 📗 Cap. 4-5 |
 |31/10/2024 | Enterprise JavaBeans (EJB) - Part 1 ➕ Laboratorio EJB (Esercizio 0)| [ EJB - Part 1](06-ejb.md) | 📗 Cap. 7-9 |
 |04/11/2024 | EJB - Part 2 ➕ Laboratorio EJB|[ EJB - Part 2](06-ejb.md) [EJB - Lab](07-ejb-lab.md) |📗 Cap. 7-9  |
