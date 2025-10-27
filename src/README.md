@@ -45,10 +45,10 @@ Ven | 09:00-11:00 | F8
 |27/10/2025 | Java Persistence API (JPA) | [ JPA - Part 2](05-jpa.md) [Laboratorio JPA](06-jpa-lab.md) | 📗 Cap. 4-5 |
 |30/10/2025 | Enterprise JavaBeans (EJB) - Part 1 ➕ Laboratorio EJB (Esercizio 0)| [ EJB - Part 1](06-ejb.md) | 📗 Cap. 7-9 |
 |31/10/2025 | EJB - Part 2 ➕ Laboratorio EJB|[ EJB - Part 2](06-ejb.md) [EJB - Lab](07-ejb-lab.md) |📗 Cap. 7-9  |
+|03/11/2025 | Laboratorio EJB  |  | 📕 |
+|06/11/2025 | Java Message Service (JMS) - Part 1  | [ JMS - Part 1](07-jms.md) | 📗 Cap. 13 |
+|07/11/2025 | JMS - Part 2 | [ JMS - Part 2](07-jms.md) | 📗 Cap. 13 |
 <!--
-|07/11/2024 | Java Message Service (JMS) - Part 1  | [ JMS - Part 1](07-jms.md) | 📗 Cap. 13 |
-|08/11/2024 | JMS - Part 2 | [ JMS - Part 2](07-jms.md) | 📗 Cap. 13 |
-|11/11/2024 | Laboratorio EJB ➕ 📝 Quiz Parte A  |  | 📕 |
 |14/11/2024 | Laboratorio EJB ➕ JMS | [EJB - Lab](07-ejb-lab.md) [JMS - Lab](08-jms-lab.md) |  |
 |  **_Fine Parte B_** ||| 
 |15/11/2024 | Laboratorio EJB ➕ JMS | [EJB - Lab](07-ejb-lab.md) [JMS - Lab](08-jms-lab.md) |  |
