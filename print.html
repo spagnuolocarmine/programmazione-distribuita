@@ -1132,6 +1132,14 @@ public class DatabasePopulator {
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><ul>
 <li><a href="07-ejb-lab.html#esercizio-0---hello-world-ejb">Esercizio 0 - Hello World EJB</a></li>
+<li>
+<ul>
+<li><a href="07-ejb-lab.html#esercizi-di-riscaldamento">Esercizi di riscaldamento</a></li>
+<li><a href="07-ejb-lab.html#esercizio-b1---calcolatrice-ejb">Esercizio B.1 - Calcolatrice EJB</a></li>
+<li><a href="07-ejb-lab.html#esercizio-b2---calcolatrice-ejb-basata-su-stack">Esercizio B.2 - Calcolatrice EJB basata su stack</a></li>
+<li><a href="07-ejb-lab.html#esercizio-b3---calcolatrice-ejb-basata-su-stack-persistente">Esercizio B.3 - Calcolatrice EJB basata su stack persistente</a></li>
+</ul>
+</li>
 <li><a href="07-ejb-lab.html#esercizio-1---music-library--warm-up-">Esercizio 1 - Music Library 🎵📚 (warm-up 🏋)</a>
 <ul>
 <li><a href="07-ejb-lab.html#music-library">Music Library</a>
@@ -1145,13 +1153,6 @@ public class DatabasePopulator {
 </li>
 <li><a href="07-ejb-lab.html#esercizio-2---music-library-">Esercizio 2 - Music Library++ 🎵📚</a></li>
 <li><a href="07-ejb-lab.html#esercizio-3---pdtify--%EF%B8%8F">Esercizio 3 - PDtify 🎵 ⏯️</a></li>
-<li><a href="07-ejb-lab.html#esercizi-bonus">Esercizi Bonus</a>
-<ul>
-<li><a href="07-ejb-lab.html#esercizio-b1---calcolatrice-ejb">Esercizio B.1 - Calcolatrice EJB</a></li>
-<li><a href="07-ejb-lab.html#esercizio-b2---calcolatrice-ejb-basata-su-stack">Esercizio B.2 - Calcolatrice EJB basata su stack</a></li>
-<li><a href="07-ejb-lab.html#esercizio-b3---calcolatrice-ejb-basata-su-stack-persistente">Esercizio B.3 - Calcolatrice EJB basata su stack persistente</a></li>
-</ul>
-</li>
 </ul>
 <blockquote>
 <p>🚀 Se avete problemi con la lookup dei vostri bean potete verificare che state utilizzando il dominio corretto con i parametri di default nel file <code>[USER_HOME]/GlassFish_Server/glassfish/domains/domain1/config/domain.xml</code>. Il pacchetto <code>[USER_HOME]/GlassFish_Server/glassfish/lib/gf-client.jar</code> carica configurazioni per l'InitialContext di default (<a href="https://docs.oracle.com/cd/E26576_01/doc.312/e24928/overview.htm#GSADG00004">GlassFish Server Administration Guide</a>).</p>
@@ -1180,6 +1181,37 @@ public interface HelloWorldEJBRemote{
     public String sayHello(String name);
 }
 </code></pre>
+<h1 id="esercizi-di-riscaldamento"><a class="header" href="#esercizi-di-riscaldamento">Esercizi di riscaldamento</a></h1>
+<h2 id="esercizio-b1---calcolatrice-ejb"><a class="header" href="#esercizio-b1---calcolatrice-ejb">Esercizio B.1 - Calcolatrice EJB</a></h2>
+<p>Scrivere un client Java che invoca degli EJB sul server che implementano un servizio di calcolatrice per tipi float. La calcolatrice offre tre metodi, tutti prendono in input due operandi di tipo <code>float</code> e restituiscono un <code>float</code>:</p>
+<ul>
+<li><code>add(float,float)</code></li>
+<li><code>sub(float,float)</code></li>
+<li><code>multiply(float,float)</code></li>
+</ul>
+<p>Il server offre inoltre un servizio di counting <code>count()</code> che restituisce il numero di operazioni effettuate da tutti i clienti dall’avvio del server. Il client deve offrire da console un interfaccia che permetta di effettuare tutte le operazioni da remoto.</p>
+<h2 id="esercizio-b2---calcolatrice-ejb-basata-su-stack"><a class="header" href="#esercizio-b2---calcolatrice-ejb-basata-su-stack">Esercizio B.2 - Calcolatrice EJB basata su stack</a></h2>
+<p>Scrivere un client Java che invoca degli Enterprise EJB sul server che implementano un servizio di calcolatrice basata su stack per tipi <code>float</code>. La calcolatrice offre cinque metodi. Tre di questi metodi rappresentano operazioni aritmetiche che non prendono input e operano direttamente sui dati nello stack: <code>add()</code>, <code>sub()</code>, <code>multiply()</code>.
+In aggiunta, il server offre il metodovoid <code>push(float)</code> e <code>float pop()</code> per la gestione dello stack. Nota che l’unico metodo che restituisce valori è la <code>pop()</code>. Le operazione aritmetiche eseguono implicitamente due <code>pop()</code> per prelevare gli operandi e una <code>push()</code> per salvare il valore di ritorno.</p>
+<p>Esempio di esecuzione del servizio:</p>
+<ul>
+<li><code>push(3)</code>, <code>push(4)</code>, <code>add()</code>, <code>pop()</code> ➡️ 7</li>
+<li><code>push(3)</code>, <code>push(4)</code>, <code>multiply()</code>, <code>pop()</code> ➡️ 12</li>
+<li><code>push(3)</code>, <code>push(4)</code>, <code>push(1)</code>, <code>add()</code>, <code>pop()</code> ➡️ 5</li>
+<li><code>push(3)</code>, <code>push(4)</code>, <code>push(1)</code>, <code>add()</code>, <code>add()</code>, <code>pop()</code> ➡️ 8</li>
+</ul>
+<p>Avanzato: gestire i meccanismi di attivazione e passivazione.</p>
+<h2 id="esercizio-b3---calcolatrice-ejb-basata-su-stack-persistente"><a class="header" href="#esercizio-b3---calcolatrice-ejb-basata-su-stack-persistente">Esercizio B.3 - Calcolatrice EJB basata su stack persistente</a></h2>
+<p>Estendere il servizio di calcolatrice basata su stack implementata nell’esercizio precedente aggiungendo un livello di persistenza dello stack. In particolare, ad ogni operazione, lo stack deve essere salvato su database. All’interfaccia del servizio verrà aggiunto il metodo <code>loadStack(String stackName)</code> e <code>saveStack(String stackName)</code> che consentono all’utente di caricare lo stack da database . Se il client non invoca la <code>loadStack()</code>, la sessione si avvia con uno stack vuoto. Lo stack puo essere salvato nel formato piu appropriato, anche come stringa.</p>
+<p>Al fine di completare l’esercizo, occorre</p>
+<ol>
+<li>Implementare il metodo <code>loadStack(String username)</code>.</li>
+<li>Implementare il metodo <code>saveStack(String username)</code>.</li>
+<li>Implementare un metodo <code>stackList()</code> che restituisce tutti i nomi degli stack
+salvati su database.</li>
+<li>Implementare un interceptor che, alla fine dell’interazione con un client, stampa una
+lista dei stackName usati da quell’utente in quella sessione.</li>
+</ol>
 <h1 id="esercizio-1---music-library--warm-up-"><a class="header" href="#esercizio-1---music-library--warm-up-">Esercizio 1 - Music Library 🎵📚 (warm-up 🏋)</a></h1>
 <p>Creare due progetti:</p>
 <ul>
@@ -1426,37 +1458,6 @@ BUILD SUCCESSFUL (total time: 2 seconds)
 </code></pre>
 </li>
 </ul>
-<h1 id="esercizi-bonus"><a class="header" href="#esercizi-bonus">Esercizi Bonus</a></h1>
-<h2 id="esercizio-b1---calcolatrice-ejb"><a class="header" href="#esercizio-b1---calcolatrice-ejb">Esercizio B.1 - Calcolatrice EJB</a></h2>
-<p>Scrivere un client Java che invoca degli EJB sul server che implementano un servizio di calcolatrice per tipi float. La calcolatrice offre tre metodi, tutti prendono in input due operandi di tipo <code>float</code> e restituiscono un <code>float</code>:</p>
-<ul>
-<li><code>add(float,float)</code></li>
-<li><code>sub(float,float)</code></li>
-<li><code>multiply(float,float)</code></li>
-</ul>
-<p>Il server offre inoltre un servizio di counting <code>count()</code> che restituisce il numero di operazioni effettuate da tutti i clienti dall’avvio del server. Il client deve offrire da console un interfaccia che permetta di effettuare tutte le operazioni da remoto.</p>
-<h2 id="esercizio-b2---calcolatrice-ejb-basata-su-stack"><a class="header" href="#esercizio-b2---calcolatrice-ejb-basata-su-stack">Esercizio B.2 - Calcolatrice EJB basata su stack</a></h2>
-<p>Scrivere un client Java che invoca degli Enterprise EJB sul server che implementano un servizio di calcolatrice basata su stack per tipi <code>float</code>. La calcolatrice offre cinque metodi. Tre di questi metodi rappresentano operazioni aritmetiche che non prendono input e operano direttamente sui dati nello stack: <code>add()</code>, <code>sub()</code>, <code>multiply()</code>.
-In aggiunta, il server offre il metodovoid <code>push(float)</code> e <code>float pop()</code> per la gestione dello stack. Nota che l’unico metodo che restituisce valori è la <code>pop()</code>. Le operazione aritmetiche eseguono implicitamente due <code>pop()</code> per prelevare gli operandi e una <code>push()</code> per salvare il valore di ritorno.</p>
-<p>Esempio di esecuzione del servizio:</p>
-<ul>
-<li><code>push(3)</code>, <code>push(4)</code>, <code>add()</code>, <code>pop()</code> ➡️ 7</li>
-<li><code>push(3)</code>, <code>push(4)</code>, <code>multiply()</code>, <code>pop()</code> ➡️ 12</li>
-<li><code>push(3)</code>, <code>push(4)</code>, <code>push(1)</code>, <code>add()</code>, <code>pop()</code> ➡️ 5</li>
-<li><code>push(3)</code>, <code>push(4)</code>, <code>push(1)</code>, <code>add()</code>, <code>add()</code>, <code>pop()</code> ➡️ 8</li>
-</ul>
-<p>Avanzato: gestire i meccanismi di attivazione e passivazione.</p>
-<h2 id="esercizio-b3---calcolatrice-ejb-basata-su-stack-persistente"><a class="header" href="#esercizio-b3---calcolatrice-ejb-basata-su-stack-persistente">Esercizio B.3 - Calcolatrice EJB basata su stack persistente</a></h2>
-<p>Estendere il servizio di calcolatrice basata su stack implementata nell’esercizio precedente aggiungendo un livello di persistenza dello stack. In particolare, ad ogni operazione, lo stack deve essere salvato su database. All’interfaccia del servizio verrà aggiunto il metodo <code>loadStack(String stackName)</code> e <code>saveStack(String stackName)</code> che consentono all’utente di caricare lo stack da database . Se il client non invoca la <code>loadStack()</code>, la sessione si avvia con uno stack vuoto. Lo stack puo essere salvato nel formato piu appropriato, anche come stringa.</p>
-<p>Al fine di completare l’esercizo, occorre</p>
-<ol>
-<li>Implementare il metodo <code>loadStack(String username)</code>.</li>
-<li>Implementare il metodo <code>saveStack(String username)</code>.</li>
-<li>Implementare un metodo <code>stackList()</code> che restituisce tutti i nomi degli stack
-salvati su database.</li>
-<li>Implementare un interceptor che, alla fine dell’interazione con un client, stampa una
-lista dei stackName usati da quell’utente in quella sessione.</li>
-</ol>
 <div style="break-before: page; page-break-before: always;"></div><ul>
 <li><a href="07-jms.html#contenuti">Contenuti</a></li>
 <li><a href="07-jms.html#materiale-bibliografico">Materiale bibliografico</a></li>
