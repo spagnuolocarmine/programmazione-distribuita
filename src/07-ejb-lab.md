@@ -1,4 +1,8 @@
 - [Esercizio 0 - Hello World EJB](#esercizio-0---hello-world-ejb)
+- - [Esercizi di riscaldamento](#esercizi-di-riscaldamento)
+  - [Esercizio B.1 - Calcolatrice EJB](#esercizio-b1---calcolatrice-ejb)
+  - [Esercizio B.2 - Calcolatrice EJB basata su stack](#esercizio-b2---calcolatrice-ejb-basata-su-stack)
+  - [Esercizio B.3 - Calcolatrice EJB basata su stack persistente](#esercizio-b3---calcolatrice-ejb-basata-su-stack-persistente)
 - [Esercizio 1 - Music Library 🎵📚 (warm-up 🏋)](#esercizio-1---music-library--warm-up-)
   - [Music Library](#music-library)
     - [Definizione entità e persistenza](#definizione-entità-e-persistenza)
@@ -6,10 +10,6 @@
   - [Music Library Client](#music-library-client)
 - [Esercizio 2 - Music Library++ 🎵📚](#esercizio-2---music-library-)
 - [Esercizio 3 - PDtify 🎵 ⏯️](#esercizio-3---pdtify--️)
-- [Esercizi Bonus](#esercizi-bonus)
-  - [Esercizio B.1 - Calcolatrice EJB](#esercizio-b1---calcolatrice-ejb)
-  - [Esercizio B.2 - Calcolatrice EJB basata su stack](#esercizio-b2---calcolatrice-ejb-basata-su-stack)
-  - [Esercizio B.3 - Calcolatrice EJB basata su stack persistente](#esercizio-b3---calcolatrice-ejb-basata-su-stack-persistente)
 
 > 🚀 Se avete problemi con la lookup dei vostri bean potete verificare che state utilizzando il dominio corretto con i parametri di default nel file `[USER_HOME]/GlassFish_Server/glassfish/domains/domain1/config/domain.xml`. Il pacchetto `[USER_HOME]/GlassFish_Server/glassfish/lib/gf-client.jar` carica configurazioni per l'InitialContext di default ([GlassFish Server Administration Guide](https://docs.oracle.com/cd/E26576_01/doc.312/e24928/overview.htm#GSADG00004)). 
 
@@ -37,6 +37,43 @@ public interface HelloWorldEJBRemote{
     public String sayHello(String name);
 }
 ```
+# Esercizi di riscaldamento
+## Esercizio B.1 - Calcolatrice EJB
+
+Scrivere un client Java che invoca degli EJB sul server che implementano un servizio di calcolatrice per tipi float. La calcolatrice offre tre metodi, tutti prendono in input due operandi di tipo `float` e restituiscono un `float`:
+
+- `add(float,float)`
+- `sub(float,float)`
+- `multiply(float,float)`
+
+Il server offre inoltre un servizio di counting `count()` che restituisce il numero di operazioni effettuate da tutti i clienti dall’avvio del server. Il client deve offrire da console un interfaccia che permetta di effettuare tutte le operazioni da remoto.
+
+## Esercizio B.2 - Calcolatrice EJB basata su stack
+
+Scrivere un client Java che invoca degli Enterprise EJB sul server che implementano un servizio di calcolatrice basata su stack per tipi `float`. La calcolatrice offre cinque metodi. Tre di questi metodi rappresentano operazioni aritmetiche che non prendono input e operano direttamente sui dati nello stack: `add()`, `sub()`, `multiply()`.
+In aggiunta, il server offre il metodovoid `push(float)` e `float pop()` per la gestione dello stack. Nota che l’unico metodo che restituisce valori è la `pop()`. Le operazione aritmetiche eseguono implicitamente due `pop()` per prelevare gli operandi e una `push()` per salvare il valore di ritorno.
+
+Esempio di esecuzione del servizio:
+
+- `push(3)`, `push(4)`, `add()`, `pop()` ➡️ 7
+- `push(3)`, `push(4)`, `multiply()`, `pop()` ➡️ 12
+- `push(3)`, `push(4)`, `push(1)`, `add()`, `pop()` ➡️ 5
+- `push(3)`, `push(4)`, `push(1)`, `add()`, `add()`, `pop()` ➡️ 8
+
+Avanzato: gestire i meccanismi di attivazione e passivazione.
+
+## Esercizio B.3 - Calcolatrice EJB basata su stack persistente
+
+Estendere il servizio di calcolatrice basata su stack implementata nell’esercizio precedente aggiungendo un livello di persistenza dello stack. In particolare, ad ogni operazione, lo stack deve essere salvato su database. All’interfaccia del servizio verrà aggiunto il metodo `loadStack(String stackName)` e `saveStack(String stackName)` che consentono all’utente di caricare lo stack da database . Se il client non invoca la `loadStack()`, la sessione si avvia con uno stack vuoto. Lo stack puo essere salvato nel formato piu appropriato, anche come stringa.
+
+Al fine di completare l’esercizo, occorre
+
+1. Implementare il metodo `loadStack(String username)`.
+2. Implementare il metodo `saveStack(String username)`.
+3. Implementare un metodo `stackList()` che restituisce tutti i nomi degli stack
+salvati su database.
+4. Implementare un interceptor che, alla fine dell’interazione con un client, stampa una
+lista dei stackName usati da quell’utente in quella sessione.
 
 # Esercizio 1 - Music Library 🎵📚 (warm-up 🏋)
 
@@ -260,40 +297,4 @@ Mofificare la classe main di `MusicLibraryClient` per il testing e la verifica d
                              "src=\""+s.getUrl()+"\">\n" +
                      "</iframe>");
     ```
-# Esercizi Bonus
-## Esercizio B.1 - Calcolatrice EJB
 
-Scrivere un client Java che invoca degli EJB sul server che implementano un servizio di calcolatrice per tipi float. La calcolatrice offre tre metodi, tutti prendono in input due operandi di tipo `float` e restituiscono un `float`:
-
-- `add(float,float)`
-- `sub(float,float)`
-- `multiply(float,float)`
-
-Il server offre inoltre un servizio di counting `count()` che restituisce il numero di operazioni effettuate da tutti i clienti dall’avvio del server. Il client deve offrire da console un interfaccia che permetta di effettuare tutte le operazioni da remoto.
-
-## Esercizio B.2 - Calcolatrice EJB basata su stack
-
-Scrivere un client Java che invoca degli Enterprise EJB sul server che implementano un servizio di calcolatrice basata su stack per tipi `float`. La calcolatrice offre cinque metodi. Tre di questi metodi rappresentano operazioni aritmetiche che non prendono input e operano direttamente sui dati nello stack: `add()`, `sub()`, `multiply()`.
-In aggiunta, il server offre il metodovoid `push(float)` e `float pop()` per la gestione dello stack. Nota che l’unico metodo che restituisce valori è la `pop()`. Le operazione aritmetiche eseguono implicitamente due `pop()` per prelevare gli operandi e una `push()` per salvare il valore di ritorno.
-
-Esempio di esecuzione del servizio:
-
-- `push(3)`, `push(4)`, `add()`, `pop()` ➡️ 7
-- `push(3)`, `push(4)`, `multiply()`, `pop()` ➡️ 12
-- `push(3)`, `push(4)`, `push(1)`, `add()`, `pop()` ➡️ 5
-- `push(3)`, `push(4)`, `push(1)`, `add()`, `add()`, `pop()` ➡️ 8
-
-Avanzato: gestire i meccanismi di attivazione e passivazione.
-
-## Esercizio B.3 - Calcolatrice EJB basata su stack persistente
-
-Estendere il servizio di calcolatrice basata su stack implementata nell’esercizio precedente aggiungendo un livello di persistenza dello stack. In particolare, ad ogni operazione, lo stack deve essere salvato su database. All’interfaccia del servizio verrà aggiunto il metodo `loadStack(String stackName)` e `saveStack(String stackName)` che consentono all’utente di caricare lo stack da database . Se il client non invoca la `loadStack()`, la sessione si avvia con uno stack vuoto. Lo stack puo essere salvato nel formato piu appropriato, anche come stringa.
-
-Al fine di completare l’esercizo, occorre
-
-1. Implementare il metodo `loadStack(String username)`.
-2. Implementare il metodo `saveStack(String username)`.
-3. Implementare un metodo `stackList()` che restituisce tutti i nomi degli stack
-salvati su database.
-4. Implementare un interceptor che, alla fine dell’interazione con un client, stampa una
-lista dei stackName usati da quell’utente in quella sessione.
