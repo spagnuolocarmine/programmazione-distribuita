@@ -48,10 +48,11 @@ Ven | 09:00-11:00 | F8
 |03/11/2025 | Laboratorio EJB  | [EJB - Lab](07-ejb-lab.md) |📗 Cap. 7-9  |
 |06/11/2025 | Java Message Service (JMS) - Part 1  | [ JMS - Part 1](07-jms.md) | 📗 Cap. 13 |
 |07/11/2025 | JMS - Part 2 | [ JMS - Part 2](07-jms.md) | 📗 Cap. 13 |
-<!--
-|14/11/2024 | Laboratorio EJB ➕ JMS | [EJB - Lab](07-ejb-lab.md) [JMS - Lab](08-jms-lab.md) |  |
 |  **_Fine Parte B_** ||| 
-|15/11/2024 | Laboratorio EJB ➕ JMS | [EJB - Lab](07-ejb-lab.md) [JMS - Lab](08-jms-lab.md) |  |
+|10/11/2025 |📝 Quiz Parte A |  |  |
+|13/11/2025 | Laboratorio EJB ➕ JMS | [EJB - Lab](07-ejb-lab.md) [JMS - Lab](08-jms-lab.md) |  |
+|14/11/2025 | Laboratorio EJB ➕ JMS | [EJB - Lab](07-ejb-lab.md) [JMS - Lab](08-jms-lab.md) |  |
+<!--
 |18/11/2024 | Java Web Services (WS) | [Java Web Services (WS) Parte 1](08-ws.md) | 📗 Cap. 14 |
 |21/11/2024 | Laboratorio Java WS ➕ Laboratorio J2EE Step-by-step| [Laboratorio Java WS](09-ws-lab.md)  |  |
 |22/11/2024 | Introduzione al Cloud Computing|  | [Materiale cloud computing](https://github.com/spagnuolocarmine/programmazione-distribuita/raw/main/data/cloud_2023.pdf) |
