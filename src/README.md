@@ -51,9 +51,9 @@ Ven | 09:00-11:00 | F8
 |  **_Fine Parte B_** ||| 
 |10/11/2025 |📝 Quiz Parte A |  |  |
 |13/11/2025 | Laboratorio EJB ➕ JMS | [EJB - Lab](07-ejb-lab.md) [JMS - Lab](08-jms-lab.md) |  |
-|14/11/2025| Java Web Services (WS) | [Java Web Services (WS) Parte 1](08-ws.md) | 📗 Cap. 14 |
+|14/11/2025| Java Web Services (WS) 1| [Java Web Services (WS) Parte 1](08-ws.md) | 📗 Cap. 14 |
 |17/11/2025 | Laboratorio EJB ➕ JMS | [EJB - Lab](07-ejb-lab.md) [JMS - Lab](08-jms-lab.md) |  |
-|20/11/2025 | Java Web Services (WS) | [Java Web Services (WS) Parte 1](08-ws.md) | 📗 Cap. 14 |
+|20/11/2025 | Java Web Services (WS) 2| [Java Web Services (WS) Parte 2](08-ws.md) | 📗 Cap. 14 |
 |21/11/2025 | Laboratorio Java WS ➕ Laboratorio J2EE Step-by-step| [Laboratorio Java WS](09-ws-lab.md)  |  |
 |24/11/2025 |📝 Quiz Parte b |  |  |
 |27/11/2025 | From J2EE to Spring Framework (Teoria) |  | [Introduzione a Spring Framework](https://github.com/spagnuolocarmine/programmazione-distribuita/raw/main/data/introduction_to_spring_citro_2024.pdf) |
