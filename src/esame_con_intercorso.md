@@ -40,12 +40,11 @@ Data di consegna della prova TODO entro le ore 9:00 tramite la piattaforma e-lea
 
 **Quiz A**
 
-![quiz-a-2024](https://github.com/spagnuolocarmine/programmazione-distribuita/raw/main/data/scores/quiz-a-25-26.png)
+![quiz-a-2025](https://github.com/spagnuolocarmine/programmazione-distribuita/raw/main/data/scores/quiz-a-25-26.png)
 
-<!--
 **Quiz B**
-![quiz-b-2024](https://github.com/spagnuolocarmine/programmazione-distribuita/raw/main/data/scores/quiz-b-2024.png)
--->
+![quiz-b-2025](https://github.com/spagnuolocarmine/programmazione-distribuita/raw/main/data/scores/quiz-b-25-26.png)
+
 
 <span style="color: gray;">
   
