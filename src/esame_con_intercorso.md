@@ -32,7 +32,7 @@ Il candidato deve munirsi di un laptop, dotato di [Safe Exam Browser](https://sa
 ---------|----------|--------|-------|
 Quiz Parte A (Fino a RMI)| 10/11/2025 11:00-13:30 | Lab Sammet | |
 Quiz Parte B (Fino a JMS)|  24/11/2025 11:00-13:30 | Lab Sammet | |
-Programma JEE |  15/12/2025 11:00-13:30 | Lab Sammet | |
+Programma JEE |  12/12/2025 09:00-11:00 | Lab Sammet | |
 
 Data di consegna della prova TODO entro le ore 9:00 tramite la piattaforma e-learning di unisa.
 
