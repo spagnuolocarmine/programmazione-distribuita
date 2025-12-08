@@ -62,12 +62,10 @@ Ven | 09:00-11:00 | F8
 |01/12/2025 | Laboratorio J2EE Simulazione |  |  |
 |04/12/2025 | Introduzione al Cloud Computing|  |  |
 |05/12/2025 | Laboratorio J2EE Simulazione |  |  |
-<!--|11/12/2025 |  Cloud Computing Pratica  |  |  |[Materiale cloud computing](https://github.com/spagnuolocarmine/programmazione-distribuita/raw/main/data/cloud_2023.pdf)
+|11/12/2025 |  Cloud Computing Pratica  |  |  | 
 |12/12/2025 | Laboratorio J2EE Simulazione |  |  |
-|15/12/2025 | Laboratorio J2EE Simulazione |  |  |
-|18/12/2024 |  📝 Prova Parte C   |  |  |
--->
-
+|18/12/2025 | 📝 Prova Parte C |  |  |
+|19/12/2025 | 📝 Prova Parte C (?) Laboratorio J2EE Simulazione|  |  |
 
 ---
 
