@@ -58,7 +58,6 @@ Ven | 09:00-11:00 | F8
 |24/11/2025 |📝 Quiz Parte B |  |  |
 |27/11/2025 | From J2EE to Spring Framework (Teoria) |  | [Introduzione a Spring Framework](https://github.com/spagnuolocarmine/programmazione-distribuita/raw/main/data/introduction_to_spring_citro_2024.pdf) |
 |28/11/2025 | From J2EE to Spring Framework (Pratica) |  | [Spring Framework In Action](https://github.com/tizianocitro/pdtify) |
-
 |01/12/2025 | Laboratorio J2EE Simulazione |  |  |
 |04/12/2025 | Introduzione al Cloud Computing|  |  |
 |05/12/2025 | Laboratorio J2EE Simulazione |  |  |
