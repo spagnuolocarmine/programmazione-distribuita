@@ -63,8 +63,8 @@ Ven | 09:00-11:00 | F8
 |05/12/2025 | Laboratorio J2EE Simulazione |  |  |
 |11/12/2025 |  Cloud Computing Pratica  |  |  | 
 |12/12/2025 | Laboratorio J2EE Simulazione |  |  |
-|18/12/2025 | 📝 Prova Parte C |  |  |
-|19/12/2025 | 📝 Prova Parte C (?) Laboratorio J2EE Simulazione|  |  |
+|15/12/2025 | 📝 Prova Parte C - Convocazione Studenti con votazione <= 27 & Studenti con +30% tempo|   | [🏆](https://docs.google.com/spreadsheets/d/1lC3Gts3sGeDMQfIWpP_WDHZkkPGubPOS5cgMpXGguk4/edit?usp=sharing) |
+|18/12/2025 | 📝 Prova Parte C - Convocazione studenti con votazione > 27|  | [🏆](https://docs.google.com/spreadsheets/d/1lC3Gts3sGeDMQfIWpP_WDHZkkPGubPOS5cgMpXGguk4/edit?usp=sharing) |
 
 ---
 
