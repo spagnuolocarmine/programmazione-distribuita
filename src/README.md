@@ -27,8 +27,8 @@ Ven | 09:00-11:00 | F8
 
 |🗓️ | Lezione | Materiale| Riferimenti |
 |---------|----------|--------|-----------|
-|25/09/2025 | Presentazione Corso + Introduzione Programmazione Distribuita| [Slide Presentazione](https://prezi.com/view/L27AvjRC5rhkqtGWRRWk/?referral_token=h7tffPlnB3FN)| 📕 Cap. 1 |
-|26/09/2024 |Open Distributed Processing Reference Model | | 📕 Cap. 1 |
+|24/09/2026 | Presentazione Corso + Introduzione Programmazione Distribuita| [Slide Presentazione](https://prezi.com/view/L27AvjRC5rhkqtGWRRWk/?referral_token=h7tffPlnB3FN)| 📕 Cap. 1 |
+<!--|26/09/2024 |Open Distributed Processing Reference Model | | 📕 Cap. 1 |
 |29/09/2025 | Java Thread 1 | ⚙️ [Installazione ambiente di sviluppo (solo prima sezione)](05-javaee-lab.html#installazione-ambiente-di-sviluppo)| 📋 [Official Java Essential Concurrency](https://docs.oracle.com/javase/tutorial/essential/concurrency) </br></br> 🌐 Insights: O'Reilly Java Threads (google it)|
 |02/10/2025 | Java Thread 2 |  💾 [Alphonse and Gaston Java Thread](https://www.jdoodle.com/ia/1jpx) | 📋 [Official Java Essential Concurrency](https://docs.oracle.com/javase/tutorial/essential/concurrency) |
 |03/10/2025 | Laboratorio Thread | [Esercitazione Java Thread](01-threads.md) | [📖 Java Threads - Understanding and Mastering Concurrent Programming](https://github.com/shannonasmith/Java_books/blob/main/Java%20Threads%203e%20(2004).pdf) |
@@ -65,7 +65,7 @@ Ven | 09:00-11:00 | F8
 |12/12/2025 | Laboratorio J2EE Simulazione |  |  |
 |15/12/2025 | 📝 Prova Parte C - Convocazione Studenti con votazione <= 27 & Studenti con +30% tempo|   | [🏆](https://docs.google.com/spreadsheets/d/1lC3Gts3sGeDMQfIWpP_WDHZkkPGubPOS5cgMpXGguk4/edit?usp=sharing) |
 |18/12/2025 | 📝 Prova Parte C - Convocazione studenti con votazione > 27|  | [🏆](https://docs.google.com/spreadsheets/d/1lC3Gts3sGeDMQfIWpP_WDHZkkPGubPOS5cgMpXGguk4/edit?usp=sharing) |
-
+-->
 ---
 
 # Informazioni modalità d'esame 
@@ -77,9 +77,9 @@ Ven | 09:00-11:00 | F8
 
 |🗓️ | 🕘 | 📍|
 ---------|----------|--------|
-09/01/2026 | 09:00 | P3-P4
-26/01/2026 | 12:00 | P3-P4
-09/02/2026 | 12:00 | P3-P4
+xxxx | 09:00 | P3-P4
+xxxx | 12:00 | P3-P4
+xxxx | 12:00 | P3-P4
 
 ## Svolgimento della prova di esame durante il corso (relativa ad esame orale primo appello) 🛑 **da concordare con la classe**
 1. 📝 Prova a quiz fine Ottobre (Libro Programmazione con Oggetti Distribuiti: Java RMI)
