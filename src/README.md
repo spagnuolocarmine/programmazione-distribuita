@@ -2,8 +2,8 @@
 ### Università degli Studi di Salerno
 
 [Carmine Spagnuolo](https://docenti.unisa.it/028012/home) <br>
-<a href="mailto:cspagnuolo@unisa.it">cspagnuolo[@]unisa.it</a>
-
+<a href="mailto:cspagnuolo@unisa.it">cspagnuolo[@]unisa.it</a> <br>
+Orari di ricevimento: dopo ogni lezione.
 
 ![](https://img.shields.io/badge/Language-%F0%9F%87%AE%F0%9F%87%B9-yellow)
 [![](https://img.shields.io/badge/Comunicazioni-elearning.informatica.unisa.it-red)](https://elearning.informatica.unisa.it/el-platform/course/view.php?id=1252)
