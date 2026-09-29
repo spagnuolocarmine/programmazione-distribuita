@@ -1,7 +1,7 @@
 # Java Thread
 
 ## Esercizio 1
-Scrivere un programma che incrementa un contatore intero per 40000 volte creando una classe Counter e una classe Incrementatore con il main che istanzia e usa Counter (e verificando poi il valore di Counter stampandolo)
+Scrivere un programma che incrementa un contatore intero per 40000 volte creando una classe Counter e una classe Incrementatore con il main che istanzia e usa Counter (e verificando poi il valore di Counter scrivendo su standard output)
 1. senza thread;
 2. generando 4 thread che tutti insieme incrementano di 10000 volte il contatore, SENZA curarsi della race condition  (e vedere il risultato);
 3. generando 4 thread, curandosi della race condition (e vedere il risultato!). 
