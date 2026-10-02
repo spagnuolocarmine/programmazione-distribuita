@@ -36,7 +36,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-ebca595b.js";
+            window.path_to_searchindex_js = "searchindex-ab6fed83.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-0e514bac.js"></script>
@@ -491,6 +491,15 @@ Linea 22: xxxxxxxxxx
 </p>
 </span></span><div style="break-before: page; page-break-before: always;"></div>
 <h1 id="java-thread"><a class="header" href="#java-thread">Java Thread</a></h1>
+<p><strong>Time code snippet</strong></p>
+<pre><code class="language-java">long start = System.currentTimeMillis();
+
+// Codice da misurare
+
+long end = System.currentTimeMillis();
+
+System.out.println("Tempo di esecuzione: " + (end - start) + " ms");
+</code></pre>
 <h2 id="esercizio-1"><a class="header" href="#esercizio-1">Esercizio 1</a></h2>
 <p>Scrivere un programma che incrementa un contatore intero per 40000 volte creando una classe Counter e una classe Incrementatore con il main che istanzia e usa Counter (e verificando poi il valore di Counter scrivendo su standard output)</p>
 <ol>
