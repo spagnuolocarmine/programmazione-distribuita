@@ -1,5 +1,16 @@
 # Java Thread
 
+**Time code snippet**
+```java
+long start = System.currentTimeMillis();
+
+// Codice da misurare
+
+long end = System.currentTimeMillis();
+
+System.out.println("Tempo di esecuzione: " + (end - start) + " ms");
+```
+
 ## Esercizio 1
 Scrivere un programma che incrementa un contatore intero per 40000 volte creando una classe Counter e una classe Incrementatore con il main che istanzia e usa Counter (e verificando poi il valore di Counter scrivendo su standard output)
 1. senza thread;
