@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Enterprise JavaBeans (EJB) - Part 1 - Programmazione Distribuita</title>
+        <title>Laboratorio Java Socket - Programmazione Distribuita</title>
 
 
         <!-- Custom HTML head -->
@@ -35,10 +35,10 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-28ff24ab.js";
+            window.path_to_searchindex_js = "searchindex-8b64d008.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="toc-0e514bac.js"></script>
+        <script src="toc-9926a16b.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -174,74 +174,20 @@
 
                 <div id="mdbook-content" class="content">
                     <main>
-                        <ul>
-<li><a href="#contenuti">Contenuti</a></li>
-<li><a href="#materiale-bibliografico-per-lo-studio">Materiale bibliografico per lo studio</a></li>
-<li><a href="#alcune-domande-di-riepilogo">Alcune domande di riepilogo</a></li>
-</ul>
-<h1 id="contenuti"><a class="header" href="#contenuti">Contenuti</a></h1>
-<p><em>Parte 1</em></p>
-<ul>
-<li>Introduzione agli EJB</li>
-<li>Come sono fatti gli EJB</li>
-<li>Tipi di EJB
-<ul>
-<li>Stateless</li>
-<li>Stateful</li>
-<li>Singleton</li>
-</ul>
-</li>
-<li>Come usare un EJB</li>
-</ul>
-<p><em>Parte 2</em></p>
-<ul>
-<li>Ciclo di Vita dei Session Beans</li>
-<li>Autorizzazioni
-<ul>
-<li>Autorizzazione dichiarativa</li>
-<li>Autorizzazione da programma</li>
-</ul>
-</li>
-<li>Transazioni
-<ul>
-<li>Cosa sono</li>
-<li>Container-managed</li>
-<li>Bean-Managed</li>
-</ul>
-</li>
-<li>Esercizi EJB con NetBeans</li>
-</ul>
-<h1 id="materiale-bibliografico-per-lo-studio"><a class="header" href="#materiale-bibliografico-per-lo-studio">Materiale bibliografico per lo studio</a></h1>
-<ul>
-<li>“Beginning Java Enterprise Edition”: Cap. 7, escludere da pag 247 a pag 256</li>
-<li>“Beginning Java Enterprise Edition”: Cap. 8, escludere Timer Service</li>
-<li>“Beginning Java Enterprise Edition”: Cap. 9,  solo “Understanding Transactions”, “Transaction Support in EJB”,  “Container-managed transactions” fino a pag. 296</li>
-<li><a href="https://www.oracle.com/technical-resources/articles/java/cdi-javaee-bien.html"><code>@Inject</code> vs <code>@EJB</code></a></li>
-<li><a href="https://javaee.github.io/tutorial/ejb-basicexamples003.html">Managing Concurrent Access in a Singleton Session Bean</a></li>
-</ul>
-<h1 id="alcune-domande-di-riepilogo"><a class="header" href="#alcune-domande-di-riepilogo">Alcune domande di riepilogo</a></h1>
-<ul>
-<li>Qual è il ciclo di vita di un bean?</li>
-<li>Qual è il vantaggio dell’utilizzo di JNDI?</li>
-<li>Quali sono le differenze tra i tre differenti tipi di beans in termini di chiamate dai clients?</li>
-<li>Qual è il caso d’uso più comune per un singleton bean?</li>
-<li>Qual è il vantaggio dell’suo del: “Programmatic Authorization”?</li>
-<li>Quali sono le principali differenze fra Container-Managed e Bean-managed transactions?</li>
-<li>Packaging e deploying</li>
-<li>Come invocare EJB</li>
-</ul>
+                        <h1 id="oggetti-remoti-con-java-socket"><a class="header" href="#oggetti-remoti-con-java-socket">Oggetti Remoti con Java Socket</a></h1>
+<h2 id="esercizio-1"><a class="header" href="#esercizio-1">Esercizio 1</a></h2>
+<p>Sviluppare l’esempio di oggetti remoti con Java Socket, come descritto nel libro “Programmazione con Oggetti Distribuiti: Java RMI” (Capitolo 2).</p>
+<h2 id="esercizio-2"><a class="header" href="#esercizio-2">Esercizio 2</a></h2>
+<p>Modificare l’esempio di oggetti remoti con Java Socket, come descritto nel libro “Programmazione con Oggetti Distribuiti: Java RMI” (Capitolo 2), in modo da poter gestire più client contemporaneamente. In particolare, il server deve essere in grado di gestire più richieste di connessione da parte dei client, creando un nuovo thread per ogni connessione accettata, gestendo le richieste in modo concorrente.</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="06-jpa-lab.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="01-threads.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                             </a>
 
-                            <a rel="next prefetch" href="07-ejb-lab.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
-                            </a>
 
                         <div style="clear: both"></div>
                     </nav>
@@ -249,13 +195,10 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="06-jpa-lab.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="01-threads.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                     </a>
 
-                    <a rel="next prefetch" href="07-ejb-lab.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
-                    </a>
             </nav>
 
         </div>
