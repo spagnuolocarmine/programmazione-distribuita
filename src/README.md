@@ -23,7 +23,7 @@ Lun | 11:00-13:00 | Lab Sammet
 Gio | 09:00-11:00 | F8
 Ven | 09:00-11:00 | F8
 
-# Materiale
+# Calendario lezioni e materiale didattico
 
 |🗓️ | Lezione | Materiale| Riferimenti |
 |---------|----------|--------|-----------|

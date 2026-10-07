@@ -3,6 +3,7 @@
 - [Programmazione Distribuita](README.md)
   - [🔗 Blog](blog.md)
   - [📝 Esame: modalità con prove intercorso per studenti corsisti](esame_con_intercorso.md)
+- [🗓️ Calendario lezioni e materiale didattico](https://spagnuolocarmine.github.io/programmazione-distribuita/index.html#calendario-delle-lezioni-e-materiale-didattico)
 - [1️⃣ 📕]()
   - [Presentazione del corso e Introduzione]()
   - [Open Distributed Processing Reference Model]()
