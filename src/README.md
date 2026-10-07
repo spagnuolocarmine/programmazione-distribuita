@@ -33,8 +33,9 @@ Ven | 09:00-11:00 | F8
 |01/10/2026 | Java Thread 2 |  💾 [Alphonse and Gaston Java Thread](https://www.jdoodle.com/ia/1jpx) | 📋 [Official Java Essential Concurrency](https://docs.oracle.com/javase/tutorial/essential/concurrency) |
 |02/10/2026 | Laboratorio Thread | [Esercitazione Java Thread](01-threads.md) | 📖 Java Threads, 3rd Edition |
 |08/10/2026 | Java Socket TCP 1-2| 📋 [Official Java All About Sockets](https://docs.oracle.com/javase/tutorial/networking/sockets/index.html)| 📕Cap. 2 |
-|09/10/2026 | RMI 1 | | 📕 Cap. 3|
-<!--|10/10/2025 | RMI 2 |[RMI 1 - Hello World](03-rmi.md) |  📕 Cap. 4|
+|09/10/2026 | Laboratorio Oggetti Remoti con Java Socket | [Esercitazione Java Socket](01-socket.md) | 📕Cap. 2|
+<!--|09/10/2026 | RMI 1 | | 📕 Cap. 3|
+|10/10/2025 | RMI 2 |[RMI 1 - Hello World](03-rmi.md) |  📕 Cap. 4|
 |13/10/2025 | Laboratorio Java RMI| [RMI - Esercizi Java RMI](03-rmi.md) | |
 |  **_Fine Parte A_** ||| 
 |16/10/2025 | Introduzione Java Enterprise Edition (Java EE) | [Java EE](04-javaee.md) | 📗 Cap. 1|

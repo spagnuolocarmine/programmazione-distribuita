@@ -4,3 +4,6 @@ language = "en"
 src = "src"
 title = "Programmazione Distribuita"
 description = "materiale di supporto al corso di Programmazione Distribuita"
+[output.html.fold]
+enable = true   # Enables collapsing/folding sections in the sidebar (defaults to false)
+level = 1       # Sets how deeply nested the open sections are by default (0 = all closed)
