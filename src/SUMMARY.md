@@ -15,13 +15,13 @@
 - [3️⃣ 📕]()
   - [Java Socket TCP 1 -2 ]()
   - [Laboratorio Java Socket](01-socket.md)
-<!--
+
 - [4️⃣ 📕📗]()
   - [Java Remote Method Invocation (RMI) 1]()
     - [ Hello World RMI]()
   - [RMI 2]()
   - [Laboratorio Java RMI](03-rmi.md)
-- [5️⃣ 📗]()
+<!--- [5️⃣ 📗]()
   - [Introduzione Java Enterprise Edition (Java EE)](04-javaee.md)
   - [Contexts and Dependency Injection (CDI) - Part 1](04-cdi.md)
   - [Laboratorio Java EE](05-javaee-lab.md)
