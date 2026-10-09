@@ -29,7 +29,7 @@ Ven | 09:00-11:00 | F8
 |---------|----------|--------|-----------|
 |24/09/2026 | Presentazione Corso + Introduzione Programmazione Distribuita| [Slide Presentazione](https://prezi.com/view/L27AvjRC5rhkqtGWRRWk/?referral_token=h7tffPlnB3FN)| 📕 Cap. 1 |
 |25/09/2026 |Open Distributed Processing Reference Model | | 📕 Cap. 1 |
-|28/09/2026 | Java Thread 1 | ⚙️ [Installazione ambiente di sviluppo (solo prima sezione)](05-javaee-lab.html#installazione-ambiente-di-sviluppo)| 📋 [Official Java Essential Concurrency](https://docs.oracle.com/javase/tutorial/essential/concurrency) </br></br> 🌐 Insights: O'Reilly Java Threads (google it)|
+|28/09/2026 | Java Thread 1 | ⚙️ [Installazione ambiente di sviluppo (solo prima sezione)](05-javaee-lab.md)| 📋 [Official Java Essential Concurrency](https://docs.oracle.com/javase/tutorial/essential/concurrency) </br></br> 🌐 Insights: O'Reilly Java Threads (google it)|
 |01/10/2026 | Java Thread 2 |  💾 [Alphonse and Gaston Java Thread](https://www.jdoodle.com/ia/1jpx) | 📋 [Official Java Essential Concurrency](https://docs.oracle.com/javase/tutorial/essential/concurrency) |
 |02/10/2026 | Laboratorio Thread | [Esercitazione Java Thread](01-threads.md) | 📖 Java Threads, 3rd Edition |
 |08/10/2026 | Java Socket TCP 1-2| 📋 [Official Java All About Sockets](https://docs.oracle.com/javase/tutorial/networking/sockets/index.html)| 📕Cap. 2 |
