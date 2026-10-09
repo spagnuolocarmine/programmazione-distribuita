@@ -34,11 +34,11 @@ Ven | 09:00-11:00 | F8
 |02/10/2026 | Laboratorio Thread | [Esercitazione Java Thread](01-threads.md) | 📖 Java Threads, 3rd Edition |
 |08/10/2026 | Java Socket TCP 1-2| 📋 [Official Java All About Sockets](https://docs.oracle.com/javase/tutorial/networking/sockets/index.html)| 📕Cap. 2 |
 |09/10/2026 | Laboratorio Oggetti Remoti con Java Socket | [Esercitazione Java Socket](01-socket.md) | 📕Cap. 2|
-<!--|09/10/2026 | RMI 1 | | 📕 Cap. 3|
-|10/10/2025 | RMI 2 |[RMI 1 - Hello World](03-rmi.md) |  📕 Cap. 4|
-|13/10/2025 | Laboratorio Java RMI| [RMI - Esercizi Java RMI](03-rmi.md) | |
+|12/10/2026 | RMI 1 | | 📕 Cap. 3|
+|15/10/2026 | RMI 2 |[RMI 1 - Hello World](03-rmi.md) |  📕 Cap. 4|
+|16/10/2026 | Laboratorio Java RMI| [RMI - Esercizi Java RMI](03-rmi.md) | |
 |  **_Fine Parte A_** ||| 
-|16/10/2025 | Introduzione Java Enterprise Edition (Java EE) | [Java EE](04-javaee.md) | 📗 Cap. 1|
+<!--|16/10/2025 | Introduzione Java Enterprise Edition (Java EE) | [Java EE](04-javaee.md) | 📗 Cap. 1|
 |17/10/2025 | Contexts and Dependency Injection (CDI) | [CDI Part 1](04-cdi.md) | 📗 Cap. 2|
 |20/10/2025 | Laboratorio Starting with J2EE | [J2EE Lab](05-javaee-lab.md) | |
 |23/10/2025 | CDI Interceptor ➕ Laboratorio J2EE| [CDI Part 2](04-cdi.md) | 📗 Cap. 2 |
