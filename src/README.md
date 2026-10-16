@@ -38,14 +38,14 @@ Ven | 09:00-11:00 | F8
 |15/10/2026 | RMI 2 |[RMI 1 - Hello World](03-rmi.md) |  📕 Cap. 4|
 |16/10/2026 | Laboratorio Java RMI| [RMI - Esercizi Java RMI](03-rmi.md) | |
 |  **_Fine Parte A_** ||| 
-<!--|16/10/2025 | Introduzione Java Enterprise Edition (Java EE) | [Java EE](04-javaee.md) | 📗 Cap. 1|
-|17/10/2025 | Contexts and Dependency Injection (CDI) | [CDI Part 1](04-cdi.md) | 📗 Cap. 2|
-|20/10/2025 | Laboratorio Starting with J2EE | [J2EE Lab](05-javaee-lab.md) | |
-|23/10/2025 | CDI Interceptor ➕ Laboratorio J2EE| [CDI Part 2](04-cdi.md) | 📗 Cap. 2 |
-|24/10/2025 | Java Persistence API (JPA) | [ JPA - Part 1](05-jpa.md)  | 📗 Cap. 4-5 |
-|27/10/2025 | Java Persistence API (JPA) | [ JPA - Part 2](05-jpa.md) [Laboratorio JPA](06-jpa-lab.md) | 📗 Cap. 4-5 |
-|30/10/2025 | Enterprise JavaBeans (EJB) - Part 1 ➕ Laboratorio EJB (Esercizio 0)| [ EJB - Part 1](06-ejb.md) | 📗 Cap. 7-9 |
-|31/10/2025 | EJB - Part 2 ➕ Laboratorio EJB Esercizi Bonus| |📗 Cap. 7-9  |
+|19/10/2026 | Introduzione Java Enterprise Edition (Java EE) | [Java EE](04-javaee.md) | 📗 Cap. 1|
+|22/10/2026 | Contexts and Dependency Injection (CDI) | [CDI Part 1](04-cdi.md) | 📗 Cap. 2|
+|23/10/2026 | Laboratorio Starting with J2EE | [J2EE Lab](05-javaee-lab.md) | |
+<!--|23/10/2026 | CDI Interceptor ➕ Laboratorio J2EE| [CDI Part 2](04-cdi.md) | 📗 Cap. 2 |
+|24/10/2026 | Java Persistence API (JPA) | [ JPA - Part 1](05-jpa.md)  | 📗 Cap. 4-5 |
+|27/10/2026 | Java Persistence API (JPA) | [ JPA - Part 2](05-jpa.md) [Laboratorio JPA](06-jpa-lab.md) | 📗 Cap. 4-5 |
+|30/10/2026 | Enterprise JavaBeans (EJB) - Part 1 ➕ Laboratorio EJB (Esercizio 0)| [ EJB - Part 1](06-ejb.md) | 📗 Cap. 7-9 |
+|31/10/2026 | EJB - Part 2 ➕ Laboratorio EJB Esercizi Bonus| |📗 Cap. 7-9  |
 |03/11/2025 | Laboratorio EJB  | [EJB - Lab](07-ejb-lab.md) |📗 Cap. 7-9  |
 |06/11/2025 | Java Message Service (JMS) - Part 1  | [ JMS - Part 1](07-jms.md) | 📗 Cap. 13 |
 |07/11/2025 | JMS - Part 2 | [ JMS - Part 2](07-jms.md) | 📗 Cap. 13 |
