@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Install dependencies 🔧
-        run: cargo install mdbook
+        run: cargo install mdbook --version 0.4.48 --locked
 
       - name: Build 🏗️
         run: mdbook build
@@ -27,4 +27,3 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: book
-
