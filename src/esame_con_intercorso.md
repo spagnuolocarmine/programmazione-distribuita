@@ -1,11 +1,47 @@
 # 📝 Esame: modalità con prove intercorso per studenti corsisti
-
+  - [A.A. 2026/2027](#aa-20262027)
   - [A.A. 2025/2026](#aa-20252026)
   - [A.A. 2024/2025](#aa-20242025)
   - [A.A. 2023/2024](#aa-20232024)
 
-## A.A. 2025/2026
+# A.A. 2026/2027
 
+L'esame per gli studenti corsisti può essere sostenuto tramite 3 prove + prova orale nella data del preappello:
+
+- _Quiz Parte A_: Fondamenti di programmazione distribuita fino a Java RMI (Libro 📕) 20% del voto di accesso all'esame orale
+- _Quiz Parte B_: Java Enterprise Edition (Libro 📗) 20% del voto di accesso all'esame orale
+- _Programma JEE Parte C_: Sviluppo di un programma in JEE 60% del voto di accesso all'esame orale
+
+### Esempi di votazione
+
+|20% Quiz Parte A | 20% Quiz Parte B | 60% Programma JEE |Voto di accesso esame orale|
+|-------|--------|--------|---------|
+|18	|18	|18	|18|
+|18	|30	|18	|20,4|
+|18	|18	|30	|25,2|
+|0	|0	|30	|18|
+|30	|30	|0	|12|
+|0	|30	|30	|24|
+|30	|0	|0	|6|
+
+## Calendario delle prove (da confermare)
+
+Il candidato deve munirsi di un laptop, dotato di [Safe Exam Browser](https://safeexambrowser.org/), per lo svolgimento della prova tramite la piattaforma di e-learning del dipartimento di informatica.
+
+|🗓️ | 🕘 | 📍| ✅❌ |
+---------|----------|--------|-------|
+Quiz Parte A (Fino a RMI)| 09/11/2026 11:00-13:30 | Lab Sammet | |
+Quiz Parte B (Fino a JMS)|  gg/mm/2026 11:00-13:30 | Lab Sammet | |
+Programma JEE |  gg/12/2026 09:00-11:00 | Lab Sammet | |
+
+Data di consegna della prova TODO entro le ore 9:00 tramite la piattaforma e-learning di unisa.
+
+### Analisi dei risultati 2025-26
+
+
+# A.A. 2025/2026
+<details>
+  <summary>Show me</summary>
 L'esame per gli studenti corsisti può essere sostenuto tramite 3 prove + prova orale nella data del preappello:
 
 - _Quiz Parte A_: Fondamenti di programmazione distribuita fino a Java RMI (Libro 📕) 20% del voto di accesso all'esame orale
@@ -48,9 +84,11 @@ Data di consegna della prova TODO entro le ore 9:00 tramite la piattaforma e-lea
 
 
 <span style="color: gray;">
-  
-## A.A. 2024/2025
+</details>
 
+# A.A. 2024/2025
+<details>
+  <summary>Show me</summary>
 L'esame per gli studenti corsisti può essere sostenuto tramite 3 prove + prova orale nella data del preappello:
 
 - _Quiz Parte A_: Fondamenti di programmazione distribuita fino a Java RMI (Libro 📕) 20% del voto di accesso all'esame orale
@@ -91,11 +129,12 @@ Data di consegna della prova TODO entro le ore 9:00 tramite la piattaforma e-lea
 
 
 <span style="color: gray;">
+</details>
 
 ## A.A. 2023/2024
-
+<details>
+  <summary>Show me</summary>
 [E-Learning UNISA PD 23/24](https://elearning.unisa.it/course/view.php?id=7552)
-
 
 ## Calendario delle prove (da confermare)
 
@@ -119,3 +158,4 @@ Data di consegna della prova 18/12/2023 entro le ore 9:00 tramite la piattaforma
 
 ![quiz-b-2023](https://github.com/spagnuolocarmine/programmazione-distribuita/raw/main/data/scores/quiz-b_20_11_2023.png)
 </span>
+</details>
