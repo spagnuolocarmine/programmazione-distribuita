@@ -192,7 +192,7 @@ Orari di ricevimento: dopo ogni lezione.</p>
 <tr><td>19/10/2026</td><td>Introduzione Java Enterprise Edition (Java EE)</td><td><a href="04-javaee.html">Java EE</a></td><td>📗 Cap. 1</td></tr>
 <tr><td>22/10/2026</td><td>Contexts and Dependency Injection (CDI)</td><td><a href="04-cdi.html">CDI Part 1</a></td><td>📗 Cap. 2</td></tr>
 <tr><td>26/10/2026</td><td>Laboratorio Starting with J2EE</td><td><a href="05-javaee-lab.html">J2EE Lab</a></td><td></td></tr>
-<tr><td>29/10/2026</td><td>CDI Interceptor ➕ Laboratorio J2EE</td><td><a href="04-cdi.html">CDI Part 2</a></td><td>📗 Cap. 2</td></tr>
+<tr><td>29/10/2026</td><td>CDI Interceptor ➕ Laboratorio J2EE</td><td><a href="04-cdi.html">CDI Part 2</a> <a href="04-cdi-lab.html">Lab Interceptor</a></td><td>📗 Cap. 2</td></tr>
 <tr><td>30/10/2026</td><td>Java Persistence API (JPA)</td><td><a href="05-jpa.html"> JPA - Part 1</a></td><td>📗 Cap. 4-5</td></tr>
 </tbody></table>
 </div><!--|27/10/2026 | Java Persistence API (JPA) | [ JPA - Part 2](05-jpa.md) [Laboratorio JPA](06-jpa-lab.md) | 📗 Cap. 4-5 |
@@ -998,6 +998,14 @@ responseMessage = server.sendMessage("Client Message");
 <ul>
 <li><a href="https://tomylab.wordpress.com/2016/06/18/java-ee-7-the-big-picture/">JAVA EE 7: THE BIG PICTURE</a></li>
 </ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="interceptor-lab---estendere-lesercizio-music-library"><a class="header" href="#interceptor-lab---estendere-lesercizio-music-library">Interceptor Lab - Estendere l'Esercizio Music Library</a></h1>
+<p>Estendere l'applicazione ⏯️  Music Library (<a href="05-javaee-lab.html">Esercizio 2</a>) introducendo i CDI Interceptors, secondo le seguenti specifiche.</p>
+<h2 id="1-logging-delle-operazioni-tramite-interceptor"><a class="header" href="#1-logging-delle-operazioni-tramite-interceptor">1. Logging delle operazioni tramite Interceptor</a></h2>
+<p>Realizzare una classe LoggingInterceptor che utilizzi l'annotazione @AroundInvoke e l'interfaccia InvocationContext per registrare l'esecuzione delle operazioni della libreria (aggiunta, eliminazione e ricerca dei brani). L'interceptor deve registrare il nome del metodo invocato, i parametri ricevuti e l'esito dell'operazione. Applicare l'interceptor ai metodi del Managed Bean Library tramite l'annotazione @Interceptors.</p>
+<h2 id="2-intercettazione-del-ciclo-di-vita-e-monitoraggio-delle-prestazioni"><a class="header" href="#2-intercettazione-del-ciclo-di-vita-e-monitoraggio-delle-prestazioni">2. Intercettazione del ciclo di vita e monitoraggio delle prestazioni</a></h2>
+<p>Realizzare un secondo interceptor, denominato PerformanceInterceptor, che permetta di monitorare il ciclo di vita del Managed Bean e il tempo di esecuzione dei suoi metodi. Utilizzare @PostConstruct per intercettare l'inizializzazione del bean e @AroundInvoke per calcolare il tempo impiegato dalle operazioni, registrando i risultati nei log dell'applicazione.</p>
+<h2 id="3-interceptor-multipli-binding-e-priorità-di-esecuzione"><a class="header" href="#3-interceptor-multipli-binding-e-priorità-di-esecuzione">3. Interceptor multipli, binding e priorità di esecuzione.</a></h2>
+<p>Definire un'annotazione personalizzata tramite @InterceptorBinding che consenta di associare gli interceptor ai metodi della libreria senza riferirsi direttamente alle rispettive classi. Configurare l'applicazione affinché più interceptor possano essere eseguiti sulla stessa operazione e utilizzare @Priority per stabilirne l'ordine di esecuzione. Verificare attraverso i log la corretta concatenazione degli interceptor, distinguendo le operazioni eseguite prima e dopo l'invocazione del metodo originale.</p>
 <div style="break-before: page; page-break-before: always;"></div><ul>
 <li><a href="05-jpa.html#contenuti">Contenuti</a></li>
 <li><a href="05-jpa.html#materiale-bibliografico">Materiale bibliografico</a></li>
