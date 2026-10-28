@@ -26,7 +26,7 @@
   - [Contexts and Dependency Injection (CDI) - Part 1](04-cdi.md)
 - [6️⃣ 📗]()
   - [Laboratorio Java EE](05-javaee-lab.md)
-  - [Contexts and Dependency Injection (CDI) - Part 2](04-cdi-lab.md)
+  - [Contexts and Dependency Injection (CDI) - Part 2 e Laboratorio Interceptor](04-cdi-lab.md)
   - [Java Persistence API - Part 1](05-jpa.md)
 <!---- - [7️⃣ 📗]()
   - [JPA 2]() 
