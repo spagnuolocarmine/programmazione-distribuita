@@ -197,12 +197,14 @@ Orari di ricevimento: dopo ogni lezione.</p>
 <tr><td>02/11/2026</td><td>Java Persistence API (JPA)</td><td><a href="05-jpa.html"> JPA - Part 2</a> <a href="06-jpa-lab.html">Laboratorio JPA</a></td><td>📗 Cap. 4-5</td></tr>
 <tr><td>05/11/2026</td><td>Enterprise JavaBeans (EJB) - Part 1 ➕ Laboratorio EJB (Esercizio 0)</td><td><a href="06-ejb.html"> EJB - Part 1</a></td><td>📗 Cap. 7-9</td></tr>
 <tr><td>06/11/2026</td><td>EJB - Part 2 ➕  <a href="07-ejb-lab.html">Laboratorio EJB Esercizi Bonus</a></td><td></td><td>📗 Cap. 7-9</td></tr>
-<tr><td>09/11/2026</td><td>Laboratorio EJB</td><td><a href="07-ejb-lab.html">EJB - Lab</a></td><td>📗 Cap. 7-9</td></tr>
-<tr><td>12/11/2026</td><td>Java Message Service (JMS) - Part 1</td><td><a href="07-jms.html"> JMS - Part 1</a></td><td>📗 Cap. 13</td></tr>
-<tr><td>13/11/2026</td><td>JMS - Part 2</td><td><a href="07-jms.html"> JMS - Part 2</a></td><td>📗 Cap. 13</td></tr>
-<tr><td><strong><em>Fine Parte B</em></strong></td><td></td><td></td><td></td></tr>
+<tr><td>09/11/2026</td><td>📝 Quiz A</td><td></td><td></td></tr>
+<tr><td>12/11/2026</td><td>Laboratorio EJB</td><td><a href="07-ejb-lab.html">EJB - Lab</a></td><td>📗 Cap. 7-9</td></tr>
+<tr><td>13/11/2026</td><td>Java Message Service (JMS) - Part 1</td><td><a href="07-jms.html"> JMS - Part 1</a></td><td>📗 Cap. 13</td></tr>
 </tbody></table>
-</div><!--|10/11/2025 |📝 Quiz Parte A |  |  |
+</div><!--
+|13/11/2026 | JMS - Part 2 | [ JMS - Part 2](07-jms.md) | 📗 Cap. 13 |
+|  **_Fine Parte B_** ||| 
+|10/11/2025 |📝 Quiz Parte A |  |  |
 |13/11/2025 | Laboratorio EJB ➕ JMS | [EJB - Lab](07-ejb-lab.md) [JMS - Lab](08-jms-lab.md) |  |
 |14/11/2025| Java Web Services (WS) 1| [Java Web Services (WS) Parte 1](08-ws.md) | 📗 Cap. 14 |
 |17/11/2025 | Laboratorio EJB ➕ JMS | [EJB - Lab](07-ejb-lab.md) [JMS - Lab](08-jms-lab.md) |  |
@@ -1622,6 +1624,218 @@ BUILD SUCCESSFUL (total time: 2 seconds)
                  "&lt;/iframe&gt;");
 </code></pre>
 </li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="-quiz-a"><a class="header" href="#-quiz-a">📝 Quiz A</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><ul>
+<li><a href="08-jms-lab.html#esercizio-0">Esercizio 0</a></li>
+<li><a href="08-jms-lab.html#esercizio-1">Esercizio 1</a></li>
+<li><a href="08-jms-lab.html#esercizio-2">Esercizio 2</a></li>
+<li><a href="08-jms-lab.html#esercizio-3">Esercizio 3</a></li>
+<li><a href="08-jms-lab.html#esercizio-4---pdtify--%EF%B8%8F">Esercizio 4 - PDtify 🎵 ⏯️</a></li>
+</ul>
+<h1 id="esercizio-0"><a class="header" href="#esercizio-0">Esercizio 0</a></h1>
+<ul>
+<li>Riferimento: org.agoncal.book.javaee7.chapter13</li>
+<li>New Project ➡️ Java with Ant ➡️ Java Application</li>
+<li>Aggiungere le dipendenze: <code>Java EE7 API Library</code> e <code>gf-client.jar</code></li>
+</ul>
+<ol>
+<li>
+<p>Definire un nuovo wrapper per i messaggi relativi ad un ordine, come segue:</p>
+<pre><code class="language-java">public class OrderDTO implements Serializable {
+
+private Long orderId;
+private Date creationDate;
+private String customerName;
+private Float totalAmount;
+
+public OrderDTO() {
+}
+
+public OrderDTO(Long orderId, Date creationDate, String customerName, Float totalAmount) {
+    this.orderId = orderId;
+    this.creationDate = creationDate;
+    this.customerName = customerName;
+    this.totalAmount = totalAmount;
+}
+
+//Getters and setters
+//toString()
+}
+</code></pre>
+</li>
+<li>
+<p>Definire un Producer di messaggi, come segue:</p>
+<pre><code class="language-java">public class OrderProducer {
+
+public static void main(String[] args) throws NamingException {
+    // Creates an orderDto with a total amount parameter
+    float value = 10.0;
+    Float totalAmount = Float.valueOf(10);
+    OrderDTO order = new OrderDTO(1234l, new Date(), "Serge Gainsbourg", totalAmount);
+
+    // Gets the JNDI context
+    Context jndiContext = new InitialContext();
+
+    // Looks up the administered objects
+    ConnectionFactory connectionFactory = (ConnectionFactory) jndiContext.lookup("jms/javaee7/ConnectionFactory");
+    Destination topic = (Destination) jndiContext.lookup("jms/javaee7/Topic");
+
+    try (JMSContext jmsContext = connectionFactory.createContext()) {
+    // Sends an object message to the topic
+    jmsContext.createProducer().setProperty("orderAmount", totalAmount).send(topic, order);
+    System.out.println("\nOrder sent : " + order.toString());
+    }
+ }
+}
+</code></pre>
+</li>
+<li>
+<p>Definire un Consumer di messaggi, come segue:</p>
+<pre><code class="language-java"> public class OrderConsumer {
+ public static void main(String[] args) throws NamingException {
+
+     // Gets the JNDI context
+     Context jndiContext = new InitialContext();
+
+     // Looks up the administered objects
+     ConnectionFactory connectionFactory = (ConnectionFactory) jndiContext.lookup("jms/javaee7/ConnectionFactory");
+     Destination topic = (Destination) jndiContext.lookup("jms/javaee7/Topic");
+
+     // Loops to receive the messages
+     System.out.println("\nInfinite loop. Waiting for a message...");
+     try (JMSContext jmsContext = connectionFactory.createContext()) {
+     while (true) {
+         OrderDTO order = jmsContext.createConsumer(topic).receiveBody(OrderDTO.class);
+         System.out.println("Order received: " + order);
+     }
+     }
+ }
+ }
+</code></pre>
+</li>
+</ol>
+<blockquote>
+<p>🚀 A questo punto è possibile eseguire prima il Consumer e poi il Producer.</p>
+</blockquote>
+<h1 id="esercizio-1-2"><a class="header" href="#esercizio-1-2">Esercizio 1</a></h1>
+<p>Scrivere un client Java che produce dei messaggi per un Topic di messaging su server Enterprise. Il client invia un messaggio con l’ordine per la costruzione di una moto, che è costituita da diverse componenti:</p>
+<ul>
+<li>Nome modello</li>
+<li>Nome telaio</li>
+<li>Nome pneumatici</li>
+</ul>
+<p>Il server deve implementare attraverso un Message Driven Bean un servizio di notifica degli ordini, stampando a video il nome del modello della moto, del telaio e degli pneumatici. Il client deve offrire da console un’interfaccia che permetta di effettuare tutte le operazioni da remoto.</p>
+<p>Note</p>
+<ul>
+<li>La ConnectionFactory deve chiamarsi: <code>jms/javaee7/ConnectionFactory</code></li>
+<li>Il Topic deve chiamarsi: <code>jms/javaee7/Topic</code></li>
+</ul>
+<h1 id="esercizio-2-2"><a class="header" href="#esercizio-2-2">Esercizio 2</a></h1>
+<p>Estendere l’esercizio precedente attraverso l’implementazione di un servizio di persistenza degli ordini che salvi su una tabella del database tutti gli ordini arrivati al server. Aggiungere un Singleton che popoli il database con 2 ordini.</p>
+<p>Note</p>
+<ul>
+<li>PersistentUnit e DB devono chiamarsi rispettivamente MotoPU e MotoDB</li>
+</ul>
+<h1 id="esercizio-3-2"><a class="header" href="#esercizio-3-2">Esercizio 3</a></h1>
+<p>Estendere l’esercizio precedente aggiungendo un client Java che riceve i messaggi degli ordini delle moto e stampa li stampa a video; provare a ricevere tutti i messaggi inviati sul topic anche prima della sottoscrizione utilizzando un DurableConsumer.</p>
+<pre><code class="language-java"> try (JMSContext jmsContext = connectionFactory.createContext()) {
+    jmsContext.setClientID("uniqueID");
+    JMSConsumer topicSubscriber = jmsContext.createDurableConsumer((Topic) topic, "uniqueID");
+    OrderDTO order = topicSubscriber.receiveBody(OrderDTO.class);
+    System.out.println("Order received: " + order);
+    topicSubscriber.close();
+}
+</code></pre>
+<h1 id="esercizio-4---pdtify--"><a class="header" href="#esercizio-4---pdtify--">Esercizio 4 - PDtify 🎵 ⏯️</a></h1>
+<p>Definire una nuova servlet <code>Player</code> che si occupa di visualizzare il player youtube per un particolare brano o una playlist.</p>
+<ul>
+<li><em>Input</em>: due parametri nel metodo GET <code>?id=x&amp;type=song|playlist</code>:
+<ul>
+<li><em>song</em>  viene visualizzato a tutto schermo il player youtube;</li>
+<li><em>playlist</em> vengono visualizzati tutti i brani in una tabella, e mostra un tasto play per ogni brano.</li>
+</ul>
+</li>
+</ul>
+<p>Quando la servlet viene caricata in modalità <em>song</em> viene inviato un nuovo messaggio sul Topic <code>jsm/musicplayer/Player</code> (utilizzare la factory di default di installazione di glassfish) contenete l'identificativo del brano. Se la servlet viene caricata in modalità <em>playlist</em>  si invia un messaggio sempre sullo stesso topic con l'identificativo della playlist.
+La gestione dei messaggi avviene tramite l'utilizzo di MDB e degli eventi, per ogni messaggio si genera un messaggio di log visualizzato nella console di glassfish.</p>
+<p>Sviluppare il progetto come segue:</p>
+<ul>
+<li>
+<p>Definire due nuovi Qualifier <code>SongEvent</code> e <code>PlaylistEvent</code>.</p>
+</li>
+<li>
+<p>Definire un wrapper di messaggi <code>MessageWrapper</code> che permette di memorizzare l'id di un brano o di una playlist ed il relativo tipo di messaggio song/playlist.</p>
+</li>
+<li>
+<p>Definire un nuovo message-driven bean <code>MusicLibraryMDB</code> che implementa <code>MessageListener</code>, per ogni messaggio ricevuto (MessageWrapper) si esegue il fire di un nuovo evento con body la relativa Song o Playlist.</p>
+</li>
+<li>
+<p>Definire due nuove classi <code>SongNotification</code>e <code>PlaylistNotification</code> che definiscono un singolo metodo <code>notify</code> che definisce un'opportuna <code>@Observes</code> di un entità <code>Song</code> o <code>Playlist</code> (parametro del metodo) con l'obiettivo di visualizzare un messaggio di log.</p>
+<pre><code class="language-java">    public class PlaySongNotification {
+        public void notify(@Observes Song s){
+            System.out.println("Playing song "+s.getName());
+        }
+    }
+</code></pre>
+</li>
+<li>
+<p>Definire un nuovo stateless EJB <code>EventProducer</code> che consente di inviare messaggi su Topic <code>jsm/musicplayer/Player</code>.</p>
+</li>
+<li>
+<p>Definire una nuova servlet <code>Player</code>che si comporta come descritto ed utilizza l'<code>EventProducer</code> per notificare il play di un brano.</p>
+</li>
+<li>
+<p>Definire un client Java <code>MDBtest</code> nel package test del ptrogetto EJB che definire un metodo main nel quale si esegue il test di tutte le funzionalità di scambio di messaggi definiti (aggiungere il file gf-client.jar come dipendenza).</p>
+</li>
+<li>
+<p>Modificare la servlet <code>MusicPlayer</code> al fine di utilizzare la nuova servlet <code>Player</code>per effettuare il play di un brano o una playlist.</p>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><ul>
+<li><a href="07-jms.html#contenuti">Contenuti</a></li>
+<li><a href="07-jms.html#materiale-bibliografico">Materiale bibliografico</a></li>
+<li><a href="07-jms.html#domande-di-riepilogo">Domande di riepilogo</a></li>
+</ul>
+<h1 id="contenuti-4"><a class="header" href="#contenuti-4">Contenuti</a></h1>
+<p><em>Parte 1</em></p>
+<ul>
+<li>Introduzione
+<ul>
+<li>Messaging</li>
+<li>Java Messaging Service API</li>
+<li>Message Producers</li>
+<li>Message Consumers</li>
+</ul>
+</li>
+<li>Anatomia di un messaggio</li>
+<li>Meccanismi di affidabilità</li>
+</ul>
+<p><em>Parte 2</em></p>
+<ul>
+<li>Message-Driven Beans</li>
+<li>Un esempio conclusivo
+<ul>
+<li>Il codice</li>
+<li>Configurazione</li>
+<li>I progetti</li>
+</ul>
+</li>
+<li>Esercizi</li>
+</ul>
+<h1 id="materiale-bibliografico-3"><a class="header" href="#materiale-bibliografico-3">Materiale bibliografico</a></h1>
+<ul>
+<li>"Beginning Java Enterprise Edition": Cap. 13</li>
+<li><a href="http://docs.oracle.com/cd/E18930_01/html/821-2443/gblyo.html#scrolltoc">Oracle GlassFish Server Message Queue 4.5 Technical Overview</a>. Cap. 1, Cap. 2, Cap. 3, Cap. 4 (cenni)</li>
+</ul>
+<h1 id="domande-di-riepilogo-3"><a class="header" href="#domande-di-riepilogo-3">Domande di riepilogo</a></h1>
+<ul>
+<li>Quali sono le principali differenze fra il modello Point-to-Point ed il modello Publish-Subscribe?</li>
+<li>Cosa sono i Message-Driven Beans?</li>
+<li>Cosa sono gli Administered Objects?</li>
+<li>Qual è la differenza fra Synchronous Delivery e Asynchronous Delivery?</li>
+<li>Quali sono i principali meccanismi di affidabilità?</li>
+<li>Quali eccezioni si possono gestire con gli MDB?</li>
 </ul>
 
                     </main>
