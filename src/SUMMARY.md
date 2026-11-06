@@ -35,7 +35,7 @@
   - [EJB - Part 2]()
     - [Laboratorio EJB (Esercizio 0)](07-ejb-lab.md)
  - [8️⃣ 📗]()
-  - [📝 Quiz A](esame_con_intercorso.md#quiz-parte-a)
+  - [📝 Quiz A](esame_con_intercorso.md)
   - [Laboratorio EJB]()
     - [JMS Lab](08-jms-lab.md)
   - [Java Message Service - Part 1](07-jms.md)
