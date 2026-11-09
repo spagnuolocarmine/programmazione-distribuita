@@ -36,7 +36,12 @@ Programma JEE |  gg/12/2026 09:00-11:00 | Lab Sammet | |
 
 Data di consegna della prova TODO entro le ore 9:00 tramite la piattaforma e-learning di unisa.
 
-### Analisi dei risultati 2025-26
+### Analisi dei risultati 2026-27
+
+**Quiz A**
+
+![quiz-a-2026](https://github.com/spagnuolocarmine/programmazione-distribuita/raw/main/data/scores/quiz_a_2627.png)
+
 
 
 # A.A. 2025/2026
