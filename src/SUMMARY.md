@@ -39,9 +39,11 @@
   - [Laboratorio EJB]()
     - [JMS Lab](08-jms-lab.md)
   - [Java Message Service - Part 1](07-jms.md)
-
-<!---- - [9️⃣ 📗]()
+- [9️⃣ 📗]()
   - [JMS - Part 2]()
+  - [Laboratorio EJB ➕ JMS](07-ejb-lab.md)
+  - [Java Web Services (WS) Parte 1](08-ws.md)
+<!---- 
   - [Java Web Services (WS) Parte 1](08-ws.md)
   - [Java WS Parte 2]()
   - [Laboratorio Java WS](09-ws-lab.md)

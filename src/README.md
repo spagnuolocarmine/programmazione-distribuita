@@ -49,12 +49,11 @@ Ven | 09:00-11:00 | F8
 |09/11/2026 | 📝 Quiz A  | |  |
 |12/11/2026 | Laboratorio EJB  | [EJB - Lab](07-ejb-lab.md) |📗 Cap. 7-9  |
 |13/11/2026 | Java Message Service (JMS) - Part 1  | [ JMS - Part 1](07-jms.md) | 📗 Cap. 13 |
-<!--
-|13/11/2026 | JMS - Part 2 | [ JMS - Part 2](07-jms.md) | 📗 Cap. 13 |
+|16/11/2026 | JMS - Part 2 | [ JMS - Part 2](07-jms.md) | 📗 Cap. 13 |
 |  **_Fine Parte B_** ||| 
-|10/11/2025 |📝 Quiz Parte A |  |  |
-|13/11/2025 | Laboratorio EJB ➕ JMS | [EJB - Lab](07-ejb-lab.md) [JMS - Lab](08-jms-lab.md) |  |
-|14/11/2025| Java Web Services (WS) 1| [Java Web Services (WS) Parte 1](08-ws.md) | 📗 Cap. 14 |
+|19/11/2025 | Laboratorio EJB ➕ JMS | [EJB - Lab](07-ejb-lab.md) [JMS - Lab](08-jms-lab.md) |  |
+|20/11/2025 | Java Web Services (WS) 1| [Java Web Services (WS) Parte 1](08-ws.md) | 📗 Cap. 14 |
+<!--
 |17/11/2025 | Laboratorio EJB ➕ JMS | [EJB - Lab](07-ejb-lab.md) [JMS - Lab](08-jms-lab.md) |  |
 |20/11/2025 | Java Web Services (WS) 2| [Java Web Services (WS) Parte 2](08-ws.md) | 📗 Cap. 14 |
 |21/11/2025 | Laboratorio Java WS ➕ Laboratorio J2EE Step-by-step| [Laboratorio Java WS](09-ws-lab.md)  |  |
