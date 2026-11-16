@@ -27,47 +27,45 @@ Ven | 09:00-11:00 | F8
 
 |🗓️ | Lezione | Materiale| Riferimenti |
 |---------|----------|--------|-----------|
-|24/09/2026 | Presentazione Corso + Introduzione Programmazione Distribuita| [Slide Presentazione](https://prezi.com/view/L27AvjRC5rhkqtGWRRWk/?referral_token=h7tffPlnB3FN)| 📕 Cap. 1 |
-|25/09/2026 |Open Distributed Processing Reference Model | [Amdahl’s Law in the Multicore Era](https://github.com/spagnuolocarmine/programmazione-distribuita/blob/main/data/Hill2008.pdf) | 📕 Cap. 1 |
-|28/09/2026 | Java Thread 1 | ⚙️ [Installazione ambiente di sviluppo (solo prima sezione)](05-javaee-lab.md)| 📋 [Official Java Essential Concurrency](https://docs.oracle.com/javase/tutorial/essential/concurrency) </br></br> 🌐 Insights: O'Reilly Java Threads (google it)|
-|01/10/2026 | Java Thread 2 |  💾 [Alphonse and Gaston Java Thread](https://www.jdoodle.com/ia/1jpx) | 📋 [Official Java Essential Concurrency](https://docs.oracle.com/javase/tutorial/essential/concurrency) |
-|02/10/2026 | Laboratorio Thread | [Esercitazione Java Thread](01-threads.md) | 📖 Java Threads, 3rd Edition |
-|08/10/2026 | Java Socket TCP 1-2| 📋 [Official Java All About Sockets](https://docs.oracle.com/javase/tutorial/networking/sockets/index.html)| 📕Cap. 2 |
-|09/10/2026 | Laboratorio Oggetti Remoti con Java Socket | [Esercitazione Java Socket](01-socket.md) | 📕Cap. 2|
-|12/10/2026 | RMI 1 | | 📕 Cap. 3|
-|15/10/2026 | RMI 2 |[RMI 1 - Hello World](03-rmi.md) |  📕 Cap. 4|
-|16/10/2026 | Laboratorio Java RMI| [RMI - Esercizi Java RMI](03-rmi.md) | |
+|24/09/2026 |1. Presentazione Corso + Introduzione Programmazione Distribuita| [Slide Presentazione](https://prezi.com/view/L27AvjRC5rhkqtGWRRWk/?referral_token=h7tffPlnB3FN)| 📕 Cap. 1 |
+|25/09/2026 |2. Open Distributed Processing Reference Model | [Amdahl’s Law in the Multicore Era](https://github.com/spagnuolocarmine/programmazione-distribuita/blob/main/data/Hill2008.pdf) | 📕 Cap. 1 |
+|28/09/2026 |3.  Java Thread 1 | ⚙️ [Installazione ambiente di sviluppo (solo prima sezione)](05-javaee-lab.md)| 📋 [Official Java Essential Concurrency](https://docs.oracle.com/javase/tutorial/essential/concurrency) </br></br> 🌐 Insights: O'Reilly Java Threads (google it)|
+|01/10/2026 |4. Java Thread 2 |  💾 [Alphonse and Gaston Java Thread](https://www.jdoodle.com/ia/1jpx) | 📋 [Official Java Essential Concurrency](https://docs.oracle.com/javase/tutorial/essential/concurrency) |
+|02/10/2026 |5. Laboratorio Thread | [Esercitazione Java Thread](01-threads.md) | 📖 Java Threads, 3rd Edition |
+|08/10/2026 |6. Java Socket TCP 1-2| 📋 [Official Java All About Sockets](https://docs.oracle.com/javase/tutorial/networking/sockets/index.html)| 📕Cap. 2 |
+|09/10/2026 |7. Laboratorio Oggetti Remoti con Java Socket | [Esercitazione Java Socket](01-socket.md) | 📕Cap. 2|
+|12/10/2026 |8. RMI 1 | | 📕 Cap. 3|
+|15/10/2026 |9. RMI 2 |[RMI 1 - Hello World](03-rmi.md) |  📕 Cap. 4|
+|16/10/2026 |10. Laboratorio Java RMI| [RMI - Esercizi Java RMI](03-rmi.md) | |
 |  **_Fine Parte A_** ||| 
-|19/10/2026 | Introduzione Java Enterprise Edition (Java EE) | [Java EE](04-javaee.md) | 📗 Cap. 1|
-|22/10/2026 | Contexts and Dependency Injection (CDI) | [CDI Part 1](04-cdi.md) | 📗 Cap. 2|
-|26/10/2026 | Laboratorio Starting with J2EE | [J2EE Lab](05-javaee-lab.md) | |
-|29/10/2026 | CDI Interceptor ➕ Laboratorio J2EE| [CDI Part 2](04-cdi.md) - [Lab Interceptor](04-cdi-lab.md) | 📗 Cap. 2 |
-|30/10/2026 | Java Persistence API (JPA) | [ JPA - Part 1](05-jpa.md)  | 📗 Cap. 4-5 |
-|02/11/2026 | Java Persistence API (JPA) | [ JPA - Part 2](05-jpa.md) [Laboratorio JPA](06-jpa-lab.md) | 📗 Cap. 4-5 |
-|05/11/2026 | Enterprise JavaBeans (EJB) - Part 1 ➕ Laboratorio EJB (Esercizio 0)| [ EJB - Part 1](06-ejb.md) | 📗 Cap. 7-9 |
-|06/11/2026 | EJB - Part 2 ➕  [Laboratorio EJB Esercizi Bonus](07-ejb-lab.md)| |📗 Cap. 7-9  |
-|09/11/2026 | 📝 Quiz A  | |  |
-|12/11/2026 | Laboratorio EJB  | [EJB - Lab](07-ejb-lab.md) |📗 Cap. 7-9  |
-|13/11/2026 | Java Message Service (JMS) - Part 1  | [ JMS - Part 1](07-jms.md) | 📗 Cap. 13 |
-|16/11/2026 | JMS - Part 2 | [ JMS - Part 2](07-jms.md) [JMS - Lab](08-jms-lab.md)  | 📗 Cap. 13 |
+|19/10/2026 |11. Introduzione Java Enterprise Edition (Java EE) | [Java EE](04-javaee.md) | 📗 Cap. 1|
+|22/10/2026 |12. Contexts and Dependency Injection (CDI) | [CDI Part 1](04-cdi.md) | 📗 Cap. 2|
+|26/10/2026 |13. Laboratorio Starting with J2EE | [J2EE Lab](05-javaee-lab.md) | |
+|29/10/2026 |14. CDI Interceptor ➕ Laboratorio J2EE| [CDI Part 2](04-cdi.md) - [Lab Interceptor](04-cdi-lab.md) | 📗 Cap. 2 |
+|30/10/2026 |15. Java Persistence API (JPA) | [ JPA - Part 1](05-jpa.md)  | 📗 Cap. 4-5 |
+|02/11/2026 |16. Java Persistence API (JPA) | [ JPA - Part 2](05-jpa.md) [Laboratorio JPA](06-jpa-lab.md) | 📗 Cap. 4-5 |
+|05/11/2026 |17. Enterprise JavaBeans (EJB) - Part 1 ➕ Laboratorio EJB (Esercizio 0)| [ EJB - Part 1](06-ejb.md) | 📗 Cap. 7-9 |
+|06/11/2026 |18. EJB - Part 2 ➕  [Laboratorio EJB Esercizi Bonus](07-ejb-lab.md)| |📗 Cap. 7-9  |
+|09/11/2026 |19. 📝 Quiz A  | |  |
+|12/11/2026 |20. Laboratorio EJB  | [EJB - Lab](07-ejb-lab.md) |📗 Cap. 7-9  |
+|13/11/2026 |21. Java Message Service (JMS) - Part 1  | [ JMS - Part 1](07-jms.md) | 📗 Cap. 13 |
+|16/11/2026 |22. JMS - Part 2 | [ JMS - Part 2](07-jms.md) [JMS - Lab](08-jms-lab.md)  | 📗 Cap. 13 |
 |  **_Fine Parte B_** ||| 
-|19/11/2025 | Laboratorio EJB ➕ JMS | [EJB - Lab](07-ejb-lab.md) [JMS - Lab](08-jms-lab.md) |  |
-|20/11/2025 | Java Web Services (WS) 1| [Java Web Services (WS) Parte 1](08-ws.md) | 📗 Cap. 14 |
-<!--
-|17/11/2025 | Laboratorio EJB ➕ JMS | [EJB - Lab](07-ejb-lab.md) [JMS - Lab](08-jms-lab.md) |  |
-|20/11/2025 | Java Web Services (WS) 2| [Java Web Services (WS) Parte 2](08-ws.md) | 📗 Cap. 14 |
-|21/11/2025 | Laboratorio Java WS ➕ Laboratorio J2EE Step-by-step| [Laboratorio Java WS](09-ws-lab.md)  |  |
-|24/11/2025 |📝 Quiz Parte B |  |  |
-|27/11/2025 | From J2EE to Spring Framework (Teoria) |  | [Introduzione a Spring Framework](https://github.com/spagnuolocarmine/programmazione-distribuita/raw/main/data/introduction_to_spring_citro_2024.pdf) |
-|28/11/2025 | From J2EE to Spring Framework (Pratica) |  | [Spring Framework In Action](https://github.com/tizianocitro/pdtify) |
-|01/12/2025 | Laboratorio J2EE Simulazione |  |  |
-|04/12/2025 | Introduzione al Cloud Computing| [Materiale didattico Cloud Computing](https://docs.google.com/document/d/1qztqnePWxVVycWgcF0aw1BgbHyVKI3r6CUQ5Vrva1Y8/edit?usp=sharing) |  |
-|05/12/2025 | Laboratorio J2EE Simulazione |  |  |
-|11/12/2025 |  Cloud Computing Pratica  |  |  | 
-|12/12/2025 | Laboratorio J2EE Simulazione |  |  |
-|15/12/2025 | 📝 Prova Parte C - Convocazione Studenti con votazione <= 27 & Studenti con +30% tempo|   | [🏆](https://docs.google.com/spreadsheets/d/1lC3Gts3sGeDMQfIWpP_WDHZkkPGubPOS5cgMpXGguk4/edit?usp=sharing) |
-|18/12/2025 | 📝 Prova Parte C - Convocazione studenti con votazione > 27|  | [🏆](https://docs.google.com/spreadsheets/d/1lC3Gts3sGeDMQfIWpP_WDHZkkPGubPOS5cgMpXGguk4/edit?usp=sharing) |
--->
+|19/11/2025 |23. Laboratorio EJB ➕ JMS | [EJB - Lab](07-ejb-lab.md) [JMS - Lab](08-jms-lab.md) |  |
+|20/11/2025 |24. Java Web Services (WS) 1| [Java Web Services (WS) Parte 1](08-ws.md) | 📗 Cap. 14 |
+|23/11/2026 |25.Java Web Services (WS) 2| [Java Web Services (WS) Parte 2](08-ws.md) | 📗 Cap. 14 |
+|26/11/2026 |26.From J2EE to Spring Framework (Teoria) |  | [Introduzione a Spring Framework](https://github.com/spagnuolocarmine/programmazione-distribuita/raw/main/data/introduction_to_spring_citro_2024.pdf) |
+|27/11/2026 |27. From J2EE to Spring Framework (Pratica) |  | [Spring Framework In Action](https://github.com/tizianocitro/pdtify) |
+|30/11/2026 |28.📝 Quiz Parte B |  |  |
+|03/12/2026 |29. Laboratorio Java WS ➕ Laboratorio J2EE Step-by-step| [Laboratorio Java WS](09-ws-lab.md)  |  |
+|04/12/2026 |30. Laboratorio J2EE Simulazione |  |  |
+|07/12/2026 |31. Laboratorio J2EE Simulazione |  |  |
+|10/12/2026 |32. Introduzione al Cloud Computing| [Materiale didattico Cloud Computing](https://docs.google.com/document/d/1qztqnePWxVVycWgcF0aw1BgbHyVKI3r6CUQ5Vrva1Y8/edit?usp=sharing) |  |
+|11/12/2026 |33.  Cloud Computing Pratica  |  |  | 
+|14/12/2026 |34. Laboratorio J2EE Simulazione |  |  |
+|15/12/2026 |35. 📝 Prova Parte C - Convocazione Studenti con votazione <= 27 & Studenti con +30% tempo|   | [🏆](https://docs.google.com/spreadsheets/d/1lC3Gts3sGeDMQfIWpP_WDHZkkPGubPOS5cgMpXGguk4/edit?usp=sharing) |
+|18/12/2026 |36. 📝 Prova Parte C - Convocazione studenti con votazione > 27|  | [🏆](https://docs.google.com/spreadsheets/d/1lC3Gts3sGeDMQfIWpP_WDHZkkPGubPOS5cgMpXGguk4/edit?usp=sharing) |
+
 ---
 
 # Informazioni modalità d'esame 
