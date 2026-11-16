@@ -63,7 +63,7 @@ Ven | 09:00-11:00 | F8
 |10/12/2026 |32. Introduzione al Cloud Computing| [Materiale didattico Cloud Computing](https://docs.google.com/document/d/1qztqnePWxVVycWgcF0aw1BgbHyVKI3r6CUQ5Vrva1Y8/edit?usp=sharing) |  |
 |11/12/2026 |33.  Cloud Computing Pratica  |  |  | 
 |14/12/2026 |34. Laboratorio J2EE Simulazione |  |  |
-|15/12/2026 |35. 📝 Prova Parte C - Sessione 1|   |  |
+|17/12/2026 |35. 📝 Prova Parte C - Sessione 1|   |  |
 |18/12/2026 |36. 📝 Prova Parte C - Sessione 2|  |  |
 <!--[🏆](https://docs.google.com/spreadsheets/d/1lC3Gts3sGeDMQfIWpP_WDHZkkPGubPOS5cgMpXGguk4/edit?usp=sharing)-->
 ---
