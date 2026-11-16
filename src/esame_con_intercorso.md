@@ -30,7 +30,7 @@ Il candidato deve munirsi di un laptop, dotato di [Safe Exam Browser](https://sa
 
 |🗓️ | 🕘 | 📍| ✅❌ |
 ---------|----------|--------|-------|
-Quiz Parte A (Fino a RMI)| 09/11/2026 11:00-13:30 | Lab Sammet | |
+Quiz Parte A (Fino a RMI)| 09/11/2026 11:00-13:30 | Lab Sammet | ✅|
 Quiz Parte B (Fino a JMS)|  gg/mm/2026 11:00-13:30 | Lab Sammet | |
 Programma JEE |  gg/12/2026 09:00-11:00 | Lab Sammet | |
 

@@ -49,7 +49,7 @@ Ven | 09:00-11:00 | F8
 |09/11/2026 | 📝 Quiz A  | |  |
 |12/11/2026 | Laboratorio EJB  | [EJB - Lab](07-ejb-lab.md) |📗 Cap. 7-9  |
 |13/11/2026 | Java Message Service (JMS) - Part 1  | [ JMS - Part 1](07-jms.md) | 📗 Cap. 13 |
-|16/11/2026 | JMS - Part 2 | [ JMS - Part 2](07-jms.md) | 📗 Cap. 13 |
+|16/11/2026 | JMS - Part 2 | [ JMS - Part 2](07-jms.md) [JMS - Lab](08-jms-lab.md)  | 📗 Cap. 13 |
 |  **_Fine Parte B_** ||| 
 |19/11/2025 | Laboratorio EJB ➕ JMS | [EJB - Lab](07-ejb-lab.md) [JMS - Lab](08-jms-lab.md) |  |
 |20/11/2025 | Java Web Services (WS) 1| [Java Web Services (WS) Parte 1](08-ws.md) | 📗 Cap. 14 |
