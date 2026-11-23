@@ -49,6 +49,11 @@
   - [Laboratorio EJB](07-ejb-lab.md)
     - [JMS - Lab](08-jms-lab.md)
   - [Java Web Services (WS) Parte 1](08-ws.md)
+- [1️⃣1️⃣]()
+  - [Java Web Services (WS) Parte 2](08-ws.md)
+    - [Laboratorio Java WS](09-ws-lab.md)
+  - [From J2EE to Spring Framework (Teoria)]()
+  - [From J2EE to Spring Framework (Pratica)]()
 <!---- 
   - [Java Web Services (WS) Parte 1](08-ws.md)
   - [Java WS Parte 2]()
@@ -56,6 +61,5 @@
   - [Laboratorio J2EE Step-by-step]()
   - [Introduzione al Cloud Computing]()
 - [1️⃣0️⃣]()
-  - [From J2EE to Spring Framework (Teoria)]()
-  - [From J2EE to Spring Framework (Pratica)]()
+
   -->

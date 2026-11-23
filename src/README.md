@@ -53,11 +53,11 @@ Ven | 09:00-11:00 | F8
 |  **_Fine Parte B_** ||| 
 |19/11/2025 |23. Laboratorio EJB ➕ JMS | [EJB - Lab](07-ejb-lab.md) [JMS - Lab](08-jms-lab.md) |  |
 |20/11/2025 |24. Java Web Services (WS) 1| [Java Web Services (WS) Parte 1](08-ws.md) | 📗 Cap. 14 |
-|23/11/2026 |25. Java Web Services (WS) 2| [Java Web Services (WS) Parte 2](08-ws.md) | 📗 Cap. 14 |
+|23/11/2026 |25. Java Web Services (WS) 2| [Java Web Services (WS) Parte 2](08-ws.md)  [Laboratorio Java WS](09-ws-lab.md) | 📗 Cap. 14 |
 |26/11/2026 |26. From J2EE to Spring Framework (Teoria) |  | [Introduzione a Spring Framework](https://github.com/spagnuolocarmine/programmazione-distribuita/raw/main/data/introduction_to_spring_citro_2024.pdf) |
 |27/11/2026 |27. From J2EE to Spring Framework (Pratica) |  | [Spring Framework In Action](https://github.com/tizianocitro/pdtify) |
 |30/11/2026 |28. 📝 Quiz Parte B |  |  |
-|03/12/2026 |29. Laboratorio Java WS ➕ Laboratorio J2EE Step-by-step| [Laboratorio Java WS](09-ws-lab.md)  |  |
+|03/12/2026 |29. Laboratorio J2EE Step-by-step|  |  |
 |04/12/2026 |30. Laboratorio J2EE Simulazione |  |  |
 |07/12/2026 |31. Laboratorio J2EE Simulazione |  |  |
 |10/12/2026 |32. Introduzione al Cloud Computing| [Materiale didattico Cloud Computing](https://docs.google.com/document/d/1qztqnePWxVVycWgcF0aw1BgbHyVKI3r6CUQ5Vrva1Y8/edit?usp=sharing) |  |
