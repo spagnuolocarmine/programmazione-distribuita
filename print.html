@@ -204,11 +204,11 @@ Orari di ricevimento: dopo ogni lezione.</p>
 <tr><td><strong><em>Fine Parte B</em></strong></td><td></td><td></td><td></td></tr>
 <tr><td>19/11/2025</td><td>23. Laboratorio EJB ➕ JMS</td><td><a href="07-ejb-lab.html">EJB - Lab</a> <a href="08-jms-lab.html">JMS - Lab</a></td><td></td></tr>
 <tr><td>20/11/2025</td><td>24. Java Web Services (WS) 1</td><td><a href="08-ws.html">Java Web Services (WS) Parte 1</a></td><td>📗 Cap. 14</td></tr>
-<tr><td>23/11/2026</td><td>25. Java Web Services (WS) 2</td><td><a href="08-ws.html">Java Web Services (WS) Parte 2</a></td><td>📗 Cap. 14</td></tr>
+<tr><td>23/11/2026</td><td>25. Java Web Services (WS) 2</td><td><a href="08-ws.html">Java Web Services (WS) Parte 2</a>  <a href="09-ws-lab.html">Laboratorio Java WS</a></td><td>📗 Cap. 14</td></tr>
 <tr><td>26/11/2026</td><td>26. From J2EE to Spring Framework (Teoria)</td><td></td><td><a href="https://github.com/spagnuolocarmine/programmazione-distribuita/raw/main/data/introduction_to_spring_citro_2024.pdf">Introduzione a Spring Framework</a></td></tr>
 <tr><td>27/11/2026</td><td>27. From J2EE to Spring Framework (Pratica)</td><td></td><td><a href="https://github.com/tizianocitro/pdtify">Spring Framework In Action</a></td></tr>
 <tr><td>30/11/2026</td><td>28. 📝 Quiz Parte B</td><td></td><td></td></tr>
-<tr><td>03/12/2026</td><td>29. Laboratorio Java WS ➕ Laboratorio J2EE Step-by-step</td><td><a href="09-ws-lab.html">Laboratorio Java WS</a></td><td></td></tr>
+<tr><td>03/12/2026</td><td>29. Laboratorio J2EE Step-by-step</td><td></td><td></td></tr>
 <tr><td>04/12/2026</td><td>30. Laboratorio J2EE Simulazione</td><td></td><td></td></tr>
 <tr><td>07/12/2026</td><td>31. Laboratorio J2EE Simulazione</td><td></td><td></td></tr>
 <tr><td>10/12/2026</td><td>32. Introduzione al Cloud Computing</td><td><a href="https://docs.google.com/document/d/1qztqnePWxVVycWgcF0aw1BgbHyVKI3r6CUQ5Vrva1Y8/edit?usp=sharing">Materiale didattico Cloud Computing</a></td><td></td></tr>
@@ -3204,6 +3204,223 @@ La gestione dei messaggi avviene tramite l'utilizzo di MDB e degli eventi, per o
 <li>Quali sono le differenze tra la serializzazione classiche e quella di JAXB?</li>
 <li>A cosa servere avere un WebService come EJB Stateless?</li>
 </ul>
+<div style="break-before: page; page-break-before: always;"></div><ul>
+<li><a href="08-ws.html#contenuti">Contenuti</a></li>
+<li><a href="08-ws.html#materiale-bibliografico">Materiale bibliografico</a></li>
+<li><a href="08-ws.html#domande-di-riepilogo">Domande di riepilogo</a></li>
+</ul>
+<h1 id="contenuti-7"><a class="header" href="#contenuti-7">Contenuti</a></h1>
+<p><em>Parte 1</em></p>
+<ul>
+<li>Service-Oriented Architecture</li>
+<li>I Web Services
+<ul>
+<li>Definizioni</li>
+<li>I ruoli nei WS</li>
+</ul>
+</li>
+<li>Gli standard
+<ul>
+<li>WSDL</li>
+<li>SOAP</li>
+<li>UDDI</li>
+</ul>
+</li>
+<li>Le specifiche di WS</li>
+</ul>
+<p><em>Parte 2</em></p>
+<ul>
+<li>WS in Java
+<ul>
+<li>WSDL Mapping</li>
+<li>Eccezioni e Fault</li>
+<li>Contesto e ciclo di vita</li>
+<li>Un esempio riassuntivo</li>
+</ul>
+</li>
+<li>Supporto ai WS in Netbeans
+<ul>
+<li>il progetto per WS</li>
+<li>testing</li>
+<li>WS Client</li>
+</ul>
+</li>
+</ul>
+<h1 id="materiale-bibliografico-6"><a class="header" href="#materiale-bibliografico-6">Materiale bibliografico</a></h1>
+<ul>
+<li>"Beginning Java Enterprise Edition": capitolo 14</li>
+<li>"A Survey of Web Services Technologies".  Papazoglou, Michael P. and Dubray, Jean-jacques (2004)</li>
+</ul>
+<h1 id="domande-di-riepilogo-6"><a class="header" href="#domande-di-riepilogo-6">Domande di riepilogo</a></h1>
+<ul>
+<li>Che cos'e' una Service-Oriented Architecture?</li>
+<li>Quali sono i requisiti di un Web Service?</li>
+<li>Il ruolo del proxy nel meccanismo di invocazione di un Web Service</li>
+<li>Cosa rappresenta il file WSDL?</li>
+<li>Che cos'e' SOAP?</li>
+<li>Quali sono le gli stili di SOAP binding?</li>
+<li>Quando UDDI risulta opzionale?</li>
+<li>Come vengono gestite le eccezioni nei WS?</li>
+<li>Come si scrive un WebService in Java?</li>
+<li>A cosa servono le annotazioni @WebMethod, @WebResult, @WebParam?</li>
+<li>Quali sono le differenze tra la serializzazione classiche e quella di JAXB?</li>
+<li>A cosa servere avere un WebService come EJB Stateless?</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><ul>
+<li><a href="09-ws-lab.html#esercizio-0---card-validator">Esercizio 0 - Card Validator</a></li>
+<li><a href="09-ws-lab.html#esercizio-1---previsioni-meteo">Esercizio 1 - Previsioni Meteo</a></li>
+<li><a href="09-ws-lab.html#esercizio-2---web-service-previsioni-meteo-avanzate">Esercizio 2 - Web Service Previsioni Meteo Avanzate</a></li>
+<li><a href="09-ws-lab.html#esercizio-3---pdtify--%EF%B8%8F">Esercizio 3 - PDtify 🎵 ⏯️</a></li>
+</ul>
+<h1 id="esercizio-0---card-validator"><a class="header" href="#esercizio-0---card-validator">Esercizio 0 - Card Validator</a></h1>
+<ul>
+<li>
+<p>New project ➡️ Java with Ant ➡️ Java Web ➡️ Web Application: <code>CardValidatorWebApplication</code></p>
+</li>
+<li>
+<p>Definiamo un nuovo oggetto <code>Card</code> utilizzando JAXB (Java Architecture for XML Binding)</p>
+<pre><code class="language-java">@XmlRootElement
+@XmlAccessorType(XmlAccessType.FIELD)
+public class CreditCard {
+    @XmlAttribute(required = true)
+    private String number;
+    private String expiryDate;
+    private Integer controlNumber; 
+    private String type;
+    // Constructors , getters , setters
+}
+</code></pre>
+</li>
+<li>
+<p>Definiamo una nuova interfaccia <code>Validator</code></p>
+<pre><code class="language-java">  @WebService
+  public interface Validator {
+      public boolean validate(CreditCard creditCard); 
+  }
+</code></pre>
+</li>
+<li>
+<p>Definiamo un nuovo Web Service <code>CardValidator</code> che implementa un interfaccia <code>Validator</code></p>
+<ul>
+<li>New Files ... ➡️ Web Services ➡️ Web Service</li>
+<li><em>Name</em> : <code>CardValidator</code></li>
+<li><em>Implement Web Service as Stateless Session Beans</em>: [✔️]</li>
+</ul>
+</li>
+</ul>
+<pre><code class="language-java">@WebService(serviceName = "CardValidator")
+public class CardValidator implements Validator {
+    public boolean validate(CreditCard creditCard) {
+        Character lastDigit = creditCard.getNumber().charAt( creditCard.getNumber().length() - 1);
+        if (Integer.parseInt(lastDigit.toString()) % 2 == 0) {
+             return true;
+        } else {
+                 return false; 
+                }
+    }    
+}
+</code></pre>
+<ul>
+<li><strong>Testing</strong>: Project ➡️ Web Services ➡️ <code>Card Validator</code>➡️ Test Web Service</li>
+<li>Aggiungere al Web Service <code>Card Validator</code> un nuovo metodo <code>validatedata</code>che prende come parametri tutti i campi di <code>Card</code>singolarmente e utilizza <code>validate</code> restituire una stringa <code>valid| not valid</code>.
+<ul>
+<li>utilizzare il wizard di netbeans per aggungere il metodo  Project ➡️ Web Services ➡️ <code>Card Validator</code>➡️ Add Operation ...</li>
+<li>successivamente modificare il codice come segue:
+<pre><code class="language-java">public String validatedata(String number, String expiryDate, Integer controlNumber, String type) {
+    Character lastDigit = number.charAt( number.length() - 1);
+    if (validate(new CreditCard(number, expiryDate, controlNumber,type))) {
+         return "valid"; 
+    } else {
+             return "not valid"; 
+            }
+}    
+</code></pre>
+</li>
+</ul>
+</li>
+<li>Definire un nuovo Web Service Client
+<ul>
+<li>New Project ➡️ Jav with Ant ➡️ Java Application</li>
+<li><em>Nome</em>: <code>ValidateWSClient</code></li>
+<li>Project ➡️ New Web Service Client
+<ul>
+<li>Project ➡️ Browse ...</li>
+<li><code>CardValidatorWebApplication</code> ➡️ <code>CardValidator</code></li>
+<li>Visualizzare i file generati in <code>Generated Sources (jax-ws)</code></li>
+<li>Definire l'oggetto <code>ValidateWSClient</code> come segue:
+<pre><code class="language-java">public class ValidateWSClient {
+
+    public static void main(String[] args) {
+        CardValidator_Service service = new CardValidator_Service();
+        CardValidator port = service.getCardValidatorPort();
+        CreditCard card = new CreditCard();
+        card.setNumber("6011111111111118");
+        System.out.println(port.validate(card));
+        
+    }
+    
+}
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="esercizio-1---previsioni-meteo"><a class="header" href="#esercizio-1---previsioni-meteo">Esercizio 1 - Previsioni Meteo</a></h1>
+<p>Scrivere un servizio Web Service che implementa un servizio di previsioni meteo. Il servizio
+implementa un servizio <code>forecast()</code> che prende in input una stringa con il nome del luogo
+in cui fare previsione (ad esempio “Salerno” o “Fisciano”), e restituisce una stringa con la
+previsione (ad esempio “sole”, “pioggia”, “neve”, “nebbia”). L’implementazione del servizio
+restituisce sempre “sole” se l’input è “Salerno”, “pioggia” se l’input è “Fisciano”, oppure un
+valore casuale se l’input è diverso.</p>
+<p>Implementare un client Java che richiede il servizio di previsioni per diverse località, e le
+stampa a video.</p>
+<h1 id="esercizio-2---web-service-previsioni-meteo-avanzate"><a class="header" href="#esercizio-2---web-service-previsioni-meteo-avanzate">Esercizio 2 - Web Service Previsioni Meteo Avanzate</a></h1>
+<p>Aggiungere al Web Service dell’esercizio precedente una funzionalità chiamata
+<code>advancedForecast()</code> che prende in input un oggetto <code>Place</code> con i seguenti attributi:</p>
+<ul>
+<li>Stringa con nome del posto</li>
+<li>Coordinate GPS</li>
+</ul>
+<p>e restituisce un oggetto Forecast con i seguenti attributi:</p>
+<ul>
+<li>Stringa con la descrizione della previsione</li>
+<li>Temperatura</li>
+<li>Direzione del vento</li>
+<li>Forza del vento</li>
+<li>Umidità</li>
+</ul>
+<p>I valori in output posso essere casuali. Implementare un client Java che richiede il servizio di previsioni avanzato per diverse località, e le visualizza su standard output.</p>
+<h1 id="esercizio-3---pdtify---3"><a class="header" href="#esercizio-3---pdtify---3">Esercizio 3 - PDtify 🎵 ⏯️</a></h1>
+<p>Modificare il progetto PDtify per offrire  le funzionalità di MusicLibrary utilizzando anche un Web Service.
+Sviluppare un client java che permette di eseguire tutte le funzionalità di PDtify e per eseguire il play di una canzone utilizzare il seguente esempio.</p>
+<pre><code class="language-java">public class TestOpenBrowser {
+    public static void main(String[] args) {
+         String url = "https://www.youtube.com/embed/lLGLUSzzuWU";
+
+        if(Desktop.isDesktopSupported()){
+            Desktop desktop = Desktop.getDesktop();
+            try {
+                desktop.browse(new URI(url));
+            } catch (IOException | URISyntaxException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+        }else{
+            Runtime runtime = Runtime.getRuntime();
+            try {
+                runtime.exec("xdg-open " + url);
+            } catch (IOException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+        }
+    }
+    
+}
+
+</code></pre>
 
                     </main>
 
